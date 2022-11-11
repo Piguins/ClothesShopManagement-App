@@ -1,0 +1,18 @@
+D:\College\Tự Học Code\WPF\WPF UI Test 2\WPF UI Test 2\bin\Debug\WPF UI Test 2.exe.config
+D:\College\Tự Học Code\WPF\WPF UI Test 2\WPF UI Test 2\bin\Debug\WPF UI Test 2.exe
+D:\College\Tự Học Code\WPF\WPF UI Test 2\WPF UI Test 2\bin\Debug\WPF UI Test 2.pdb
+D:\College\Tự Học Code\WPF\WPF UI Test 2\WPF UI Test 2\obj\Debug\WPF UI Test 2.csproj.AssemblyReference.cache
+D:\College\Tự Học Code\WPF\WPF UI Test 2\WPF UI Test 2\obj\Debug\WPF UI Test 2.csproj.SuggestedBindingRedirects.cache
+D:\College\Tự Học Code\WPF\WPF UI Test 2\WPF UI Test 2\obj\Debug\MainWindow.g.cs
+D:\College\Tự Học Code\WPF\WPF UI Test 2\WPF UI Test 2\obj\Debug\View\LoginView.g.cs
+D:\College\Tự Học Code\WPF\WPF UI Test 2\WPF UI Test 2\obj\Debug\App.g.cs
+D:\College\Tự Học Code\WPF\WPF UI Test 2\WPF UI Test 2\obj\Debug\WPF UI Test 2_MarkupCompile.cache
+D:\College\Tự Học Code\WPF\WPF UI Test 2\WPF UI Test 2\obj\Debug\WPF UI Test 2_MarkupCompile.lref
+D:\College\Tự Học Code\WPF\WPF UI Test 2\WPF UI Test 2\obj\Debug\MainWindow.baml
+D:\College\Tự Học Code\WPF\WPF UI Test 2\WPF UI Test 2\obj\Debug\View\LoginView.baml
+D:\College\Tự Học Code\WPF\WPF UI Test 2\WPF UI Test 2\obj\Debug\WPF UI Test 2.g.resources
+D:\College\Tự Học Code\WPF\WPF UI Test 2\WPF UI Test 2\obj\Debug\WPF_UI_Test_2.Properties.Resources.resources
+D:\College\Tự Học Code\WPF\WPF UI Test 2\WPF UI Test 2\obj\Debug\WPF UI Test 2.csproj.GenerateResource.cache
+D:\College\Tự Học Code\WPF\WPF UI Test 2\WPF UI Test 2\obj\Debug\WPF UI Test 2.csproj.CoreCompileInputs.cache
+D:\College\Tự Học Code\WPF\WPF UI Test 2\WPF UI Test 2\obj\Debug\WPF UI Test 2.exe
+D:\College\Tự Học Code\WPF\WPF UI Test 2\WPF UI Test 2\obj\Debug\WPF UI Test 2.pdb
