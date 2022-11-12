@@ -1,0 +1,54 @@
+﻿<Window x:Class="Wpf_MainWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        >
+
+    <Border>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Border Background="#FFC55CBE" Grid.Column="0"
+                        CornerRadius="30,0,0,30">
+                
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal"
+                            Height="35"
+                            Margin="15,25">
+                        <Image Source="/image/icon_shopping.png"
+                           Height="30"/>
+                        <TextBlock Text="TIU"
+                               Foreground="White"
+                               FontSize="25"
+                               FontWeight="Medium"
+                               VerticalAlignment="Center"
+                               Padding="10,0,0,0"/>
+
+                    </StackPanel>
+                    <RadioButton>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Trang chủ"/>
+                        </StackPanel>
+                    </RadioButton>
+                </StackPanel>
+            </Border>
+
+            <Border Background="#FF81297C" Grid.Column="1"
+                        CornerRadius="0,30,30,0">
+
+            </Border>
+        </Grid>
+    </Border>
+</Window>

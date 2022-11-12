@@ -1,0 +1,16 @@
+D:\IT008\Wpf_MainWindow\Wpf_MainWindow\bin\Debug\Wpf_MainWindow.exe.config
+D:\IT008\Wpf_MainWindow\Wpf_MainWindow\bin\Debug\Wpf_MainWindow.exe
+D:\IT008\Wpf_MainWindow\Wpf_MainWindow\bin\Debug\Wpf_MainWindow.pdb
+D:\IT008\Wpf_MainWindow\Wpf_MainWindow\obj\Debug\Wpf_MainWindow.csproj.AssemblyReference.cache
+D:\IT008\Wpf_MainWindow\Wpf_MainWindow\obj\Debug\Wpf_MainWindow.csproj.SuggestedBindingRedirects.cache
+D:\IT008\Wpf_MainWindow\Wpf_MainWindow\obj\Debug\MainWindow.g.cs
+D:\IT008\Wpf_MainWindow\Wpf_MainWindow\obj\Debug\App.g.cs
+D:\IT008\Wpf_MainWindow\Wpf_MainWindow\obj\Debug\Wpf_MainWindow_MarkupCompile.cache
+D:\IT008\Wpf_MainWindow\Wpf_MainWindow\obj\Debug\Wpf_MainWindow_MarkupCompile.lref
+D:\IT008\Wpf_MainWindow\Wpf_MainWindow\obj\Debug\MainWindow.baml
+D:\IT008\Wpf_MainWindow\Wpf_MainWindow\obj\Debug\Wpf_MainWindow.g.resources
+D:\IT008\Wpf_MainWindow\Wpf_MainWindow\obj\Debug\Wpf_MainWindow.Properties.Resources.resources
+D:\IT008\Wpf_MainWindow\Wpf_MainWindow\obj\Debug\Wpf_MainWindow.csproj.GenerateResource.cache
+D:\IT008\Wpf_MainWindow\Wpf_MainWindow\obj\Debug\Wpf_MainWindow.csproj.CoreCompileInputs.cache
+D:\IT008\Wpf_MainWindow\Wpf_MainWindow\obj\Debug\Wpf_MainWindow.exe
+D:\IT008\Wpf_MainWindow\Wpf_MainWindow\obj\Debug\Wpf_MainWindow.pdb
