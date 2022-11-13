@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Clothes Shop Management\\Clothes Shop Management\\Clothes Shop Management.csproj",
+      "projectUniqueName": "D:\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\Clothes Shop Management.csproj",
       "projectName": "Clothes Shop Management",
-      "projectPath": "D:\\Clothes Shop Management\\Clothes Shop Management\\Clothes Shop Management.csproj",
+      "projectPath": "D:\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\Clothes Shop Management.csproj",
       "packagesPath": "C:\\Users\\theki\\.nuget\\packages\\",
-      "outputPath": "D:\\Clothes Shop Management\\Clothes Shop Management\\obj\\",
+      "outputPath": "D:\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\theki\\AppData\\Roaming\\NuGet\\NuGet.Config",
