@@ -277,3 +277,197 @@ PHẦN CỔ BO: 100% COTTON
 
 HỌA TIẾT TRÀN IN KTS','/Resource/ImgProduct/painful.jpg','15',N'Áo thun','XL')
 INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT29',N'Full Rabbit','350000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/full_rabbit.jpg','50',N'Áo thun','S')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT30',N'Full Rabbit','350000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/full_rabbit.jpg','50',N'Áo thun','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT31',N'Full Rabbit','350000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/full_rabbit.jpg','30',N'Áo thun','L')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT32',N'Full Rabbit','350000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/full_rabbit.jpg','30',N'Áo thun','XL')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT33',N'Rabbit Cyber','350000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/rabbit_cyber.jpg','50',N'Áo thun','S')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT34',N'Rabbit Cyber','350000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/rabbit_cyber.jpg','30',N'Áo thun','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT35',N'Rabbit Cyber','350000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/rabbit_cyber.jpg','30',N'Áo thun','L')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT36',N'Rabbit Cyber','350000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/rabbit_cyber.jpg','30',N'Áo thun','XL')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT37',N'Lucky You Tee','350000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/lucky_you.jpg','20',N'Áo thun','S')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT38',N'Lucky You Tee','350000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/lucky_you.jpg','15',N'Áo thun','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT39',N'Lucky You Tee','350000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/lucky_you.jpg','35',N'Áo thun','L')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT40',N'Lucky You Tee','350000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/lucky_you.jpg','25',N'Áo thun','XL')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT41',N'Good Rabbit','350000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/good_rabbit.jpg','30',N'Áo thun','S')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT42',N'Good Rabbit','350000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/good_rabbit.jpg','40',N'Áo thun','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT43',N'Good Rabbit','350000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/good_rabbit.jpg','20',N'Áo thun','L')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT44',N'Good Rabbit','350000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/good_rabbit.jpg','15',N'Áo thun','XL')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT45',N'Ruby Tie Dye Tee','420000',N'VẢI CHÍNH: 100% COTTON
+
+BO CỔ: 100% COTTON
+
+MÀU: KỸ THUẬT NHUỘM THỦ CÔNG','/Resource/ImgProduct/ruby_tie_dye.jpg','20',N'Áo thun','S')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT46',N'Ruby Tie Dye Tee','420000',N'VẢI CHÍNH: 100% COTTON
+
+BO CỔ: 100% COTTON
+
+MÀU: KỸ THUẬT NHUỘM THỦ CÔNG','/Resource/ImgProduct/ruby_tie_dye.jpg','30',N'Áo thun','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT47',N'Ruby Tie Dye Tee','420000',N'VẢI CHÍNH: 100% COTTON
+
+BO CỔ: 100% COTTON
+
+MÀU: KỸ THUẬT NHUỘM THỦ CÔNG','/Resource/ImgProduct/ruby_tie_dye.jpg','40',N'Áo thun','L')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT48',N'Ruby Tie Dye Tee','420000',N'VẢI CHÍNH: 100% COTTON
+
+BO CỔ: 100% COTTON
+
+MÀU: KỸ THUẬT NHUỘM THỦ CÔNG','/Resource/ImgProduct/ruby_tie_dye.jpg','20',N'Áo thun','XL')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT49',N'Excited','450000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/excited.jpg','20',N'Áo thun','S')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT50',N'Excited','450000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/excited.jpg','15',N'Áo thun','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT51',N'Excited','450000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/excited.jpg','20',N'Áo thun','L')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('AT52',N'Excited','450000',N'PHẦN  VẢI: 100% COTTON
+
+PHẦN BO CỔ: 100% COTTON
+
+HỌA TIẾT IN KÉO LỤA THỦ CÔNG','/Resource/ImgProduct/excited.jpg','30',N'Áo thun','XL')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('SM01',N'Striped Shirt','480000',N'PHẦN VẢI CHÍNH: 65% POLYESTER 35% COTTON
+
+HỌA TIẾT IN CHUYỂN NHIỆT','/Resource/ImgProduct/striped_shirt.jpg','50',N'Áo sơ mi','Freesize')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('SM02',N'Pattern Shirt','520000',N'PHẦN VẢI CHÍNH: 100% COTTON
+
+PHẦN CỔ BO: 100% COTTON
+
+HỌA TIẾT TRÀN IN KTS','/Resource/ImgProduct/pattern_shirt.jpg','45',N'Áo sơ mi','Freesize')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('SM03',N'Comic Shirt','520000',N'PHẦN VẢI CHÍNH: 65% POLYESTER 35% COTTON
+
+HỌA TIẾT IN CHUYỂN NHIỆT','/Resource/ImgProduct/comic_shirt.jpg','30',N'Áo sơ mi','Freesize')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('TK01',N'Mascot Tattooss Hoodie','520000',N'- Chất Liệu: Vải nỉ bông
+
+- Chất liệu in: in lụa','/Resource/ImgProduct/Hoodie1.jpg','30',N'Áo trùm đầu','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('TK02',N'Flower Hoodie','520000',N'- Chất Liệu: Vải nỉ bông
+
+- Chất liệu in: in lụa','/Resource/ImgProduct/Hoodie2.jpg','50',N'Áo trùm đầu','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('TK03',N'Paint Mascot Hoodie','520000',N'- Chất Liệu: Vải nỉ bông
+
+- Chất liệu in: in lụa','/Resource/ImgProduct/Hoodie3.jpg','50',N'Áo trùm đầu','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('TK04',N'Time-Stop Hoodie','490000',N'- Chất Liệu: Vải nỉ bông
+
+- Chất liệu in: in lụa','/Resource/ImgProduct/Hoodie4.jpg','50',N'Áo trùm đầu','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('TK05',N'Sweater Tiedye','490000',N'- Chất Liệu: Vải nỉ bông
+
+- Chất liệu in: in lụa','/Resource/ImgProduct/Sweater1.jpg','50',N'Áo tay dài','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('TK06',N'Basic Sweater','490000',N'- Chất Liệu: Vải nỉ bông
+
+- Chất liệu in: in lụa','/Resource/ImgProduct/Sweater2.jpg','50',N'Áo tay dài','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('TK07',N'Mascot Sweater','470000',N'- Chất Liệu: Vải nỉ bông
+
+- Chất liệu in: in lụa','/Resource/ImgProduct/Sweater3.jpg','50',N'Áo tay dài','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('TK08',N'I''m Sick Sweater','470000',N'- Chất Liệu: Vải nỉ bông
+
+- Chất liệu in: in lụa','/Resource/ImgProduct/Sweater4.jpg','50',N'Áo tay dài','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('TK09',N'OutDoor Jacket','520000',N'- Chất liệu : Dù 2 lớp
+
+- Phối màu: Xanh Đen - Vàng
+
+- Chi tiết : Thêu nổi 3d 100 cotton
+
+- Phối tay : Phản quang','/Resource/ImgProduct/Jacket1.jpg','50',N'Áo khoác','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('TK10',N'Clownz Jacket','850000',N'- Chất liệu: vải dạ (lót 2 lớp)
+
+- Màu sắc: Đen, xanh
+
+- Dáng xuông rộng
+
+- Sử dụng khuy dập
+
+- Mặt sau: Hình thêu logo sử dụng chất liệu bông xù','/Resource/ImgProduct/Jacket2.jpg','50',N'Áo khoác','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('TK11',N'EMGO VARSITY ','890000',N'MATERIAL: CORDUROY (COTTON + POLY)','/Resource/ImgProduct/Jacket3.jpg','50',N'Áo khoác','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('TK12',N'Basic Sweapant - Black','420000',N'Chất liệu: Vải dù.
+
+Họa tiết thêu
+
+Form quần ống suông','/Resource/ImgProduct/quan1.jpg','50',N'Quần','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('TK13',N'Line Pants - Black','420000',N'Chất liệu: Vải dù.
+
+Họa tiết thêu
+
+Form quần ống suông','/Resource/ImgProduct/quan2.jpg','50',N'Quần','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('TK14',N'Black/ White Pants','420000',N'Chất liệu: Vải dù.
+
+Họa tiết thêu
+
+Form quần ống suông','/Resource/ImgProduct/quan3.jpg','50',N'Quần','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('TK15',N'Mascot Short - Black','350000',N'Chất liệu: Vải chân cua
+
+Chất liệu in: kéo lụa','/Resource/ImgProduct/quan4.jpg','50',N'Quần','M')
+INSERT INTO SANPHAM(MASP,TENSP,GIA,MOTA,HINHSP,SL,LOAISP,SIZE) VALUES('TK16',N'Terry Short - Pink','350000',N'Chất liệu vải : Chân Cua (Vải thun dày)
+
+Họa tiết :  Thêu
+
+','/Resource/ImgProduct/quan5.jpg','50',N'Quần','M')
