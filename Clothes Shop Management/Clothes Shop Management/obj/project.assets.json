@@ -8,19 +8,24 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\theki\\.nuget\\packages\\": {}
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\Clothes Shop Management.csproj",
+      "projectUniqueName": "D:\\College\\Đồ Án LTTQ\\Repository\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\Clothes Shop Management.csproj",
       "projectName": "Clothes Shop Management",
-      "projectPath": "D:\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\Clothes Shop Management.csproj",
-      "packagesPath": "C:\\Users\\theki\\.nuget\\packages\\",
-      "outputPath": "D:\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\obj\\",
+      "projectPath": "D:\\College\\Đồ Án LTTQ\\Repository\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\Clothes Shop Management.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "D:\\College\\Đồ Án LTTQ\\Repository\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\theki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

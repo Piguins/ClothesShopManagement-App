@@ -1,0 +1,2 @@
+Trong File Resource của Clothes Shop Management_Demo\Demo có 2 file .xaml ẩn hiện đang bị exclude ra khỏi project do chưa khám phá xong source code của bên KATEE có 2 file đó làm gì. 
+Nếu include lại thì project sẽ ko  chạy thử demo được.
