@@ -9,7 +9,7 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
-        Background="Transparent"
+        Background="AntiqueWhite"
         AllowsTransparency="True"
         MouseDown="Window_MouseDown"
         >
