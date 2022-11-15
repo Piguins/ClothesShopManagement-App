@@ -62,9 +62,8 @@ Kinh tế ngày càng phát triển, đây là thời buổi của công nghệ,
 <div id="Doituongsudung"></div>
 
 ### 3. Đối tượng sử dụng
-Hệ thống các cửa hàng gồm:
 * Chủ cửa hàng: Vai trò quản lý
-* Nhân viên quản lý
+* Khách hàng
 
 
 <div id="Muctieu"></div>
