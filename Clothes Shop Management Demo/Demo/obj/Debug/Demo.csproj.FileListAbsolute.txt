@@ -35,3 +35,21 @@ D:\Clothes-Shop-Management-Project\Clothes Shop Management_Demo\Demo\obj\Debug\D
 D:\Clothes-Shop-Management-Project\Clothes Shop Management_Demo\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache
 D:\Clothes-Shop-Management-Project\Clothes Shop Management_Demo\Demo\obj\Debug\Demo.exe
 D:\Clothes-Shop-Management-Project\Clothes Shop Management_Demo\Demo\obj\Debug\Demo.pdb
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.AssemblyReference.cache
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.SuggestedBindingRedirects.cache
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\MainWindow.g.cs
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\LoginView.g.cs
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\App.g.cs
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo_MarkupCompile.cache
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo_MarkupCompile.lref
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\MainWindow.baml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\LoginView.baml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.g.resources
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.pdb
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Demo.exe.config
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Demo.exe
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Demo.pdb
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.Properties.Resources.resources
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.GenerateResource.cache
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.exe

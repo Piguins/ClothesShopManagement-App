@@ -55,6 +55,30 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\AddCsViewModel.cs" />
+    <Compile Include="ViewModel\AddImportViewModel.cs" />
+    <Compile Include="ViewModel\AddNDVM.cs" />
+    <Compile Include="ViewModel\AddOrderViewModel.cs" />
+    <Compile Include="ViewModel\AddProductViewModel.cs" />
+    <Compile Include="ViewModel\ChangePasswordViewModel.cs" />
+    <Compile Include="ViewModel\SettingViewModel.cs" />
+    <Compile Include="ViewModel\ReportViewModel.cs" />
+    <Compile Include="ViewModel\RelayCommand.cs" />
+    <Compile Include="ViewModel\RegisterViewModel.cs" />
+    <Compile Include="ViewModel\QLNVViewModel.cs" />
+    <Compile Include="ViewModel\ProductViewModel.cs" />
+    <Compile Include="ViewModel\OrderViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
+    <Compile Include="ViewModel\ImportViewModel.cs" />
+    <Compile Include="ViewModel\HomeViewModel.cs" />
+    <Compile Include="ViewModel\ForgetPassViewModel.cs" />
+    <Compile Include="ViewModel\DetailProductViewModel.cs" />
+    <Compile Include="ViewModel\DetailOrderViewModel.cs" />
+    <Compile Include="ViewModel\DetailImportViewModel.cs" />
+    <Compile Include="ViewModel\DetailCustomer.cs" />
+    <Compile Include="ViewModel\CustomerViewModel.cs" />
     <Compile Include="View\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
@@ -106,11 +130,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
-    <Folder Include="View Model\" />
+    <Folder Include="Resource\Ava\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resource\Ava\khoi.jpg" />
-    <Resource Include="Resource\Ava\trang.jpg" />
     <Resource Include="Resource\Chart\doanh_thu.jpg" />
     <Resource Include="Resource\Chart\loai_san_pham.jpg" />
     <Resource Include="Resource\Chart\top5_san_pham.jpg" />
