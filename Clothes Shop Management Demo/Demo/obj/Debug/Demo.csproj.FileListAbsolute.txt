@@ -85,3 +85,28 @@ D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Sho
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.CopyComplete
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.exe
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.pdb
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Demo.exe.config
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Demo.exe
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Demo.pdb
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\MaterialDesignColors.dll
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\MaterialDesignColors.pdb
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.AssemblyReference.cache
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.SuggestedBindingRedirects.cache
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\MainWindow.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\LoginView.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\App.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo_MarkupCompile.cache
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo_MarkupCompile.lref
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\App.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\MainWindow.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\LoginView.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.g.resources
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.Properties.Resources.resources
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.GenerateResource.cache
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.CopyComplete
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.exe
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.pdb

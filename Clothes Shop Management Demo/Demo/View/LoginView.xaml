@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="Phần mềm quản lý bán hàng" Height="700" Width="1000"
+        
         FontFamily="Josefin Sans"
         >
     <Grid>
@@ -27,7 +28,7 @@
                     FontFamily="Josefin Sans" TextAlignment="Center" FontWeight="Bold"/>
             </Border>
             <Label Height="19" Width="288">
-                <Border CornerRadius="0" BorderThickness="2" BorderBrush="#493AF8" Background="#493AF8" Margin="40 0 -250 0"></Border>
+                <Border CornerRadius="0" BorderThickness="1.5" BorderBrush="#493AF8" Background="#493AF8" Margin="40 0 -250 0"></Border>
             </Label>
             <StackPanel Margin="0 50 0 0"
                 Orientation="Horizontal" >
@@ -60,20 +61,18 @@
                 </PasswordBox.Background>
                 
             </PasswordBox>
-            
-            <Button materialDesign:ButtonAssist.CornerRadius="25"
-                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
-                    Style="{StaticResource MaterialDesignRaisedDarkButton}"
-                    ToolTip="MaterialDesignRaisedDarkButton with Round Corners"
-                    Margin="0 50 0 0" Width="150" Height="40"
-                    Background="#6891DF" HorizontalAlignment="Center" VerticalContentAlignment="Center">
-                <TextBox Text="Đăng nhập" VerticalAlignment="Center" 
-                         FontWeight="Bold" 
-                         FontFamily="Josefin Sans"
-                         >
-                </TextBox>
+
+            <Button
+    materialDesign:ButtonAssist.CornerRadius="25"
+    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+    Style="{StaticResource MaterialDesignRaisedDarkButton}"
+    ToolTip="MaterialDesignRaisedDarkButton with Round Corners"
+                Margin="0 50 0 0" Width="150" Height="40"
+                Background="#6891DF" HorizontalAlignment="Center" VerticalContentAlignment="Center">
+                <TextBlock
+      Text="Đăng nhập" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Josefin Sans"/>
             </Button>
-            
+
             <Grid Height="135" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="auto"/>
