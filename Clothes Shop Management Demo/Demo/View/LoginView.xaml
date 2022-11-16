@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="Phần mềm quản lý bán hàng" Height="700" Width="1000"
+        FontFamily="Josefin Sans"
         >
     <Grid>
         <Grid.ColumnDefinitions>
@@ -23,7 +24,7 @@
                     Text ="Chào mừng trở lại"
                     FontSize="30" Width="260"
                     Foreground="#292929"
-                    FontFamily="Bold" TextAlignment="Center" FontWeight="Bold"/>
+                    FontFamily="Josefin Sans" TextAlignment="Center" FontWeight="Bold"/>
             </Border>
             <Label Height="19" Width="288">
                 <Border CornerRadius="0" BorderThickness="2" BorderBrush="#493AF8" Background="#493AF8" Margin="40 0 -250 0"></Border>
@@ -31,13 +32,13 @@
             <StackPanel Margin="0 50 0 0"
                 Orientation="Horizontal" >
                 <TextBox
-                    materialDesign:HintAssist.Hint="Tên đăng nhập"
+                    materialDesign:HintAssist.Hint="Tên đăng nhập" FontFamily="Josefin Sans"
                     Text="{Binding Content}" Height="40" Width="300"/>
             </StackPanel>
             <PasswordBox
                 x:Name="PasswordBox"
                 materialDesign:HintAssist.HelperText=""
-                materialDesign:HintAssist.Hint="Mật khẩu"
+                materialDesign:HintAssist.Hint="Mật khẩu" FontFamily="Josefin Sans"
                 materialDesign:TextFieldAssist.HasClearButton="True" Width="300"
                 Margin="0 50 0 0"
                 Height="40"/>
@@ -50,7 +51,7 @@
                 Margin="0 50 0 0" Width="150" Height="40"
                 Background="#6891DF" HorizontalAlignment="Center" VerticalContentAlignment="Center">
                 <TextBlock
-      Text="Đăng nhập" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Medium"/>
+      Text="Đăng nhập" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Josefin Sans"/>
             </Button>
             <Grid Height="135" >
                 <Grid.ColumnDefinitions>
@@ -61,19 +62,18 @@
                 <TextBlock Grid.Column="0"
                     Margin="0 0 0 0"
                     Text = "Đăng ký" FontSize="13"
+                    FontFamily="Josefin Sans"
                     Height="25"
                     Foreground="#1B59D1"
                     />
                 <TextBlock Grid.Column="2"
                     Text = "Quên mật khẩu"
                     FontSize="13"
+                    FontFamily="Josefin Sans"
                     Height="25"
                     Foreground="#1B59D1"
                     HorizontalAlignment="Right"/>
             </Grid>
-
-
-
         </StackPanel>
     </Grid>
 </Window>
