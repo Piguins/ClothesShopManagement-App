@@ -53,3 +53,10 @@ D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\D
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.GenerateResource.cache
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.exe
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\MaterialDesignColors.dll
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\MaterialDesignColors.pdb
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\App.baml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.CopyComplete
