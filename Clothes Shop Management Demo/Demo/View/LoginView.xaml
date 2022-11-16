@@ -42,16 +42,14 @@
                 materialDesign:TextFieldAssist.HasClearButton="True" Width="300"
                 Margin="0 50 0 0"
                 Height="40"/>
-            
-            <Button
-    materialDesign:ButtonAssist.CornerRadius="25"
-    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
-    Style="{StaticResource MaterialDesignRaisedDarkButton}"
-    ToolTip="MaterialDesignRaisedDarkButton with Round Corners"
-                Margin="0 50 0 0" Width="150" Height="40"
-                Background="#6891DF" HorizontalAlignment="Center" VerticalContentAlignment="Center">
-                <TextBlock
-      Text="Đăng nhập" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Josefin Sans"/>
+
+            <Button materialDesign:ButtonAssist.CornerRadius="25"
+                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                    Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                    ToolTip="MaterialDesignRaisedDarkButton with Round Corners"
+                    Margin="0 50 0 0" Width="150" Height="40"
+                    Background="#6891DF" HorizontalAlignment="Center" VerticalContentAlignment="Center">
+                <TextBlock Text="Đăng nhập" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Josefin Sans"/>
             </Button>
             <Grid Height="135" >
                 <Grid.ColumnDefinitions>
@@ -59,20 +57,69 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Column="0"
-                    Margin="0 0 0 0"
-                    Text = "Đăng ký" FontSize="13"
-                    FontFamily="Josefin Sans"
-                    Height="25"
-                    Foreground="#1B59D1"
-                    />
-                <TextBlock Grid.Column="2"
-                    Text = "Quên mật khẩu"
-                    FontSize="13"
-                    FontFamily="Josefin Sans"
-                    Height="25"
-                    Foreground="#1B59D1"
-                    HorizontalAlignment="Right"/>
+                <Button Grid.Column ="0" 
+                        Margin="0 0 0 0"
+                        Content = "Đăng ký" FontSize="13"
+                        FontFamily="Josefin Sans"
+                        Height="25"
+                        BorderBrush="Transparent"
+                        Cursor="Hand">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Foreground" Value="#6891DF"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#6891DF"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="60" Height="25"
+                                    CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center">
+                                </ContentPresenter>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Grid.Column="2"
+                        Content = "Quên mật khẩu"
+                        FontSize="13"
+                        FontFamily="Josefin Sans"
+                        Height="25"
+                        HorizontalAlignment="Right"
+                        BorderBrush="Transparent"
+                        Cursor="Hand">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Foreground" Value="#6891DF"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#6891DF"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="100" Height="25"
+                                    CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center">
+                                </ContentPresenter>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
             </Grid>
         </StackPanel>
     </Grid>
