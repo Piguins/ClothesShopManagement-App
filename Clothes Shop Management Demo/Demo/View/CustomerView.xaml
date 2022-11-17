@@ -36,10 +36,10 @@
                     Margin="15,10,0,0"
                     ><Run Text="KHÁCH HÀNG"/>
                     </TextBlock>
-                    <Image 
-                        Height="50"
-                        Margin="20,6,0,0" Source="E:\IT008\Clothes-Shop-Management-Project\Des UI - Figma\UI Login\account_circle_FILL0_wght400_GRAD0_opsz48.png">
-                    </Image>
+                    <Image Source="/Resource/Image/account_circle.png" 
+                           Height="50"
+                           Margin="20,6,0,0"
+                           />
                 </StackPanel>
 
             </Grid>
@@ -95,7 +95,7 @@
                         CaretBrush="White" TextChanged="tbxSearch_TextChanged"
                         >
                         <TextBox.Background>
-                            <ImageBrush ImageSource="E:\IT008\Clothes-Shop-Management-Project\Des UI - Figma\UI Login\search_FILL0_wght400_GRAD0_opsz48.png" 
+                            <ImageBrush ImageSource="/Resource/Image/search_fill.png" 
                                         AlignmentX="Right" 
                                         Stretch="None"
                                         ></ImageBrush>
@@ -111,8 +111,10 @@
                         BorderThickness="3"
                         >
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="E:\IT008\Clothes-Shop-Management-Project\Des UI - Figma\UI Login\add_FILL0_wght400_GRAD0_opsz48.png"
-                                   Margin="0,0,3,0"/>
+                            <Image Source="/Resource/Image/add_fill.png" 
+                                   Height="40"
+                                   Margin="0,3,0,0"/>
+
                         </StackPanel>
                     </Button>
 

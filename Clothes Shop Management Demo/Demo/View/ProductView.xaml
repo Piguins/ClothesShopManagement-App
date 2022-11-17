@@ -11,13 +11,15 @@
         Height="600"
         Width="800"
         Background="LightSkyBlue"
-        CornerRadius="20">
+        CornerRadius="20"
+        BorderThickness="5">
         <Border.BorderBrush>
             <LinearGradientBrush EndPoint="0.5 ,1" StartPoint="0.5,0">
                 <GradientStop Color="Aqua" Offset="0"/>
-                <GradientStop Color="LightPink" Offset="1"/>
+                <GradientStop Color="White" Offset="1"/>
             </LinearGradientBrush>
         </Border.BorderBrush>
+        
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="65"/>
@@ -138,8 +140,9 @@
                         Width="90"
                         FontFamily="{StaticResource MaterialDesignFont}"
                         materialDesign:ButtonAssist.CornerRadius="15"
-                        BorderThickness="0"
-                        Background="White" Foreground="DeepSkyBlue"
+                        Background="LightPink"
+                        BorderBrush="LightSkyBlue"
+                        BorderThickness="3"
                         FontWeight="SemiBold"
                         FontSize="17"
                         >                        

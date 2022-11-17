@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("view/search_fill0_wght400_grad0_opsz48.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("view/lock_reset.png")]
 
 
