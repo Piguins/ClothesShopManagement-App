@@ -24,10 +24,5 @@ namespace Demo.View
         {
             InitializeComponent();
         }
-
-        private void cbxTimKiem_ImageFailed(object sender, ExceptionRoutedEventArgs e)
-        {
-
-        }
     }
 }
