@@ -28,7 +28,7 @@
 
         <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="474">
 
-            <Border Margin="0 0 0 0">
+            <Border Margin="0 0 5 0">
                 <TextBlock
                     Text ="Chào mừng trở lại"
                     FontSize="30" Width="260"
@@ -75,7 +75,7 @@
     IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
     Style="{StaticResource MaterialDesignRaisedDarkButton}"
     ToolTip="MaterialDesignRaisedDarkButton with Round Corners"
-                Margin="0 50 0 0" Width="150" Height="40"
+                Margin="20 50 0 0" Width="150" Height="40"
                 Background="#6891DF" HorizontalAlignment="Center" VerticalContentAlignment="Center">
                 <TextBlock
       Text="Đăng nhập" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Josefin Sans"/>
