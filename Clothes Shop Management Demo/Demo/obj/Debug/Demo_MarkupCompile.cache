@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\
 Demo
 none
 false
 DEBUG;TRACE
-E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\App.xaml
-6-2062824138
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\App.xaml
+82008755691
 
-35451196853
-18-2054335718
-MainWindow.xaml;View\CustomerView.xaml;View\ForgotPassword.xaml;View\LoginView.xaml;View\ProductView.xaml;View\SignUpView.xaml;
+36-1928818303
+181005591138
+MainWindow.xaml;Resource\StyleRecourse.xaml;View\CustomersView.xaml;View\ForgetPassword.xaml;View\LoginView.xaml;View\MainView.xaml;View\ProductView.xaml;View\SignUpView.xaml;
 
 True
 
