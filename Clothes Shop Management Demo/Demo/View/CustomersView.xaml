@@ -1,23 +1,24 @@
-﻿<UserControl
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Demo.View"
-             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="Demo.View.CustomerView"
-             mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="800">
+﻿<Page x:Class="Demo.View.CustomersView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1000"
+      Title="CustomersView_1_">
+
     <Border
-        Height="600"
-        Width="800"
+        Height="700"
+        Width="1000"
         Background="White"
         CornerRadius="20"
         BorderThickness="5"
         >
         <Border.BorderBrush>
             <LinearGradientBrush EndPoint="0.5 ,1" StartPoint="0.5,0">
-                <GradientStop Color="Aqua" Offset="0"/>
-                <GradientStop Color="White" Offset="1"/>
+                <GradientStop Color="#6891DF" Offset="0"/>
+                <GradientStop Color="FloralWhite" Offset="1"/>
             </LinearGradientBrush>
         </Border.BorderBrush>
         <Grid>
@@ -48,15 +49,15 @@
                     <Border
                         Margin="15,0,0,0"
                         Height="60"
-                        Width="150"
+                        Width="200"
                         CornerRadius="20"
                         Background="White"
                         BorderThickness="2"
                         >
                         <Border.BorderBrush>
                             <LinearGradientBrush EndPoint="0.5 ,1" StartPoint="0.5,0">
-                                <GradientStop Color="Aqua" Offset="0"/>
-                                <GradientStop Color="LightPink" Offset="1"/>
+                                <GradientStop Color="#6891DF" Offset="0"/>
+                                <GradientStop Color="FloralWhite" Offset="1"/>
                             </LinearGradientBrush>
                         </Border.BorderBrush>
                         <ComboBox
@@ -72,15 +73,15 @@
                             FontFamily="{StaticResource MaterialDesignFont}"
                             Height="45"
                             FontSize="18" Margin="6,6,5,5">
-                            
+
                         </ComboBox>
                     </Border>
                     <TextBox
                         x:Name="tbxSearch"
-                        Width="470"
+                        Width="650"
                         Height="60"
                         Margin="15,0,0,0"
-                        BorderBrush="Aqua"
+                        BorderBrush="#6891DF"
                         Foreground="Gray"
                         FontSize="18"
                         FontWeight="SemiBold"
@@ -103,11 +104,11 @@
                     </TextBox>
                     <Button
                         Margin="20,0,0,0"
-                        Width="100"
+                        Width="70"
                         Height="60"
                         materialDesign:ButtonAssist.CornerRadius="15"
                         Background="White"
-                        BorderBrush="LightSkyBlue"
+                        BorderBrush="#6891DF"
                         BorderThickness="3"
                         >
                         <StackPanel Orientation="Horizontal">
@@ -124,7 +125,7 @@
                 <StackPanel>
                     <Border
                         Margin="10,5,10,0"
-                        Width="770"
+                        Width="970"
                         Height="50"
                         CornerRadius="15"
                         Background="White"
@@ -132,15 +133,15 @@
                         >
                         <Border.BorderBrush>
                             <LinearGradientBrush EndPoint="0.5 ,1" StartPoint="0.5,0">
-                                <GradientStop Color="Aqua" Offset="0"/>
-                                <GradientStop Color="LightPink" Offset="1"/>
+                                <GradientStop Color="#6891DF" Offset="0"/>
+                                <GradientStop Color="FloralWhite" Offset="1"/>
                             </LinearGradientBrush>
                         </Border.BorderBrush>
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="120"/>
+                                <ColumnDefinition Width="150"/>
+                                <ColumnDefinition Width="250"/>
                                 <ColumnDefinition Width="200"/>
-                                <ColumnDefinition Width="180"/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
                             <Grid Grid.Column="0">
@@ -151,15 +152,15 @@
                                            FontFamily="{StaticResource MaterialDesignFont}"
                                            FontSize="18"
                                            FontWeight="SemiBold"
-                                               Margin="10,0,0,0"
+                                               Margin="30,0,0,0"
                                            />
                                     <Image Source="/Resource/Image/code_fill.png"
                                            Height="30"
-                                           Margin="4,7,0,10"/>
+                                           Margin="5,7,0,10"/>
 
                                 </StackPanel>
-                                
-                                
+
+
                             </Grid>
                             <Grid Grid.Column="1">
                                 <StackPanel Orientation="Horizontal">
@@ -169,13 +170,14 @@
                                            FontFamily="{StaticResource MaterialDesignFont}"
                                            FontSize="18"
                                            FontWeight="SemiBold"
+                                               Margin="30,0,0,0"
                                            />
                                     <Image Source="/Resource/Image/person_fill.png" 
                                            Height="30"
                                            />
 
                                 </StackPanel>
-                                
+
                             </Grid>
                             <Grid Grid.Column="2">
                                 <StackPanel Orientation="Horizontal">
@@ -185,25 +187,27 @@
                                            FontFamily="{StaticResource MaterialDesignFont}"
                                            FontSize="18"
                                            FontWeight="SemiBold"
+                                               Margin="25,0,0,0"
                                            />
                                     <Image Source="/Resource/Image/call_fill.png" Height="30"/>
 
                                 </StackPanel>
-                                
+
                             </Grid>
                             <Grid Grid.Column="3">
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="ĐỊA CHỈ"
-                                           HorizontalAlignment="Left"
+                                           HorizontalAlignment="Center"
                                            VerticalAlignment="Center"
                                            FontFamily="{StaticResource MaterialDesignFont}"
                                            FontSize="18"
                                            FontWeight="SemiBold"
+                                               Margin="140,0,0,0"
                                            />
                                     <Image Source="/Resource/Image/home_pin.png" 
                                            Height="30"/>
                                 </StackPanel>
-                                
+
                             </Grid>
 
                         </Grid>
@@ -212,8 +216,8 @@
                     <ListView
                         x:Name="CustomersListView"
                         ItemsSource="{Binding}"
-                        Height="400"
-                        Width="770"
+                        Height="490"
+                        Width="970"
                         SelectionMode="Single"
                         ScrollViewer.VerticalScrollBarVisibility="Hidden"
                         >
@@ -298,4 +302,6 @@
         </Grid>
 
     </Border>
-</UserControl>
+</Page>
+
+

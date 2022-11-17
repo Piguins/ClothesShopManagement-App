@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Demo.View
 {
     /// <summary>
-    /// Interaction logic for CustomerView.xaml
+    /// Interaction logic for ForgetPassword.xaml
     /// </summary>
-    public partial class CustomerView : UserControl
+    public partial class ForgetPassword : Page
     {
-        public CustomerView()
+        public ForgetPassword()
         {
             InitializeComponent();
         }
