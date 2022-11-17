@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace Demo.View
 {
     /// <summary>
-    /// Interaction logic for CustomerView.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class CustomerView : UserControl
+    public partial class MainWindow : UserControl
     {
-        public CustomerView()
+        public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void cbxTimKiem_ImageFailed(object sender, ExceptionRoutedEventArgs e)
-        {
-
         }
     }
 }

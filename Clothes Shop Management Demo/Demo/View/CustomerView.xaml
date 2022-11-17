@@ -10,7 +10,7 @@
     <Border
         Height="600"
         Width="800"
-        Background="LightSkyBlue"
+        Background="White"
         CornerRadius="20"
         BorderThickness="5"
         >
@@ -27,13 +27,21 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
-                <TextBlock
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock
                     VerticalAlignment="Center"
                     FontFamily="{StaticResource MaterialDesignFont}"
                     FontSize="50"
-                    Foreground="White"
+                    Foreground="SkyBlue"
                     Margin="15,10,0,0"
-                    ><Run Text="KHÁCH HÀNG"/></TextBlock>
+                    ><Run Text="KHÁCH HÀNG"/>
+                    </TextBlock>
+                    <Image 
+                        Height="50"
+                        Margin="20,6,0,0" Source="E:\IT008\Clothes-Shop-Management-Project\Des UI - Figma\UI Login\account_circle_FILL0_wght400_GRAD0_opsz48.png">
+                    </Image>
+                </StackPanel>
+
             </Grid>
             <Grid Grid.Row="1">
                 <StackPanel Orientation="Horizontal">
@@ -54,7 +62,7 @@
                         <ComboBox
                             x:Name="cbxTimKiem"
                             Style="{StaticResource MaterialDesignFilledComboBox}"
-                            materialDesign:TextFieldAssist.TextBoxViewMargin="10,-10,0,0"
+                            materialDesign:TextFieldAssist.TextBoxViewMargin="-8,-10,0,0"
                             materialDesign:HintAssist.Hint="Tìm Kiếm"
                             materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                             BorderThickness="0"
@@ -63,16 +71,8 @@
                             Background="White"
                             FontFamily="{StaticResource MaterialDesignFont}"
                             Height="45"
-                            Width="135"
-                            FontSize="18"
-                            ItemsSource="{Binding}">
-                            <ComboBox.ItemTemplate>
-                                <DataTemplate>
-                                    <StackPanel Orientation="Horizontal">
-                                        <TextBlock Text="{Binding}"/>
-                                    </StackPanel>
-                                </DataTemplate>
-                            </ComboBox.ItemTemplate>
+                            FontSize="18" Margin="6,6,5,5">
+                            
                         </ComboBox>
                     </Border>
                     <TextBox
@@ -80,8 +80,8 @@
                         Width="470"
                         Height="60"
                         Margin="15,0,0,0"
-                        BorderBrush="White"
-                        Foreground="White"
+                        BorderBrush="Aqua"
+                        Foreground="Gray"
                         FontSize="18"
                         FontWeight="SemiBold"
                         materialDesign:HintAssist.Hint="Tìm Kiếm"
@@ -92,20 +92,28 @@
                         materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                         BorderThickness="2"
                         VerticalAlignment="Center"
-                        CaretBrush="White"
+                        CaretBrush="White" TextChanged="tbxSearch_TextChanged"
                         >
+                        <TextBox.Background>
+                            <ImageBrush ImageSource="E:\IT008\Clothes-Shop-Management-Project\Des UI - Figma\UI Login\search_FILL0_wght400_GRAD0_opsz48.png" 
+                                        AlignmentX="Right" 
+                                        Stretch="None"
+                                        ></ImageBrush>
+                        </TextBox.Background>
                     </TextBox>
                     <Button
-                        Content="THÊM"
                         Margin="20,0,0,0"
                         Width="100"
                         Height="60"
                         materialDesign:ButtonAssist.CornerRadius="15"
-                        Background="LightPink"
+                        Background="White"
                         BorderBrush="LightSkyBlue"
                         BorderThickness="3"
                         >
-                        
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="E:\IT008\Clothes-Shop-Management-Project\Des UI - Figma\UI Login\add_FILL0_wght400_GRAD0_opsz48.png"
+                                   Margin="0,0,3,0"/>
+                        </StackPanel>
                     </Button>
 
                 </StackPanel>
@@ -118,9 +126,14 @@
                         Height="50"
                         CornerRadius="15"
                         Background="White"
-                        BorderBrush="Aqua"
                         BorderThickness="2"
                         >
+                        <Border.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5 ,1" StartPoint="0.5,0">
+                                <GradientStop Color="Aqua" Offset="0"/>
+                                <GradientStop Color="LightPink" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.BorderBrush>
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="120"/>
@@ -136,7 +149,7 @@
                                            FontSize="18"
                                            FontWeight="SemiBold"
                                            />
-                                
+
                             </Grid>
                             <Grid Grid.Column="1">
                                 <TextBlock Text="TÊN KHÁCH HÀNG"
@@ -165,9 +178,9 @@
                                            FontWeight="SemiBold"
                                            />
                             </Grid>
-                            
+
                         </Grid>
-                        
+
                     </Border>
                     <ListView
                         x:Name="CustomersListView"
@@ -190,7 +203,7 @@
                                             <GradientStop Color="#FFE5D8" Offset="1"/>
                                             <GradientStop Color="#FFCAD4" Offset="0"/>
                                         </LinearGradientBrush>
-                                     </Border.Background>
+                                    </Border.Background>
                                     <Grid>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="120"/>
@@ -205,7 +218,7 @@
                                                 VerticalAlignment="Center"
                                                 FontFamily="{StaticResource MaterialDesignFont}"
                                                 FontSize="16"
-                                                >                                                
+                                                >
                                             </TextBlock>
                                         </Grid>
                                         <Grid Grid.Column="1">
@@ -243,7 +256,7 @@
                                             </TextBlock>
                                         </Grid>
                                     </Grid>
-                                    
+
                                 </Border>
                             </DataTemplate>
                         </ListView.ItemTemplate>
