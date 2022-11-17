@@ -153,3 +153,12 @@ D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\V
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ForgotPassword.baml
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\MainWindow.baml
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ProductView.baml
+D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\CustomerView.g.cs
+D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ForgotPassword.g.cs
+D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ProductView.g.cs
+D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\CustomerView.baml
+D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ForgotPassword.baml
+D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\MainWindow.baml
+D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ProductView.baml
+D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\SignUpView.g.cs
+D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\SignUpView.baml
