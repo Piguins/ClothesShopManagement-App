@@ -117,7 +117,9 @@
                         Width="770"
                         Height="50"
                         CornerRadius="15"
-                        Background="White"                        
+                        Background="White"
+                        BorderBrush="Aqua"
+                        BorderThickness="2"
                         >
                         <Grid>
                             <Grid.ColumnDefinitions>
