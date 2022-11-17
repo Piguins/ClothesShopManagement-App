@@ -10,7 +10,7 @@
     <Border
         Height="600"
         Width="800"
-        Background="LightSkyBlue"
+        Background="White"
         CornerRadius="20"
         BorderThickness="5">
         <Border.BorderBrush>
@@ -28,8 +28,9 @@
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
                 <TextBlock VerticalAlignment="Center" 
+                           HorizontalAlignment="Center"
                            FontSize="40" Margin="20,0,0,0" 
-                           Foreground="White" FontWeight="SemiBold" 
+                           Foreground="DarkBlue" FontWeight="SemiBold" 
                            ><Run Text="SẢN PHẨM"/></TextBlock>
             </Grid>
             <Grid Grid.Row="1">
@@ -118,8 +119,8 @@
                         Width="290"
                         Height="57"
                         Margin="20,0,0,0"
-                        BorderBrush="White"
-                        Foreground="White"
+                        BorderBrush="Silver"
+                        Foreground="Gray"
                         FontSize="20"
                         FontWeight="SemiBold"
                         materialDesign:HintAssist.Hint="Tìm Kiếm"
@@ -131,7 +132,13 @@
                         BorderThickness="2"
                         VerticalAlignment="Center"
                         CaretBrush="White"                            
-                            >                            
+                            >
+                        <TextBox.Background>
+                            <ImageBrush ImageSource="/Resource/Image/search_fill.png"
+                                        AlignmentX="Right"
+                                        Stretch="None">
+                            </ImageBrush>
+                        </TextBox.Background>
                     </TextBox>           
                     <Button
                         Content="THÊM"
@@ -140,8 +147,9 @@
                         Width="90"
                         FontFamily="{StaticResource MaterialDesignFont}"
                         materialDesign:ButtonAssist.CornerRadius="15"
-                        Background="LightPink"
-                        BorderBrush="LightSkyBlue"
+                        Background="White"
+                        BorderBrush="LightPink"
+                        Foreground="Gray"
                         BorderThickness="3"
                         FontWeight="SemiBold"
                         FontSize="17"

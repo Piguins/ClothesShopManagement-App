@@ -144,41 +144,66 @@
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
                             <Grid Grid.Column="0">
-                                <TextBlock Text="MÃ KH"
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="MÃ KH"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"
                                            FontFamily="{StaticResource MaterialDesignFont}"
                                            FontSize="18"
                                            FontWeight="SemiBold"
+                                               Margin="10,0,0,0"
                                            />
+                                    <Image Source="/Resource/Image/code_fill.png"
+                                           Height="30"
+                                           Margin="4,7,0,10"/>
+
+                                </StackPanel>
+                                
                                 
                             </Grid>
                             <Grid Grid.Column="1">
-                                <TextBlock Text="TÊN KHÁCH HÀNG"
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="TÊN KHÁCH HÀNG"
                                            HorizontalAlignment="Left"
                                            VerticalAlignment="Center"
                                            FontFamily="{StaticResource MaterialDesignFont}"
                                            FontSize="18"
                                            FontWeight="SemiBold"
                                            />
+                                    <Image Source="/Resource/Image/person_fill.png" 
+                                           Height="30"
+                                           />
+
+                                </StackPanel>
+                                
                             </Grid>
                             <Grid Grid.Column="2">
-                                <TextBlock Text="SỐ ĐIỆN THOẠI"
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="SỐ ĐIỆN THOẠI"
                                            HorizontalAlignment="Left"
                                            VerticalAlignment="Center"
                                            FontFamily="{StaticResource MaterialDesignFont}"
                                            FontSize="18"
                                            FontWeight="SemiBold"
                                            />
+                                    <Image Source="/Resource/Image/call_fill.png" Height="30"/>
+
+                                </StackPanel>
+                                
                             </Grid>
                             <Grid Grid.Column="3">
-                                <TextBlock Text="ĐỊA CHỈ"
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="ĐỊA CHỈ"
                                            HorizontalAlignment="Left"
                                            VerticalAlignment="Center"
                                            FontFamily="{StaticResource MaterialDesignFont}"
                                            FontSize="18"
                                            FontWeight="SemiBold"
                                            />
+                                    <Image Source="/Resource/Image/home_pin.png" 
+                                           Height="30"/>
+                                </StackPanel>
+                                
                             </Grid>
 
                         </Grid>
