@@ -92,7 +92,7 @@
                         materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                         BorderThickness="2"
                         VerticalAlignment="Center"
-                        CaretBrush="White" TextChanged="tbxSearch_TextChanged"
+                        CaretBrush="White"
                         >
                         <TextBox.Background>
                             <ImageBrush ImageSource="/Resource/Image/search_fill.png" 
@@ -151,7 +151,7 @@
                                            FontSize="18"
                                            FontWeight="SemiBold"
                                            />
-
+                                
                             </Grid>
                             <Grid Grid.Column="1">
                                 <TextBlock Text="TÊN KHÁCH HÀNG"
