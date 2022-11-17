@@ -24,7 +24,7 @@
         <materialDesign:Card UniformCornerRadius="20" materialDesign:ShadowAssist.ShadowDepth="Depth2"  Background="#FFF9F5" Margin="25,25,25,25" Grid.RowSpan="4" Grid.ColumnSpan="2">
         </materialDesign:Card>
 
-        <Image Source="/Resource/Image/Shopping.png" Height="800" Width="630" Grid.ColumnSpan="2" Margin="-66,-91,366,-25"/>
+        <Image Source="/Resource/Image/Shoping 2.png" Height="750" Width="630" Grid.ColumnSpan="2" Margin="-8,-25,378,-25"/>
 
         <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="474">
 

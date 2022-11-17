@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("view/lock_reset.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("shoping-2.ico")]
 
 
