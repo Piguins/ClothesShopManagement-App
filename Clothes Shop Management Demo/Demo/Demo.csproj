@@ -103,11 +103,11 @@
     <Compile Include="ViewModel\DetailImportViewModel.cs" />
     <Compile Include="ViewModel\DetailCustomer.cs" />
     <Compile Include="ViewModel\CustomerViewModel.cs" />
-    <Compile Include="View\CustomerView.xaml.cs">
-      <DependentUpon>CustomerView.xaml</DependentUpon>
+    <Compile Include="View\CustomersView.xaml.cs">
+      <DependentUpon>CustomersView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\ForgotPassword.xaml.cs">
-      <DependentUpon>ForgotPassword.xaml</DependentUpon>
+    <Compile Include="View\ForgetPassword.xaml.cs">
+      <DependentUpon>ForgetPassword.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
@@ -130,11 +130,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\CustomerView.xaml">
+    <Page Include="View\CustomersView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\ForgotPassword.xaml">
+    <Page Include="View\ForgetPassword.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
