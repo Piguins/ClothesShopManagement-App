@@ -12,7 +12,7 @@
         xmlns:local="clr-namespace:Demo.View"
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="Phần mềm quản lý bán hàng" Height="700" Width="1000"
+        Title="Đăng nhập" Height="700" Width="1000"
         
         FontFamily="Josefin Sans"
         >
@@ -127,7 +127,7 @@
                         Height="25"
                         HorizontalAlignment="Right"
                         BorderBrush="Transparent"
-                        Cursor="Hand" Click="Button_Click">
+                        Cursor="Hand">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="Transparent"/>

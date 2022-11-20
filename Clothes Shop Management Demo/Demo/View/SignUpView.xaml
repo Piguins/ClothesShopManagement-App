@@ -11,7 +11,8 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="Transparent"
-        AllowsTransparency="True"  Height="450" Width="650" WindowStartupLocation="CenterScreen">
+        AllowsTransparency="True" 
+        Title="Đăng ký" Height="450" Width="650" WindowStartupLocation="CenterScreen">
     <Border CornerRadius="15" Background="White" >
         <i:Interaction.Triggers>
             <i:EventTrigger EventName="MouseLeftButtonDown">
