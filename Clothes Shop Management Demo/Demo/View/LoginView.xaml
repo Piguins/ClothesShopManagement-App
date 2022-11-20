@@ -76,7 +76,7 @@
     Style="{StaticResource MaterialDesignRaisedDarkButton}"
     ToolTip="MaterialDesignRaisedDarkButton with Round Corners"
                 Margin="20 50 0 0" Width="150" Height="40"
-                Background="#6891DF" HorizontalAlignment="Center" VerticalContentAlignment="Center">
+                Background="#6C63FF" HorizontalAlignment="Center" VerticalContentAlignment="Center">
                 <TextBlock
       Text="Đăng nhập" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Josefin Sans"/>
             </Button>
@@ -98,7 +98,7 @@
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="Transparent"/>
-                            <Setter Property="Foreground" Value="#6891DF"/>
+                            <Setter Property="Foreground" Value="#6C63FF"/>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
                                     <Setter Property="Background" Value="#6891DF"/>
@@ -131,7 +131,7 @@
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="Transparent"/>
-                            <Setter Property="Foreground" Value="#6891DF"/>
+                            <Setter Property="Foreground" Value="#6C63FF"/>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
                                     <Setter Property="Background" Value="#6891DF"/>

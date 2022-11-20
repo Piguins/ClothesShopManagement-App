@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-       
         x:Name="SignUpWd"
         WindowStyle="None"
         ResizeMode="NoResize"
@@ -28,6 +27,8 @@
             </Grid.RowDefinitions>
             <Grid Grid.Row="0"
                   Background="Transparent">
+                <materialDesign:Card UniformCornerRadius="35" materialDesign:ShadowAssist.ShadowDepth="Depth2"  Background="#FFF9F5" Margin="25,25,25,25" Grid.RowSpan="4" Grid.ColumnSpan="2">
+                </materialDesign:Card>
                 <StackPanel 
                                 Orientation="Horizontal" 
                                 HorizontalAlignment="Right" 
