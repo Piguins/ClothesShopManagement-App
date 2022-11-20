@@ -38,5 +38,11 @@ namespace Demo.View
         {
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            SignUpView signUpView = new SignUpView();
+            signUpView.Show();
+        }
     }
 }

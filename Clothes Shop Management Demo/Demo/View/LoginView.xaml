@@ -67,7 +67,7 @@
                                     Stretch="None"
                                     AlignmentX="Left"/>
                 </PasswordBox.Background>
-                
+
             </PasswordBox>
 
             <Button
@@ -87,14 +87,14 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
-                
+
                 <Button Grid.Column ="0" 
-                        Margin="0 0 0 0"
+                        Margin="0,55,0,55"
                         Content = "Đăng ký" FontSize="13"
                         FontFamily="Josefin Sans"
                         Height="25"
                         BorderBrush="Transparent"
-                        Cursor="Hand">
+                        Cursor="Hand" Click="Button_Click" HorizontalAlignment="Left" Width="60">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="Transparent"/>
@@ -119,7 +119,7 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-                
+
                 <Button Grid.Column="2"
                         Content = "Quên mật khẩu"
                         FontSize="13"
@@ -127,7 +127,7 @@
                         Height="25"
                         HorizontalAlignment="Right"
                         BorderBrush="Transparent"
-                        Cursor="Hand">
+                        Cursor="Hand" Click="Button_Click">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="Transparent"/>
@@ -152,10 +152,10 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-                
+
             </Grid>
-            
+
         </StackPanel>
-        
+
     </Grid>
 </Window>

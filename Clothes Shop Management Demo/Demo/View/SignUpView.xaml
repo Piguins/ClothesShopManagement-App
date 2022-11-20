@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        DataContext="{StaticResource RegisterVM}"
+       
         x:Name="SignUpWd"
         WindowStyle="None"
         ResizeMode="NoResize"
@@ -55,6 +55,8 @@
             <Grid Grid.Row="1">
                 <TextBlock
                     Text="ĐĂNG KÝ"
+                    Margin= "150 0 0 0"
+                    FontWeight="Bold"
                     HorizontalAlignment="Center"
                     FontSize="24"
                     Foreground="#6C63FF"
