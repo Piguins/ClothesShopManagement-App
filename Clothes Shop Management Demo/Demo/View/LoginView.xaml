@@ -74,7 +74,6 @@
     materialDesign:ButtonAssist.CornerRadius="25"
     IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
     Style="{StaticResource MaterialDesignRaisedDarkButton}"
-    ToolTip="MaterialDesignRaisedDarkButton with Round Corners"
                 Margin="20 50 0 0" Width="150" Height="40"
                 Background="#6C63FF" HorizontalAlignment="Center" VerticalContentAlignment="Center" Click="Button_Click_1">
                 <TextBlock
@@ -127,7 +126,7 @@
                         Height="25"
                         HorizontalAlignment="Right"
                         BorderBrush="Transparent"
-                        Cursor="Hand">
+                        Cursor="Hand" Click="Button_Click_2">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="Transparent"/>

@@ -73,6 +73,7 @@
                     </Grid>
                     <Grid Grid.Row="2">
                         <Calendar
+                            FontFamily="Medium"
                             Style="{DynamicResource CalendarStyle1}"
                             CalendarButtonStyle="{DynamicResource CalendarButtonStyle1}"
                             CalendarItemStyle="{DynamicResource CalendarItemStyle1}"

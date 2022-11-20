@@ -18,7 +18,7 @@ namespace Demo.View
     /// <summary>
     /// Interaction logic for ForgetPassword.xaml
     /// </summary>
-    public partial class ForgetPassword : Page
+    public partial class ForgetPassword : Window
     {
         public ForgetPassword()
         {
