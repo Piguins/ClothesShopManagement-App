@@ -6,7 +6,7 @@
         xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
         xmlns:local="clr-namespace:Demo.View"
         mc:Ignorable="d"
-        Title="MainView" Height="550" Width="1000"
+        Title="MainView" Height="700" Width="1000"
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="Transparent"
@@ -17,8 +17,7 @@
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
-                <ColumnDefinition Width="600"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition />
             </Grid.ColumnDefinitions>
 
             <Border Grid.Column="0"
@@ -27,11 +26,14 @@
 
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="170"/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
 
-                    <Grid Grid.Row="0">
+                    <Grid Grid.Row="0"
+                          Margin="0,0,0,0">
                         <TextBlock
                         Text="TIU"
                         FontSize="35"
@@ -42,8 +44,57 @@
                         />
 
                     </Grid>
+                    <Grid Grid.Row="1"
+                          Margin="0">
+                        <DockPanel>
+                            <Border
+                                Height="40"
+                                Width="40"
+                                Background="White"
+                                CornerRadius="50"
+                                Margin="30,5,5,5"
+                                >
+                                <Ellipse Height="40" Width="40" VerticalAlignment="Top">
+                                    <Ellipse.Fill>
+                                        <ImageBrush ImageSource="{Binding Ava}"/>
+                                    </Ellipse.Fill>
+                                </Ellipse>
 
-                    <Grid Grid.Row="1">
+                            </Border>
+                            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <TextBlock x:Name="TenDangNhap" 
+                                           Text="The Kiet"
+                                           FontSize="15"
+                                           Foreground="White"
+                                           FontFamily="{StaticResource Custom}">
+                                    
+                                </TextBlock>
+                                <TextBlock x:Name="Quyen" 
+                                           Text="Quan Tri Vien"
+                                           FontSize="12"
+                                           Foreground="White"
+                                           FontFamily="{StaticResource Custom}"
+                                           >
+                                    
+                                </TextBlock>
+                                
+                            </StackPanel>
+                        </DockPanel>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Calendar
+                            Style="{DynamicResource CalendarStyle1}"
+                            CalendarButtonStyle="{DynamicResource CalendarButtonStyle1}"
+                            CalendarItemStyle="{DynamicResource CalendarItemStyle1}"
+                            CalendarDayButtonStyle="{DynamicResource CalendarDayButtonStyle1}"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            >
+                            
+                        </Calendar>
+                    </Grid>
+
+                    <Grid Grid.Row="3" Margin="0,10,0,0">
 
                         <StackPanel>
                             <RadioButton
@@ -113,6 +164,13 @@
                             >
 
                             </RadioButton>
+                            <Button 
+                                Style="{StaticResource BtnLogOut}"
+                                FontFamily="{StaticResource Custom}"
+                                Margin="-4,2,0,0"
+                                >
+                            </Button>
+                                
                         </StackPanel>
                     </Grid>
                 </Grid>

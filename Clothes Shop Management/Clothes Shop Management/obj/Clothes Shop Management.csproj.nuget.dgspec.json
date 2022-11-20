@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\College\\Đồ Án LTTQ\\Repository\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\Clothes Shop Management.csproj": {}
+    "E:\\IT008\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\Clothes Shop Management.csproj": {}
   },
   "projects": {
-    "D:\\College\\Đồ Án LTTQ\\Repository\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\Clothes Shop Management.csproj": {
+    "E:\\IT008\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\Clothes Shop Management.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\College\\Đồ Án LTTQ\\Repository\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\Clothes Shop Management.csproj",
+        "projectUniqueName": "E:\\IT008\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\Clothes Shop Management.csproj",
         "projectName": "Clothes Shop Management",
-        "projectPath": "D:\\College\\Đồ Án LTTQ\\Repository\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\Clothes Shop Management.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\College\\Đồ Án LTTQ\\Repository\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\obj\\",
+        "projectPath": "E:\\IT008\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\Clothes Shop Management.csproj",
+        "packagesPath": "C:\\Users\\Tsu\\.nuget\\packages\\",
+        "outputPath": "E:\\IT008\\Clothes-Shop-Management-Project\\Clothes Shop Management\\Clothes Shop Management\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tsu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

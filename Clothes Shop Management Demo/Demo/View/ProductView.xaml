@@ -15,7 +15,7 @@
         BorderThickness="5">
         <Border.BorderBrush>
             <LinearGradientBrush EndPoint="0.5 ,1" StartPoint="0.5,0">
-                <GradientStop Color="Aqua" Offset="0"/>
+                <GradientStop Color="#6891DF" Offset="0"/>
                 <GradientStop Color="White" Offset="1"/>
             </LinearGradientBrush>
         </Border.BorderBrush>
@@ -44,7 +44,7 @@
                         BorderThickness="3">
                         <Border.BorderBrush>
                             <LinearGradientBrush EndPoint="0.5 ,1" StartPoint="0.5,0">
-                                <GradientStop Color="Aqua" Offset="0"/>
+                                <GradientStop Color="#6891DF" Offset="0"/>
                                 <GradientStop Color="LightPink" Offset="1"/>
                             </LinearGradientBrush>
                         </Border.BorderBrush>
@@ -85,7 +85,7 @@
                         BorderThickness="3">
                         <Border.BorderBrush>
                             <LinearGradientBrush EndPoint="0.5 ,1" StartPoint="0.5,0">
-                                <GradientStop Color="Aqua" Offset="0"/>
+                                <GradientStop Color="#6891DF" Offset="0"/>
                                 <GradientStop Color="LightPink" Offset="1"/>
                             </LinearGradientBrush>
                         </Border.BorderBrush>
