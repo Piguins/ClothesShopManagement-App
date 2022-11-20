@@ -6,13 +6,13 @@
         xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
         xmlns:local="clr-namespace:Demo.View"
         mc:Ignorable="d"
-        Title="MainView" Height="700" Width="1000"
+        Title="Phần mềm quản lý bán hàng" Height="700" Width="1000"
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="Transparent"
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen">
-    <Border CornerRadius="40"
+    <Border CornerRadius="45"
             Background="White">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -33,17 +33,7 @@
                     </Grid.RowDefinitions>
 
                     <Grid Grid.Row="0"
-                          Margin="0,0,0,0">
-                        <TextBlock
-                        Text="TIU"
-                        FontSize="35"
-                        FontWeight="UltraBold"
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center"
-                        Foreground="#FFF6EFEF"
-                        />
-
-                    </Grid>
+                          Margin="0,0,0,0"/>
                     <Grid Grid.Row="1"
                           Margin="0">
                         <DockPanel>

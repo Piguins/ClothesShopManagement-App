@@ -24,25 +24,18 @@ namespace Demo.View
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void Button_ColorChanged(object sender, RoutedPropertyChangedEventArgs<Color> e)
-        {
-
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             SignUpView signUpView = new SignUpView();
-            signUpView.Show();
+            signUpView.ShowDialog();
+            this.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainView mainView = new MainView();
+            mainView.ShowDialog();
+            this.Show();
         }
     }
 }
