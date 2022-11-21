@@ -106,8 +106,8 @@
     <Compile Include="View\CustomersView.xaml.cs">
       <DependentUpon>CustomersView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\ForgetPassword.xaml.cs">
-      <DependentUpon>ForgetPassword.xaml</DependentUpon>
+    <Compile Include="View\ForgetPassView.xaml.cs">
+      <DependentUpon>ForgetPassView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
@@ -141,7 +141,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\ForgetPassword.xaml">
+    <Page Include="View\ForgetPassView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -151,7 +151,7 @@
     </Page>
     <Page Include="View\MainView.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="View\ProductView.xaml">
       <SubType>Designer</SubType>

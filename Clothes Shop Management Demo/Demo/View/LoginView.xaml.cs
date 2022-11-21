@@ -40,8 +40,8 @@ namespace Demo.View
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            ForgetPassword forgetPassword = new ForgetPassword();
-            forgetPassword.ShowDialog();
+            ForgetPassView forgetPassView = new ForgetPassView();
+            forgetPassView.ShowDialog();
             this.Show();
         }
     }
