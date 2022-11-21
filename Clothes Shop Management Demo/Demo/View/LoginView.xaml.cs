@@ -14,9 +14,7 @@ using System.Windows.Shapes;
 
 namespace Demo.View
 {
-    /// <summary>
-    /// Interaction logic for Window1.xaml
-    /// </summary>
+    
     public partial class LoginView : Window
     {
         public LoginView()
@@ -24,21 +22,20 @@ namespace Demo.View
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void OpenSignUpView(object sender, RoutedEventArgs e)
         {
             SignUpView signUpView = new SignUpView();
             signUpView.ShowDialog();
             this.Show();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void OpenMainView(object sender, RoutedEventArgs e)
         {
             MainView mainView = new MainView();
             mainView.ShowDialog();
-            this.Show();
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void OpenForgetPassView(object sender, RoutedEventArgs e)
         {
             ForgetPassView forgetPassView = new ForgetPassView();
             forgetPassView.ShowDialog();
