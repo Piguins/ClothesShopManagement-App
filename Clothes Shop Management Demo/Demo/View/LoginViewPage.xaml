@@ -13,7 +13,7 @@
 
     <Grid>
 
-        <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="474">
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="475" Margin="0 25 0 0">
 
             <Border Margin="0 0 5 0">
                 <TextBlock
@@ -63,7 +63,7 @@
     IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
     Style="{StaticResource MaterialDesignRaisedDarkButton}"
                 Margin="20 50 0 0" Width="150" Height="40"
-                Background="#6C63FF" HorizontalAlignment="Center" VerticalContentAlignment="Center" >
+                Background="#6C63FF" HorizontalAlignment="Center" VerticalContentAlignment="Center" Click="OpenMainView" >
                 <TextBlock
       Text="Đăng nhập" x:Name="LoginButton" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Josefin Sans"/>
             </Button>

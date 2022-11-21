@@ -39,7 +39,7 @@
                 Foreground="#6C63FF"
                 FontFamily="Josefin Sans"
                 FontSize="25"
-                Margin="25 45 0 0"
+                Margin="25 50 0 0"
                 FontWeight="Bold" Width="234">
             </TextBlock>
         </StackPanel>
