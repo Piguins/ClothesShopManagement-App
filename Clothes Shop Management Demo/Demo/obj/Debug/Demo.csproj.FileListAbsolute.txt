@@ -193,3 +193,5 @@ D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Sho
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\MainView.baml
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Resource\MainResource.baml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Resource\MainResource.baml

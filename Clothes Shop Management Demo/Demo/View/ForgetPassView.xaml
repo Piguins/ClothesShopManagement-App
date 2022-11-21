@@ -54,7 +54,7 @@
                              FontFamily="Josefin Sans"
                              FontSize="15"
                              Width="200"
-                             Padding="0,22,0,0"
+                             Padding="0,15,0,0"
                              x:Name="requestUsernameField"
                              BorderBrush="LightGray"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}"
