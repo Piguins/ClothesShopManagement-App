@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -40,6 +41,15 @@ namespace Demo.View
             ForgetPassView forgetPassView = new ForgetPassView();
             forgetPassView.ShowDialog();
             this.Show();
+        }
+        private void MinimizeButton(object sender, MouseButtonEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+
+        private void CloseButton(object sender, MouseButtonEventArgs e)
+        {
+            Close();
         }
     }
 }
