@@ -1,6 +1,6 @@
 ﻿<Window 
         ResizeMode="NoResize"
-        WindowStartupLocation="Manual" Top="255" Left="825"
+        WindowStartupLocation="CenterOwner" Top="255" Left="825"
         WindowStyle="None"
         AllowsTransparency="True"
         Background="{x:Null}"
