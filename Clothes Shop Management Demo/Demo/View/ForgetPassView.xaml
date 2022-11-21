@@ -5,28 +5,29 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Demo.View"
+        xmlns:local="clr-namespace:Demo.ViewModel"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Quên mật khẩu" Height="350" Width="400">
+        Title="Quên mật khẩu" Height="350" Width="400"
+         DataContext="{StaticResource LoginVM}">
 
     <Grid>
-        <materialDesign:Card 
-        UniformCornerRadius="0" 
-        Background="Transparent">
-        </materialDesign:Card>
-        <StackPanel
-            HorizontalAlignment="Left"
-            Margin="25,10,0,64">
-            <Label>
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="0">
+            <Label Cursor="Hand"
+                   Height="30"
+                   Grid.Row="0"
+                   Width="30"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   x:Name="lbl">
                 <materialDesign:PackIcon Kind="ArrowLeft"
                                          Height="26"
-                                         Width="26"/>
-
+                                         Width="26" />
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="MouseLeftButtonDown">
-                        <i:InvokeCommandAction Command="{Binding Close1}"
-                                                       CommandParameter="{Binding ElementName=Registerwd}"></i:InvokeCommandAction>
+                        <i:InvokeCommandAction Command="{Binding CancelCM}"
+                                                CommandParameter="{Binding ElementName=lbl}"/>
                     </i:EventTrigger>
                 </i:Interaction.Triggers>
             </Label>
