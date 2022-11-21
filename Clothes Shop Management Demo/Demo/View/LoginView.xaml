@@ -10,13 +10,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Demo.View"
+        xmlns:local="clr-namespace:Demo.ViewModel"
+        xmlns:locals="clr-namespace:Demo.View"
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="Đăng nhập" Height="700" Width="1000"
-        
         FontFamily="Josefin Sans"
-        >
+        Name="LoginWindow"
+        DataContext="{StaticResource LoginVM}">
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -30,9 +32,18 @@
         Grid.RowSpan="4" 
         Grid.ColumnSpan="2">
         </materialDesign:Card>
-
         <Image Source="/Resource/Image/Shoping 2.png" Height="750" Width="630" Grid.ColumnSpan="2" Margin="-8,-25,378,-25"/>
 
+        <Frame x:Name="frame"
+                           Background="#FFF9F5"
+                           NavigationUIVisibility="Hidden" Grid.Column="1" Margin="45,95,70,90">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Loaded">
+                    <i:InvokeCommandAction Command="{Binding LoadLoginPageCM}"
+                                                       CommandParameter="{Binding ElementName=frame}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Frame>
         <StackPanel 
                                 Orientation="Horizontal" 
                                 HorizontalAlignment="Right" 
@@ -63,137 +74,6 @@
                     </i:EventTrigger>
                 </i:Interaction.Triggers>
             </materialDesign:PackIcon>
-        </StackPanel>
-
-        <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="474">
-
-            <Border Margin="0 0 5 0">
-                <TextBlock
-                    Text ="Chào mừng trở lại"
-                    FontSize="30" Width="260"
-                    Foreground="#292929"
-                    FontFamily="Josefin Sans" TextAlignment="Center" FontWeight="Bold"/>
-            </Border>
-            <Label Height="19" Width="288">
-                <Border CornerRadius="0" BorderThickness="1.5" BorderBrush="#493AF8" Background="#493AF8" Margin="40 0 -250 0"></Border>
-            </Label>
-            <StackPanel Margin="0 50 0 0"
-                Orientation="Horizontal" >
-                <TextBox
-                        materialDesign:HintAssist.Hint="Tên đăng nhập" 
-                        FontFamily="Josefin Sans"
-                        Text="{Binding Content}" 
-                        Height="40" 
-                        Width="300"
-                        Padding="20,15,0,0">
-                    <TextBox.Background>
-                        <ImageBrush ImageSource="/Resource/Image/Username_16x16.png"
-                                    Stretch="None"
-                                    AlignmentX="Left"/>
-                    </TextBox.Background>
-                </TextBox>
-            </StackPanel>
-            <PasswordBox
-                x:Name="PasswordBox"
-                materialDesign:HintAssist.HelperText=""
-                materialDesign:HintAssist.Hint="Mật khẩu" FontFamily="Josefin Sans"
-                materialDesign:TextFieldAssist.HasClearButton="True" Width="300"
-                Margin="0 50 0 0"
-                Height="40"
-                Padding="20,15,0,0">
-                <PasswordBox.Background>
-                    <ImageBrush ImageSource="/Resource/Image/Password_16x16.png"
-                                    Stretch="None"
-                                    AlignmentX="Left"/>
-                </PasswordBox.Background>
-
-            </PasswordBox>
-
-            <Button
-    materialDesign:ButtonAssist.CornerRadius="25"
-    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
-    Style="{StaticResource MaterialDesignRaisedDarkButton}"
-                Margin="20 50 0 0" Width="150" Height="40"
-                Background="#6C63FF" HorizontalAlignment="Center" VerticalContentAlignment="Center" Click="OpenMainView">
-                <TextBlock
-      Text="Đăng nhập" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Josefin Sans"/>
-            </Button>
-
-            <Grid Height="135" >
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="auto"/>
-                    <ColumnDefinition Width="121*"/>
-                    <ColumnDefinition Width="19*"/>
-                    <ColumnDefinition Width="auto"/>
-                </Grid.ColumnDefinitions>
-
-                <Button 
-                        Margin="0,55,0,55"
-                        Content = "Đăng ký" FontSize="13"
-                        FontFamily="Josefin Sans"
-                        Height="25"
-                        BorderBrush="Transparent"
-                        Cursor="Hand" Click="OpenSignUpView" HorizontalAlignment="Center" Width="60">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="Transparent"/>
-                            <Setter Property="Foreground" Value="#6C63FF"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#6891DF"/>
-                                    <Setter Property="Foreground" Value="White"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border Width="60" Height="25"
-                                    CornerRadius="9"
-                                    Background="{TemplateBinding Background}">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center">
-                                </ContentPresenter>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-
-                <Button Grid.Column="3"
-                        Content = "Quên mật khẩu"
-                        FontSize="13"
-                        FontFamily="Josefin Sans"
-                        Height="25"
-                        HorizontalAlignment="Center"
-                        BorderBrush="Transparent"
-                        Cursor="Hand" Click="OpenForgetPassView" Margin="0,55,0,55">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="Transparent"/>
-                            <Setter Property="Foreground" Value="#6C63FF"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#6891DF"/>
-                                    <Setter Property="Foreground" Value="White"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border Width="100" Height="25"
-                                    CornerRadius="9"
-                                    Background="{TemplateBinding Background}">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center">
-                                </ContentPresenter>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-
-            </Grid>
-
         </StackPanel>
 
     </Grid>

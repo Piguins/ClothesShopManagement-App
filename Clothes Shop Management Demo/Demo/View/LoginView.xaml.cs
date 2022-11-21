@@ -23,25 +23,6 @@ namespace Demo.View
             InitializeComponent();
         }
 
-        private void OpenSignUpView(object sender, RoutedEventArgs e)
-        {
-            SignUpView signUpView = new SignUpView();
-            signUpView.ShowDialog();
-            this.Show();
-        }
-
-        private void OpenMainView(object sender, RoutedEventArgs e)
-        {
-            MainView mainView = new MainView();
-            mainView.ShowDialog();
-        }
-
-        private void OpenForgetPassView(object sender, RoutedEventArgs e)
-        {
-            ForgetPassView forgetPassView = new ForgetPassView();
-            forgetPassView.ShowDialog();
-            this.Show();
-        }
         private void MinimizeButton(object sender, MouseButtonEventArgs e)
         {
             WindowState = WindowState.Minimized;
