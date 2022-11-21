@@ -21,7 +21,7 @@
         </materialDesign:Card>
         <StackPanel
             HorizontalAlignment="Left"
-            Margin="10,5,0,64">
+            Margin="25,10,0,64">
             <Label>
                 <materialDesign:PackIcon Kind="ArrowLeft"
                                          Height="26"
