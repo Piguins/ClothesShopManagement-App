@@ -51,9 +51,10 @@
                                              VerticalAlignment="Bottom" />
                 <TextBox materialDesign:HintAssist.Hint=" Nhập Email đã đăng ký"
                              Foreground="Black"
+                             FontFamily="Josefin Sans"
                              FontSize="15"
                              Width="200"
-                             Padding="0,12,0,0"
+                             Padding="0,22,0,0"
                              x:Name="requestUsernameField"
                              BorderBrush="LightGray"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}"
@@ -61,6 +62,7 @@
             </StackPanel>
             <TextBlock Text="Chúng tôi sẽ gửi mật khẩu mới thông qua Email liên kết với tài khoản trên"
                        TextWrapping="Wrap"
+                       FontFamily="Josefin Sans"
                        FontSize="15"
                        Width="235"
                        Grid.RowSpan="2"
@@ -70,9 +72,10 @@
         </StackPanel>
         <Button Width="120"
                         x:Name="sendmailbtn"
+                        FontFamily="Josefin Sans"
                         Background="#6C63FF"
                         Content="Lấy mật khẩu"
-                        Padding="0,0,0,5"
+                        Padding="0,0,0,0"
                         materialDesign:ButtonAssist.CornerRadius="10"
                                        
                         Margin="238,270,42,48">
