@@ -36,7 +36,7 @@
                                 VerticalAlignment="Center"
                                 Margin="0,0,10,0"
                                 >
-                    <materialDesign:PackIcon Kind="WindowMinimize" Foreground="#6C63FF" Height="24" Width="24" Margin="0,0,8,0">
+                    <materialDesign:PackIcon Kind="WindowMinimize" Foreground="#6C63FF" Height="24" Width="24" Margin="0,0,8,0" MouseDown="MinimizeButton">
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="MouseLeftButtonDown">
                                 <i:InvokeCommandAction Command="{Binding Minimizewd}"
@@ -44,7 +44,7 @@
                             </i:EventTrigger>
                         </i:Interaction.Triggers>
                     </materialDesign:PackIcon>
-                    <materialDesign:PackIcon Kind="CloseThick" Foreground="#6C63FF" Height="24" Width="24">
+                    <materialDesign:PackIcon Kind="CloseThick" Foreground="#6C63FF" Height="24" Width="24" MouseDown="CloseButton">
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="MouseLeftButtonDown">
                                 <i:InvokeCommandAction Command="{Binding Close1}"
@@ -88,7 +88,7 @@
                           BlurRadius="10"/>
                             </Ellipse.Effect>
                             <Ellipse.Fill>
-                                <ImageBrush x:Name="HinhAnh1" ImageSource="{Binding linkaddimage}"/>
+                                <ImageBrush x:Name="ProfilePicture" ImageSource="/Resource/Image/addava.png"/>
                             </Ellipse.Fill>
                         </Ellipse>
                     </Border>
@@ -97,7 +97,7 @@
                         Content="Thêm ảnh đại diện" FontFamily="{StaticResource Custom}"
                         BorderThickness="0"
                         Width="160" Height="40" Background="#6C63FF" Foreground="White"
-                        Grid.Row="1">
+                        Grid.Row="1" Click="Button_Click">
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="Click">
                                 <i:InvokeCommandAction Command="{Binding AddImage}"

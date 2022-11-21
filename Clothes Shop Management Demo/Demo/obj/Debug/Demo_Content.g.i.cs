@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("shoping-2.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resource/xmlfile1.xml")]
 
 
