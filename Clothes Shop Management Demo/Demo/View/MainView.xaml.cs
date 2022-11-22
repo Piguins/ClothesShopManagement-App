@@ -23,5 +23,14 @@ namespace Demo.View
         {
             InitializeComponent();
         }
+        private void MinimizeButton(object sender, MouseButtonEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+
+        private void CloseButton(object sender, MouseButtonEventArgs e)
+        {
+            Close();
+        }
     }
 }
