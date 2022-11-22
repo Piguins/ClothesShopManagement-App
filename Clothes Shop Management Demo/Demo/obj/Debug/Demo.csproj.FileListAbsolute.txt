@@ -197,4 +197,5 @@ D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\G
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Resource\MainResource.baml
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\LoginViewPage.g.cs
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\LoginViewPage.baml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\SettingView.g.cs
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\SettingView.baml

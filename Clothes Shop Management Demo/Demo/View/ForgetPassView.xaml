@@ -11,7 +11,7 @@
         Title="Quên mật khẩu" Height="350" Width="400"
         DataContext="{StaticResource ForgetPassVM}"
         Name="ForgetPassWindow">
-
+    
     <Page.Triggers>
         <EventTrigger RoutedEvent="Page.Loaded">
             <BeginStoryboard>

@@ -121,6 +121,9 @@
     <Compile Include="View\ProductView.xaml.cs">
       <DependentUpon>ProductView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\SettingView.xaml.cs">
+      <DependentUpon>SettingView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\SignUpView.xaml.cs">
       <DependentUpon>SignUpView.xaml</DependentUpon>
     </Compile>
@@ -167,6 +170,10 @@
     <Page Include="View\ProductView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SettingView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\SignUpView.xaml">
       <SubType>Designer</SubType>

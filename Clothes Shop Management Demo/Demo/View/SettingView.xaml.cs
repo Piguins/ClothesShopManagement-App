@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,16 @@ namespace Demo.View
         public SettingView()
         {
             InitializeComponent();
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image files|*.bmp;*.jpg;*.png";
+            openFileDialog.FilterIndex = 1;
+            if (openFileDialog.ShowDialog() == true)
+            {
+                ProfilePicture.ImageSource = new BitmapImage(new Uri(openFileDialog.FileName));
+            }
         }
     }
 }
