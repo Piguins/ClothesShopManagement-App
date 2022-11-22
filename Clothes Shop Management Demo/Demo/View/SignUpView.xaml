@@ -13,6 +13,26 @@
         Background="Transparent"
         AllowsTransparency="True" 
         Title="Đăng ký" Height="450" Width="650" WindowStartupLocation="CenterScreen">
+
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation Storyboard.TargetName="SignUpWd"
+                                     Storyboard.TargetProperty="Opacity"
+                                     From="0"
+                                     To="1"
+                                     Duration="0:0:0.1" />
+
+
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+
+
+
+
     <Border CornerRadius="15" Background="White" >
         <i:Interaction.Triggers>
             <i:EventTrigger EventName="MouseLeftButtonDown">

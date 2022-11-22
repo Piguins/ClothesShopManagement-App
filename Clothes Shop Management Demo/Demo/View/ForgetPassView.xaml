@@ -9,8 +9,22 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="Quên mật khẩu" Height="350" Width="400"
-        DataContext="{StaticResource ForgetPassVM}">
+        DataContext="{StaticResource ForgetPassVM}"
+        Name="ForgetPassWindow">
 
+    <Page.Triggers>
+        <EventTrigger RoutedEvent="Page.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <ThicknessAnimation Storyboard.TargetName="ForgetPassWindow"
+                                        Storyboard.TargetProperty="Margin"
+                                        From="426,0,0,0"
+                                        To="0"
+                                        Duration="0:0:0.2" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Page.Triggers>
     <Grid>
         <StackPanel Orientation="Horizontal"
                     Grid.Row="0">

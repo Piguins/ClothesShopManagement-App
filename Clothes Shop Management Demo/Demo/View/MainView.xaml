@@ -13,8 +13,9 @@
         ResizeMode="NoResize"
         Background="Transparent"
         AllowsTransparency="True"
-        WindowStartupLocation="CenterScreen">
-
+        WindowStartupLocation="CenterScreen"
+        Name="Mainview">
+    
 
     <Border CornerRadius="45"
             Background="White">

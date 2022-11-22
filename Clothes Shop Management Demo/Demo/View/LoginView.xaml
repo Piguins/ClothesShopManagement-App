@@ -16,7 +16,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="Đăng nhập" Height="700" Width="1000"
         FontFamily="Josefin Sans"
-        Name="LoginWindow"
+        Name="mainPage"
         DataContext="{StaticResource LoginVM}">
 
     <Grid>
