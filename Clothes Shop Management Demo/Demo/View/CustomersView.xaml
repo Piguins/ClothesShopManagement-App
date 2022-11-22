@@ -72,7 +72,7 @@
                             Background="White"
                             FontFamily="{StaticResource MaterialDesignFont}"
                             Height="45"
-                            FontSize="18" Margin="6,6,5,5">
+                            FontSize="18" Margin="6,6,0,5" HorizontalAlignment="Left" Width="185">
 
                         </ComboBox>
                     </Border>
