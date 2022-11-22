@@ -31,8 +31,6 @@
     </Window.Triggers>
 
 
-
-
     <Border CornerRadius="15" Background="White" >
         <i:Interaction.Triggers>
             <i:EventTrigger EventName="MouseLeftButtonDown">
