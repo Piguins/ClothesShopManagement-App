@@ -64,9 +64,11 @@
                             Height="50"
                             Margin="35,100,0,0" Width="250">
                 <materialDesign:PackIcon Kind="Email"
-                                             Height="20"
-                                             Width="20"
-                                             VerticalAlignment="Bottom" />
+                                             Foreground="#6C63FF"
+                                             Height="25"
+                                             Width="25"
+                                             VerticalAlignment="Bottom"
+                                             Margin="0 -5 0 0"/>
                 <TextBox materialDesign:HintAssist.Hint=" Nhập Email đã đăng ký"
                              Foreground="Black"
                              FontFamily="Josefin Sans"
