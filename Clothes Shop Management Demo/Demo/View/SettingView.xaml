@@ -13,12 +13,6 @@
 
     <Grid>
         <Border CornerRadius="15"  RenderTransformOrigin="0.608,0.49" >
-            <i:Interaction.Triggers>
-                <i:EventTrigger EventName="MouseLeftButtonDown">
-                    <i:InvokeCommandAction Command="{Binding Movewd}"
-                                                       CommandParameter="{Binding ElementName=Registerwd}"></i:InvokeCommandAction>
-                </i:EventTrigger>
-            </i:Interaction.Triggers>
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
