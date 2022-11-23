@@ -24,14 +24,12 @@
                                 Height="25"
                                 VerticalAlignment="Center"
                                 Margin="6"
-                                Foreground="{TemplateBinding Property=OpacityMask}"
                                 />
                                 <TextBlock 
                                 Text="TRANG CHỦ"
                                 FontSize="13"                                
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
-                                Foreground="{TemplateBinding Property=OpacityMask}"
                                        />
                             </DockPanel>
                         </Border>
@@ -40,12 +38,10 @@
             </Setter>
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="OpacityMask" Value="Black"/>
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="Black"></Setter>
-                <Setter Property="OpacityMask" Value="White"></Setter>
+                <Setter Property="Background" Value="LightPink"></Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -72,14 +68,12 @@
                                 Height="25"
                                 VerticalAlignment="Center"
                                 Margin="6"
-                                Foreground="{TemplateBinding Property=OpacityMask}"
                                 />
                                 <TextBlock 
                                 Text="KHÁCH HÀNG"
                                 FontSize="13"                                
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
-                                Foreground="{TemplateBinding Property=OpacityMask}"
                                        />
                             </DockPanel>
                         </Border>
@@ -88,12 +82,10 @@
             </Setter>
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="OpacityMask" Value="Black"/>
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="Black"></Setter>
-                <Setter Property="OpacityMask" Value="White"></Setter>
+                <Setter Property="Background" Value="LightPink"></Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -120,14 +112,12 @@
                                 Height="25"
                                 VerticalAlignment="Center"
                                 Margin="6"
-                                Foreground="{TemplateBinding Property=OpacityMask}"
                                 />
                                 <TextBlock 
                                 Text="ĐƠN HÀNG"
                                 FontSize="13"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
-                                Foreground="{TemplateBinding Property=OpacityMask}"
                                        />
                             </DockPanel>
                         </Border>
@@ -135,13 +125,11 @@
                 </Setter.Value>
             </Setter>
             <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="OpacityMask" Value="Black"/>
             <Setter Property="BorderThickness" Value="0"/>
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="Black"></Setter>
-                <Setter Property="OpacityMask" Value="White"/>
+                <Setter Property="Background" Value="LightPink"></Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -168,15 +156,13 @@
                                 Height="25"
                                 VerticalAlignment="Center"
                                 Margin="6"
-                                Foreground="{TemplateBinding Property=OpacityMask}"
                                 />
                                 <TextBlock 
                                 Text="CÀI ĐẶT"
                                 FontSize="13"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
-                                Foreground="{TemplateBinding Property=OpacityMask}"
-                                       />
+                                  />
                             </DockPanel>
                         </Border>
                     </ControlTemplate>
@@ -184,12 +170,10 @@
             </Setter>
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="OpacityMask" Value="Black"/>
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="Black"></Setter>
-                <Setter Property="OpacityMask" Value="White"></Setter>
+                <Setter Property="Background" Value="LightPink"></Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -216,14 +200,12 @@
                                 Height="25"
                                 VerticalAlignment="Center"
                                 Margin="6"
-                                Foreground="{TemplateBinding Property=OpacityMask}"
                                 />
                                 <TextBlock 
                                 Text="SẢN PHẨM"
                                 FontSize="13"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
-                                Foreground="{TemplateBinding Property=OpacityMask}"
                                        />
                             </DockPanel>
                         </Border>
@@ -232,12 +214,10 @@
             </Setter>
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="OpacityMask" Value="Black"/>
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="Black"></Setter>
-                <Setter Property="OpacityMask" Value="White"></Setter>
+                <Setter Property="Background" Value="LightPink"></Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -264,14 +244,12 @@
                                 Height="25"
                                 VerticalAlignment="Center"
                                 Margin="6"
-                                Foreground="{TemplateBinding Property=OpacityMask}"
                                 />
                                 <TextBlock 
                                 Text="NHẬP HÀNG"
                                 FontSize="13"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
-                                Foreground="{TemplateBinding Property=OpacityMask}"
                                        />
                             </DockPanel>
                         </Border>
@@ -280,12 +258,10 @@
             </Setter>
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="OpacityMask" Value="Black"/>
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="Black"></Setter>
-                <Setter Property="OpacityMask" Value="White"></Setter>
+                <Setter Property="Background" Value="LightPink"></Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -312,14 +288,12 @@
                                 Height="25"
                                 VerticalAlignment="Center"
                                 Margin="6"
-                                Foreground="{TemplateBinding Property=OpacityMask}"
                                 />
                                 <TextBlock 
                                 Text="THỐNG KÊ"
                                 FontSize="13"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
-                                Foreground="{TemplateBinding Property=OpacityMask}"
                                        />
                             </DockPanel>
                         </Border>
@@ -328,12 +302,10 @@
             </Setter>
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="OpacityMask" Value="Black"/>
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="Black"></Setter>
-                <Setter Property="OpacityMask" Value="White"></Setter>
+                <Setter Property="Background" Value="LightPink"></Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -360,14 +332,12 @@
                                 Height="25"
                                 VerticalAlignment="Center"
                                 Margin="6"
-                                Foreground="{TemplateBinding Property=OpacityMask}"
                                 />
                                 <TextBlock 
                                 Text="QUẢN LÝ"
                                 FontSize="13"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
-                                Foreground="{TemplateBinding Property=OpacityMask}"
                                        />
                             </DockPanel>
                         </Border>
@@ -376,12 +346,10 @@
             </Setter>
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="OpacityMask" Value="Black"/>
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="Black"></Setter>
-                <Setter Property="OpacityMask" Value="white"></Setter>
+                <Setter Property="Background" Value="LightPink"></Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -408,11 +376,11 @@
                                 Width="25"
                                 Height="25"
                                 VerticalAlignment="Center"
-                                Foreground="{TemplateBinding OpacityMask}"
+                                Foreground="White"
                                 Margin="6"
                                 />
                                 <TextBlock 
-                                Foreground="{TemplateBinding OpacityMask}"
+                                Foreground="White"
                                 Text="ĐĂNG XUẤT"
                                 FontSize="13"
                                 HorizontalAlignment="Left"
@@ -425,12 +393,10 @@
             </Setter>
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="OpacityMask" Value="Black"/>
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsPressed" Value="True">
-                <Setter Property="Background" Value="Black"></Setter>
-                <Setter Property="OpacityMask" Value="White"></Setter>
+                <Setter Property="Background" Value="LightPink"></Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
