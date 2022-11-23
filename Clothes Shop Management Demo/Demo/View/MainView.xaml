@@ -107,7 +107,7 @@
                     </Grid>
 
 
-                    <Grid Grid.Row="2" Margin="0,85,0,0" Grid.RowSpan="2">
+                    <Grid Grid.Row="2" Margin="0,50,0,0" Grid.RowSpan="2">
 
                         <StackPanel>
                             <RadioButton
@@ -177,12 +177,20 @@
 
 
                             </RadioButton>
-                            <Button 
-                                Style="{StaticResource BtnLogOut}"
-                                FontFamily="{StaticResource Custom}"
-                                Margin="-4,2,0,0">
-
-                            </Button>
+                            <Grid Grid.Row="2" VerticalAlignment="Bottom">
+                                <Button
+                            
+                            Style="{StaticResource BtnLogOut}"
+                            FontFamily="{StaticResource Custom}" Margin="0,69,0,-69"
+                            >
+                                    <i:Interaction.Triggers>
+                                        <i:EventTrigger EventName="Click">
+                                            <i:InvokeCommandAction Command="{Binding LogOutCommand}"
+                                       CommandParameter="{Binding ElementName=Mainwd}"></i:InvokeCommandAction>
+                                        </i:EventTrigger>
+                                    </i:Interaction.Triggers>
+                                </Button>
+                            </Grid>
 
                         </StackPanel>
                     </Grid>

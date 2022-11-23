@@ -35,6 +35,7 @@ namespace Demo.View
         {
             MainView mainView = new MainView();
             mainView.Show();
+            
         }
     }
 }
