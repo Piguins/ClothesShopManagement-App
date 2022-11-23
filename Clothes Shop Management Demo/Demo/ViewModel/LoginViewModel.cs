@@ -42,10 +42,10 @@ namespace Demo.ViewModel
             {
                 Window oldWindow = App.Current.MainWindow;
                 MainView mainView = new MainView();
-      
-                mainView.Show();
                 App.Current.MainWindow = oldWindow;
                 oldWindow.Close();
+                mainView.Show();
+              
                
             });
 

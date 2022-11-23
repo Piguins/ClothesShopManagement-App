@@ -170,8 +170,6 @@
                             FontFamily="{StaticResource Custom}"
                             Uid="7">
 
-
-
                             </RadioButton>
                             <Grid Grid.Row="2" VerticalAlignment="Bottom">
                                 <Button
