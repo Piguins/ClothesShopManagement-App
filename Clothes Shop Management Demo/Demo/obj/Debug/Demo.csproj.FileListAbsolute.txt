@@ -135,8 +135,6 @@ E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\D
 E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.GenerateResource.cache
 E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache
 E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.CopyComplete
-E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ProductView.g.cs
-E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ProductView.baml
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ProductView.g.cs
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ProductView.baml
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ProductView.g.cs
@@ -229,5 +227,5 @@ E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\D
 E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\SettingView.baml
 E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ProductViewPage.g.cs
 E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ProductViewPage.baml
-E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\CustomerDetails.g.cs
-E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\CustomerDetails.baml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\AddCustomerView.g.cs
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\AddCustomerView.baml

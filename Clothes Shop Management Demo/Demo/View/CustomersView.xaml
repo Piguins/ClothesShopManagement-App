@@ -26,6 +26,7 @@
                     <TextBlock
                         VerticalAlignment="Center"
                         HorizontalAlignment="Right"
+                        FontWeight="SemiBold"
                     FontFamily="{StaticResource MaterialDesignFont}"
                     FontSize="50"
                     Foreground="DarkBlue"

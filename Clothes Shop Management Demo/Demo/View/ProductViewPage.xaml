@@ -46,7 +46,7 @@
                         <ComboBox
                             x:Name="cbxBoLoc"
                             Style="{StaticResource MaterialDesignFilledComboBox}"
-                            materialDesign:TextFieldAssist.TextBoxViewMargin="8,-12,0,0"
+                            materialDesign:TextFieldAssist.TextBoxViewMargin="8,-10,-10,-5"
                             materialDesign:HintAssist.Hint="Bộ Lọc"
                             materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                             BorderThickness="0"
