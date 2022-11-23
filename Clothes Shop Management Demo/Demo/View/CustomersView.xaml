@@ -15,12 +15,6 @@
         CornerRadius="20"
         BorderThickness="5"
         >
-        <Border.BorderBrush>
-            <LinearGradientBrush EndPoint="0.5 ,1" StartPoint="0.5,0">
-                <GradientStop Color="#6891DF" Offset="0"/>
-                <GradientStop Color="FloralWhite" Offset="1"/>
-            </LinearGradientBrush>
-        </Border.BorderBrush>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="65"/>
@@ -30,17 +24,14 @@
             <Grid Grid.Row="0">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock
-                    VerticalAlignment="Center"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Right"
                     FontFamily="{StaticResource MaterialDesignFont}"
                     FontSize="50"
-                    Foreground="SkyBlue"
-                    Margin="15,10,0,0"
+                    Foreground="DarkBlue"
+                    Margin="15,10,0,0" Width="950"
                     ><Run Text="KHÁCH HÀNG"/>
                     </TextBlock>
-                    <Image Source="/Resource/Image/account_circle.png" 
-                           Height="50"
-                           Margin="20,6,0,0"
-                           />
                 </StackPanel>
 
             </Grid>
@@ -52,7 +43,7 @@
                         Width="200"
                         CornerRadius="20"
                         Background="White"
-                        BorderThickness="2"
+                        BorderThickness="3"
                         >
                         <Border.BorderBrush>
                             <LinearGradientBrush EndPoint="0.5 ,1" StartPoint="0.5,0">
@@ -91,7 +82,7 @@
                         materialDesign:TextFieldAssist.TextBoxViewMargin="10,14,0,0"
                         materialDesign:TextFieldAssist.TextFieldCornerRadius="20"
                         materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
-                        BorderThickness="2"
+                        BorderThickness="3"
                         VerticalAlignment="Center"
                         CaretBrush="White"
                         >
@@ -114,7 +105,7 @@
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/Resource/Image/add_fill.png" 
                                    Height="40"
-                                   Margin="0,3,0,0"/>
+                                   Margin="0,0,0,2"/>
 
                         </StackPanel>
                     </Button>
@@ -129,7 +120,7 @@
                         Height="50"
                         CornerRadius="15"
                         Background="White"
-                        BorderThickness="2"
+                        BorderThickness="3"
                         >
                         <Border.BorderBrush>
                             <LinearGradientBrush EndPoint="0.5 ,1" StartPoint="0.5,0">
@@ -154,9 +145,6 @@
                                            FontWeight="SemiBold"
                                                Margin="30,0,0,0"
                                            />
-                                    <Image Source="/Resource/Image/code_fill.png"
-                                           Height="30"
-                                           Margin="5,7,0,10"/>
 
                                 </StackPanel>
 
@@ -172,9 +160,6 @@
                                            FontWeight="SemiBold"
                                                Margin="30,0,0,0"
                                            />
-                                    <Image Source="/Resource/Image/person_fill.png" 
-                                           Height="30"
-                                           />
 
                                 </StackPanel>
 
@@ -189,7 +174,6 @@
                                            FontWeight="SemiBold"
                                                Margin="25,0,0,0"
                                            />
-                                    <Image Source="/Resource/Image/call_fill.png" Height="30"/>
 
                                 </StackPanel>
 
@@ -204,8 +188,6 @@
                                            FontWeight="SemiBold"
                                                Margin="140,0,0,0"
                                            />
-                                    <Image Source="/Resource/Image/home_pin.png" 
-                                           Height="30"/>
                                 </StackPanel>
 
                             </Grid>

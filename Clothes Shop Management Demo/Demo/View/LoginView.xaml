@@ -14,7 +14,9 @@
         xmlns:locals="clr-namespace:Demo.View"
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="Đăng nhập" Height="700" Width="1000"
+        Title="Đăng nhập" 
+        Height="700" 
+        Width="1000"
         FontFamily="Josefin Sans"
         Name="mainPage"
         DataContext="{StaticResource LoginVM}">
