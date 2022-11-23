@@ -30,12 +30,5 @@ namespace Demo.View
             SignUpView signUpView = new SignUpView();
             signUpView.Show();
         }
-
-        private void OpenMainView(object sender, RoutedEventArgs e)
-        {
-            MainView mainView = new MainView();
-            mainView.Show();
-            
-        }
     }
 }

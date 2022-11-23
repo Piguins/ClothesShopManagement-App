@@ -77,7 +77,7 @@
     IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
     Style="{StaticResource MaterialDesignRaisedDarkButton}"
                 Margin="20 50 0 0" Width="150" Height="40"
-                Background="#6C63FF" HorizontalAlignment="Center" VerticalContentAlignment="Center" Click="OpenMainView" >
+                Background="#6C63FF" HorizontalAlignment="Center" VerticalContentAlignment="Center" >
                 <TextBlock
       Text="Đăng nhập" x:Name="LoginButton" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Josefin Sans"/>
             </Button>

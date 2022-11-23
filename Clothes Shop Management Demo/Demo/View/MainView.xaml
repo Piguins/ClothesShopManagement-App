@@ -179,16 +179,13 @@
                             </RadioButton>
                             <Grid Grid.Row="2" VerticalAlignment="Bottom">
                                 <Button
-                            
+                         
                             Style="{StaticResource BtnLogOut}"
-                            FontFamily="{StaticResource Custom}" Margin="0,69,0,-69"
-                            >
-                                    <i:Interaction.Triggers>
-                                        <i:EventTrigger EventName="Click">
-                                            <i:InvokeCommandAction Command="{Binding LogOutCommand}"
-                                       CommandParameter="{Binding ElementName=Mainwd}"></i:InvokeCommandAction>
-                                        </i:EventTrigger>
-                                    </i:Interaction.Triggers>
+                            FontFamily="{StaticResource Custom}" Margin="-5,65,0,-65"
+                                    Command="{Binding SignoutCM}"
+                                    CommandParameter="{Binding ElementName=Mainview}">
+
+
                                 </Button>
                             </Grid>
 

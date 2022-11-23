@@ -23,6 +23,7 @@ namespace Demo.ViewModel
         public ICommand LoadLoginPageCM { get; set; }
 
         public ICommand ForgotPassCM { get; set; }
+
         public LoginViewModel()
         {
 
@@ -36,6 +37,13 @@ namespace Demo.ViewModel
             {
                 MainFrame.Content = new ForgetPassView();
             });
+
+            LoginCM = new RelayCommand<object>((p) => { return true; }, (p) =>
+            {
+                MainView mainView = new MainView();
+                mainView.ShowDialog();
+            });
+
         }
     }
 
