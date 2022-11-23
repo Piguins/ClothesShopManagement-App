@@ -48,6 +48,7 @@ Kinh tế ngày càng phát triển, đây là thời buổi của công nghệ,
 
 * Sử dụng Microsoft SQL Sever, đây chính là một loại phần mềm đã được phát triển bởi Microsoft và nó được sử dụng để có thể dễ dàng lưu trữ cho những dữ liệu dựa theo tiêu chuẩn RDBMS. SQL Server có khả năng cung cấp đầy đủ các công cụ cho việc quản lý từ giao diện GUI đến sử dụng ngôn ngữ cho việc truy vấn SQL
 
+* Sử dụng Figma để thiết kế bố cục, màu sắc chủ đạo cũng như style cho các giao diện sử dụng trong phần mềm. Việc này giúp đảm bảo phần mềm có một giao diện trực quan, chung phong cách thiết kế và không bị rối khi bắt tay code giao diện bằng XAML
 
 <div id="Congnghe"></div>
 
@@ -58,12 +59,11 @@ Kinh tế ngày càng phát triển, đây là thời buổi của công nghệ,
 * Công cụ quản lý: Git, GitHub
 * Entity Framework
 
-
 <div id="Doituongsudung"></div>
 
 ### 3. Đối tượng sử dụng
 * Chủ cửa hàng: Vai trò quản lý
-* Khách hàng
+* Nhân viên
 
 
 <div id="Muctieu"></div>
