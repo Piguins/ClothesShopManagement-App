@@ -26,12 +26,10 @@
                                      From="0"
                                      To="1"
                                      Duration="0:0:0.1" />
-
                 </Storyboard>
             </BeginStoryboard>
         </EventTrigger>
     </Window.Triggers>
-
 
     <Border CornerRadius="45"
             Background="White">
@@ -55,7 +53,6 @@
             <Border Grid.Column="0"
                     Background="#FF6363AB"
                     CornerRadius="40,0,0,40">
-
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="60"/>
@@ -74,14 +71,14 @@
                                 Width="40"
                                 Background="White"
                                 CornerRadius="50"
-                                Margin="30,5,5,5"
-                                >
+                                Margin="30,5,5,5">
+
                                 <Ellipse Height="40" Width="40" VerticalAlignment="Top">
                                     <Ellipse.Fill>
                                         <ImageBrush ImageSource="{Binding Ava}"/>
                                     </Ellipse.Fill>
                                 </Ellipse>
-
+                                
                             </Border>
                             <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center">
                                 <TextBlock x:Name="TenDangNhap" 
@@ -97,8 +94,7 @@
                                            FontSize="13"
                                            Foreground="White"
                                            FontFamily="{StaticResource Custom}"
-                                           FontWeight="Thin"
-                                           >
+                                           FontWeight="Thin">
 
                                 </TextBlock>
 
@@ -192,9 +188,7 @@
                         </StackPanel>
                     </Grid>
                 </Grid>
-
             </Border>
-
 
             <Border Grid.Column="1"
                     Background="Snow"

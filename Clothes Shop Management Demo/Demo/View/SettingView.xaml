@@ -12,7 +12,7 @@
       FontFamily="Josefin Sans">
 
     <Grid>
-        <Border CornerRadius="15"  RenderTransformOrigin="0.608,0.49" >
+        <Border CornerRadius="15" Background="white"  RenderTransformOrigin="0.608,0.49" >
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>

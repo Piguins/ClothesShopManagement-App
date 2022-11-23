@@ -7,8 +7,8 @@
       mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="800"
       Title="HomeView"
-      DataContext="{StaticResource HomeVM}"
-      >
+      DataContext="{StaticResource HomeVM}">
+
 
     <Border Background="White"
             CornerRadius="20"

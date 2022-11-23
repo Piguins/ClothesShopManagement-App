@@ -40,8 +40,13 @@ namespace Demo.ViewModel
 
             LoginCM = new RelayCommand<object>((p) => { return true; }, (p) =>
             {
+                Window oldWindow = App.Current.MainWindow;
                 MainView mainView = new MainView();
-                mainView.ShowDialog();
+      
+                mainView.Show();
+                App.Current.MainWindow = oldWindow;
+                oldWindow.Close();
+               
             });
 
         }
