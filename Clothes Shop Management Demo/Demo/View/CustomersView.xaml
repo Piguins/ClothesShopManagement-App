@@ -24,14 +24,13 @@
             <Grid Grid.Row="0">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock
-                        VerticalAlignment="Center"
-                        HorizontalAlignment="Right"
+                        Text="KHÁCH HÀNG"
                         FontWeight="SemiBold"
-                    FontFamily="{StaticResource MaterialDesignFont}"
-                    FontSize="50"
-                    Foreground="DarkBlue"
-                    Margin="15,10,0,0" Width="950"
-                    ><Run Text="KHÁCH HÀNG"/>
+                        FontFamily="{StaticResource MaterialDesignFont}"
+                        FontSize="50"
+                        Foreground="DarkBlue"
+                        Margin="15,10,0,0" Width="950"
+                    ><Run Text="KHÁCH HÀNG" />
                     </TextBlock>
                 </StackPanel>
 
@@ -100,13 +99,13 @@
                         Height="60"
                         materialDesign:ButtonAssist.CornerRadius="15"
                         Background="White"
-                        BorderBrush="#6891DF"
-                        BorderThickness="3"
+                        BorderBrush="Pink"
+                        BorderThickness="5"
                         >
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/Resource/Image/add_fill.png" 
                                    Height="40"
-                                   Margin="0,0,0,2"/>
+                                   Margin="0,0,5,2"/>
 
                         </StackPanel>
                     </Button>
@@ -121,10 +120,10 @@
                         Height="50"
                         CornerRadius="15"
                         Background="White"
-                        BorderThickness="3"
+                        BorderThickness="4"
                         >
                         <Border.BorderBrush>
-                            <LinearGradientBrush EndPoint="0.5 ,1" StartPoint="0.5,0">
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0.5">
                                 <GradientStop Color="#6891DF" Offset="0"/>
                                 <GradientStop Color="FloralWhite" Offset="1"/>
                             </LinearGradientBrush>
