@@ -28,13 +28,13 @@
     </Page.Triggers>
 
     <Grid>
-       
+
         <Border Background="White" 
                 Margin="0 0 0 0">
             <Grid>
                 <Grid Grid.Row="0"
                   Background="Transparent" Margin="10,10,0,0">
-             
+
                     <StackPanel 
                                 Orientation="Horizontal" 
                                 HorizontalAlignment="Right" 
@@ -53,7 +53,7 @@
                             FontWeight="Bold" RenderTransformOrigin="0.719,0.72" Width="260"/>
                     </StackPanel>
                 </Grid>
-        
+
                 <Grid Grid.Row="2"
                   Margin="0,90,0,0">
 
@@ -195,17 +195,39 @@
                             Margin="25,-24,0,0">
                             </Button>
 
-                            <TextBlock
-                                VerticalAlignment="Center"
-                                HorizontalAlignment="Left"
-                                Text="Đổi mật khẩu"
-                                FontFamily="Josefin Sans" 
-                                Margin="289,0,0,0"
-                                FontSize=" 15"
-                                Foreground="#1B59D1"
-                                Width="101" Height="26">
-
-                            </TextBlock>
+                            <Button
+                                Content = "Quên mật khẩu"
+                                FontSize="13"
+                                FontFamily="Josefin Sans"
+                                Height="25"
+                                HorizontalAlignment="Center"
+                                BorderBrush="Transparent"
+                                Cursor="Hand"  Margin="0,55,0,55"
+                                Command="{Binding ForgotPassCM}" >
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Background" Value="Transparent"/>
+                                        <Setter Property="Foreground" Value="#6C63FF"/>
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Background" Value="#6891DF"/>
+                                                <Setter Property="Foreground" Value="White"/>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Button.Style>
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Width="100" Height="25"
+                                    CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
+                                            <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center">
+                                            </ContentPresenter>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
                         </Grid>
                     </Grid>
                 </Grid>
