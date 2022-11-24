@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\App.xaml
-131537351127
+15583203501
 
-401354060442
+411111697738
 18-2054335718
-MainWindow.xaml;Resource\MainResource.xaml;Resource\StyleRecourse.xaml;View\ChangePassword.xaml;View\CustomersView.xaml;View\ForgetPassView.xaml;View\HomeView.xaml;View\LoginView.xaml;View\LoginViewPage.xaml;View\MainView.xaml;View\ProductViewPage.xaml;View\SettingView.xaml;View\SignUpView.xaml;
+MainWindow.xaml;Resource\MainResource.xaml;Resource\StyleRecourse.xaml;View\ChangePassword.xaml;View\CustomersView.xaml;View\DetailOrder.xaml;View\ForgetPassView.xaml;View\HomeView.xaml;View\LoginView.xaml;View\LoginViewPage.xaml;View\MainView.xaml;View\OrderView.xaml;View\ProductViewPage.xaml;View\SettingView.xaml;View\SignUpView.xaml;
 
-True
+False
 

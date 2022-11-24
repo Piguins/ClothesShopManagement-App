@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Demo.View"
       mc:Ignorable="d" 
-      d:DesignHeight="600" d:DesignWidth="800"
+      d:DesignHeight="600" d:DesignWidth="700"
       Title="HomeView"
       DataContext="{StaticResource HomeVM}">
 
@@ -31,9 +31,9 @@
             </Grid>
 
             <Grid Grid.Row="1">
-                
+
             </Grid>
-            
+
             <Grid Grid.Row="2">
                 <StackPanel>
                     <TextBlock Text="Hoạt động trong ngày:"
@@ -47,9 +47,9 @@
                         <Border
                         CornerRadius="20"
                         Height="130"
-                        Width="220"
+                        Width="200"
                         HorizontalAlignment="Left"
-                        VerticalAlignment="Center" Canvas.Left="40" Canvas.Top="10"
+                        VerticalAlignment="Top" Canvas.Left="20" Canvas.Top="20"
                                     >
                             <Border.Effect>
                                 <DropShadowEffect BlurRadius="15" Direction="-90"
@@ -90,9 +90,9 @@
                         <Border
                                     CornerRadius="20"
                                     Height="130"
-                                    Width="220"                                     
+                                    Width="200"                                     
                                     HorizontalAlignment="Left"
-                                    VerticalAlignment="Center" Canvas.Left="290" Canvas.Top="10">
+                                    VerticalAlignment="Top" Canvas.Left="250" Canvas.Top="20">
                             <Border.Effect>
                                 <DropShadowEffect BlurRadius="15" Direction="-90"
                               RenderingBias="Quality" ShadowDepth="5"/>
@@ -132,7 +132,7 @@
                         <Border
                                     CornerRadius="20"
                                     Height="130"
-                                    Width="220" Canvas.Right="40" Canvas.Top="10"                         
+                                    Width="200" Canvas.Right="40" Canvas.Top="20" Canvas.Left="480" HorizontalAlignment="Left" VerticalAlignment="Center"                         
                                     >
                             <Border.Effect>
                                 <DropShadowEffect BlurRadius="15" Direction="-90"
@@ -172,7 +172,7 @@
                         </Border>
                     </Canvas>
                 </StackPanel>
-                
+
             </Grid>
         </Grid>
     </Border>

@@ -1,4 +1,4 @@
-﻿E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+﻿
 FE:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\App.xaml;;
 FE:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\MainWindow.xaml;;
 FE:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\Resource\MainResource.xaml;;
@@ -11,4 +11,6 @@ FE:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\View
 FE:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\View\ProductViewPage.xaml;;
 FE:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\View\SettingView.xaml;;
 FE:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\View\SignUpView.xaml;;
+FE:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\View\DetailOrder.xaml;;
+FE:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\View\OrderView.xaml;;
 
