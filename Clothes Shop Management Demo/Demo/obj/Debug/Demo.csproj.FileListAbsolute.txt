@@ -288,3 +288,5 @@ D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Sho
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\LoginViewPage.baml
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ProductViewPage.baml
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\SettingView.baml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ChangePassword.g.cs
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ChangePassword.baml

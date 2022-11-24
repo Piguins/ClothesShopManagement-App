@@ -10,22 +10,11 @@
       d:DesignHeight="500" d:DesignWidth="700"
       Title="SettingViewPage"
       Name="SettingViewPage"
-      FontFamily="Josefin Sans">
+      FontFamily="Josefin Sans"
+      DataContext="{StaticResource MainVM}">
 
 
-    <Page.Triggers>
-        <EventTrigger RoutedEvent="Page.Loaded">
-            <BeginStoryboard>
-                <Storyboard>
-                    <ThicknessAnimation Storyboard.TargetName="SettingViewPage"
-                                        Storyboard.TargetProperty="Margin"
-                                        From="425,0,0,0"
-                                        To="0"
-                                        Duration="0:0:0.2" />
-                </Storyboard>
-            </BeginStoryboard>
-        </EventTrigger>
-    </Page.Triggers>
+    
 
     <Grid>
 
@@ -196,7 +185,6 @@
                             </Button>
 
                             <Button
-                          
                                 Content = "Đổi mật khẩu"
                                 FontSize="13"
                                 FontFamily="Josefin Sans"
@@ -204,7 +192,7 @@
                                 HorizontalAlignment="Center"
                                 BorderBrush="Transparent"
                                 Cursor="Hand"  Margin="250,30,0,55"
-                                Command="{Binding ForgotPassCM}" >
+                                Command="{Binding ChangePassCM}" >
                                 <Button.Style>
                                     <Style TargetType="Button">
                                         <Setter Property="Background" Value="Transparent"/>

@@ -16,8 +16,8 @@ namespace Demo.ViewModel
         public static Frame MainFrame { get; set; }
         public ICommand LoadPageCM { get; set; }
         public ICommand SignoutCM { get; set; }
-
         public ICommand SettingCM { get; set; }
+        public ICommand ChangePassCM { get; set; }
 
         public MainViewModel()
         {
@@ -31,6 +31,11 @@ namespace Demo.ViewModel
             {
            
                 MainFrame.Content = new SettingView();
+            });
+
+            ChangePassCM = new RelayCommand<object>((p) => { return true; }, (p) =>
+            {
+                MainFrame.Content = new ChangePassword();
             });
 
             SignoutCM = new RelayCommand<FrameworkElement>((p) => { return p == null ? false : true; }, (p) =>
