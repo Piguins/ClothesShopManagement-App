@@ -19,6 +19,8 @@ namespace Demo.ViewModel
         public ICommand SettingCM { get; set; }
         public ICommand ChangePassCM { get; set; }
 
+        public ICommand QuanLyCM { get; set; }
+
         public MainViewModel()
         {
             LoadPageCM = new RelayCommand<Frame>((p) => { return true; }, (p) =>
@@ -27,9 +29,13 @@ namespace Demo.ViewModel
                 p.Content = new HomeView();
             });
 
+            QuanLyCM = new RelayCommand<FrameworkElement>((p) => { return true; }, (p) =>
+            {
+                MainFrame.Content = new QLNVView();
+            });
+
             SettingCM = new RelayCommand<Frame>((p) => { return true; }, (p) =>
             {
-           
                 MainFrame.Content = new SettingView();
             });
 
@@ -50,6 +56,7 @@ namespace Demo.ViewModel
                     w.Close();
                 }
             });
+
             FrameworkElement GetParentWindow(FrameworkElement p)
             {
                 FrameworkElement parent = p;
@@ -59,7 +66,7 @@ namespace Demo.ViewModel
                     parent = parent.Parent as FrameworkElement;
                 }
                 return parent;
-            }  
+            }
         }
     }
 }

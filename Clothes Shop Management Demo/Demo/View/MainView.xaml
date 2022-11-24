@@ -152,6 +152,7 @@
                             Visibility="{Binding SetQuanLy}"
                             Style="{StaticResource BtnManage}"
                             FontFamily="{StaticResource Custom}"
+                            Command="{Binding QuanLyCM}"
                             
                             >
 
