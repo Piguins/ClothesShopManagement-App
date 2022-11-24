@@ -29,7 +29,7 @@
 
     <Grid>
 
-        <Border Background="White" 
+        <Border Background="Transparent" 
                 Margin="0 0 0 0">
             <Grid>
                 <Grid Grid.Row="0"
@@ -192,17 +192,18 @@
                             Background="#6C63FF"
                             Height="40"
                             Style="{StaticResource MaterialDesignFlatMidBgButton}"
-                            Margin="25,-24,0,0">
+                            Margin="25,-25,0,0">
                             </Button>
 
                             <Button
-                                Content = "Quên mật khẩu"
+                          
+                                Content = "Đổi mật khẩu"
                                 FontSize="13"
                                 FontFamily="Josefin Sans"
                                 Height="25"
                                 HorizontalAlignment="Center"
                                 BorderBrush="Transparent"
-                                Cursor="Hand"  Margin="0,55,0,55"
+                                Cursor="Hand"  Margin="250,30,0,55"
                                 Command="{Binding ForgotPassCM}" >
                                 <Button.Style>
                                     <Style TargetType="Button">
