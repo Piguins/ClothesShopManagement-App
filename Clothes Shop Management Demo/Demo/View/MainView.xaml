@@ -216,7 +216,7 @@
 
                     <Frame x:Name="frame"
                            Background="#FFF9F5"
-                           NavigationUIVisibility="Hidden" Margin="50,10,100,35" Grid.Row="1">
+                           NavigationUIVisibility="Hidden" Margin="50,10,100,35" Grid.Row="1" Height="605" Width="700">
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="Loaded">
                                 <i:InvokeCommandAction Command="{Binding LoadPageCM}"
