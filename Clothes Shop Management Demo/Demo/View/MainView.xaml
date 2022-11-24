@@ -7,6 +7,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:local="clr-namespace:Demo.ViewModel"
+        xmlns:view="clr-namespace:Demo.View"
         mc:Ignorable="d"
         Title="Phần mềm quản lý bán hàng" Height="700" Width="1000"
         WindowStyle="None"
@@ -191,28 +192,41 @@
             <Border Grid.Column="1"
                     Background="Snow"
                     CornerRadius="0,40,40,0">
-                <StackPanel
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Border Grid.Row="0">
+                        <StackPanel
                 Orientation="Horizontal" 
                 VerticalAlignment="Top"
                 HorizontalAlignment="Right"
                 Margin="10 20 30 0">
-                    <materialDesign:PackIcon Kind="WindowMinimize" Foreground="#6C63FF" Height="24" Width="24" Margin="0,0,8,0" MouseDown="MinimizeButton">
-                        <i:Interaction.Triggers>
-                            <i:EventTrigger EventName="MouseLeftButtonDown">
-                                <i:InvokeCommandAction Command="{Binding Minimizewd}"
+                            <materialDesign:PackIcon Kind="WindowMinimize" Foreground="#6C63FF" Height="24" Width="24" Margin="0,0,8,0" MouseDown="MinimizeButton">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="MouseLeftButtonDown">
+                                        <i:InvokeCommandAction Command="{Binding Minimizewd}"
                                                        CommandParameter="{Binding ElementName=Registerwd}"></i:InvokeCommandAction>
-                            </i:EventTrigger>
-                        </i:Interaction.Triggers>
-                    </materialDesign:PackIcon>
-                    <materialDesign:PackIcon Kind="CloseThick" Foreground="#6C63FF" Height="24" Width="24" MouseDown="CloseButton">
-                        <i:Interaction.Triggers>
-                            <i:EventTrigger EventName="MouseLeftButtonDown">
-                                <i:InvokeCommandAction Command="{Binding Close1}"
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </materialDesign:PackIcon>
+                            <materialDesign:PackIcon Kind="CloseThick" Foreground="#6C63FF" Height="24" Width="24" MouseDown="CloseButton">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="MouseLeftButtonDown">
+                                        <i:InvokeCommandAction Command="{Binding Close1}"
                                                        CommandParameter="{Binding ElementName=Registerwd}"></i:InvokeCommandAction>
-                            </i:EventTrigger>
-                        </i:Interaction.Triggers>
-                    </materialDesign:PackIcon>
-                </StackPanel>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </materialDesign:PackIcon>
+                        </StackPanel>
+                    </Border>
+
+                    <Frame x:Name="Main" Grid.Row="1" Source="/view/HomeView.xaml" NavigationUIVisibility="Hidden" DataContext="{StaticResource MainVM}"
+                           Margin="10,10,10,10">
+                    </Frame>
+                </Grid>
 
             </Border>
         </Grid>

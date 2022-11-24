@@ -38,7 +38,7 @@ namespace Demo.ViewModel
                     parent = parent.Parent as FrameworkElement;
                 }
                 return parent;
-            }
+            }  
         }
     }
 }
