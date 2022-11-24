@@ -18,8 +18,8 @@ namespace Demo.ViewModel
         public ICommand SignoutCM { get; set; }
         public ICommand SettingCM { get; set; }
         public ICommand ChangePassCM { get; set; }
-
         public ICommand QuanLyCM { get; set; }
+        public ICommand HomeCM { get; set; }
 
         public MainViewModel()
         {
@@ -27,6 +27,11 @@ namespace Demo.ViewModel
             {
                 MainFrame = p;
                 p.Content = new HomeView();
+            });
+
+            HomeCM = new RelayCommand<FrameworkElement>((p) => { return true; }, (p) =>
+            {
+                MainFrame.Content = new HomeView();
             });
 
             QuanLyCM = new RelayCommand<FrameworkElement>((p) => { return true; }, (p) =>

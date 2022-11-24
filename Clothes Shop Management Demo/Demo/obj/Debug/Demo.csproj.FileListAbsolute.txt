@@ -304,3 +304,9 @@ D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Sho
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailOrder.baml
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\OrderView.baml
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\QLNVView.baml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailOrder.g.cs
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\OrderView.g.cs
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\QLNVView.g.cs
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailOrder.baml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\OrderView.baml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\QLNVView.baml

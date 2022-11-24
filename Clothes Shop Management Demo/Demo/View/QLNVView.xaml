@@ -43,12 +43,13 @@
                            >QUẢN LÝ NHÂN VIÊN</TextBlock>
                 </Grid>
                 <Grid Grid.Row="1">
-                    <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Horizontal"
+                                Margin="10 0 0 0">
                         <ComboBox Foreground="White"
                         x:Name="cbxChon"
                         Style="{StaticResource MaterialDesignFilledComboBox}"
                         materialDesign:TextFieldAssist.TextBoxViewMargin="0,-11,0,0"
-                        materialDesign:HintAssist.Hint="Tìm Kiếm"
+                        materialDesign:HintAssist.Hint="Tìm kiếm" FontWeight="Bold"
                         materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                         BorderThickness="0"
                         materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
