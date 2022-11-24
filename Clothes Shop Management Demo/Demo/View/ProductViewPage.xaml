@@ -6,12 +6,12 @@
       xmlns:local="clr-namespace:Demo.View"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
-      d:DesignHeight="600" d:DesignWidth="800"
+      d:DesignHeight="605" d:DesignWidth="700"
       Title="ProductViewPage">
 
     <Border
-        Height="600"
-        Width="800"
+        Height="605"
+        Width="700"
         Background="White"
         CornerRadius="20"
         BorderThickness="5">
@@ -25,15 +25,16 @@
                 <TextBlock VerticalAlignment="Center" 
                            HorizontalAlignment="Center"
                            FontSize="40" Margin="20,0,0,0" 
-                           Foreground="DarkBlue" FontWeight="SemiBold" 
+                           Foreground="#6891DF" FontWeight="SemiBold"
+                           FontFamily="{StaticResource Custom}"
                            ><Run Text="SẢN PHẨM"/></TextBlock>
             </Grid>
             <Grid Grid.Row="1">
                 <StackPanel Orientation="Horizontal">
                     <Border
-                        Margin="15,0,0,0"
+                        Margin="10,0,0,0"
                         Height="60"
-                        Width="150"
+                        Width="130"
                         CornerRadius="20"
                         Background="White"
                         BorderThickness="3">
@@ -46,19 +47,19 @@
                         <ComboBox
                             x:Name="cbxBoLoc"
                             Style="{StaticResource MaterialDesignFilledComboBox}"
-                            materialDesign:TextFieldAssist.TextBoxViewMargin="8,-10,-10,-5"
+                            materialDesign:TextFieldAssist.TextBoxViewMargin="0,-10,-15,-5"
                             materialDesign:HintAssist.Hint="Bộ Lọc"
                             materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                             BorderThickness="0"
                             materialDesign:HintAssist.FontFamily="{StaticResource MaterialDesignFont}"
                             materialDesign:HintAssist.Foreground="White"
                             Background="White"
-                            FontFamily="{StaticResource MaterialDesignFont}"
+                            FontFamily="{StaticResource Custom}"
                             Height="50"
-                            Width="110"
+                            Width="100"
                             FontSize="20"
                             SelectedIndex="0"
-                            Margin="0,8,0,0"
+                            Margin="0,5,3,0"
                             >
                             <ComboBoxItem Content="Tất cả"/>
                             <ComboBoxItem Content="Áo sơ mi"/>
@@ -74,7 +75,7 @@
                     <Border
                             Margin="15,0,0,0"
                         Height="60"
-                        Width="170"
+                        Width="140"
                         CornerRadius="20"
                         Background="White"
                         BorderThickness="3">
@@ -87,16 +88,16 @@
                         <ComboBox
                             x:Name="cbxTimKiem"
                             Style="{StaticResource MaterialDesignFilledComboBox}"
-                            materialDesign:TextFieldAssist.TextBoxViewMargin="10,-10,0,0"
+                            materialDesign:TextFieldAssist.TextBoxViewMargin="-5,-10,-10,0"
                             materialDesign:HintAssist.Hint="Tìm Kiếm"
                             materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                             BorderThickness="0"
                             materialDesign:HintAssist.FontFamily="{StaticResource MaterialDesignFont}"
                             materialDesign:HintAssist.Foreground="White"
-                            FontFamily="{StaticResource MaterialDesignFont}"
+                            FontFamily="{StaticResource Custom}"
                             Height="50"
                             FontSize="20"
-                            Width="145"
+                            Width="117"
                             Background="White">
                             <ComboBox.ItemTemplate>
                                 <DataTemplate>
@@ -111,7 +112,7 @@
                     </Border>
                     <TextBox
                         x:Name="tbxSearch"
-                        Width="290"
+                        Width="260"
                         Height="57"
                         Margin="20,0,0,0"
                         BorderBrush="#6891DF"
@@ -137,10 +138,10 @@
                     </TextBox>
                     <Button
                         Content="THÊM"
-                        Margin="30,0,0,0"
+                        Margin="10,0,0,0"
                         Height="50"
                         Width="90"
-                        FontFamily="{StaticResource MaterialDesignFont}"
+                        FontFamily="{StaticResource Custom}"
                         materialDesign:ButtonAssist.CornerRadius="15"
                         Background="White"
                         BorderBrush="LightPink"
