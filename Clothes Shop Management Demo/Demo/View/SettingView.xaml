@@ -7,33 +7,55 @@
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="650"
-      Title="SettingView"
+      d:DesignHeight="500" d:DesignWidth="650"
+      Title="SettingViewPage"
+      Name="SettingViewPage"
       FontFamily="Josefin Sans">
 
+
+    <Page.Triggers>
+        <EventTrigger RoutedEvent="Page.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <ThicknessAnimation Storyboard.TargetName="SettingViewPage"
+                                        Storyboard.TargetProperty="Margin"
+                                        From="425,0,0,0"
+                                        To="0"
+                                        Duration="0:0:0.2" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Page.Triggers>
+
     <Grid>
-        <Border CornerRadius="15" Background="white"  RenderTransformOrigin="0.608,0.49" >
+       
+        <Border Background="Transparent" 
+                Margin="0 0 0 0">
             <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="30"/>
-                    <RowDefinition Height="30"/>
-                    <RowDefinition />
-                </Grid.RowDefinitions>
                 <Grid Grid.Row="0"
-                  Background="Transparent">
-                    <materialDesign:Card UniformCornerRadius="35" materialDesign:ShadowAssist.ShadowDepth="Depth2"  Background="#FFF9F5" Margin="25,25,25,25" Grid.RowSpan="4" Grid.ColumnSpan="2">
-                    </materialDesign:Card>
+                  Background="Transparent" Margin="10,10,0,0">
+             
                     <StackPanel 
                                 Orientation="Horizontal" 
                                 HorizontalAlignment="Right" 
                                 VerticalAlignment="Center"
-                                Margin="0,0,10,0">
+                                Margin="0,50,20,0">
+                    </StackPanel>
+                    <StackPanel
+                        HorizontalAlignment="Center"
+                        Margin="150 20 0 0">
+                        <TextBlock
+                            Text="CÀI ĐẶT THÔNG TIN" Height="54"
+                            Margin="0 0 0 0"
+                            FontFamily="Josefin Sans"
+                            FontSize=" 25"
+                            Foreground="#6C63FF"
+                            FontWeight="Bold" RenderTransformOrigin="0.719,0.72" Width="260"/>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Row="1">
-                </Grid>
+        
                 <Grid Grid.Row="2"
-                  Margin="0,15,0,0">
+                  Margin="0,90,0,0">
 
                     <Grid>
                         <Grid.RowDefinitions>
@@ -74,7 +96,7 @@
                         </Button>
                         <Grid Grid.Column="1">
                             <StackPanel>
-              
+
                                 <StackPanel
                                 Orientation="Horizontal"
                                 Margin="0,10,0,0">
@@ -155,7 +177,7 @@
                                     materialDesign:TextFieldAssist.UnderlineBrush="#6C63FF"
                                     FontFamily="Josefin Sans"
                                     materialDesign:HintAssist.Hint="Địa chỉ" Width="390"/>
-                             
+
                             </StackPanel>
                         </Grid>
                         <Grid Grid.Row="2" Grid.Column="2">
@@ -171,9 +193,19 @@
                             Height="40"
                             Style="{StaticResource MaterialDesignFlatMidBgButton}"
                             Margin="0,-24,0,0">
-
-
                             </Button>
+
+                            <TextBlock
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Left"
+                                Text="Đổi mật khẩu"
+                                FontFamily="Josefin Sans" 
+                                Margin="289,0,0,0"
+                                FontSize=" 15"
+                                Foreground="#1B59D1"
+                                Width="101" Height="26">
+
+                            </TextBlock>
                         </Grid>
                     </Grid>
                 </Grid>

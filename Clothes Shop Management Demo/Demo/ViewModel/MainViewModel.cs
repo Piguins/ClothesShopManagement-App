@@ -13,10 +13,26 @@ namespace Demo.ViewModel
 {
     internal class MainViewModel
     {
+        public static Frame MainFrame { get; set; }
+        public ICommand LoadPageCM { get; set; }
         public ICommand SignoutCM { get; set; }
+
+        public ICommand SettingCM { get; set; }
 
         public MainViewModel()
         {
+            LoadPageCM = new RelayCommand<Frame>((p) => { return true; }, (p) =>
+            {
+                MainFrame = p;
+                p.Content = new HomeView();
+            });
+
+            SettingCM = new RelayCommand<Frame>((p) => { return true; }, (p) =>
+            {
+           
+                MainFrame.Content = new SettingView();
+            });
+
             SignoutCM = new RelayCommand<FrameworkElement>((p) => { return p == null ? false : true; }, (p) =>
             {
                 FrameworkElement window = GetParentWindow(p);

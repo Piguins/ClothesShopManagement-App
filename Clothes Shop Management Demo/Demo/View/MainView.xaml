@@ -40,16 +40,6 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
 
-            <Frame x:Name="frame"
-                           Background="#FFF9F5"
-                           NavigationUIVisibility="Hidden" Grid.Column="1" Margin="45,95,70,90">
-                <i:Interaction.Triggers>
-                    <i:EventTrigger EventName="Loaded">
-                        <i:InvokeCommandAction Command="{Binding LoadLoginPageCM}"
-                                                       CommandParameter="{Binding ElementName=frame}" />
-                    </i:EventTrigger>
-                </i:Interaction.Triggers>
-            </Frame>
 
             <Border Grid.Column="0"
                     Background="#FF6363AB"
@@ -79,7 +69,7 @@
                                         <ImageBrush ImageSource="{Binding Ava}"/>
                                     </Ellipse.Fill>
                                 </Ellipse>
-                                
+
                             </Border>
                             <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center">
                                 <TextBlock x:Name="TenDangNhap" 
@@ -169,7 +159,8 @@
                             <RadioButton
                             Style="{StaticResource BtnSetting}"
                             FontFamily="{StaticResource Custom}"
-                            Uid="7">
+                            Uid="7"
+                            Command="{Binding SettingCM}">
 
                             </RadioButton>
                             <Grid Grid.Row="2" VerticalAlignment="Bottom">
@@ -223,8 +214,15 @@
                         </StackPanel>
                     </Border>
 
-                    <Frame x:Name="Main" Grid.Row="1" Source="/view/HomeView.xaml" NavigationUIVisibility="Hidden" DataContext="{StaticResource MainVM}"
-                           Margin="10,10,10,10">
+                    <Frame x:Name="frame"
+                           Background="#FFF9F5"
+                           NavigationUIVisibility="Hidden" Margin="50,10,100,35" Grid.Row="1">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Loaded">
+                                <i:InvokeCommandAction Command="{Binding LoadPageCM}"
+                                                       CommandParameter="{Binding ElementName=frame}" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
                     </Frame>
                 </Grid>
 
