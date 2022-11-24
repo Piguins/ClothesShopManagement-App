@@ -5,12 +5,12 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
-      d:DesignHeight="700" d:DesignWidth="1000"
-      Title="CustomersView_1_">
+      d:DesignHeight="605" d:DesignWidth="700"
+      >
 
     <Border
-        Height="700"
-        Width="1000"
+        Height="605"
+        Width="700"
         Background="White"
         CornerRadius="20"
         BorderThickness="5"
@@ -24,12 +24,11 @@
             <Grid Grid.Row="0">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock
-                        Text="KHÁCH HÀNG"
                         FontWeight="SemiBold"
-                        FontFamily="{StaticResource MaterialDesignFont}"
+                        FontFamily="{StaticResource Custom}"
                         FontSize="50"
-                        Foreground="DarkBlue"
-                        Margin="15,10,0,0" Width="950"
+                        Foreground="#6891DF"
+                        Margin="15,10,0,0" Width="650"
                     ><Run Text="KHÁCH HÀNG" />
                     </TextBlock>
                 </StackPanel>
@@ -40,7 +39,7 @@
                     <Border
                         Margin="15,0,0,0"
                         Height="60"
-                        Width="200"
+                        Width="120"
                         CornerRadius="20"
                         Background="White"
                         BorderThickness="3"
@@ -54,7 +53,7 @@
                         <ComboBox
                             x:Name="cbxTimKiem"
                             Style="{StaticResource MaterialDesignFilledComboBox}"
-                            materialDesign:TextFieldAssist.TextBoxViewMargin="-8,-10,0,0"
+                            materialDesign:TextFieldAssist.TextBoxViewMargin="-12,-15,-10,0"
                             materialDesign:HintAssist.Hint="Tìm Kiếm"
                             materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                             BorderThickness="0"
@@ -63,13 +62,13 @@
                             Background="White"
                             FontFamily="{StaticResource MaterialDesignFont}"
                             Height="45"
-                            FontSize="18" Margin="6,6,0,5" HorizontalAlignment="Left" Width="185">
+                            FontSize="18" Margin="6,6,0,5" HorizontalAlignment="Left" Width="105">
 
                         </ComboBox>
                     </Border>
                     <TextBox
                         x:Name="tbxSearch"
-                        Width="650"
+                        Width="430"
                         Height="60"
                         Margin="15,0,0,0"
                         BorderBrush="#6891DF"
@@ -116,7 +115,7 @@
                 <StackPanel>
                     <Border
                         Margin="10,5,10,0"
-                        Width="970"
+                        Width="670"
                         Height="50"
                         CornerRadius="15"
                         Background="White"
@@ -130,9 +129,9 @@
                         </Border.BorderBrush>
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="150"/>
-                                <ColumnDefinition Width="250"/>
-                                <ColumnDefinition Width="200"/>
+                                <ColumnDefinition Width="80"/>
+                                <ColumnDefinition Width="190"/>
+                                <ColumnDefinition Width="160"/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
                             <Grid Grid.Column="0">
@@ -140,10 +139,10 @@
                                     <TextBlock Text="MÃ KH"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"
-                                           FontFamily="{StaticResource MaterialDesignFont}"
+                                           FontFamily="{StaticResource Custom}"
                                            FontSize="18"
                                            FontWeight="SemiBold"
-                                               Margin="30,0,0,0"
+                                               Margin="10,0,0,0"
                                            />
 
                                 </StackPanel>
@@ -155,10 +154,10 @@
                                     <TextBlock Text="TÊN KHÁCH HÀNG"
                                            HorizontalAlignment="Left"
                                            VerticalAlignment="Center"
-                                           FontFamily="{StaticResource MaterialDesignFont}"
+                                           FontFamily="{StaticResource Custom}"
                                            FontSize="18"
                                            FontWeight="SemiBold"
-                                               Margin="30,0,0,0"
+                                               Margin="10,0,0,0"
                                            />
 
                                 </StackPanel>
@@ -169,10 +168,10 @@
                                     <TextBlock Text="SỐ ĐIỆN THOẠI"
                                            HorizontalAlignment="Left"
                                            VerticalAlignment="Center"
-                                           FontFamily="{StaticResource MaterialDesignFont}"
+                                           FontFamily="{StaticResource Custom}"
                                            FontSize="18"
                                            FontWeight="SemiBold"
-                                               Margin="25,0,0,0"
+                                               Margin="15,0,0,0"
                                            />
 
                                 </StackPanel>
@@ -183,10 +182,10 @@
                                     <TextBlock Text="ĐỊA CHỈ"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"
-                                           FontFamily="{StaticResource MaterialDesignFont}"
+                                           FontFamily="{StaticResource Custom}"
                                            FontSize="18"
                                            FontWeight="SemiBold"
-                                               Margin="140,0,0,0"
+                                               Margin="85,0,0,0"
                                            />
                                 </StackPanel>
 
@@ -198,8 +197,8 @@
                     <ListView
                         x:Name="CustomersListView"
                         ItemsSource="{Binding}"
-                        Height="490"
-                        Width="970"
+                        Height="400"
+                        Width="670"
                         SelectionMode="Single"
                         ScrollViewer.VerticalScrollBarVisibility="Hidden"
                         >
@@ -285,5 +284,3 @@
 
     </Border>
 </Page>
-
-
