@@ -91,14 +91,18 @@ Kinh tế ngày càng phát triển, đây là thời buổi của công nghệ,
 
 ### 5. Tính năng
 
-  * Quản lý sản phẩm
+  * Quản lý sản phẩm 
   * Quản lý hóa đơn
   * Quản lý khách hàng
   * Quản lý nhân viên
   * Quản lý nhập hàng
   * Đăng nhập và đăng xuất
   * Báo cáo và thống kê
-  * Cài đặt
+  * Giảm giá sản phẩm theo hóa đơn
+  * Xuất Voucher, áp dụng Voucher
+  * Cài đặt thông tin tài khoản
+  * Thay đổi mật khẩu
+  * Lấy lại mật khẩu
 
 <!-- TÁC GIẢ -->
 <div id="Tacgia"></div>
