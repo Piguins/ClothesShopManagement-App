@@ -1,17 +1,23 @@
-﻿<Page x:Class="Demo.View.DetailOrder"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Demo.View"
-      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
-      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-      mc:Ignorable="d" 
-      d:DesignHeight="605" d:DesignWidth="700"
-      DataContext="{StaticResource OrVM}">
-
+﻿<Window x:Class="Demo.View.DetailsOrder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo.View"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="AddImportView" 
+        DataContext="{StaticResource AddImportVM}"
+        x:Name="AddImportwd"
+        Height="600" 
+        Width="700" SizeToContent="Manual" WindowStartupLocation="CenterScreen">
     <Border
-        x:Name="xx"
+        x:Name="DetailsOrder"
         CornerRadius="15"
         Background="Transparent"
         >
@@ -480,4 +486,4 @@
             </Grid>
         </Grid>
     </Border>
-</Page>
+</Window>

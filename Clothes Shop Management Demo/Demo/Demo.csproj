@@ -103,14 +103,20 @@
     <Compile Include="ViewModel\DetailImportViewModel.cs" />
     <Compile Include="ViewModel\DetailCustomer.cs" />
     <Compile Include="ViewModel\CustomerViewModel.cs" />
+    <Compile Include="View\AddCustomerView.xaml.cs">
+      <DependentUpon>AddCustomerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddImpotView.xaml.cs">
+      <DependentUpon>AddImpotView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ChangePassword.xaml.cs">
       <DependentUpon>ChangePassword.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\CustomersView.xaml.cs">
       <DependentUpon>CustomersView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\DetailOrder.xaml.cs">
-      <DependentUpon>DetailOrder.xaml</DependentUpon>
+    <Compile Include="View\DetailsOrder.xaml.cs">
+      <DependentUpon>DetailsOrder.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ForgetPassView.xaml.cs">
       <DependentUpon>ForgetPassView.xaml</DependentUpon>
@@ -162,6 +168,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\AddCustomerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AddImpotView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\ChangePassword.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -170,7 +184,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\DetailOrder.xaml">
+    <Page Include="View\DetailsOrder.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -20,7 +20,7 @@
     <Border
                     Height="605"
                     Width="700"
-                    Background="White"
+                    Background="Transparent"
                     CornerRadius="40"
                     Padding="13.75,0,6.875,0"
                     >

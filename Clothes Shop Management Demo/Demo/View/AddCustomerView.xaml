@@ -207,6 +207,7 @@
                                 BorderThickness="0"
                                 x:Name="btnupdate"
                                 materialDesign:ButtonAssist.CornerRadius="15"
+                                FontFamily="{StaticResource Custom}"
                                 >
                             <Button.Background>
                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0,0.5">

@@ -12,7 +12,7 @@
     <Border
         Height="605"
         Width="700"
-        Background="White"
+        Background="Transparent"
         CornerRadius="20"
         BorderThickness="5">
         <Grid>

@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Demo.View
 {
     /// <summary>
-    /// Interaction logic for DetailOrder.xaml
+    /// Interaction logic for DetailsOrder.xaml
     /// </summary>
-    public partial class DetailOrder : Page
+    public partial class DetailsOrder : Window
     {
-        public DetailOrder()
+        public DetailsOrder()
         {
             InitializeComponent();
         }
