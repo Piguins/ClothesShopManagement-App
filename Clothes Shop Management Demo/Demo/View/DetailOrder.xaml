@@ -13,13 +13,8 @@
     <Border
         x:Name="xx"
         CornerRadius="15"
+        Background="Transparent"
         >
-        <Border.Background>
-            <LinearGradientBrush EndPoint="0.5,1.5" StartPoint="0,0.5">
-                <GradientStop Color="White" Offset="0"/>
-                <GradientStop Color="#6891DF" Offset="1"/>
-            </LinearGradientBrush>
-        </Border.Background>
         <i:Interaction.Triggers>
             <i:EventTrigger EventName="MouseLeftButtonDown">
                 <i:InvokeCommandAction Command="{Binding MoveWindow}"
@@ -62,7 +57,7 @@
             <Grid Grid.Row="1">
                 <TextBlock
                     Text="HÓA ĐƠN"
-                    Foreground="Black"
+                    Foreground="#6C63FF"
                     FontFamily="{StaticResource Custom}"
                     FontSize="30"
                     HorizontalAlignment="Center"
@@ -411,7 +406,7 @@
                                     FontSize="12"
                                     x:Name="deletebtn"
                                     FontFamily="{StaticResource Custom}"
-                                    Background="White"
+                                    Background="LightPink"
                                     Width="150"
                                     VerticalAlignment="Center"
                                     Margin="33,0,34,0"
@@ -433,21 +428,21 @@
                     <StackPanel>
                         <TextBlock
                             Margin="0,6,0,0"
-                            Foreground="White"
+                            Foreground="#6C63FF"
                             Text="GIẢM GIÁ: "
                             FontFamily="{StaticResource Custom}"
                             FontSize="16"
                         />
                         <TextBlock
                             Margin="0,6,0,0"
-                            Foreground="White"
+                            Foreground="#6C63FF"
                             Text="GIÁ ĐÃ TRỪ KHUYẾN MÃI: "
                             FontFamily="{StaticResource Custom}"
                             FontSize="16"
                         />
                         <TextBlock
                             Margin="0,6,0,0"
-                            Foreground="White"
+                            Foreground="#6C63FF"
                             Text="TỔNG TIỀN: "
                             FontFamily="{StaticResource Custom}"
                             FontSize="16"
@@ -459,7 +454,7 @@
                         <TextBlock
                             HorizontalAlignment="Right"
                             Margin="0,6,10,0"
-                            Foreground="White"
+                            Foreground="Black"
                             x:Name="GG"
                             FontFamily="{StaticResource Custom}"
                             FontSize="16"
@@ -467,7 +462,7 @@
                         <TextBlock
                             HorizontalAlignment="Right"
                             Margin="0,6,10,0"
-                            Foreground="White"
+                            Foreground="Black"
                             x:Name="TT1"
                             FontFamily="{StaticResource Custom}"
                             FontSize="16"
@@ -475,7 +470,7 @@
                         <TextBlock
                             HorizontalAlignment="Right"
                             Margin="0,6,10,0"
-                            Foreground="White"
+                            Foreground="Black"
                             x:Name="TT"
                             FontFamily="{StaticResource Custom}"
                             FontSize="16"
