@@ -41,7 +41,7 @@
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="#092968"></Setter>
+                <Setter Property="Background" Value="#4F48A1"></Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -85,7 +85,7 @@
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="LightPink"></Setter>
+                <Setter Property="Background" Value="#4F48A1"></Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -129,7 +129,7 @@
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="LightPink"></Setter>
+                <Setter Property="Background" Value="#4F48A1"></Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -173,7 +173,7 @@
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="LightPink"></Setter>
+                <Setter Property="Background" Value="#4F48A1"></Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -217,7 +217,7 @@
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="LightPink"></Setter>
+                <Setter Property="Background" Value="#4F48A1"></Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -261,7 +261,7 @@
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="LightPink"></Setter>
+                <Setter Property="Background" Value="#4F48A1"></Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -305,7 +305,7 @@
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="LightPink"></Setter>
+                <Setter Property="Background" Value="#4F48A1"></Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -349,7 +349,7 @@
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsChecked" Value="True">
-                <Setter Property="Background" Value="LightPink"></Setter>
+                <Setter Property="Background" Value="#4F48A1"></Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -396,7 +396,7 @@
         </Style.Setters>
         <Style.Triggers>
             <Trigger Property="IsPressed" Value="True">
-                <Setter Property="Background" Value="LightPink"></Setter>
+                <Setter Property="Background" Value="#4F48A1"></Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -416,8 +416,8 @@
         </Setter>
     </Style>
     <Style x:Key="CalendarButtonStyle1" TargetType="{x:Type CalendarButton}">
-        <Setter Property="Background" Value="LightPink"/>
-        <Setter Property="BorderBrush" Value="LightPink"/>
+        <Setter Property="Background" Value="#4F48A1"/>
+        <Setter Property="BorderBrush" Value="#4F48A1"/>
         <Setter Property="MinWidth" Value="40"/>
         <Setter Property="MinHeight" Value="42"/>
         <Setter Property="FontSize" Value="12"/>
@@ -497,7 +497,7 @@
                         <Rectangle x:Name="SelectedBackground" Fill="{TemplateBinding Background}" Opacity="0" RadiusY="1" RadiusX="1"/>
                         <Rectangle x:Name="Background" Fill="{TemplateBinding Background}" Opacity="0" RadiusY="1" RadiusX="1"/>
                         <ContentPresenter x:Name="NormalText" TextElement.Foreground="White" TextElement.FontWeight="Bold" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="1,0,1,1" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                        <Rectangle x:Name="CalendarButtonFocusVisual" IsHitTestVisible="false" RadiusY="1" RadiusX="1" Stroke="LightPink" Visibility="Collapsed"/>
+                        <Rectangle x:Name="CalendarButtonFocusVisual" IsHitTestVisible="false" RadiusY="1" RadiusX="1" Stroke="#4F48A1" Visibility="Collapsed"/>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsFocused" Value="True">
@@ -777,13 +777,13 @@
                                 </VisualState>
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
-                        <Rectangle x:Name="TodayBackground" Fill="LightPink" Opacity="0" RadiusY="1" RadiusX="1"/>
-                        <Rectangle x:Name="SelectedBackground" Fill="LightPink" Opacity="0" RadiusY="1" RadiusX="1"/>
+                        <Rectangle x:Name="TodayBackground" Fill="#4F48A1" Opacity="0" RadiusY="1" RadiusX="1"/>
+                        <Rectangle x:Name="SelectedBackground" Fill="#4F48A1" Opacity="0" RadiusY="1" RadiusX="1"/>
                         <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}"/>
-                        <Rectangle x:Name="HighlightBackground" Fill="LightPink" Opacity="0" RadiusY="1" RadiusX="1"/>
+                        <Rectangle x:Name="HighlightBackground" Fill="#4F48A1" Opacity="0" RadiusY="1" RadiusX="1"/>
                         <ContentPresenter x:Name="NormalText" TextElement.Foreground="White" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="5,1,5,1" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                         <Path x:Name="Blackout" Data="M8.1772461,11.029181 L10.433105,11.029181 L11.700684,12.801641 L12.973633,11.029181 L15.191895,11.029181 L12.844727,13.999395 L15.21875,17.060919 L12.962891,17.060919 L11.673828,15.256231 L10.352539,17.060919 L8.1396484,17.060919 L10.519043,14.042364 z" Fill="#FF000000" HorizontalAlignment="Stretch" Margin="3" Opacity="0" RenderTransformOrigin="0.5,0.5" Stretch="Fill" VerticalAlignment="Stretch"/>
-                        <Rectangle x:Name="DayButtonFocusVisual" IsHitTestVisible="false" RadiusY="1" RadiusX="1" Stroke="LightPink" Visibility="Collapsed"/>
+                        <Rectangle x:Name="DayButtonFocusVisual" IsHitTestVisible="false" RadiusY="1" RadiusX="1" Stroke="#4F48A1" Visibility="Collapsed"/>
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

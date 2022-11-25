@@ -7,12 +7,25 @@
       mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="700"
       Title="HomeView"
-      DataContext="{StaticResource HomeVM}">
+      DataContext="{StaticResource HomeVM}"
+      Name="HomeViewPage">
 
+    <Page.Triggers>
+        <EventTrigger RoutedEvent="Page.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <ThicknessAnimation Storyboard.TargetName="HomeViewPage"
+                                        Storyboard.TargetProperty="Margin"
+                                        From="425,0,0,0"
+                                        To="0"
+                                        Duration="0:0:0.2" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Page.Triggers>
 
-    <Border Background="White"
-            CornerRadius="20"
-            >
+    <Border 
+            CornerRadius="20">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="65"/>
@@ -22,11 +35,14 @@
 
             <Grid Grid.Row="0">
                 <TextBlock
-                    VerticalAlignment="Center" 
-                    FontSize="40" Margin="20,0,0,0" 
+                    VerticalAlignment="Center"
+                   
+                    FontSize="30" Margin="40,10,0,0" 
                     FontFamily="{StaticResource Custom}" 
-                    Foreground="Black" 
-                    HorizontalAlignment="Center"
+                    Foreground="#6C63FF"
+                    FontWeight="Bold"
+                    HorizontalAlignment="Left"
+                  
                     >TRANG CHỦ</TextBlock>
             </Grid>
 
@@ -34,7 +50,9 @@
 
             </Grid>
 
-            <Grid Grid.Row="2">
+            <Grid Grid.Row="2"
+                  Margin="10,5,0,0"
+                  >
                 <StackPanel>
                     <TextBlock Text="Hoạt động trong ngày:"
                            FontSize="20"
@@ -45,9 +63,9 @@
 
                     <Canvas>
                         <Border
-                        CornerRadius="20"
-                        Height="130"
-                        Width="200"
+                        CornerRadius="15"
+                        Height="100"
+                        Width="170"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top" Canvas.Left="20" Canvas.Top="20"
                                     >
@@ -70,7 +88,7 @@
                                         <RowDefinition Height="55"/>
                                     </Grid.RowDefinitions>
                                     <Grid Grid.Row="0" Width="150">
-                                        <TextBlock Text="Số đơn bán ra trong ngày:" TextWrapping="Wrap" FontSize="20" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto"/>
+                                        <TextBlock Text="Số đơn bán ra trong ngày:" TextWrapping="Wrap" FontSize="17" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto" Margin="0,10,0,0"/>
                                     </Grid>
                                     <Grid Grid.Row="1" VerticalAlignment="Center">
                                         <Grid.ColumnDefinitions>
@@ -88,11 +106,11 @@
                             </StackPanel>
                         </Border>
                         <Border
-                                    CornerRadius="20"
-                                    Height="130"
-                                    Width="200"                                     
+                                    CornerRadius="15"
+                                    Height="100"
+                                    Width="170"                                     
                                     HorizontalAlignment="Left"
-                                    VerticalAlignment="Top" Canvas.Left="250" Canvas.Top="20">
+                                    VerticalAlignment="Top" Canvas.Left="235" Canvas.Top="20">
                             <Border.Effect>
                                 <DropShadowEffect BlurRadius="15" Direction="-90"
                               RenderingBias="Quality" ShadowDepth="5"/>
@@ -111,7 +129,7 @@
                                         <RowDefinition Height="55"/>
                                     </Grid.RowDefinitions>
                                     <Grid Grid.Row="0" Height="30" VerticalAlignment="Top">
-                                        <TextBlock Text="Doanh thu ngày:" TextWrapping="Wrap" FontSize="20" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto"/>
+                                        <TextBlock Text="Doanh thu ngày:" TextWrapping="Wrap" FontSize="17" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto" Margin="0,10,0,-24"/>
                                     </Grid>
                                     <Grid Grid.Row="1">
                                         <Grid.ColumnDefinitions>
@@ -130,9 +148,9 @@
                             </StackPanel>
                         </Border>
                         <Border
-                                    CornerRadius="20"
-                                    Height="130"
-                                    Width="200" Canvas.Right="40" Canvas.Top="20" Canvas.Left="480" HorizontalAlignment="Left" VerticalAlignment="Center"                         
+                                    CornerRadius="15"
+                                    Height="100"
+                                    Width="170" Canvas.Right="40" Canvas.Top="20" Canvas.Left="450" HorizontalAlignment="Left" VerticalAlignment="Center"                         
                                     >
                             <Border.Effect>
                                 <DropShadowEffect BlurRadius="15" Direction="-90"
@@ -153,7 +171,7 @@
                                         <RowDefinition Height="55"/>
                                     </Grid.RowDefinitions>
                                     <Grid Grid.Row="0" Width="150">
-                                        <TextBlock Text="Số sản phẩm bán trong ngày:" TextWrapping="Wrap" FontSize="20" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto"/>
+                                        <TextBlock Text="Số sản phẩm bán trong ngày:" TextWrapping="Wrap" FontSize="17" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto" Margin="0,10,0,0"/>
                                     </Grid>
                                     <Grid Grid.Row="1" VerticalAlignment="Center">
                                         <Grid.ColumnDefinitions>

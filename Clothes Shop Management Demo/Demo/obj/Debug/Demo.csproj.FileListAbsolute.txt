@@ -202,7 +202,6 @@ C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Man
 C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ForgetPassView.g.cs
 C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\LoginViewPage.g.cs
 C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\MainView.g.cs
-C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ProductView.g.cs
 C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\SettingView.g.cs
 C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\SignUpView.g.cs
 C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\GeneratedInternalTypeHelper.g.cs
@@ -210,7 +209,6 @@ C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Man
 C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ForgetPassView.baml
 C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\LoginViewPage.baml
 C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\MainView.baml
-C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ProductView.baml
 C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\SettingView.baml
 C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\SignUpView.baml
 E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ForgetPassView.g.cs
@@ -310,3 +308,18 @@ D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\V
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailOrder.baml
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\OrderView.baml
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\QLNVView.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\AddCustomerView.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\AddImpotView.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ChangePassword.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\HomeView.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\OrderView.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ProductViewPage.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\QLNVView.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\AddCustomerView.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\AddImpotView.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ChangePassword.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailsOrder.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\HomeView.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\OrderView.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ProductViewPage.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\QLNVView.baml
