@@ -91,7 +91,7 @@
                                 </i:EventTrigger>
                             </i:Interaction.Triggers>
                         </TextBox>
-                        <Button
+                        <Button x:Name="AddNV"
                         Content="THÊM"
                         Margin="124,0,0,0"
                         Width="90"
@@ -100,7 +100,7 @@
                         BorderBrush="Transparent"
                         Foreground="White"
                         materialDesign:ButtonAssist.CornerRadius="6"
-                        Background="#6C63FF"
+                        Background="#6C63FF" Click="AddNV_Click"
                         >
                             <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="Click">

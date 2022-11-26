@@ -109,11 +109,17 @@
     <Compile Include="View\AddImpotView.xaml.cs">
       <DependentUpon>AddImpotView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\AddNDView.xaml.cs">
+      <DependentUpon>AddNDView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ChangePassword.xaml.cs">
       <DependentUpon>ChangePassword.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\CustomersView.xaml.cs">
       <DependentUpon>CustomersView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DetailNDView.xaml.cs">
+      <DependentUpon>DetailNDView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ForgetPassView.xaml.cs">
       <DependentUpon>ForgetPassView.xaml</DependentUpon>
@@ -173,11 +179,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\AddNDView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\ChangePassword.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\CustomersView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DetailNDView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -8,5 +8,6 @@ namespace Demo.ViewModel
 {
     internal class QLNVViewModel
     {
+
     }
 }

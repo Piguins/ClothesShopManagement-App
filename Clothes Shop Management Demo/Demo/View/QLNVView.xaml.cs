@@ -24,5 +24,11 @@ namespace Demo.View
         {
             InitializeComponent();
         }
+
+        private void AddNV_Click(object sender, RoutedEventArgs e)
+        {
+            AddNDView addNDView = new AddNDView();
+            addNDView.Show();
+        }
     }
 }
