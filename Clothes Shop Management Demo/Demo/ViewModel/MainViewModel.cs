@@ -21,6 +21,9 @@ namespace Demo.ViewModel
         public ICommand QuanLyCM { get; set; }
         public ICommand HomeCM { get; set; }
 
+        public ICommand ImportCM { get; set; }
+
+        public ICommand OrderCM { get; set; }
         public MainViewModel()
         {
             LoadPageCM = new RelayCommand<Frame>((p) => { return true; }, (p) =>
@@ -39,6 +42,16 @@ namespace Demo.ViewModel
                 MainFrame.Content = new QLNVView();
             });
 
+            OrderCM = new RelayCommand<FrameworkElement>((p) => { return true; }, (p) =>
+            {
+                MainFrame.Content = new OrderView();
+            });
+
+            ImportCM = new RelayCommand<FrameworkElement>((p) => { return true; }, (p) =>
+            {
+                MainFrame.Content = new ImportView();
+            });
+
             SettingCM = new RelayCommand<Frame>((p) => { return true; }, (p) =>
             {
                 MainFrame.Content = new SettingView();
@@ -48,6 +61,7 @@ namespace Demo.ViewModel
             {
                 MainFrame.Content = new ChangePassword();
             });
+
 
             SignoutCM = new RelayCommand<FrameworkElement>((p) => { return p == null ? false : true; }, (p) =>
             {

@@ -243,8 +243,8 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\DetailsOrder.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\ForgetPassView.xaml">
       <SubType>Designer</SubType>

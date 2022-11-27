@@ -8,7 +8,7 @@
       xmlns:uc="clr-namespace:Demo.Resource"
       xmlns:local="clr-namespace:Demo.View"
       mc:Ignorable="d" 
-      d:DesignHeight="490" d:DesignWidth="600"
+      d:DesignHeight="605" d:DesignWidth="705"
       Title="HomeView"
       DataContext="{StaticResource HomeVM}"
       Name="HomeViewPage">
@@ -27,13 +27,14 @@
         </EventTrigger>
     </Page.Triggers>
 
-    <Border Background="Transparent"
-            CornerRadius="20">
+    <Border Background="#FF9F9FC6"
+            CornerRadius="20"
+            >
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="65"/>
+                <RowDefinition Height="*"/>
                 <RowDefinition Height="100"/>
-                <RowDefinition />
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0">
@@ -49,25 +50,25 @@
                     >TRANG CHỦ</TextBlock>
             </Grid>
 
-            <Grid Grid.Row="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="180"/>
-                    <ColumnDefinition Width="180"/>
-                    <ColumnDefinition Width="180"/>
-                </Grid.ColumnDefinitions>
-
-                <uc:InfoCard Grid.Column="0" Title="Total Views" Icon="Eye" Number="654,947" Background1="#827BFF" Background2="#D9B5FF" EllipseBackground1="#B298FD" EllipseBackground2="#E4BBFF"></uc:InfoCard>
-                <uc:InfoCard Grid.Column="1" Title="Total Orders" Icon="ShoppingCart" Number="192,320" Background1="#FD8A87" Background2="#F3AB92" EllipseBackground1="#FBD5A8" EllipseBackground2="#FDB89B" Grid.ColumnSpan="2" Margin="30,0,150,0"/>
-                <uc:InfoCard Grid.Column="2" Title="Total Revenue" Icon="Coins" Number="$14,528" Background1="#FC84CB" Background2="#FC8FAE" EllipseBackground1="#FC8FAE" EllipseBackground2="#FFABE6" Margin="60,0,-60,0"/>
-            </Grid>
-
             <Grid Grid.Row="2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Border CornerRadius="20" Padding="35 25" Background="#243771" Margin="0,30,60,10">
+                <uc:InfoCard Grid.Column="0" Title="Total Views" Icon="Eye" Number="654,947" Background1="#827BFF" Background2="#D9B5FF" EllipseBackground1="#B298FD" EllipseBackground2="#E4BBFF"/>
+                <uc:InfoCard Grid.Column="1" Title="Total Orders" Icon="ShoppingCart" Number="192,320" Background1="#FD8A87" Background2="#F3AB92" EllipseBackground1="#FBD5A8" EllipseBackground2="#FDB89B"/>
+                <uc:InfoCard Grid.Column="2" Title="Total Revenue" Icon="Coins" Number="$14,528" Background1="#FC84CB" Background2="#FC8FAE" EllipseBackground1="#FC8FAE" EllipseBackground2="#FFABE6"/>
+            </Grid>
+
+            <Grid Grid.Row="1" Margin="5,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border CornerRadius="20" Padding="35 25" Background="#243771"  Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="685" Margin="0,0,0,25">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="auto"/>
@@ -147,22 +148,6 @@
 
                     </Grid>
 
-                </Border>
-                <Border Grid.Column="1" CornerRadius="20" Padding="0 25" Background="#243771" Margin="0,30,62,10">
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="auto"/>
-                            <RowDefinition Height="*"/>
-                        </Grid.RowDefinitions>
-
-                        <StackPanel Orientation="Horizontal" Margin="28 0 0 15">
-
-                        </StackPanel>
-
-                        <StackPanel Grid.Row="1">
-
-                        </StackPanel>
-                    </Grid>
                 </Border>
             </Grid>
         </Grid>

@@ -25,7 +25,7 @@
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
                 <TextBlock VerticalAlignment="Center" 
-                           HorizontalAlignment="Center"
+                           HorizontalAlignment="Left"
                            FontSize="30" Margin="20,0,0,0" 
                            FontFamily="{StaticResource Custom}" 
                            Foreground="#6C63FF" 

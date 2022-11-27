@@ -11,6 +11,7 @@
       DataContext="{StaticResource OrVM}"
       x:Name="Orderwd">
 
+    
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">
             <i:InvokeCommandAction Command="{Binding LoadCsCommand}"

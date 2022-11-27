@@ -512,3 +512,15 @@ D:\College\Đồ Án LTTQ\Repository\1\Clothes-Shop-Management-Project\Clothes S
 D:\College\Đồ Án LTTQ\Repository\1\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.GenerateResource.cache
 D:\College\Đồ Án LTTQ\Repository\1\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache
 D:\College\Đồ Án LTTQ\Repository\1\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.CopyComplete
+D:\năm 2\Nhập môn mạng máy tính\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\AddOrderView.g.cs
+D:\năm 2\Nhập môn mạng máy tính\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\AddProductView.g.cs
+D:\năm 2\Nhập môn mạng máy tính\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailImport.g.cs
+D:\năm 2\Nhập môn mạng máy tính\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailsOrder.g.cs
+D:\năm 2\Nhập môn mạng máy tính\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ImportView.g.cs
+D:\năm 2\Nhập môn mạng máy tính\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\PrintOrderView.g.cs
+D:\năm 2\Nhập môn mạng máy tính\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\AddOrderView.baml
+D:\năm 2\Nhập môn mạng máy tính\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\AddProductView.baml
+D:\năm 2\Nhập môn mạng máy tính\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailImport.baml
+D:\năm 2\Nhập môn mạng máy tính\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailsOrder.baml
+D:\năm 2\Nhập môn mạng máy tính\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ImportView.baml
+D:\năm 2\Nhập môn mạng máy tính\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\PrintOrderView.baml
