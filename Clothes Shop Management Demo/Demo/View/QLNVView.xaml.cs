@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Demo.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,7 @@ namespace Demo.View
     /// </summary>
     public partial class QLNVView : Page
     {
+        public static Frame MainFrame { get; set; }
         public QLNVView()
         {
             InitializeComponent();

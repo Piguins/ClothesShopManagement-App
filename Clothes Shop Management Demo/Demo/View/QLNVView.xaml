@@ -102,6 +102,7 @@
                         Foreground="White"
                         materialDesign:ButtonAssist.CornerRadius="10"
                         Background="#6C63FF"
+                        Command="{Binding AddNVPage}"
                         >
                             <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="Click">
