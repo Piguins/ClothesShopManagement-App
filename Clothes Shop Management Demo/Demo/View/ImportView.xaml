@@ -134,17 +134,11 @@
                                     Width="600"
                                     Height="40"
                                     CornerRadius="10"                       
-                                 >
-                                    <Border.Background>
-                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                            <GradientStop Color="#FFE5D8" Offset="1"/>
-                                            <GradientStop Color="#FFCAD4" Offset="0"/>
-                                        </LinearGradientBrush>
-                                    </Border.Background>
+                                 >                                    
                                     <Grid>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="100"/>
-                                            <ColumnDefinition Width="200"/>
+                                            <ColumnDefinition Width="180"/>
+                                            <ColumnDefinition Width="250"/>
                                             <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
                                         <Grid Grid.Column="0">

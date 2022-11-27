@@ -26,7 +26,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Grid Grid.Column="0">
+            <Grid Grid.Column="1">
                 <Image 
                     x:Name="HinhAnh"
                     Source="{Binding linkimage}"
@@ -40,7 +40,7 @@
                     </i:Interaction.Triggers>
                 </Image>
             </Grid>
-            <Grid Grid.Column="1">
+            <Grid Grid.Column="0">
                 <StackPanel 
                                 Orientation="Vertical"
                                 Margin="15,30,0,0"
