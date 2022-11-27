@@ -30,5 +30,10 @@ namespace Demo.View
             AddNDView addNDView = new AddNDView();
             addNDView.Show();
         }
+
+        private void cbxChon_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

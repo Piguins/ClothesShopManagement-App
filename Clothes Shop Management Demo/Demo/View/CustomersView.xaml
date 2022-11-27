@@ -28,7 +28,7 @@
                         FontWeight="SemiBold"
                         FontFamily="{StaticResource Custom}"
                         FontSize="50"
-                        Foreground="#6891DF"
+                        Foreground="#6C63FF"
                         Margin="15,10,0,0" Width="650"
                     ><Run Text="KHÁCH HÀNG" />
                     </TextBlock>
@@ -72,7 +72,7 @@
                         Width="430"
                         Height="60"
                         Margin="15,0,0,0"
-                        BorderBrush="#6891DF"
+                        BorderBrush="#6C63FF"
                         Foreground="Gray"
                         FontSize="18"
                         FontWeight="SemiBold"
@@ -124,7 +124,7 @@
                         >
                         <Border.BorderBrush>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0.5">
-                                <GradientStop Color="#6891DF" Offset="0"/>
+                                <GradientStop Color="#6C63FF" Offset="0"/>
                                 <GradientStop Color="FloralWhite" Offset="1"/>
                             </LinearGradientBrush>
                         </Border.BorderBrush>

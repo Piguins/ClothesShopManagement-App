@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\năm 2\Nhập môn mạng máy tính\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\
 Demo
 none
 false
 DEBUG;TRACE
-D:\năm 2\Nhập môn mạng máy tính\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\App.xaml
-20-1496292379
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\App.xaml
+23793663751
 
-472075244436
-22912662916
-MainWindow.xaml;Resource\InfoCard.xaml;Resource\MainResource.xaml;Resource\StyleRecourse.xaml;View\AddCustomerView.xaml;View\AddImpotView.xaml;View\AddNDView.xaml;View\ChangePassword.xaml;View\CustomersView.xaml;View\DetailNDView.xaml;View\ForgetPassView.xaml;View\HomeView.xaml;View\LoginView.xaml;View\LoginViewPage.xaml;View\MainView.xaml;View\OrderView.xaml;View\ProductViewPage.xaml;View\QLNVView.xaml;View\SettingView.xaml;View\SignUpView.xaml;
+491894125520
+22-334814086
+MainWindow.xaml;Resource\InfoCard.xaml;Resource\MainResource.xaml;Resource\StyleRecourse.xaml;View\AddCustomerView.xaml;View\AddImpotView.xaml;View\AddNDView.xaml;View\AddOrderView.xaml;View\AddProductView.xaml;View\ChangePassword.xaml;View\CustomersView.xaml;View\DetailNDView.xaml;View\DetailsOrder.xaml;View\ForgetPassView.xaml;View\HomeView.xaml;View\LoginView.xaml;View\LoginViewPage.xaml;View\MainView.xaml;View\OrderView.xaml;View\ProductViewPage.xaml;View\QLNVView.xaml;View\SettingView.xaml;View\SignUpView.xaml;
 
-True
+False
 

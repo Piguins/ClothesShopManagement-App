@@ -33,7 +33,7 @@
             <Grid Grid.Row="0">
                 <TextBlock VerticalAlignment="Center" 
                            FontSize="30" Margin="20,0,0,0" 
-                           FontFamily="{StaticResource Custom}" Foreground="#6891DF" 
+                           FontFamily="{StaticResource Custom}" Foreground="#6C63FF" 
                            >ĐƠN HÀNG
                 <Image Source="/Resource/Image/shopping_cart_FILL0_wght400_GRAD0_opsz48.png" 
                        Stretch="None"

@@ -125,6 +125,12 @@
     <Compile Include="View\AddNDView.xaml.cs">
       <DependentUpon>AddNDView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\AddOrderView.xaml.cs">
+      <DependentUpon>AddOrderView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddProductView.xaml.cs">
+      <DependentUpon>AddProductView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ChangePassword.xaml.cs">
       <DependentUpon>ChangePassword.xaml</DependentUpon>
     </Compile>
@@ -133,6 +139,9 @@
     </Compile>
     <Compile Include="View\DetailNDView.xaml.cs">
       <DependentUpon>DetailNDView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DetailsOrder.xaml.cs">
+      <DependentUpon>DetailsOrder.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ForgetPassView.xaml.cs">
       <DependentUpon>ForgetPassView.xaml</DependentUpon>
@@ -200,6 +209,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\AddOrderView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AddProductView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\ChangePassword.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -211,6 +228,10 @@
     <Page Include="View\DetailNDView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DetailsOrder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\ForgetPassView.xaml">
       <SubType>Designer</SubType>

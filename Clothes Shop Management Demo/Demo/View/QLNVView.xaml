@@ -58,7 +58,8 @@
                         Height="38"
                         FontSize="14"
                         ItemsSource="{Binding listTK}"
-                        Width="110">
+                        Width="110"
+                        >
                             <ComboBox.ItemTemplate>
                                 <DataTemplate>
                                     <StackPanel Orientation="Horizontal">
@@ -99,7 +100,7 @@
                         FontFamily="{StaticResource Custom}"
                         BorderBrush="Transparent"
                         Foreground="White"
-                        materialDesign:ButtonAssist.CornerRadius="6"
+                        materialDesign:ButtonAssist.CornerRadius="10"
                         Background="#6C63FF" Click="AddNV_Click"
                         >
                             <i:Interaction.Triggers>

@@ -25,7 +25,7 @@
                 <TextBlock VerticalAlignment="Center" 
                            HorizontalAlignment="Center"
                            FontSize="40" Margin="20,0,0,0" 
-                           Foreground="#6891DF" FontWeight="SemiBold"
+                           Foreground="#6C63FF" FontWeight="SemiBold"
                            FontFamily="{StaticResource Custom}"
                            ><Run Text="SẢN PHẨM"/></TextBlock>
             </Grid>
@@ -40,7 +40,7 @@
                         BorderThickness="3">
                         <Border.BorderBrush>
                             <LinearGradientBrush EndPoint="0.5 ,1" StartPoint="0.5,0">
-                                <GradientStop Color="#6891DF" Offset="0"/>
+                                <GradientStop Color="#6C63FF" Offset="0"/>
                                 <GradientStop Color="LightPink" Offset="1"/>
                             </LinearGradientBrush>
                         </Border.BorderBrush>
@@ -81,7 +81,7 @@
                         BorderThickness="3">
                         <Border.BorderBrush>
                             <LinearGradientBrush EndPoint="0.5 ,1" StartPoint="0.5,0">
-                                <GradientStop Color="#6891DF" Offset="0"/>
+                                <GradientStop Color="#6C63FF" Offset="0"/>
                                 <GradientStop Color="LightPink" Offset="1"/>
                             </LinearGradientBrush>
                         </Border.BorderBrush>
@@ -115,7 +115,7 @@
                         Width="260"
                         Height="57"
                         Margin="20,0,0,0"
-                        BorderBrush="#6891DF"
+                        BorderBrush="#6C63FF"
                         Foreground="Gray"
                         FontSize="20"
                         FontWeight="SemiBold"

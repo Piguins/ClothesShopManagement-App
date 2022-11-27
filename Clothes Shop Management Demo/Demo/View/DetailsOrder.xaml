@@ -17,7 +17,7 @@
         Height="600" 
         Width="700" SizeToContent="Manual" WindowStartupLocation="CenterScreen">
     <Border
-        x:Name="DetailsOrder"
+        x:Name="DO1"
         CornerRadius="15"
         Background="Transparent"
         >
