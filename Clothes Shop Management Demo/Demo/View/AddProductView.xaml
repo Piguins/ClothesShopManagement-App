@@ -12,7 +12,7 @@
         ResizeMode="CanMinimize"
         x:Name="AddProductwd"
         DataContext="{StaticResource AddProductVM}"
-        Height="550" 
+        Height="605" 
         Width="700" WindowStartupLocation="CenterScreen">
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">

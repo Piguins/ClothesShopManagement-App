@@ -14,7 +14,7 @@
         Title="AddImportView" 
         DataContext="{StaticResource AddImportVM}"
         x:Name="AddImportwd"
-        Height="600" 
+        Height="605" 
         Width="700" SizeToContent="Manual" WindowStartupLocation="CenterScreen">
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">
