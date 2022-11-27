@@ -101,7 +101,7 @@
                         BorderBrush="Transparent"
                         Foreground="White"
                         materialDesign:ButtonAssist.CornerRadius="10"
-                        Background="#6C63FF" Click="AddNV_Click"
+                        Background="#6C63FF"
                         >
                             <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="Click">

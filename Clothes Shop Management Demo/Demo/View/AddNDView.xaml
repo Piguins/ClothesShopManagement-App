@@ -1,4 +1,4 @@
-﻿<Window x:Class="Demo.View.AddNDView"
+﻿<Page x:Class="Demo.View.AddNDView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -9,11 +9,9 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         DataContext="{StaticResource AddNDVM}"
         x:Name="AddNDwd"
-        WindowStyle="None"
-        ResizeMode="NoResize"
-        Background="White"
+        Background="Transparent"
         FontFamily="Josefin Sans"
-        AllowsTransparency="True"  Height="460" Width="650" WindowStartupLocation="CenterScreen">
+        Height="500" Width="700">
     <Border CornerRadius="15" >
         <Grid>
             <Grid.RowDefinitions>
@@ -29,25 +27,30 @@
                                 VerticalAlignment="Center"
                                 Margin="0,0,10,0"
                                 >
-                    <materialDesign:PackIcon x:Name="MinimizeButton" Kind="WindowMinimize" Foreground="#6C63FF" Height="24" Width="24" Margin="0,0,8,0" MouseDown="MinimizeButton_MouseDown">
-                        <i:Interaction.Triggers>
-                            <i:EventTrigger EventName="MouseLeftButtonDown">
-                                <i:InvokeCommandAction Command="{Binding Minimizewd}"
-                                                       CommandParameter="{Binding ElementName=AddNDwd}"></i:InvokeCommandAction>
-                            </i:EventTrigger>
-                        </i:Interaction.Triggers>
-                    </materialDesign:PackIcon>
-                    <materialDesign:PackIcon x:Name="CloseButton" Kind="CloseThick" Foreground="#6C63FF" Height="24" Width="24" MouseDown="CloseButton_MouseDown">
-                        <i:Interaction.Triggers>
-                            <i:EventTrigger EventName="MouseLeftButtonDown">
-                                <i:InvokeCommandAction Command="{Binding Closewd}"
-                                                       CommandParameter="{Binding ElementName=AddNDwd}"></i:InvokeCommandAction>
-                            </i:EventTrigger>
-                        </i:Interaction.Triggers>
-                    </materialDesign:PackIcon>
                 </StackPanel>
             </Grid>
             <Grid Grid.Row="1">
+                <StackPanel Orientation="Horizontal"
+                    Grid.Row="0">
+                    <Label Cursor="Hand"
+                   Height="50"
+                   Grid.Row="0"
+                   Width="50"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   x:Name="lbl">
+                        <materialDesign:PackIcon Kind="ArrowLeft"
+                                         Height="26"
+                                         Width="26"
+                                         Margin="20 0 0 0"/>
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="MouseLeftButtonDown">
+                                <i:InvokeCommandAction Command="{Binding CancelCM}"
+                                                CommandParameter="{Binding ElementName=lbl}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </Label>
+                </StackPanel>
                 <TextBlock
                     Text="THÊM THÔNG TIN NHÂN VIÊN"
                     HorizontalAlignment="Center"
@@ -186,9 +189,8 @@
                             </StackPanel>
                             <TextBox 
                                     Foreground="Black" 
-                                    Margin="-50,10,0,0"
+                                    Margin="-100,10,0,0"
                                     Style="{StaticResource MaterialDesignFilledTextBox}"
-                                    VerticalAlignment="Top"
                                     AcceptsReturn="True"
                                     TextWrapping="Wrap"
                                     MaxWidth="400" x:Name="Mail"
@@ -198,7 +200,7 @@
                                     materialDesign:HintAssist.Hint="Email" Width="390"/>
                             <TextBox 
                                     Foreground="Black" 
-                                    Margin="-50,10,0,0"
+                                    Margin="-100,10,0,0"
                                     Style="{StaticResource MaterialDesignFilledTextBox}"
                                     VerticalAlignment="Top"
                                     AcceptsReturn="True"
@@ -236,4 +238,4 @@
             </Grid>
         </Grid>
     </Border>
-</Window>
+</Page>

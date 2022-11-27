@@ -21,8 +21,14 @@ namespace Demo.ViewModel
         public string linkaddimage { get => _linkaddimage; set { _linkaddimage = value; OnPropertyChanged(); } }
         public ICommand AddNDCommand { get; set; }
         public ICommand AddImage { get; set; }
+        public ICommand CancelCM { get; set; }
+        public static Frame MainFrame { get; set; }
         public AddNDVM()
         {
+            CancelCM = new RelayCommand<object>((p) => { return p == null ? false : true; }, (p) =>
+            {
+                MainFrame.Content = new MainView();
+            });
             //linkaddimage = Const._localLink + "/Resource/Image/addava.png";
             //AddImage = new RelayCommand<ImageBrush>((p) => true, (p) => _AddImage(p));
         }
@@ -40,6 +46,6 @@ namespace Demo.ViewModel
             img.ImageSource = new BitmapImage(fileUri);
         }*/ //Cái này là để thêm hình & lưu vào database
             //nhưng mà mình chưa implement Model nên t (Minh)
-            //sẽ code tạm là show hình trên cái khung hình đại diện trong cái phần AddNDView.xaml.cs
+            //sẽ code tạm là show hình trên cái khung hình đại diện trong cái phần AddNDView.xaml.c
     }
 }

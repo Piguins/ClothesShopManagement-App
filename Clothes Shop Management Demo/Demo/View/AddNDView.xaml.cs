@@ -18,21 +18,11 @@ namespace Demo.View
     /// <summary>
     /// Interaction logic for AddNVView.xaml
     /// </summary>
-    public partial class AddNDView : Window
+    public partial class AddNDView : Page
     {
         public AddNDView()
         {
             InitializeComponent();
-        }
-
-        private void MinimizeButton_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            WindowState = WindowState.Minimized;
-        }
-
-        private void CloseButton_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            Close();
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
