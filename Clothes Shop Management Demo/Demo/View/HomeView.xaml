@@ -2,10 +2,13 @@
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+      xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+      xmlns:uc="clr-namespace:Demo.Resource"
       xmlns:local="clr-namespace:Demo.View"
       mc:Ignorable="d" 
-      d:DesignHeight="600" d:DesignWidth="700"
+      d:DesignHeight="490" d:DesignWidth="600"
       Title="HomeView"
       DataContext="{StaticResource HomeVM}"
       Name="HomeViewPage">
@@ -24,13 +27,13 @@
         </EventTrigger>
     </Page.Triggers>
 
-    <Border 
+    <Border Background="Transparent"
             CornerRadius="20">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="65"/>
+                <RowDefinition Height="100"/>
                 <RowDefinition />
-                <RowDefinition Height="200"/>
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0">
@@ -47,150 +50,120 @@
             </Grid>
 
             <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="180"/>
+                </Grid.ColumnDefinitions>
 
+                <uc:InfoCard Grid.Column="0" Title="Total Views" Icon="Eye" Number="654,947" Background1="#827BFF" Background2="#D9B5FF" EllipseBackground1="#B298FD" EllipseBackground2="#E4BBFF"></uc:InfoCard>
+                <uc:InfoCard Grid.Column="1" Title="Total Orders" Icon="ShoppingCart" Number="192,320" Background1="#FD8A87" Background2="#F3AB92" EllipseBackground1="#FBD5A8" EllipseBackground2="#FDB89B" Grid.ColumnSpan="2" Margin="30,0,150,0"/>
+                <uc:InfoCard Grid.Column="2" Title="Total Revenue" Icon="Coins" Number="$14,528" Background1="#FC84CB" Background2="#FC8FAE" EllipseBackground1="#FC8FAE" EllipseBackground2="#FFABE6" Margin="60,0,-60,0"/>
             </Grid>
 
-            <Grid Grid.Row="2"
-                  Margin="10,5,0,0"
-                  >
-                <StackPanel>
-                    <TextBlock Text="Hoạt động trong ngày:"
-                           FontSize="20"
-                           Foreground="Black"
-                           FontFamily="{StaticResource Custom}">
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="300"/>
+                </Grid.ColumnDefinitions>
 
-                    </TextBlock>
+                <Border CornerRadius="20" Padding="35 25" Background="#243771" Margin="0,30,60,10">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
 
-                    <Canvas>
-                        <Border
-                        CornerRadius="15"
-                        Height="100"
-                        Width="170"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Top" Canvas.Left="20" Canvas.Top="20"
-                                    >
-                            <Border.Effect>
-                                <DropShadowEffect BlurRadius="15" Direction="-90"
-                              RenderingBias="Quality" ShadowDepth="5"/>
-                            </Border.Effect>
-                            <Border.Background>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#FFC165DD" Offset="0"/>
-                                    <GradientStop Color="#FF5C27FE" Offset="1"/>
+                        <StackPanel Orientation="Horizontal" Margin="0 0 0 25">
+                            <fa:IconImage Icon="Circle" />
+                            <TextBlock Text="Profit" />
+                        </StackPanel>
+
+                        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0 0 0 25" Grid.Row="1">
+                            <TextBlock Text="70000" Foreground="#717EB2" Margin="0 0 0 25"/>
+                            <TextBlock Text="60000" Foreground="#717EB2" Margin="0 0 0 25"/>
+                            <TextBlock Text="50000" Foreground="#717EB2" Margin="0 0 0 25"/>
+                            <TextBlock Text="40000" Foreground="#717EB2" Margin="0 0 0 25"/>
+                            <TextBlock Text="30000" Foreground="#717EB2" Margin="0 0 0 25"/>
+                            <TextBlock Text="20000" Foreground="#717EB2" Margin="0 0 0 25"/>
+                            <TextBlock Text="10000" Foreground="#717EB2" Margin="0 0 0 25"/>
+                            <TextBlock Text="0" Foreground="#717EB2" HorizontalAlignment="Right"/>
+                        </StackPanel>
+
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="1" Orientation="Horizontal" Margin="50 0 0 0">
+                            <TextBlock Text="1" Foreground="#717EB2"/>
+                            <TextBlock Text="2" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="3" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="4" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="5" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="6" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="7" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="8" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="9" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="10" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="11" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="12" Foreground="#717EB2" Margin="41 0 0 0"/>
+                        </StackPanel>
+
+                        <lvc:CartesianChart Grid.Row="1" Margin="45 0 0 25">
+                            <lvc:CartesianChart.Background>
+                                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                    <GradientStop Color="#26376F" Offset="0"/>
+                                    <GradientStop Color="#6A6AE4" Offset="1.5"/>
                                 </LinearGradientBrush>
-                            </Border.Background>
-                            <StackPanel HorizontalAlignment="Center"
-                                    VerticalAlignment="Center">
+                            </lvc:CartesianChart.Background>
 
-                                <Grid>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="55"/>
-                                        <RowDefinition Height="55"/>
-                                    </Grid.RowDefinitions>
-                                    <Grid Grid.Row="0" Width="150">
-                                        <TextBlock Text="Số đơn bán ra trong ngày:" TextWrapping="Wrap" FontSize="17" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto" Margin="0,10,0,0"/>
-                                    </Grid>
-                                    <Grid Grid.Row="1" VerticalAlignment="Center">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="100"/>
-                                            <ColumnDefinition Width="50"/>
-                                        </Grid.ColumnDefinitions>
-                                        <Grid Grid.Column="1">
+                            <lvc:CartesianChart.DataTooltip>
+                                <lvc:DefaultTooltip Background="#24336A" Foreground="#D5E2FF"/>
+                            </lvc:CartesianChart.DataTooltip>
 
-                                        </Grid>
-                                        <TextBlock x:Name="DonNgay" VerticalAlignment="Center" Text="0" TextAlignment="Left" FontWeight="Bold" TextWrapping="Wrap" FontSize="30" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto">
+                            <lvc:CartesianChart.AxisX>
+                                <lvc:Axis MinValue="1" MaxValue="5" Foreground="#717EB2" ShowLabels="False">
+                                    <lvc:Axis.Separator>
+                                        <lvc:Separator StrokeThickness="0" Step="1"/>
+                                    </lvc:Axis.Separator>
+                                </lvc:Axis>
+                            </lvc:CartesianChart.AxisX>
 
-                                        </TextBlock>
-                                    </Grid>
-                                </Grid>
-                            </StackPanel>
-                        </Border>
-                        <Border
-                                    CornerRadius="15"
-                                    Height="100"
-                                    Width="170"                                     
-                                    HorizontalAlignment="Left"
-                                    VerticalAlignment="Top" Canvas.Left="235" Canvas.Top="20">
-                            <Border.Effect>
-                                <DropShadowEffect BlurRadius="15" Direction="-90"
-                              RenderingBias="Quality" ShadowDepth="5"/>
-                            </Border.Effect>
-                            <Border.Background>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#FFFFCB52" Offset="0"/>
-                                    <GradientStop Color="#FFFF7B02" Offset="1"/>
-                                </LinearGradientBrush>
-                            </Border.Background>
-                            <StackPanel HorizontalAlignment="Center"
-                                    VerticalAlignment="Center">
-                                <Grid>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="55"/>
-                                        <RowDefinition Height="55"/>
-                                    </Grid.RowDefinitions>
-                                    <Grid Grid.Row="0" Height="30" VerticalAlignment="Top">
-                                        <TextBlock Text="Doanh thu ngày:" TextWrapping="Wrap" FontSize="17" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto" Margin="0,10,0,-24"/>
-                                    </Grid>
-                                    <Grid Grid.Row="1">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="100"/>
-                                            <ColumnDefinition Width="50"/>
-                                        </Grid.ColumnDefinitions>
-                                        <Grid Grid.Column="1">
+                            <lvc:CartesianChart.AxisY>
+                                <lvc:Axis MinValue="0" MaxValue="60000" Foreground="#717EB2" ShowLabels="False">
+                                    <lvc:Axis.Separator>
+                                        <lvc:Separator StrokeThickness="0"/>
+                                    </lvc:Axis.Separator>
+                                </lvc:Axis>
+                            </lvc:CartesianChart.AxisY>
 
-                                        </Grid>
-                                        <TextBlock x:Name="DTNgay" VerticalAlignment="Center" Text="0 VNĐ" TextAlignment="Left" FontWeight="Bold"  TextWrapping="Wrap" FontSize="20" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto">
+                            <lvc:CartesianChart.Series>
+                                <lvc:LineSeries Name="Slm" Values="20000,17000,30000,15000,50000,30000,20000" StrokeThickness="2" Stroke="#ADA4FD" PointGeometrySize="0">
+                                    <lvc:LineSeries.Fill>
+                                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                            <GradientStop Color="#B397E2" Offset="0.4"/>
+                                            <GradientStop Color="#6A6AE4" Offset="1.2"/>
+                                        </LinearGradientBrush>
+                                    </lvc:LineSeries.Fill>
+                                </lvc:LineSeries>
+                            </lvc:CartesianChart.Series>
+                        </lvc:CartesianChart>
 
-                                        </TextBlock>
-                                    </Grid>
-                                </Grid>
+                    </Grid>
 
-                            </StackPanel>
-                        </Border>
-                        <Border
-                                    CornerRadius="15"
-                                    Height="100"
-                                    Width="170" Canvas.Right="40" Canvas.Top="20" Canvas.Left="450" HorizontalAlignment="Left" VerticalAlignment="Center"                         
-                                    >
-                            <Border.Effect>
-                                <DropShadowEffect BlurRadius="15" Direction="-90"
-                              RenderingBias="Quality" ShadowDepth="5"/>
-                            </Border.Effect>
-                            <Border.Background>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#FF1DE5E2" Offset="0"/>
-                                    <GradientStop Color="#FFB588F7" Offset="1"/>
-                                </LinearGradientBrush>
-                            </Border.Background>
-                            <StackPanel HorizontalAlignment="Center"
-                                    VerticalAlignment="Center">
+                </Border>
+                <Border Grid.Column="1" CornerRadius="20" Padding="0 25" Background="#243771" Margin="0,30,62,10">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
 
-                                <Grid>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="55"/>
-                                        <RowDefinition Height="55"/>
-                                    </Grid.RowDefinitions>
-                                    <Grid Grid.Row="0" Width="150">
-                                        <TextBlock Text="Số sản phẩm bán trong ngày:" TextWrapping="Wrap" FontSize="17" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto" Margin="0,10,0,0"/>
-                                    </Grid>
-                                    <Grid Grid.Row="1" VerticalAlignment="Center">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="100"/>
-                                            <ColumnDefinition Width="50"/>
-                                        </Grid.ColumnDefinitions>
-                                        <Grid Grid.Column="1">
+                        <StackPanel Orientation="Horizontal" Margin="28 0 0 15">
 
-                                        </Grid>
-                                        <TextBlock x:Name="SPNgay" VerticalAlignment="Center" Text="0" TextAlignment="Left" FontWeight="Bold" TextWrapping="Wrap" FontSize="30" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto">
+                        </StackPanel>
 
-                                        </TextBlock>
-                                    </Grid>
-                                </Grid>
-                            </StackPanel>
-                        </Border>
-                    </Canvas>
-                </StackPanel>
+                        <StackPanel Grid.Row="1">
 
+                        </StackPanel>
+                    </Grid>
+                </Border>
             </Grid>
         </Grid>
     </Border>

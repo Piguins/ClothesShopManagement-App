@@ -11,6 +11,7 @@
 
 using Demo.View;
 using Demo.ViewModel;
+using FontAwesome.Sharp;
 using MaterialDesignThemes.Wpf;
 using MaterialDesignThemes.Wpf.Converters;
 using MaterialDesignThemes.Wpf.Transitions;
