@@ -27,7 +27,7 @@ namespace Demo.ViewModel
         {
             CancelCM = new RelayCommand<object>((p) => { return p == null ? false : true; }, (p) =>
             {
-                MainFrame.Content = new MainView();
+                MainViewModel.MainFrame.Content = new QLNVView();
             });
             //linkaddimage = Const._localLink + "/Resource/Image/addava.png";
             //AddImage = new RelayCommand<ImageBrush>((p) => true, (p) => _AddImage(p));

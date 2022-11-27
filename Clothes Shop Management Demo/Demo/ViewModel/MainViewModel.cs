@@ -20,10 +20,8 @@ namespace Demo.ViewModel
         public ICommand ChangePassCM { get; set; }
         public ICommand QuanLyCM { get; set; }
         public ICommand HomeCM { get; set; }
+        public ICommand AddNDCM { get; set; }
 
-        public ICommand ImportCM { get; set; }
-
-        public ICommand OrderCM { get; set; }
         public MainViewModel()
         {
             LoadPageCM = new RelayCommand<Frame>((p) => { return true; }, (p) =>
@@ -42,16 +40,6 @@ namespace Demo.ViewModel
                 MainFrame.Content = new QLNVView();
             });
 
-            OrderCM = new RelayCommand<FrameworkElement>((p) => { return true; }, (p) =>
-            {
-                MainFrame.Content = new OrderView();
-            });
-
-            ImportCM = new RelayCommand<FrameworkElement>((p) => { return true; }, (p) =>
-            {
-                MainFrame.Content = new ImportView();
-            });
-
             SettingCM = new RelayCommand<Frame>((p) => { return true; }, (p) =>
             {
                 MainFrame.Content = new SettingView();
@@ -62,6 +50,10 @@ namespace Demo.ViewModel
                 MainFrame.Content = new ChangePassword();
             });
 
+            AddNDCM = new RelayCommand<Frame>((p) => { return true; }, (p) =>
+            {
+                MainFrame.Content = new AddNDView();
+            });
 
             SignoutCM = new RelayCommand<FrameworkElement>((p) => { return p == null ? false : true; }, (p) =>
             {

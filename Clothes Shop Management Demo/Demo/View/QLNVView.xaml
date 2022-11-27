@@ -10,7 +10,7 @@
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       Title="Quản lý nhân viên"
       FontFamily="Josefin Sans"
-      DataContext="{StaticResource QLNVVM}"
+      DataContext="{StaticResource MainVM}"
       x:Name="QLNVwd">
     <Page.Triggers>
         <EventTrigger RoutedEvent="Page.Loaded">
@@ -25,7 +25,6 @@
             </BeginStoryboard>
         </EventTrigger>
     </Page.Triggers>
-
     <Grid>
         <Border Background="Transparent" 
                 Margin="0 0 0 0">
@@ -102,7 +101,7 @@
                         Foreground="White"
                         materialDesign:ButtonAssist.CornerRadius="10"
                         Background="#6C63FF"
-                        Command="{Binding AddNVPage}"
+                        Command="{Binding AddNDCM}"
                         >
                             <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="Click">
