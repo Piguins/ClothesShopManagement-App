@@ -33,22 +33,17 @@
                 <StackPanel Orientation="Horizontal">
                     <Border
                         Margin="10,0,0,0"
-                        Height="60"
+                        Height="59"
                         Width="130"
                         CornerRadius="20"
                         Background="White"
                         BorderThickness="3">
-                        <Border.BorderBrush>
-                            <LinearGradientBrush EndPoint="0.5 ,1" StartPoint="0.5,0">
-                                <GradientStop Color="#6C63FF" Offset="0"/>
-                                <GradientStop Color="#6C63FF" Offset="1"/>
-                            </LinearGradientBrush>
-                        </Border.BorderBrush>
+                       
                         <ComboBox
                             x:Name="cbxBoLoc"
                             Style="{StaticResource MaterialDesignFilledComboBox}"
                             materialDesign:TextFieldAssist.TextBoxViewMargin="0,-10,-15,-5"
-                            materialDesign:HintAssist.Hint="Bộ Lọc"
+                 
                             materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                             BorderThickness="0"
                             materialDesign:HintAssist.FontFamily="{StaticResource MaterialDesignFont}"

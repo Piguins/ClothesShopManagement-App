@@ -41,7 +41,7 @@
                 <StackPanel Orientation="Horizontal">
                     <Border
                         Margin="15,0,0,0"
-                        Height="60"
+                        Height="40"
                         Width="120"
                         CornerRadius="20"
                         Background="White"
@@ -56,8 +56,8 @@
                         <ComboBox
                             x:Name="cbxTimKiem"
                             Style="{StaticResource MaterialDesignFilledComboBox}"
-                            materialDesign:TextFieldAssist.TextBoxViewMargin="-12,-15,-10,0"
-                            materialDesign:HintAssist.Hint="Tìm Kiếm"
+                            materialDesign:TextFieldAssist.TextBoxViewMargin="0,-15,-10,0"
+                            materialDesign:HintAssist.Hint="Tìm kiếm"
                             materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                             BorderThickness="0"
                             materialDesign:HintAssist.FontFamily="{StaticResource MaterialDesignFont}"
@@ -65,14 +65,14 @@
                             Background="White"
                             FontFamily="{StaticResource MaterialDesignFont}"
                             Height="45"
-                            FontSize="18" Margin="6,6,0,5" HorizontalAlignment="Left" Width="105">
+                            FontSize="18" Margin="6,-2,0,5" HorizontalAlignment="Left" Width="105">
 
                         </ComboBox>
                     </Border>
                     <TextBox
                         x:Name="tbxSearch"
                         Width="430"
-                        Height="60"
+                        Height="40"
                         Margin="15,0,0,0"
                         BorderBrush="#6C63FF"
                         Foreground="Gray"
@@ -124,12 +124,7 @@
                         Background="White"
                         BorderThickness="4"
                         >
-                        <Border.BorderBrush>
-                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0.5">
-                                <GradientStop Color="#6C63FF" Offset="0"/>
-                                <GradientStop Color="FloralWhite" Offset="1"/>
-                            </LinearGradientBrush>
-                        </Border.BorderBrush>
+                      
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="80"/>
@@ -143,7 +138,7 @@
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"
                                            FontFamily="{StaticResource Custom}"
-                                           FontSize="18"
+                                           FontSize="14"
                                            FontWeight="SemiBold"
                                                Margin="10,0,0,0"
                                            />
@@ -158,9 +153,9 @@
                                            HorizontalAlignment="Left"
                                            VerticalAlignment="Center"
                                            FontFamily="{StaticResource Custom}"
-                                           FontSize="18"
+                                           FontSize="14"
                                            FontWeight="SemiBold"
-                                               Margin="10,0,0,0"
+                                               Margin="35,0,0,0"
                                            />
 
                                 </StackPanel>
@@ -172,9 +167,9 @@
                                            HorizontalAlignment="Left"
                                            VerticalAlignment="Center"
                                            FontFamily="{StaticResource Custom}"
-                                           FontSize="18"
+                                           FontSize="14"
                                            FontWeight="SemiBold"
-                                               Margin="15,0,0,0"
+                                               Margin="35,0,0,0"
                                            />
 
                                 </StackPanel>
@@ -186,9 +181,9 @@
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"
                                            FontFamily="{StaticResource Custom}"
-                                           FontSize="18"
+                                           FontSize="14"
                                            FontWeight="SemiBold"
-                                               Margin="85,0,0,0"
+                                               Margin="90,0,0,0" RenderTransformOrigin="0.986,0.782"
                                            />
                                 </StackPanel>
 

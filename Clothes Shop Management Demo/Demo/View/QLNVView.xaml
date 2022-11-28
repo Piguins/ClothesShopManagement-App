@@ -32,44 +32,58 @@
                 <Grid Grid.Row="1">
                     <StackPanel Orientation="Horizontal"
                                 Margin="10 0 0 0">
-                        <ComboBox Foreground="White"
+                        <StackPanel Orientation="Horizontal">
+                            <Border
+                        Margin="5,0,0,0"
+                        Height="40"
+                        Width="115"
+                        CornerRadius="15"
+                        Background="#6C63FF"
+                        >
+                                <ComboBox
                         x:Name="cbxChon"
+                                    
                         Style="{StaticResource MaterialDesignFilledComboBox}"
-                        materialDesign:TextFieldAssist.TextBoxViewMargin="0,-11,0,0"
-                        materialDesign:HintAssist.Hint="Tìm kiếm" FontWeight="Bold"
+                        materialDesign:TextFieldAssist.TextBoxViewMargin="2,-11,-10,0"
+                        materialDesign:TextFieldAssist.TextFieldCornerRadius="14"
+                        materialDesign:HintAssist.Hint="Tìm kiếm"
                         materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                         BorderThickness="0"
                         materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
-                        Background="#6C63FF"
+                        materialDesign:HintAssist.Foreground="White"
+                        Background="White"
                         FontFamily="{StaticResource Custom}"
-                        Height="38"
+                        Height="35"
                         FontSize="14"
                         ItemsSource="{Binding listTK}"
                         Width="110"
+                      
                         >
-                            <ComboBox.ItemTemplate>
-                                <DataTemplate>
-                                    <StackPanel Orientation="Horizontal">
-                                        <TextBlock Text="{Binding}"/>
-                                    </StackPanel>
-                                </DataTemplate>
-                            </ComboBox.ItemTemplate>
-                        </ComboBox>
+                                    <ComboBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Text="{Binding}"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ComboBox.ItemTemplate>
+                                </ComboBox>
+                            </Border>
+                        </StackPanel>
                         <TextBox
                                 x:Name="txbSearch"
                                 Width="250"
                                 Height="40"
                                 Margin="10,0,0,0"
                                 BorderBrush="#6C63FF"
-                                Foreground="#6C63FF"
-                                FontSize="16"
+                                Foreground="Black"
+                                FontSize="14"
                                 FontWeight="SemiBold"
-                                materialDesign:HintAssist.Hint="Tìm Kiếm"
+                                materialDesign:HintAssist.Hint="Tìm kiếm"
                                 materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
                                 materialDesign:HintAssist.Foreground="White"
                                 materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
                                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
-                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,3,0,0"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,7,0,0"
                                 BorderThickness="2"
                                 VerticalAlignment="Center" CaretBrush="White" >
                             <i:Interaction.Triggers>
