@@ -9,10 +9,27 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         DataContext="{StaticResource AddNDVM}"
         x:Name="AddNDwd"
-        Background="Transparent"
+        Background="White"
         FontFamily="Josefin Sans"
-        Height="500" Width="700">
+        Height="600" Width="700">
+
+
+    <Page.Triggers>
+        <EventTrigger RoutedEvent="Page.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <ThicknessAnimation Storyboard.TargetName="AddNDwd"
+                                        Storyboard.TargetProperty="Margin"
+                                        From="426,0,0,0"
+                                        To="0"
+                                        Duration="0:0:0.2" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Page.Triggers>
+
     <Border CornerRadius="15" >
+
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="30"/>
@@ -32,26 +49,9 @@
             <Grid Grid.Row="1">
                 <StackPanel Orientation="Horizontal"
                     Grid.Row="0">
-                    <Label Cursor="Hand"
-                   Height="50"
-                   Grid.Row="0"
-                   Width="50"
-                   HorizontalAlignment="Left"
-                   VerticalAlignment="Top"
-                   x:Name="lbl">
-                        <materialDesign:PackIcon Kind="ArrowLeft"
-                                         Height="26"
-                                         Width="26"
-                                         Margin="20 0 0 0"/>
-                        <i:Interaction.Triggers>
-                            <i:EventTrigger EventName="MouseLeftButtonDown">
-                                <i:InvokeCommandAction Command="{Binding CancelCM}"
-                                                CommandParameter="{Binding ElementName=lbl}"/>
-                            </i:EventTrigger>
-                        </i:Interaction.Triggers>
-                    </Label>
                 </StackPanel>
                 <TextBlock
+                    Margin="140 0 0 0"
                     Text="THÊM THÔNG TIN NHÂN VIÊN"
                     HorizontalAlignment="Center"
                     FontSize="24"
@@ -86,7 +86,7 @@
                             </Ellipse.Fill>
                         </Ellipse>
                     </Border>
-                    <Button HorizontalAlignment="Left" Margin="30,-80,0,0" VerticalAlignment="Top"
+                    <Button HorizontalAlignment="Left" Margin="30,-150,0,0" VerticalAlignment="Top"
                         Style="{StaticResource MaterialDesignFlatMidBgButton}"
                         Content="Thêm ảnh đại diện" FontFamily="{StaticResource Custom}"
                         BorderThickness="0"
@@ -100,7 +100,7 @@
                         </i:Interaction.Triggers>
                     </Button>
                     <Grid Grid.Column="1">
-                        <StackPanel>
+                        <StackPanel Margin="15 0 0 0">
                             <StackPanel
                         Orientation="Horizontal"
                         >
@@ -122,6 +122,7 @@
                                     Width="190"
                                     Style="{StaticResource MaterialDesignFilledTextBox}"
                                     VerticalAlignment="Top"
+                                    AcceptsReturn="True"
                                     TextWrapping="Wrap"
                                     MaxWidth="400" x:Name="TenND"
                                     FontFamily="{StaticResource Custom}"
@@ -178,6 +179,7 @@
                                         materialDesign:HintAssist.Foreground="Black"
                                         materialDesign:TextFieldAssist.UnderlineBrush="#6C63FF"
                                         VerticalAlignment="Top"
+                                        AcceptsReturn="True"
                                         TextWrapping="Wrap"
                                         HorizontalAlignment="Left" x:Name="SDT"
                                         FontFamily="{StaticResource Custom}"
@@ -185,8 +187,9 @@
                             </StackPanel>
                             <TextBox 
                                     Foreground="Black" 
-                                    Margin="-100,10,0,0"
+                                    Margin="-85,10,0,0"
                                     Style="{StaticResource MaterialDesignFilledTextBox}"
+                                    AcceptsReturn="True"
                                     TextWrapping="Wrap"
                                     MaxWidth="400" x:Name="Mail"
                                     materialDesign:HintAssist.Foreground="Black"
@@ -195,9 +198,10 @@
                                     materialDesign:HintAssist.Hint="Email" Width="390"/>
                             <TextBox 
                                     Foreground="Black" 
-                                    Margin="-100,10,0,0"
+                                    Margin="-85,10,0,0"
                                     Style="{StaticResource MaterialDesignFilledTextBox}"
                                     VerticalAlignment="Top"
+                                    AcceptsReturn="True"
                                     TextWrapping="Wrap"
                                     MaxWidth="400" x:Name="DC"
                                     materialDesign:HintAssist.Foreground="Black"
@@ -208,7 +212,7 @@
                     </Grid>
                     <Grid Grid.Row="1" Grid.Column="1">
                         <Button
-                            Margin="0,20,0,0"
+                            Margin="15,-75,0,0"
                             Width="390"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Top"
@@ -226,6 +230,38 @@
                                                        CommandParameter="{Binding ElementName=AddNDwd}"></i:InvokeCommandAction>
                                 </i:EventTrigger>
                             </i:Interaction.Triggers>
+                        </Button>
+                        <Button 
+                        Margin="307,-80,0,10"
+                        Content = "Hủy" FontSize="13"
+                        FontFamily="Josefin Sans"
+                        Height="25"
+                        BorderBrush="Transparent"
+                        Cursor="Hand" HorizontalAlignment="Left" Width="98"
+                        x:Name="lbl" Click="lbl_Click">
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                    <Setter Property="Foreground" Value="#6C63FF"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#6891DF"/>
+                                            <Setter Property="Foreground" Value="White"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="100" Height="25"
+                                    CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
+                                        <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center">
+                                        </ContentPresenter>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
                         </Button>
                     </Grid>
                 </Grid>

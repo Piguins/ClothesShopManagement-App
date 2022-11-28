@@ -545,3 +545,27 @@ D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Sho
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailsOrder.baml
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ImportView.baml
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\PrintOrderView.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Resource\InfoCard.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Resource\InfoCard.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\AddNDView.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\AddOrderView.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\AddProductView.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailImport.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailNDView.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailsOrder.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ImportView.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\PrintOrderView.g.cs
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\LiveCharts.dll
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\LiveCharts.pdb
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\LiveCharts.xml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\AddNDView.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\AddOrderView.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\AddProductView.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailImport.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailNDView.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ImportView.baml
+C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\PrintOrderView.baml

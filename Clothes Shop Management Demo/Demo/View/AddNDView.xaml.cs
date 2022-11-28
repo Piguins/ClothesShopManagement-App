@@ -1,4 +1,5 @@
-﻿using Microsoft.Win32;
+﻿using Demo.ViewModel;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,10 @@ namespace Demo.View
         public AddNDView()
         {
             InitializeComponent();
+        }
+        private void lbl_Click(object sender, RoutedEventArgs e)
+        {
+            MainViewModel.MainFrame.Content = new QLNVView();
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
