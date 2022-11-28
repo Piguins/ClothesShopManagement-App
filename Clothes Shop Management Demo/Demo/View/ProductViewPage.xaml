@@ -22,10 +22,10 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
-                <TextBlock VerticalAlignment="Center" 
-                           HorizontalAlignment="Center"
-                           FontSize="40" Margin="20,0,0,0" 
-                           Foreground="#6C63FF" FontWeight="SemiBold"
+                <TextBlock VerticalAlignment="Top" 
+                           HorizontalAlignment="Left"
+                           FontSize="30" Margin="27,14,0,0" 
+                           Foreground="#6C63FF" FontWeight="Bold"
                            FontFamily="{StaticResource Custom}"
                            ><Run Text="SẢN PHẨM"/></TextBlock>
             </Grid>
@@ -41,7 +41,7 @@
                         <Border.BorderBrush>
                             <LinearGradientBrush EndPoint="0.5 ,1" StartPoint="0.5,0">
                                 <GradientStop Color="#6C63FF" Offset="0"/>
-                                <GradientStop Color="LightPink" Offset="1"/>
+                                <GradientStop Color="#6C63FF" Offset="1"/>
                             </LinearGradientBrush>
                         </Border.BorderBrush>
                         <ComboBox
@@ -79,7 +79,7 @@
                         CornerRadius="20"
                         Background="White"
                         BorderThickness="3"
-                        BorderBrush="#6C63FF">                       
+                        BorderBrush="#6C63FF">
                         <ComboBox
                             x:Name="cbxTimKiem"
                             Style="{StaticResource MaterialDesignFilledComboBox}"
@@ -138,7 +138,7 @@
                         Width="90"
                         FontFamily="{StaticResource Custom}"
                         materialDesign:ButtonAssist.CornerRadius="15"
-                        Background="LightPink"
+                        Background="#6C63FF"
                         Foreground="White"
                         BorderThickness="3"
                         FontWeight="SemiBold"

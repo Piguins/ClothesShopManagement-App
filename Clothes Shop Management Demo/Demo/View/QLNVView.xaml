@@ -12,19 +12,7 @@
       FontFamily="Josefin Sans"
       DataContext="{StaticResource MainVM}"
       x:Name="QLNVwd">
-    <Page.Triggers>
-        <EventTrigger RoutedEvent="Page.Loaded">
-            <BeginStoryboard>
-                <Storyboard>
-                    <ThicknessAnimation Storyboard.TargetName="QLNVwd"
-                                        Storyboard.TargetProperty="Margin"
-                                        From="425,0,0,0"
-                                        To="0"
-                                        Duration="0:0:0.2" />
-                </Storyboard>
-            </BeginStoryboard>
-        </EventTrigger>
-    </Page.Triggers>
+
     <Grid>
         <Border Background="Transparent" 
                 Margin="0 0 0 0">
@@ -37,7 +25,7 @@
                 <Grid Grid.Row="0"
                   Background="Transparent" Margin="10,10,0,0">
                     <TextBlock VerticalAlignment="Center" 
-                           FontSize="30" Margin="20,0,0,0" 
+                           FontSize="30" Margin="0,0,20,0" 
                            FontFamily="{StaticResource Custom}" Foreground="#6C63FF" 
                            >QUẢN LÝ NHÂN VIÊN</TextBlock>
                 </Grid>

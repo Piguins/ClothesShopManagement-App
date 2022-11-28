@@ -24,5 +24,6 @@ namespace Demo.View
         {
             InitializeComponent();
         }
+
     }
 }

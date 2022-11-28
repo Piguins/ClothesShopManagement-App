@@ -11,7 +11,7 @@
       DataContext="{StaticResource OrVM}"
       x:Name="Orderwd">
 
-    
+
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">
             <i:InvokeCommandAction Command="{Binding LoadCsCommand}"
@@ -32,9 +32,9 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
-                <TextBlock VerticalAlignment="Center" 
-                           HorizontalAlignment="Center"
-                           FontSize="30" Margin="20,0,0,0" 
+                <TextBlock VerticalAlignment="Top" 
+                           HorizontalAlignment="Left"
+                           FontSize="30" Margin="10,14,0,0" 
                            FontFamily="{StaticResource Custom}" Foreground="#6C63FF" 
                            ><Run Text="ĐƠN HÀNG "/></TextBlock>
             </Grid>
@@ -45,7 +45,7 @@
                         Height="40"
                         Width="115"
                         CornerRadius="15"
-                        Background="#6891DF"
+                        Background="#6C63FF"
                         >
                         <ComboBox
                         x:Name="cbxChon"
@@ -78,7 +78,7 @@
                                 Width="430"
                                 Height="40"
                                 Margin="15,0,0,0"
-                                BorderBrush="Gray"
+                                BorderBrush="#6C63FF"
                                 Foreground="Gray"
                                 FontSize="16"
                                 FontWeight="SemiBold"
@@ -106,7 +106,7 @@
                         BorderBrush="Transparent"
                         Foreground="White"
                         materialDesign:ButtonAssist.CornerRadius="15"
-                        Background="LightPink"
+                        Background="#6C63FF"
                         >
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="Click">

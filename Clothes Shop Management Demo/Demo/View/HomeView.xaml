@@ -13,19 +13,7 @@
       DataContext="{StaticResource HomeVM}"
       Name="HomeViewPage">
 
-    <Page.Triggers>
-        <EventTrigger RoutedEvent="Page.Loaded">
-            <BeginStoryboard>
-                <Storyboard>
-                    <ThicknessAnimation Storyboard.TargetName="HomeViewPage"
-                                        Storyboard.TargetProperty="Margin"
-                                        From="425,0,0,0"
-                                        To="0"
-                                        Duration="0:0:0.2" />
-                </Storyboard>
-            </BeginStoryboard>
-        </EventTrigger>
-    </Page.Triggers>
+
 
     <Border Background="White"
             CornerRadius="20"
@@ -38,16 +26,7 @@
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0">
-                <TextBlock
-                    VerticalAlignment="Center"
-                   
-                    FontSize="30" Margin="40,10,0,0" 
-                    FontFamily="{StaticResource Custom}" 
-                    Foreground="#6C63FF"
-                    FontWeight="Bold"
-                    HorizontalAlignment="Left"
-                  
-                    >TRANG CHỦ</TextBlock>
+
             </Grid>
 
             <Grid Grid.Row="2">
@@ -57,9 +36,9 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <uc:InfoCard Grid.Column="0" Title="Total Views" Icon="Eye" Number="654,947" Background1="#827BFF" Background2="#D9B5FF" EllipseBackground1="#B298FD" EllipseBackground2="#E4BBFF"/>
-                <uc:InfoCard Grid.Column="1" Title="Total Orders" Icon="ShoppingCart" Number="192,320" Background1="#FD8A87" Background2="#F3AB92" EllipseBackground1="#FBD5A8" EllipseBackground2="#FDB89B"/>
-                <uc:InfoCard Grid.Column="2" Title="Total Revenue" Icon="Coins" Number="$14,528" Background1="#FC84CB" Background2="#FC8FAE" EllipseBackground1="#FC8FAE" EllipseBackground2="#FFABE6"/>
+                <uc:InfoCard Grid.Column="0" Title="Total Views" Icon="Eye" Number="654,947" Background1="#827BFF" Background2="#D9B5FF" EllipseBackground1="#B298FD" EllipseBackground2="#E4BBFF" Margin="45,-30,10,30"/>
+                <uc:InfoCard Grid.Column="1" Title="Total Orders" Icon="ShoppingCart" Number="192,320" Background1="#FD8A87" Background2="#F3AB92" EllipseBackground1="#FBD5A8" EllipseBackground2="#FDB89B" Margin="45,-30,10,30"/>
+                <uc:InfoCard Grid.Column="2" Title="Total Revenue" Icon="Coins" Number="$14,528" Background1="#FC84CB" Background2="#FC8FAE" EllipseBackground1="#FC8FAE" EllipseBackground2="#FFABE6" Margin="45,-30,10,30"/>
             </Grid>
 
             <Grid Grid.Row="1" Margin="5,0">
@@ -67,88 +46,8 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-
-                <Border CornerRadius="20" Padding="35 25" Background="#243771"  Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="685" Margin="0,0,0,25">
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="auto"/>
-                            <RowDefinition Height="*"/>
-                        </Grid.RowDefinitions>
-
-                        <StackPanel Orientation="Horizontal" Margin="0 0 0 25">
-                            <fa:IconImage Icon="Circle" />
-                            <TextBlock Text="Profit" />
-                        </StackPanel>
-
-                        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0 0 0 25" Grid.Row="1">
-                            <TextBlock Text="70000" Foreground="#717EB2" Margin="0 0 0 25"/>
-                            <TextBlock Text="60000" Foreground="#717EB2" Margin="0 0 0 25"/>
-                            <TextBlock Text="50000" Foreground="#717EB2" Margin="0 0 0 25"/>
-                            <TextBlock Text="40000" Foreground="#717EB2" Margin="0 0 0 25"/>
-                            <TextBlock Text="30000" Foreground="#717EB2" Margin="0 0 0 25"/>
-                            <TextBlock Text="20000" Foreground="#717EB2" Margin="0 0 0 25"/>
-                            <TextBlock Text="10000" Foreground="#717EB2" Margin="0 0 0 25"/>
-                            <TextBlock Text="0" Foreground="#717EB2" HorizontalAlignment="Right"/>
-                        </StackPanel>
-
-                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="1" Orientation="Horizontal" Margin="50 0 0 0">
-                            <TextBlock Text="1" Foreground="#717EB2"/>
-                            <TextBlock Text="2" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="3" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="4" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="5" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="6" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="7" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="8" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="9" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="10" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="11" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="12" Foreground="#717EB2" Margin="41 0 0 0"/>
-                        </StackPanel>
-
-                        <lvc:CartesianChart Grid.Row="1" Margin="45 0 0 25">
-                            <lvc:CartesianChart.Background>
-                                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
-                                    <GradientStop Color="#26376F" Offset="0"/>
-                                    <GradientStop Color="#6A6AE4" Offset="1.5"/>
-                                </LinearGradientBrush>
-                            </lvc:CartesianChart.Background>
-
-                            <lvc:CartesianChart.DataTooltip>
-                                <lvc:DefaultTooltip Background="#24336A" Foreground="#D5E2FF"/>
-                            </lvc:CartesianChart.DataTooltip>
-
-                            <lvc:CartesianChart.AxisX>
-                                <lvc:Axis MinValue="1" MaxValue="5" Foreground="#717EB2" ShowLabels="False">
-                                    <lvc:Axis.Separator>
-                                        <lvc:Separator StrokeThickness="0" Step="1"/>
-                                    </lvc:Axis.Separator>
-                                </lvc:Axis>
-                            </lvc:CartesianChart.AxisX>
-
-                            <lvc:CartesianChart.AxisY>
-                                <lvc:Axis MinValue="0" MaxValue="60000" Foreground="#717EB2" ShowLabels="False">
-                                    <lvc:Axis.Separator>
-                                        <lvc:Separator StrokeThickness="0"/>
-                                    </lvc:Axis.Separator>
-                                </lvc:Axis>
-                            </lvc:CartesianChart.AxisY>
-
-                            <lvc:CartesianChart.Series>
-                                <lvc:LineSeries Name="Slm" Values="20000,17000,30000,15000,50000,30000,20000" StrokeThickness="2" Stroke="#ADA4FD" PointGeometrySize="0">
-                                    <lvc:LineSeries.Fill>
-                                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
-                                            <GradientStop Color="#B397E2" Offset="0.4"/>
-                                            <GradientStop Color="#6A6AE4" Offset="1.2"/>
-                                        </LinearGradientBrush>
-                                    </lvc:LineSeries.Fill>
-                                </lvc:LineSeries>
-                            </lvc:CartesianChart.Series>
-                        </lvc:CartesianChart>
-
-                    </Grid>
-
-                </Border>
+                <Image Source="/Resource/Image/Shoping 2.png" Grid.ColumnSpan="2" Margin="-116,-156,231,-26"/>
+          
             </Grid>
         </Grid>
     </Border>

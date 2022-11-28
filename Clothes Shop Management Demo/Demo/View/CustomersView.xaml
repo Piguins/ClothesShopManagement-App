@@ -27,7 +27,7 @@
                     <TextBlock
                         FontWeight="SemiBold"
                         FontFamily="{StaticResource Custom}"
-                        FontSize="50"
+                        FontSize="30"
                         Foreground="#6C63FF"
                         Margin="15,10,0,0" Width="650"
                         HorizontalAlignment="Center"
@@ -101,7 +101,7 @@
                         Height="60"
                         materialDesign:ButtonAssist.CornerRadius="15"
                         Background="White"
-                        BorderBrush="Pink"
+                        BorderBrush="#6C63FF"
                         BorderThickness="5"
                         >
                         <StackPanel Orientation="Horizontal">
