@@ -18,9 +18,13 @@ namespace Demo.ViewModel
         public ICommand SignoutCM { get; set; }
         public ICommand SettingCM { get; set; }
         public ICommand ChangePassCM { get; set; }
+        public ICommand ImportCM { get; set; }
         public ICommand QuanLyCM { get; set; }
         public ICommand HomeCM { get; set; }
         public ICommand AddNDCM { get; set; }
+        public ICommand SPCM { get; set; }
+        public ICommand OrderCM { get; set; }
+        public ICommand KHCM { get; set; }
 
         public MainViewModel()
         {
@@ -38,6 +42,27 @@ namespace Demo.ViewModel
             QuanLyCM = new RelayCommand<FrameworkElement>((p) => { return true; }, (p) =>
             {
                 MainFrame.Content = new QLNVView();
+            });
+
+            OrderCM = new RelayCommand<FrameworkElement>((p) => { return true; }, (p) =>
+            {
+                MainFrame.Content = new OrderView();
+            });
+
+            KHCM = new RelayCommand<FrameworkElement>((p) => { return true; }, (p) =>
+            {
+                MainFrame.Content = new CustomersView();
+            });
+
+
+            SPCM = new RelayCommand<FrameworkElement>((p) => { return true; }, (p) =>
+            {
+                MainFrame.Content = new ProductViewPage();
+            });
+
+            ImportCM = new RelayCommand<Frame>((p) => { return true; }, (p) =>
+            {
+                MainFrame.Content = new ImportView();
             });
 
             SettingCM = new RelayCommand<Frame>((p) => { return true; }, (p) =>

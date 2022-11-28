@@ -120,6 +120,7 @@
                             FontFamily="{StaticResource Custom}"
                             Uid="2"
                             x:Name="btnProducts"
+                            Command="{Binding SPCM}"
                             >
 
                             </RadioButton>
@@ -128,6 +129,7 @@
                             FontFamily="{StaticResource Custom}"
                             Uid="3"
                             x:Name="btnKH"
+                            Command="{Binding KHCM}"
                             >
 
                             </RadioButton>

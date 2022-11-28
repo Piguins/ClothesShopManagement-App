@@ -27,7 +27,7 @@
         </EventTrigger>
     </Page.Triggers>
 
-    <Border Background="#FF9F9FC6"
+    <Border Background="White"
             CornerRadius="20"
             >
         <Grid>
