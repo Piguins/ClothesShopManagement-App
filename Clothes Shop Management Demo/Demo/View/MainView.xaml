@@ -148,6 +148,7 @@
                             FontFamily="{StaticResource Custom}"
                             Uid="5"
                             x:Name="btnReport"
+                            Command="{Binding ReportCM}"
                             >
 
                             </RadioButton>

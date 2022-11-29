@@ -26,6 +26,7 @@ namespace Demo.ViewModel
         public ICommand OrderCM { get; set; }
         public ICommand KHCM { get; set; }
         public ICommand AddOrder { get; set; } 
+        public ICommand ReportCM { get; set; }
 
         public MainViewModel()
         {
@@ -34,7 +35,10 @@ namespace Demo.ViewModel
                 MainFrame = p;
                 p.Content = new HomeView();
             });
-
+            ReportCM = new RelayCommand<Frame>((p) => { return true; }, (p) =>
+            {
+                MainFrame.Content = new ReportView();
+            });
             HomeCM = new RelayCommand<FrameworkElement>((p) => { return true; }, (p) =>
             {
                 MainFrame.Content = new HomeView();

@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfChart.XForms.WPF</name>
+    </assembly>
+    <members>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.SfChartResources.Maximum">
+            <summary>
+            Gets the culture based value to represent maximum.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.SfChartResources.Minimum">
+            <summary>
+            Gets the culture based value to represent minimum.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.SfChartResources.Q3">
+            <summary>
+            Gets the culture based value to represent q3.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.SfChartResources.Q1">
+            <summary>
+            Gets the culture based value to represent q1.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.SfChartResources.Median">
+            <summary>
+            Gets the culture based value to represent median.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.SfChartResources.High">
+            <summary>
+            Gets the culture based value to represent high.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.SfChartResources.Low">
+            <summary>
+            Gets the culture based value to represent low.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.SfChartResources.Close">
+            <summary>
+            Gets the culture based value to represent close.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.SfChartResources.Open">
+            <summary>
+            Gets the culture based value to represent open.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.SfChartResources.Others">
+            <summary>
+            Gets the culture based value to represent grouping label.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.SfChartResources.Week">
+            <summary>
+             Gets the culture based value to represent week. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.SfChartResources.W">
+            <summary>
+            Gets the culture based value to represent W.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.SfChartResources.Quarter">
+            <summary>
+            Gets the culture based value to represent quarter.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.SfChartResources.Q">
+            <summary>
+            Gets the culture based value to represent Q.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.SfChartResources.Increase">
+            <summary>
+            Gets the culture based value to represent waterfall series Increase legend label.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.SfChartResources.Decrease">
+            <summary>
+            Gets the culture based value to represent waterfall series Decrease legend label.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.SfChartResources.Total">
+            <summary>
+            Gets the culture based value to represent waterfall series Total legend label.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfChart.XForms.WPF.ChartDependencyService.Syncfusion#SfChart#XForms#ChartDependencyService#UpdateCustomColor(System.Object,System.Collections.Generic.IList{Xamarin.Forms.Color},System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Updates the native CustomBrushes collection when forms CustomBrushes collection is changed.
+            </summary>
+            <param name="nativeObject">The native <see cref="T:Syncfusion.SfChart.XForms.ChartColorModel"/> object.</param>
+            <param name="formsBrushes">The forms CustomBrushes object.</param>
+            <param name="e">Forms CustomBrushes collection changed event arguments.</param>
+        </member>
+        <member name="T:Syncfusion.SfChart.XForms.WPF.MeasureTextSize">
+            <summary>
+            Measure text size class contains extension method to return the text width.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfChart.XForms.WPF.MeasureTextSize.MeasureTextWidth(System.String,System.String,System.Double)">
+            <summary>
+            Returns the width for the given text based on the platform specific.
+            </summary>
+            <param name="text">The string</param>
+            <param name="fontFamily">The Font Family</param>
+            <param name="size">The double</param>
+            <returns>returns text width based on platform specific</returns>
+        </member>
+        <member name="M:Syncfusion.SfChart.XForms.WPF.SelectionBehaviorHelper.SelectionChanging(Syncfusion.SfChart.XForms.ChartSelectionChangingEventArgs)">
+            <summary>
+             This method used to update the selected values
+            </summary>
+            <param name="arg">The event argument</param>
+        </member>
+        <member name="M:Syncfusion.SfChart.XForms.WPF.SelectionBehaviorHelper.SelectionChanged(Syncfusion.SfChart.XForms.ChartSelectionEventArgs)">
+            <summary>
+            Called when selection changed.
+            </summary>
+            <param name="arg">The event argument</param>
+        </member>
+        <member name="M:Syncfusion.SfChart.XForms.WPF.ChartAxisMapping.OnCreateLabels(Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)">
+            <summary>
+            Method to add native labels to XForms visible labels collection.
+            </summary>
+            <param name="nativeAxis">The native axis</param>
+        </member>
+        <member name="M:Syncfusion.SfChart.XForms.WPF.ChartAxisMapping.AddVisibleLabels(Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)">
+            <summary>
+            Method to add XForms visible labels collection to native visible labels.
+            </summary>
+            <param name="nativeAxis">The native axis</param>
+        </member>
+        <member name="T:Syncfusion.SfChart.XForms.WPF.ChartLegendWrapPanel">
+            <summary>
+            Represents <see cref="T:Syncfusion.SfChart.XForms.WPF.ChartLegendWrapPanel"/> class implementation. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.ChartLegendWrapPanel.MaximumWidth">
+            <summary>
+            Gets or sets double value that indicates maximum width value for this panel. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.ChartLegendWrapPanel.LegendPlacement">
+            <summary>
+            Gets or sets LegendPlacement enum that represents legend position in chart layout. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.ChartLegendWrapPanel.ItemMargin">
+            <summary>
+            Gets or sets Thickness value that represents children margin value. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfChart.XForms.WPF.ChartLegendWrapPanel.MeasureOverride(System.Windows.Size)">
+            <summary>
+             Measure all children and return available size of panel
+            </summary>
+            <param name="availableSize">Available Size</param>
+            <returns>Desired width and height</returns>
+        </member>
+        <member name="M:Syncfusion.SfChart.XForms.WPF.ChartLegendWrapPanel.ArrangeOverride(System.Windows.Size)">
+            <summary>
+            Arrange all children and return final size of panel
+            </summary>
+            <param name="finalSize">Final Size</param>
+            <returns>Final size of panel</returns>
+        </member>
+        <member name="M:Syncfusion.SfChart.XForms.WPF.ChartSeriesMapping.TooltipLayout_MeasureInvalidated(System.Object,System.EventArgs)">
+            <summary>
+            Measure tooltip view size when layout of tooltip template is invalidate.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Syncfusion.SfChart.XForms.WPF.DoubleToThicknessConverter">
+            <summary>
+            Convert <see cref="T:System.Double"/> to <see cref="T:System.Windows.Thickness"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfChart.XForms.WPF.TrackballBehaviorHelper.OnLayoutUpdated">
+            <summary>
+            Hide trackball while chart update.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfChart.XForms.WPF.TrackballBehaviorHelper.GenerateLabels">
+            <summary>
+            Method implementation to generate labels.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfChart.XForms.WPF.TrackballBehaviorHelper.InvokeLabelCreatedEvent(Syncfusion.SfChart.XForms.SfChart)">
+            <summary>
+            Invokes the label created event.
+            </summary>
+            <param name="formsChart">The forms chart.</param>
+        </member>
+        <member name="M:Syncfusion.SfChart.XForms.WPF.TrackballBehaviorHelper.SetNativePointInfos(System.Collections.Generic.List{Syncfusion.SfChart.XForms.ChartPointInfo})">
+            <summary>
+            Sets the native point information from the forms point information after the label created event triggered.
+            </summary>
+            <param name="formsPointInfos">The forms point information.</param>
+        </member>
+        <member name="M:Syncfusion.SfChart.XForms.WPF.TrackballBehaviorHelper.SetFormsPointInfos(Syncfusion.SfChart.XForms.SfChart,System.Collections.Generic.List{Syncfusion.SfChart.XForms.ChartPointInfo})">
+            <summary>
+            Sets the forms point information from the native point information before the event is triggered.
+            </summary>
+            <param name="formsChart">The forms chart.</param>       
+            <param name="formsPointInfos">The forms point information.</param>
+        </member>
+        <member name="T:Syncfusion.SfChart.XForms.WPF.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfChart.XForms.WPF.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
