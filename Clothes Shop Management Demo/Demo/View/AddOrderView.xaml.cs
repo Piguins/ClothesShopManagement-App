@@ -17,7 +17,7 @@ namespace Demo.View
     /// <summary>
     /// Interaction logic for AddOrderView.xaml
     /// </summary>
-    public partial class AddOrderView : Window
+    public partial class AddOrderView : Page
     {
         public AddOrderView()
         {

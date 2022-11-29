@@ -3,12 +3,12 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Demo.View"
+      xmlns:local="clr-namespace:Demo.ViewModel"
       xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
       d:DesignHeight="605" d:DesignWidth="700"
-      DataContext="{StaticResource OrVM}"
+      DataContext="{StaticResource MainVM}"
       x:Name="Orderwd">
 
 
@@ -108,6 +108,7 @@
                         Foreground="White"
                         materialDesign:ButtonAssist.CornerRadius="15"
                         Background="#6C63FF" 
+                        Command="{Binding AddOrder}"
                         >
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="Click">

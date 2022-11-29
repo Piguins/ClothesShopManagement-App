@@ -16,5 +16,5 @@ D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\App.xaml
 222057263334
 MainWindow.xaml;Resource\InfoCard.xaml;Resource\MainResource.xaml;Resource\StyleRecourse.xaml;View\AddCustomerView.xaml;View\AddImpotView.xaml;View\AddNDView.xaml;View\AddOrderView.xaml;View\AddProductView.xaml;View\ChangePassword.xaml;View\CustomersView.xaml;View\DetailImport.xaml;View\DetailNDView.xaml;View\DetailsOrder.xaml;View\ForgetPassView.xaml;View\HomeView.xaml;View\ImportView.xaml;View\LoginView.xaml;View\LoginViewPage.xaml;View\MainView.xaml;View\OrderView.xaml;View\PrintOrderView.xaml;View\ProductViewPage.xaml;View\QLNVView.xaml;View\SettingView.xaml;View\SignUpView.xaml;
 
-False
+True
 

@@ -25,6 +25,7 @@ namespace Demo.ViewModel
         public ICommand SPCM { get; set; }
         public ICommand OrderCM { get; set; }
         public ICommand KHCM { get; set; }
+        public ICommand AddOrder { get; set; } 
 
         public MainViewModel()
         {
@@ -73,6 +74,11 @@ namespace Demo.ViewModel
             ChangePassCM = new RelayCommand<object>((p) => { return true; }, (p) =>
             {
                 MainFrame.Content = new ChangePassword();
+            });
+
+            AddOrder = new RelayCommand<object>((p) => { return true; }, (p) =>
+            {
+                MainFrame.Content = new AddOrderView();
             });
 
             AddNDCM = new RelayCommand<Frame>((p) => { return true; }, (p) =>

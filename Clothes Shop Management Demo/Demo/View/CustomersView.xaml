@@ -43,7 +43,7 @@
                         Margin="15,0,0,0"
                         Height="40"
                         Width="115"
-                        CornerRadius="15"
+                        CornerRadius="16"
                         Background="#6C63FF"
                         >                        
                         <ComboBox
