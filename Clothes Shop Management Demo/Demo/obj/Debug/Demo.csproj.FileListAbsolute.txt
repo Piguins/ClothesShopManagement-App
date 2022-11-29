@@ -626,3 +626,38 @@ D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Sho
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Xaml.xml
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ReportView.g.cs
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ReportView.baml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\OpenTK.dll
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\OpenTK.GLControl.dll
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.Core.XForms.dll
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.Core.XForms.WPF.dll
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.Licensing.dll
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.SfChart.WPF.dll
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.SfChart.XForms.dll
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.SfChart.XForms.WPF.dll
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.SfSkinManager.WPF.dll
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Core.dll
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Platform.WPF.dll
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\OpenTK.pdb
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\OpenTK.xml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\OpenTK.GLControl.pdb
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\OpenTK.GLControl.xml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.Core.XForms.xml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.Core.XForms.WPF.xml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.SfChart.WPF.xml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.SfChart.XForms.xml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.SfChart.XForms.WPF.xml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.SfSkinManager.WPF.xml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Core.pdb
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Core.xml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Platform.WPF.pdb
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ReportView.g.cs
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ReportView.baml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\EntityFramework.dll
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\EntityFramework.SqlServer.dll
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\EntityFramework.xml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\EntityFramework.SqlServer.xml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo_Content.g.cs
