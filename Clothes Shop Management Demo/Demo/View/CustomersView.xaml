@@ -42,30 +42,25 @@
                     <Border
                         Margin="15,0,0,0"
                         Height="40"
-                        Width="120"
-                        CornerRadius="20"
-                        Background="White"
-                        BorderThickness="3"
-                        >
-                        <Border.BorderBrush>
-                            <LinearGradientBrush EndPoint="0.5 ,1" StartPoint="0.5,0">
-                                <GradientStop Color="#6891DF" Offset="0"/>
-                                <GradientStop Color="FloralWhite" Offset="1"/>
-                            </LinearGradientBrush>
-                        </Border.BorderBrush>
+                        Width="115"
+                        CornerRadius="15"
+                        Background="#6C63FF"
+                        >                        
                         <ComboBox
                             x:Name="cbxTimKiem"
                             Style="{StaticResource MaterialDesignFilledComboBox}"
-                            materialDesign:TextFieldAssist.TextBoxViewMargin="0,-15,-10,0"
+                            materialDesign:TextFieldAssist.TextBoxViewMargin="2,-11,-10,0"
+                            materialDesign:TextFieldAssist.TextFieldCornerRadius="14"
                             materialDesign:HintAssist.Hint="Tìm kiếm"
                             materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                             BorderThickness="0"
-                            materialDesign:HintAssist.FontFamily="{StaticResource MaterialDesignFont}"
+                            materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
                             materialDesign:HintAssist.Foreground="White"
                             Background="White"
-                            FontFamily="{StaticResource MaterialDesignFont}"
-                            Height="45"
-                            FontSize="18" Margin="6,-2,0,5" HorizontalAlignment="Left" Width="105">
+                            FontFamily="{StaticResource Custom}"
+                            Height="35"
+                            FontSize="14"
+                            Width="110">
 
                         </ComboBox>
                     </Border>
@@ -81,8 +76,8 @@
                         materialDesign:HintAssist.Hint="Tìm Kiếm"
                         materialDesign:HintAssist.FontFamily="{StaticResource MaterialDesignFont}"
                         materialDesign:HintAssist.Foreground="White"
-                        materialDesign:TextFieldAssist.TextBoxViewMargin="10,14,0,0"
-                        materialDesign:TextFieldAssist.TextFieldCornerRadius="20"
+                        materialDesign:TextFieldAssist.TextBoxViewMargin="10,4,0,0"
+                        materialDesign:TextFieldAssist.TextFieldCornerRadius="15"
                         materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                         BorderThickness="3"
                         VerticalAlignment="Center"
@@ -91,23 +86,21 @@
                         <TextBox.Background>
                             <ImageBrush ImageSource="/Resource/Image/search_fill.png" 
                                         AlignmentX="Right" 
-                                        Stretch="None"
+                                        Stretch="Uniform"
                                         ></ImageBrush>
                         </TextBox.Background>
                     </TextBox>
                     <Button
-                        Margin="20,0,0,0"
-                        Width="70"
-                        Height="60"
+                        Margin="40,0,0,0"
+                        Width="50"
+                        Height="40"
                         materialDesign:ButtonAssist.CornerRadius="15"
-                        Background="White"
-                        BorderBrush="#6C63FF"
-                        BorderThickness="5"
+                        Background="#6C63FF"
                         >
                         <StackPanel Orientation="Horizontal">
                             <Image Source="/Resource/Image/add_fill.png" 
-                                   Height="40"
-                                   Margin="0,0,5,2"/>
+                                   Height="20"
+                                   Margin="-1,0,0,2"/>
 
                         </StackPanel>
                     </Button>
@@ -120,9 +113,7 @@
                         Margin="10,5,10,0"
                         Width="670"
                         Height="50"
-                        CornerRadius="15"
-                        Background="White"
-                        BorderThickness="4"
+                        CornerRadius="10"
                         >
                       
                         <Grid>

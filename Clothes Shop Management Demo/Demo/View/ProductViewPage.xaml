@@ -33,28 +33,27 @@
                 <StackPanel Orientation="Horizontal">
                     <Border
                         Margin="10,0,0,0"
-                        Height="59"
+                        Height="40"
                         Width="130"
-                        CornerRadius="20"
-                        Background="White"
-                        BorderThickness="3">
+                        CornerRadius="15"
+                        Background="#6C63FF"
+                        >
                        
                         <ComboBox
                             x:Name="cbxBoLoc"
                             Style="{StaticResource MaterialDesignFilledComboBox}"
-                            materialDesign:TextFieldAssist.TextBoxViewMargin="0,-10,-15,-5"
-                 
+                            materialDesign:TextFieldAssist.TextBoxViewMargin="10,-11,-10,0"
+                            materialDesign:TextFieldAssist.TextFieldCornerRadius="15"
                             materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                             BorderThickness="0"
                             materialDesign:HintAssist.FontFamily="{StaticResource MaterialDesignFont}"
                             materialDesign:HintAssist.Foreground="White"
                             Background="White"
                             FontFamily="{StaticResource Custom}"
-                            Height="50"
-                            Width="100"
-                            FontSize="20"
+                            Height="35"
+                            Width="125"
+                            FontSize="14"
                             SelectedIndex="0"
-                            Margin="0,5,3,0"
                             >
                             <ComboBoxItem Content="Tất cả"/>
                             <ComboBoxItem Content="Áo sơ mi"/>
@@ -68,26 +67,26 @@
 
                     </Border>
                     <Border
-                            Margin="15,0,0,0"
-                        Height="60"
-                        Width="140"
-                        CornerRadius="20"
-                        Background="White"
-                        BorderThickness="3"
-                        BorderBrush="#6C63FF">
+                        Margin="15,0,0,0"
+                        Height="40"
+                        Width="115"
+                        CornerRadius="15"
+                        Background="#6C63FF"
+                        >
                         <ComboBox
                             x:Name="cbxTimKiem"
                             Style="{StaticResource MaterialDesignFilledComboBox}"
-                            materialDesign:TextFieldAssist.TextBoxViewMargin="-5,-10,-10,0"
+                            materialDesign:TextFieldAssist.TextBoxViewMargin="2,-11,-10,0"
                             materialDesign:HintAssist.Hint="Tìm Kiếm"
+                            materialDesign:TextFieldAssist.TextFieldCornerRadius="14"
                             materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                             BorderThickness="0"
-                            materialDesign:HintAssist.FontFamily="{StaticResource MaterialDesignFont}"
+                            materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
                             materialDesign:HintAssist.Foreground="White"
                             FontFamily="{StaticResource Custom}"
-                            Height="50"
-                            FontSize="20"
-                            Width="117"
+                            Height="35"
+                            FontSize="14"
+                            Width="110"
                             Background="White">
                             <ComboBox.ItemTemplate>
                                 <DataTemplate>
@@ -102,42 +101,41 @@
                     </Border>
                     <TextBox
                         x:Name="tbxSearch"
-                        Width="260"
-                        Height="57"
-                        Margin="20,0,0,0"
+                        Width="280"
+                        Height="40"
+                        Margin="15,0,0,0"
                         BorderBrush="#6C63FF"
                         Foreground="Gray"
-                        FontSize="20"
+                        FontSize="18"
                         FontWeight="SemiBold"
                         materialDesign:HintAssist.Hint="Tìm Kiếm"
                         materialDesign:HintAssist.FontFamily="{StaticResource MaterialDesignFont}"
                         materialDesign:HintAssist.Foreground="White"
+                        materialDesign:TextFieldAssist.TextBoxViewMargin="10,4,0,0"
                         materialDesign:TextFieldAssist.TextFieldCornerRadius="15"
                         materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
-                        materialDesign:TextFieldAssist.TextBoxViewMargin="10,14,0,0"
-                        BorderThickness="2"
+                        BorderThickness="3"
                         VerticalAlignment="Center"
-                        CaretBrush="White"                            
-                            >
+                        CaretBrush="White"
+                        >
                         <TextBox.Background>
-                            <ImageBrush ImageSource="/Resource/Image/search_fill.png"
-                                        AlignmentX="Right"
-                                        Stretch="None">
-                            </ImageBrush>
+                            <ImageBrush ImageSource="/Resource/Image/search_fill.png" 
+                                        AlignmentX="Right" 
+                                        Stretch="Uniform"
+                                        ></ImageBrush>
                         </TextBox.Background>
                     </TextBox>
                     <Button
                         Content="THÊM"
-                        Margin="10,0,0,0"
-                        Height="50"
+                        Margin="20,0,0,0"
+                        Height="40"
                         Width="90"
                         FontFamily="{StaticResource Custom}"
                         materialDesign:ButtonAssist.CornerRadius="15"
                         Background="#6C63FF"
                         Foreground="White"
-                        BorderThickness="3"
                         FontWeight="SemiBold"
-                        FontSize="17"
+                        FontSize="18"
                         >
                     </Button>
                 </StackPanel>
