@@ -44,7 +44,7 @@
                         Margin="5,0,0,0"
                         Height="40"
                         Width="115"
-                        CornerRadius="15"
+                        CornerRadius="17"
                         Background="#6C63FF"
                         >
                         <ComboBox
@@ -63,6 +63,7 @@
                         FontSize="14"
                         ItemsSource="{Binding listTK}"
                         Width="110"
+                     
                         >
                             <ComboBox.ItemTemplate>
                                 <DataTemplate>
@@ -82,7 +83,7 @@
                                 Foreground="Black"
                                 FontSize="14"
                                 FontWeight="SemiBold"
-                                materialDesign:HintAssist.Hint="Tìm Kiếm"
+                                materialDesign:HintAssist.Hint="Tìm kiếm"
                                 materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
                                 materialDesign:HintAssist.Foreground="White"
                                 materialDesign:TextFieldAssist.TextFieldCornerRadius="10"

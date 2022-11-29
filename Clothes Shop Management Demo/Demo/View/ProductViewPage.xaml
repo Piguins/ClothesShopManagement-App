@@ -24,7 +24,7 @@
             <Grid Grid.Row="0">
                 <TextBlock VerticalAlignment="Top" 
                            HorizontalAlignment="Left"
-                           FontSize="30" Margin="27,14,0,0" 
+                           FontSize="30" Margin="15,14,0,0" 
                            Foreground="#6C63FF" FontWeight="Bold"
                            FontFamily="{StaticResource Custom}"
                            ><Run Text="SẢN PHẨM"/></TextBlock>
@@ -35,14 +35,14 @@
                         Margin="10,0,0,0"
                         Height="40"
                         Width="130"
-                        CornerRadius="15"
+                        CornerRadius="17"
                         Background="#6C63FF"
                         >
                        
                         <ComboBox
                             x:Name="cbxBoLoc"
                             Style="{StaticResource MaterialDesignFilledComboBox}"
-                            materialDesign:TextFieldAssist.TextBoxViewMargin="10,-11,-10,0"
+                            materialDesign:TextFieldAssist.TextBoxViewMargin="0,-13,-10,0"
                             materialDesign:TextFieldAssist.TextFieldCornerRadius="15"
                             materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                             BorderThickness="0"
@@ -54,6 +54,7 @@
                             Width="125"
                             FontSize="14"
                             SelectedIndex="0"
+
                             >
                             <ComboBoxItem Content="Tất cả"/>
                             <ComboBoxItem Content="Áo sơ mi"/>
@@ -70,14 +71,14 @@
                         Margin="15,0,0,0"
                         Height="40"
                         Width="115"
-                        CornerRadius="15"
+                        CornerRadius="17"
                         Background="#6C63FF"
                         >
                         <ComboBox
                             x:Name="cbxTimKiem"
                             Style="{StaticResource MaterialDesignFilledComboBox}"
-                            materialDesign:TextFieldAssist.TextBoxViewMargin="2,-11,-10,0"
-                            materialDesign:HintAssist.Hint="Tìm Kiếm"
+                            materialDesign:TextFieldAssist.TextBoxViewMargin="2,-13,-10,0"
+                            materialDesign:HintAssist.Hint="Tìm kiếm"
                             materialDesign:TextFieldAssist.TextFieldCornerRadius="14"
                             materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                             BorderThickness="0"
@@ -105,25 +106,20 @@
                         Height="40"
                         Margin="15,0,0,0"
                         BorderBrush="#6C63FF"
-                        Foreground="Gray"
-                        FontSize="18"
+                        Foreground="Black"
+                        FontSize="14"
                         FontWeight="SemiBold"
-                        materialDesign:HintAssist.Hint="Tìm Kiếm"
+                        materialDesign:HintAssist.Hint="Tìm kiếm"
                         materialDesign:HintAssist.FontFamily="{StaticResource MaterialDesignFont}"
                         materialDesign:HintAssist.Foreground="White"
-                        materialDesign:TextFieldAssist.TextBoxViewMargin="10,4,0,0"
+                        materialDesign:TextFieldAssist.TextBoxViewMargin="10,6,0,0"
                         materialDesign:TextFieldAssist.TextFieldCornerRadius="15"
                         materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                         BorderThickness="3"
                         VerticalAlignment="Center"
                         CaretBrush="White"
                         >
-                        <TextBox.Background>
-                            <ImageBrush ImageSource="/Resource/Image/search_fill.png" 
-                                        AlignmentX="Right" 
-                                        Stretch="Uniform"
-                                        ></ImageBrush>
-                        </TextBox.Background>
+                     
                     </TextBox>
                     <Button
                         Content="THÊM"
@@ -135,7 +131,7 @@
                         Background="#6C63FF"
                         Foreground="White"
                         FontWeight="SemiBold"
-                        FontSize="18"
+                        FontSize="14"
                         >
                     </Button>
                 </StackPanel>

@@ -70,38 +70,31 @@
                         Height="40"
                         Margin="15,0,0,0"
                         BorderBrush="#6C63FF"
-                        Foreground="Gray"
-                        FontSize="18"
+                        Foreground="Black"
+                        FontSize="14"
                         FontWeight="SemiBold"
-                        materialDesign:HintAssist.Hint="Tìm Kiếm"
+                        materialDesign:HintAssist.Hint="Tìm kiếm"
                         materialDesign:HintAssist.FontFamily="{StaticResource MaterialDesignFont}"
                         materialDesign:HintAssist.Foreground="White"
-                        materialDesign:TextFieldAssist.TextBoxViewMargin="10,4,0,0"
+                        materialDesign:TextFieldAssist.TextBoxViewMargin="10,7,0,0"
                         materialDesign:TextFieldAssist.TextFieldCornerRadius="15"
                         materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                         BorderThickness="3"
                         VerticalAlignment="Center"
                         CaretBrush="White"
                         >
-                        <TextBox.Background>
-                            <ImageBrush ImageSource="/Resource/Image/search_fill.png" 
-                                        AlignmentX="Right" 
-                                        Stretch="Uniform"
-                                        ></ImageBrush>
-                        </TextBox.Background>
+                       
                     </TextBox>
                     <Button
                         Margin="40,0,0,0"
                         Width="50"
                         Height="40"
                         materialDesign:ButtonAssist.CornerRadius="15"
-                        Background="#6C63FF"
+                        Background="#6C63FF" 
                         >
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="/Resource/Image/add_fill.png" 
-                                   Height="20"
-                                   Margin="-1,0,0,2"/>
-
+                            <materialDesign:PackIcon Kind="PlusThick" Height="30" Width="20"/>
+                                   
                         </StackPanel>
                     </Button>
 
