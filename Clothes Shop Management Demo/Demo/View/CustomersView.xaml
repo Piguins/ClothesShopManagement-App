@@ -86,14 +86,19 @@
                        
                     </TextBox>
                     <Button
-                        Margin="40,0,0,0"
-                        Width="50"
+                        Margin="20,0,0,0"
+                        Width="80"
                         Height="40"
                         materialDesign:ButtonAssist.CornerRadius="15"
                         Background="#6C63FF" 
                         >
                         <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="PlusThick" Height="30" Width="20"/>
+                            <TextBlock
+                                Text="THÊM"
+                                FontWeight="Bold"
+                                FontFamily="{StaticResource Custom}">
+                                
+                            </TextBlock>
                                    
                         </StackPanel>
                     </Button>
