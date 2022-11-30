@@ -51,7 +51,7 @@
                                 Margin="15,20,10,10"
                                 >
                         <TextBlock
-                            Margin="-10,-20,0,50"
+                            Margin="-5,-20,0,50"
                             HorizontalAlignment="Center"
                             Text="THÔNG TIN KHÁCH HÀNG"
                             FontSize="24"

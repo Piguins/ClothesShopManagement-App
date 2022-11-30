@@ -43,14 +43,14 @@
                                 Foreground="Black"
                                 FontSize="14"
                                 FontWeight="SemiBold"
-                                materialDesign:HintAssist.Hint="Tìm Kiếm"
+                                materialDesign:HintAssist.Hint="Tìm kiếm"
                                 materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
                                 materialDesign:HintAssist.Foreground="White"
                                 materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
                                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                 materialDesign:TextFieldAssist.TextBoxViewMargin="15,6,0,0"
                                 BorderThickness="2"
-                                VerticalAlignment="Center" CaretBrush="White" >
+                                VerticalAlignment="Center" CaretBrush="Gray" >
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="TextChanged">
                                 <i:InvokeCommandAction Command="{Binding SearchCommand}"

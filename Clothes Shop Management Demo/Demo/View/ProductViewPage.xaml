@@ -117,7 +117,7 @@
                         materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                         BorderThickness="3"
                         VerticalAlignment="Center"
-                        CaretBrush="White"
+                        CaretBrush="Gray"
                         >
                      
                     </TextBox>

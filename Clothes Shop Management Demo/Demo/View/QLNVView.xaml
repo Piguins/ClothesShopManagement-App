@@ -85,7 +85,7 @@
                                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                 materialDesign:TextFieldAssist.TextBoxViewMargin="10,7,0,0"
                                 BorderThickness="2"
-                                VerticalAlignment="Center" CaretBrush="White" >
+                                VerticalAlignment="Center" CaretBrush="Gray" >
                             <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="TextChanged">
                                     <i:InvokeCommandAction Command="{Binding SearchCommand}"
