@@ -13,7 +13,7 @@
       DataContext="{StaticResource QLNVVM}"
       x:Name="QLNVwd">
 
-    <Grid>
+    <Grid DataContext="{StaticResource MainVM}">
         <Border Background="Transparent" 
                 Margin="0 0 0 0">
             <Grid>

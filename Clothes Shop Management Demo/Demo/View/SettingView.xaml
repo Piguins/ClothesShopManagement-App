@@ -11,12 +11,12 @@
       Title="SettingViewPage"
       Name="SettingViewPage"
       FontFamily="Josefin Sans"
-      DataContext="{StaticResource MainVM}">
+      DataContext="{StaticResource SettingVM}">
 
 
     
 
-    <Grid>
+    <Grid DataContext="{StaticResource MainVM}">
 
         <Border Background="Transparent" 
                 Margin="0 0 0 0">
