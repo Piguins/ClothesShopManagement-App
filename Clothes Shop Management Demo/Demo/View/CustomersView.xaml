@@ -6,9 +6,9 @@
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
       d:DesignHeight="605" d:DesignWidth="700"
-      >
+      DataContext="{StaticResource CsVM}">
 
-    <Border
+    <Border DataContext="{StaticResource MainVM}"
         Height="605"
         Width="700"
         Background="Transparent"
@@ -91,6 +91,7 @@
                         Height="40"
                         materialDesign:ButtonAssist.CornerRadius="15"
                         Background="#6C63FF" 
+                        Command="{Binding AddCustomer}"
                         >
                         <StackPanel Orientation="Horizontal">
                             <TextBlock

@@ -1,20 +1,16 @@
-﻿<Window x:Class="Demo.View.AddCustomerView"
+﻿<Page x:Class="Demo.View.AddCustomerView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Demo.View"
         mc:Ignorable="d"
-        WindowStyle="None"
-        ResizeMode="NoResize"
-        Background="Transparent"
-        AllowsTransparency="True"
         x:Name="AddCswd"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         DataContext="{StaticResource AddCsVM}"
         Height="605" 
-        Width="350" WindowStartupLocation="CenterScreen">
+        Width="500">
     <Border
         CornerRadius="15"
         Background="Transparent"
@@ -34,34 +30,10 @@
                     <RowDefinition Height="30"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Grid Grid.Row="0" Background="Transparent">
-                    <StackPanel 
-                                Orientation="Horizontal" 
-                                HorizontalAlignment="Right" 
-                                VerticalAlignment="Center"
-                                Margin="0,0,10,0"
-                                >
-                        <materialDesign:PackIcon Kind="WindowMinimize" Foreground="Black" Height="24" Width="24" Margin="0,0,8,0">
-                            <i:Interaction.Triggers>
-                                <i:EventTrigger EventName="MouseLeftButtonDown">
-                                    <i:InvokeCommandAction Command="{Binding Minimizewd}"
-                                                       CommandParameter="{Binding ElementName=AddCswd}"></i:InvokeCommandAction>
-                                </i:EventTrigger>
-                            </i:Interaction.Triggers>
-                        </materialDesign:PackIcon>
-                        <materialDesign:PackIcon Kind="CloseThick" Foreground="Black" Height="24" Width="24">
-                            <i:Interaction.Triggers>
-                                <i:EventTrigger EventName="MouseLeftButtonDown">
-                                    <i:InvokeCommandAction Command="{Binding Closewd}"
-                                                       CommandParameter="{Binding ElementName=AddCswd}"></i:InvokeCommandAction>
-                                </i:EventTrigger>
-                            </i:Interaction.Triggers>
-                        </materialDesign:PackIcon>
-                    </StackPanel>
-                </Grid>
+
                 <Grid Grid.Row="1">
                     <StackPanel Orientation="Vertical"
-                                Margin="15,20,0,0"
+                                Margin="15,20,10,0"
                                 >
                         <TextBlock
                             Margin="-15,0,0,50"
@@ -71,7 +43,7 @@
                             Foreground="#6C63FF"
                             FontFamily="{StaticResource Custom}"
                             />
-                        <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Horizontal" Margin="80 0 0 0">
                             <StackPanel Orientation="Vertical">
                                 <TextBlock
                                     Margin="0,0,0,0"
@@ -86,7 +58,7 @@
                                     BorderBrush="Gray"
                                     >
                                     <TextBox
-                                    IsEnabled="False"
+                                    IsEnabled="False" Margin="0 3 0 0"
                                     x:Name="MaKH"
                                     HorizontalAlignment="Left"
                                     Width="150"
@@ -119,13 +91,13 @@
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
                                     materialDesign:HintAssist.Hint="THÊM HỌ TÊN"
-                                    materialDesign:TextFieldAssist.TextBoxViewMargin="10,2,0,0"
+                                    materialDesign:TextFieldAssist.TextBoxViewMargin="10,3,0,0"
                                     materialDesign:TextFieldAssist.UnderlineBrush="Black"
                                 />
                             </StackPanel>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" 
-                                    Margin="0,10,0,20"
+                                    Margin="80,10,0,20"
                                     >
                             <StackPanel Orientation="Vertical">
                                 <TextBlock
@@ -136,7 +108,7 @@
                                     HorizontalAlignment="Center"
                                 />
                                 <TextBox
-                                    x:Name="SDT"
+                                    x:Name="SDT" Margin="0 3 0 0"
                                     HorizontalAlignment="Left"
                                     Width="154"
                                     FontFamily="{StaticResource Custom}"
@@ -159,7 +131,7 @@
                                     HorizontalAlignment="Center"
                                 />
                                 <ComboBox
-                                    Height="30"
+                                    Height="30" Margin="0 3 0 0"
                                     x:Name="GT"
                                     FontFamily="{StaticResource Custom}"
                                     HorizontalAlignment="Left"
@@ -185,7 +157,7 @@
                                     HorizontalAlignment="Center"
                                 />
                         <TextBox
-                                    x:Name="DC"
+                                    x:Name="DC" Margin="5 5 0 0"
                                     FontFamily="{StaticResource Custom}"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
@@ -202,7 +174,7 @@
                                     TextWrapping="Wrap"                            
                                 />
                         <Button Content="THÊM KHÁCH HÀNG"
-                                Margin="0,30,0,0"
+                                Margin="5,30,0,0"
                                 Width="230"
                                 BorderThickness="0"
                                 x:Name="btnupdate"
@@ -211,8 +183,8 @@
                                 >
                             <Button.Background>
                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0,0.5">
-                                    <GradientStop Color="#FFE5D8" Offset="0"/>
-                                    <GradientStop Color="#FFCAD4" Offset="1"/>
+                                    <GradientStop Color="#6C63FF" Offset="0"/>
+                                    <GradientStop Color="#6C63FF" Offset="1"/>
                                 </LinearGradientBrush>
                             </Button.Background>
                             <i:Interaction.Triggers>
@@ -227,4 +199,4 @@
             </Grid>
         </Grid>
     </Border>
-</Window>
+</Page>

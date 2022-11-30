@@ -17,7 +17,7 @@ namespace Demo.View
     /// <summary>
     /// Interaction logic for AddCustomerView.xaml
     /// </summary>
-    public partial class AddCustomerView : Window
+    public partial class AddCustomerView : Page
     {
         public AddCustomerView()
         {
