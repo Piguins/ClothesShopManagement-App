@@ -9,7 +9,8 @@
       mc:Ignorable="d" 
       d:DesignHeight="605" d:DesignWidth="700"
       Title="ImportView"
-      x:Name="Importwd">
+      x:Name="Importwd"
+      DataContext="{StaticResource ImportVM}">
 
     <Border
                     Height="605"

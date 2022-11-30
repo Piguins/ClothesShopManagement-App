@@ -10,7 +10,7 @@
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       Title="Quản lý nhân viên"
       FontFamily="Josefin Sans"
-      DataContext="{StaticResource MainVM}"
+      DataContext="{StaticResource QLNVVM}"
       x:Name="QLNVwd">
 
     <Grid>

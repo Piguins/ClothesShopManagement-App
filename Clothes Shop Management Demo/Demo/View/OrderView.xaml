@@ -8,7 +8,7 @@
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
       d:DesignHeight="605" d:DesignWidth="700"
-      DataContext="{StaticResource MainVM}"
+      DataContext="{StaticResource OrVM}"
       x:Name="Orderwd">
 
 

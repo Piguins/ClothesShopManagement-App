@@ -138,6 +138,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Const.cs" />
     <Compile Include="Model\CTHD.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
