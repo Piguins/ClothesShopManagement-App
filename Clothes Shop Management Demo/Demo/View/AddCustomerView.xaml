@@ -9,12 +9,27 @@
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         DataContext="{StaticResource AddCsVM}"
-        Height="605" 
-        Width="500">
+        Height="500" 
+        Width="600">
+
+    <Page.Triggers>
+        <EventTrigger RoutedEvent="Page.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <ThicknessAnimation Storyboard.TargetName="AddCswd"
+                                        Storyboard.TargetProperty="Margin"
+                                        From="426,0,0,0"
+                                        To="0"
+                                        Duration="0:0:0.2" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Page.Triggers>
+    
     <Border
         CornerRadius="15"
         Background="Transparent"
-        >        
+        >
         <i:Interaction.Triggers>
             <i:EventTrigger EventName="MouseLeftButtonDown">
                 <i:InvokeCommandAction Command="{Binding MoveWindow}"
@@ -33,42 +48,44 @@
 
                 <Grid Grid.Row="1">
                     <StackPanel Orientation="Vertical"
-                                Margin="15,20,10,0"
+                                Margin="15,20,10,10"
                                 >
                         <TextBlock
-                            Margin="-15,0,0,50"
+                            Margin="-10,-20,0,50"
                             HorizontalAlignment="Center"
                             Text="THÔNG TIN KHÁCH HÀNG"
                             FontSize="24"
                             Foreground="#6C63FF"
                             FontFamily="{StaticResource Custom}"
                             />
-                        <StackPanel Orientation="Horizontal" Margin="80 0 0 0">
+                        <StackPanel Orientation="Horizontal" Margin="130 0 0 0">
                             <StackPanel Orientation="Vertical">
                                 <TextBlock
-                                    Margin="0,0,0,0"
+                                    Margin="-25,0,0,0"
                                     Text="MÃ KHÁCH HÀNG"
                                     FontFamily="{StaticResource Custom}"
-                                    VerticalAlignment="Center"
-                                    HorizontalAlignment="Center"
+                                    HorizontalAlignment="Center" Height="18"
                                 />
                                 <Border
                                     CornerRadius="10"
                                     BorderThickness="2"
                                     BorderBrush="Gray"
+                                    
                                     >
                                     <TextBox
-                                    IsEnabled="False" Margin="0 3 0 0"
+                                    IsEnabled="False" Margin="0 0 0 0"
                                     x:Name="MaKH"
                                     HorizontalAlignment="Left"
                                     Width="150"
                                     FontFamily="{StaticResource Custom}"
-                                    materialDesign:HintAssist.Hint="THÊM MÃ KH"
+                                    Foreground="Black" FontWeight="ExtraBlack"
                                     BorderThickness="0"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                    materialDesign:TextFieldAssist.TextBoxViewMargin="10,2,0,0"
+                                    materialDesign:HintAssist.Hint="Thêm mã khách hàng" 
+                                    materialDesign:TextFieldAssist.TextBoxViewMargin="10,3,0,0"
                                     materialDesign:TextFieldAssist.UnderlineBrush="Black"
+                                    
                                 />
                                 </Border>
                             </StackPanel>
@@ -76,11 +93,10 @@
                                         Margin="10,0,0,0"
                                         >
                                 <TextBlock
-                                    Margin="0,0,0,0"
+                                    Margin="-60,0,0,0"
                                     Text="HỌ TÊN"
                                     FontFamily="{StaticResource Custom}"
-                                    VerticalAlignment="Center"
-                                    HorizontalAlignment="Center"
+                                    HorizontalAlignment="Center" Height="18" Width="85"
                                 />
                                 <TextBox
                                     x:Name="TenKH"
@@ -90,22 +106,21 @@
                                     BorderThickness="2"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                    materialDesign:HintAssist.Hint="THÊM HỌ TÊN"
+                                    materialDesign:HintAssist.Hint="Thêm họ tên"
                                     materialDesign:TextFieldAssist.TextBoxViewMargin="10,3,0,0"
                                     materialDesign:TextFieldAssist.UnderlineBrush="Black"
                                 />
                             </StackPanel>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" 
-                                    Margin="80,10,0,20"
+                                    Margin="130,30,0,20"
                                     >
                             <StackPanel Orientation="Vertical">
                                 <TextBlock
                                     Margin="0,0,0,0"
                                     Text="SỐ ĐIỆN THOẠI"
                                     FontFamily="{StaticResource Custom}"
-                                    VerticalAlignment="Center"
-                                    HorizontalAlignment="Center"
+                                    HorizontalAlignment="Center" Width="133"
                                 />
                                 <TextBox
                                     x:Name="SDT" Margin="0 3 0 0"
@@ -115,7 +130,7 @@
                                     BorderThickness="2"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                    materialDesign:HintAssist.Hint="THÊM SDT"
+                                    materialDesign:HintAssist.Hint="Thêm số điện thoại"
                                     materialDesign:TextFieldAssist.TextBoxViewMargin="10,2,0,0"
                                     materialDesign:TextFieldAssist.UnderlineBrush="Black"
                                 />
@@ -127,8 +142,7 @@
                                     Margin="0,0,0,0"
                                     Text="GIỚI TÍNH"
                                     FontFamily="{StaticResource Custom}"
-                                    VerticalAlignment="Center"
-                                    HorizontalAlignment="Center"
+                                    HorizontalAlignment="Center" Width="144"
                                 />
                                 <ComboBox
                                     Height="30" Margin="0 3 0 0"
@@ -139,7 +153,7 @@
                                     BorderThickness="2"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                    materialDesign:HintAssist.Hint="THÊM GIỚI TÍNH"
+                                    materialDesign:HintAssist.Hint="Thêm giới tính"
                                     materialDesign:TextFieldAssist.TextBoxViewMargin="10,2,0,0"
                                     materialDesign:TextFieldAssist.UnderlineBrush="Black"
                                 >
@@ -150,23 +164,21 @@
                             </StackPanel>
                         </StackPanel>
                         <TextBlock
-                                    Margin="0,10,0,0"
+                                    Margin="-200,10,0,0"
                                     Text="ĐỊA CHỈ"
                                     FontFamily="{StaticResource Custom}"
-                                    VerticalAlignment="Center"
-                                    HorizontalAlignment="Center"
+                                    HorizontalAlignment="Center" Width="88"
                                 />
                         <TextBox
                                     x:Name="DC" Margin="5 5 0 0"
                                     FontFamily="{StaticResource Custom}"
                                     HorizontalAlignment="Center"
-                                    VerticalAlignment="Center"
-                                    Width="319"
-                                    Height="155"
+                                    Width="320"
+                                    Height="30"
                                     BorderThickness="2"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                    materialDesign:HintAssist.Hint="THÊM ĐỊA CHỈ"
+                                    materialDesign:HintAssist.Hint="Thêm địa chỉ"
                                     materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0"
                                     materialDesign:TextFieldAssist.UnderlineBrush="Black"
                                     HorizontalScrollBarVisibility="Auto"
@@ -174,11 +186,11 @@
                                     TextWrapping="Wrap"                            
                                 />
                         <Button Content="THÊM KHÁCH HÀNG"
-                                Margin="5,30,0,0"
-                                Width="230"
+                                Margin="5,40,0,0"
+                                Width="319"
                                 BorderThickness="0"
                                 x:Name="btnupdate"
-                                materialDesign:ButtonAssist.CornerRadius="15"
+                                materialDesign:ButtonAssist.CornerRadius="0"
                                 FontFamily="{StaticResource Custom}"
                                 >
                             <Button.Background>
@@ -195,6 +207,39 @@
                             </i:Interaction.Triggers>
                         </Button>
                     </StackPanel>
+                    <Button 
+                        VerticalAlignment="Bottom" HorizontalAlignment="Right"
+                        Margin="0,0,98,48"
+                        Content = "Hủy" FontSize="13"
+                        FontFamily="Josefin Sans"
+                        Height="25"
+                        BorderBrush="Transparent"
+                        Cursor="Hand"  Width="105"
+                        x:Name="lbl" Click="lbl_Click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="Foreground" Value="#6C63FF"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#6891DF"/>
+                                        <Setter Property="Foreground" Value="White"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="100" Height="25"
+                                    CornerRadius="9"
+                                    Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center">
+                                    </ContentPresenter>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
                 </Grid>
             </Grid>
         </Grid>

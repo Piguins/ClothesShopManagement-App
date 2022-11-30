@@ -11,6 +11,19 @@
         DataContext="{StaticResource AddOrderVM}"
         Height="705" 
         Width="700">
+    <Page.Triggers>
+        <EventTrigger RoutedEvent="Page.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <ThicknessAnimation Storyboard.TargetName="AddOrderwd"
+                                        Storyboard.TargetProperty="Margin"
+                                        From="426,0,0,0"
+                                        To="0"
+                                        Duration="0:0:0.2" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Page.Triggers>
 
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">
@@ -51,7 +64,7 @@
                     </Grid.ColumnDefinitions>
                     <Border
                         Margin="30,-54,10,54"
-                        Background="FloralWhite"
+                        Background="Transparent"
                         CornerRadius="15" Grid.ColumnSpan="2"
                         >
                         <StackPanel
@@ -204,7 +217,7 @@
                 <Grid Grid.Column="1" Margin="0,-22,0,22">
                     <Border
                         Margin="20,-32,20,32"
-                        Background="FloralWhite"
+                        Background="Transparent"
                         CornerRadius="15"
                         >
                         <StackPanel
@@ -386,7 +399,7 @@
                         Width="600"
                         Height="46"
                         CornerRadius="10"
-                        Background="FloralWhite"
+                        Background="Transparent"
                         >
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -588,6 +601,7 @@
                             HorizontalAlignment="Right"
                         />
                     </StackPanel>
+                 
                 </Grid>
             </Grid>
         </Grid>

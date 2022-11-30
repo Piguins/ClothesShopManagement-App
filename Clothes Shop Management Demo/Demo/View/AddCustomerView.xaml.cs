@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Demo.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,16 @@ namespace Demo.View
         public AddCustomerView()
         {
             InitializeComponent();
+        }
+
+        private void Border_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+
+        }
+
+        private void lbl_Click(object sender, RoutedEventArgs e)
+        {
+            MainViewModel.MainFrame.Content = new CustomersView();
         }
     }
 }
