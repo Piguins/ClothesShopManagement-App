@@ -179,7 +179,7 @@
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
                                     materialDesign:HintAssist.Hint="Thêm địa chỉ"
-                                    materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0"
+                                    materialDesign:TextFieldAssist.TextBoxViewMargin="10,2,0,0"
                                     materialDesign:TextFieldAssist.UnderlineBrush="Black"
                                     HorizontalScrollBarVisibility="Auto"
                                     AcceptsReturn="True"
