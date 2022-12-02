@@ -1,0 +1,16 @@
+﻿<ContentPresenter
+    x:Class="Syncfusion.XForms.UWP.TextInputLayout.ToggleVisibleIcon"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.XForms.UWP.TextInputLayout"
+    Background="Transparent">
+
+    <ContentPresenter.Resources>
+        <local:NativeColorConverter x:Key="colorConverter" />
+    </ContentPresenter.Resources>
+
+    <Path Fill="{Binding Color, Converter={StaticResource colorConverter}}"
+          Data="M8,3.3000005C9.2070007,3.3000005 10.181999,4.2819988 10.181999,5.5000006 10.181999,6.7179991 9.2070007,7.6999975 8,7.6999975 6.7929993,7.6999975 5.8180008,6.7179991 5.8180008,5.5000006 5.8180008,4.2819988 6.7929993,3.3000005 8,3.3000005z M8,1.8329997C5.993,1.8329997 4.3639984,3.475999 4.3639984,5.5000006 4.3639984,7.5249983 5.993,9.1669999 8,9.1669999 10.007,9.1669999 11.636002,7.5249983 11.636002,5.5000006 11.636002,3.475999 10.007,1.8329997 8,1.8329997z M8,0C11.636002,-1.1919138E-07 14.742001,2.2800001 16,5.5000006 14.742001,8.7199975 11.636002,11 8,11 4.3639984,11 1.2579994,8.7199975 0,5.5000006 1.2579994,2.2800001 4.3639984,-1.1919138E-07 8,0z">
+    </Path>
+</ContentPresenter>
+

@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLBHModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="QLBHEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CTHDs" EntityType="QLBHModel.CTHD" />
+    <EntitySet Name="CTPNs" EntityType="QLBHModel.CTPN" />
+    <EntitySet Name="HOADONs" EntityType="QLBHModel.HOADON" />
+    <EntitySet Name="KHACHHANGs" EntityType="QLBHModel.KHACHHANG" />
+    <EntitySet Name="NGUOIDUNGs" EntityType="QLBHModel.NGUOIDUNG" />
+    <EntitySet Name="PHIEUNHAPs" EntityType="QLBHModel.PHIEUNHAP" />
+    <EntitySet Name="SANPHAMs" EntityType="QLBHModel.SANPHAM" />
+    <AssociationSet Name="FK_CT_HD" Association="QLBHModel.FK_CT_HD">
+      <End Role="HOADON" EntitySet="HOADONs" />
+      <End Role="CTHD" EntitySet="CTHDs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CT_SP" Association="QLBHModel.FK_CT_SP">
+      <End Role="SANPHAM" EntitySet="SANPHAMs" />
+      <End Role="CTHD" EntitySet="CTHDs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CN_PN" Association="QLBHModel.FK_CN_PN">
+      <End Role="PHIEUNHAP" EntitySet="PHIEUNHAPs" />
+      <End Role="CTPN" EntitySet="CTPNs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CN_SP" Association="QLBHModel.FK_CN_SP">
+      <End Role="SANPHAM" EntitySet="SANPHAMs" />
+      <End Role="CTPN" EntitySet="CTPNs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HD_ND" Association="QLBHModel.FK_HD_ND">
+      <End Role="NGUOIDUNG" EntitySet="NGUOIDUNGs" />
+      <End Role="HOADON" EntitySet="HOADONs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KH_HD" Association="QLBHModel.FK_KH_HD">
+      <End Role="KHACHHANG" EntitySet="KHACHHANGs" />
+      <End Role="HOADON" EntitySet="HOADONs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PN_ND" Association="QLBHModel.FK_PN_ND">
+      <End Role="NGUOIDUNG" EntitySet="NGUOIDUNGs" />
+      <End Role="PHIEUNHAP" EntitySet="PHIEUNHAPs" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CTHD">
+    <Key>
+      <PropertyRef Name="SOHD" />
+      <PropertyRef Name="MASP" />
+    </Key>
+    <Property Name="SOHD" Type="Int32" Nullable="false" />
+    <Property Name="MASP" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SL" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="HOADON" Relationship="QLBHModel.FK_CT_HD" FromRole="CTHD" ToRole="HOADON" />
+    <NavigationProperty Name="SANPHAM" Relationship="QLBHModel.FK_CT_SP" FromRole="CTHD" ToRole="SANPHAM" />
+  </EntityType>
+  <EntityType Name="CTPN">
+    <Key>
+      <PropertyRef Name="MAPN" />
+      <PropertyRef Name="MASP" />
+    </Key>
+    <Property Name="MAPN" Type="Int32" Nullable="false" />
+    <Property Name="MASP" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SL" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PHIEUNHAP" Relationship="QLBHModel.FK_CN_PN" FromRole="CTPN" ToRole="PHIEUNHAP" />
+    <NavigationProperty Name="SANPHAM" Relationship="QLBHModel.FK_CN_SP" FromRole="CTPN" ToRole="SANPHAM" />
+  </EntityType>
+  <EntityType Name="HOADON">
+    <Key>
+      <PropertyRef Name="SOHD" />
+    </Key>
+    <Property Name="SOHD" Type="Int32" Nullable="false" />
+    <Property Name="MAND" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MAKH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NGHD" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TRIGIA" Type="Int32" Nullable="false" />
+    <Property Name="KHUYENMAI" Type="Int32" />
+    <NavigationProperty Name="CTHDs" Relationship="QLBHModel.FK_CT_HD" FromRole="HOADON" ToRole="CTHD" />
+    <NavigationProperty Name="NGUOIDUNG" Relationship="QLBHModel.FK_HD_ND" FromRole="HOADON" ToRole="NGUOIDUNG" />
+    <NavigationProperty Name="KHACHHANG" Relationship="QLBHModel.FK_KH_HD" FromRole="HOADON" ToRole="KHACHHANG" />
+  </EntityType>
+  <EntityType Name="KHACHHANG">
+    <Key>
+      <PropertyRef Name="MAKH" />
+    </Key>
+    <Property Name="MAKH" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HOTEN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GIOITINH" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="DCHI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SDT" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="HOADONs" Relationship="QLBHModel.FK_KH_HD" FromRole="KHACHHANG" ToRole="HOADON" />
+  </EntityType>
+  <EntityType Name="NGUOIDUNG">
+    <Key>
+      <PropertyRef Name="MAND" />
+    </Key>
+    <Property Name="MAND" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TENND" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NGSINH" Type="DateTime" Precision="0" />
+    <Property Name="GIOITINH" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="SDT" Type="String" Nullable="false" MaxLength="50" FixedLength="true" Unicode="false" />
+    <Property Name="DIACHI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="USERNAME" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+    <Property Name="PASS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="QTV" Type="Boolean" Nullable="false" />
+    <Property Name="TTND" Type="Boolean" Nullable="false" />
+    <Property Name="AVA" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="MAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="HOADONs" Relationship="QLBHModel.FK_HD_ND" FromRole="NGUOIDUNG" ToRole="HOADON" />
+    <NavigationProperty Name="PHIEUNHAPs" Relationship="QLBHModel.FK_PN_ND" FromRole="NGUOIDUNG" ToRole="PHIEUNHAP" />
+  </EntityType>
+  <EntityType Name="PHIEUNHAP">
+    <Key>
+      <PropertyRef Name="MAPN" />
+    </Key>
+    <Property Name="MAPN" Type="Int32" Nullable="false" />
+    <Property Name="MAND" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NGAYNHAP" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="CTPNs" Relationship="QLBHModel.FK_CN_PN" FromRole="PHIEUNHAP" ToRole="CTPN" />
+    <NavigationProperty Name="NGUOIDUNG" Relationship="QLBHModel.FK_PN_ND" FromRole="PHIEUNHAP" ToRole="NGUOIDUNG" />
+  </EntityType>
+  <EntityType Name="SANPHAM">
+    <Key>
+      <PropertyRef Name="MASP" />
+    </Key>
+    <Property Name="MASP" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TENSP" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GIA" Type="Int32" Nullable="false" />
+    <Property Name="MOTA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="HINHSP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SL" Type="Int32" Nullable="false" />
+    <Property Name="LOAISP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SIZE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CTHDs" Relationship="QLBHModel.FK_CT_SP" FromRole="SANPHAM" ToRole="CTHD" />
+    <NavigationProperty Name="CTPNs" Relationship="QLBHModel.FK_CN_SP" FromRole="SANPHAM" ToRole="CTPN" />
+  </EntityType>
+  <Association Name="FK_CT_HD">
+    <End Type="QLBHModel.HOADON" Role="HOADON" Multiplicity="1" />
+    <End Type="QLBHModel.CTHD" Role="CTHD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HOADON">
+        <PropertyRef Name="SOHD" />
+      </Principal>
+      <Dependent Role="CTHD">
+        <PropertyRef Name="SOHD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CT_SP">
+    <End Type="QLBHModel.SANPHAM" Role="SANPHAM" Multiplicity="1" />
+    <End Type="QLBHModel.CTHD" Role="CTHD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SANPHAM">
+        <PropertyRef Name="MASP" />
+      </Principal>
+      <Dependent Role="CTHD">
+        <PropertyRef Name="MASP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CN_PN">
+    <End Type="QLBHModel.PHIEUNHAP" Role="PHIEUNHAP" Multiplicity="1" />
+    <End Type="QLBHModel.CTPN" Role="CTPN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PHIEUNHAP">
+        <PropertyRef Name="MAPN" />
+      </Principal>
+      <Dependent Role="CTPN">
+        <PropertyRef Name="MAPN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CN_SP">
+    <End Type="QLBHModel.SANPHAM" Role="SANPHAM" Multiplicity="1" />
+    <End Type="QLBHModel.CTPN" Role="CTPN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SANPHAM">
+        <PropertyRef Name="MASP" />
+      </Principal>
+      <Dependent Role="CTPN">
+        <PropertyRef Name="MASP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HD_ND">
+    <End Type="QLBHModel.NGUOIDUNG" Role="NGUOIDUNG" Multiplicity="0..1" />
+    <End Type="QLBHModel.HOADON" Role="HOADON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NGUOIDUNG">
+        <PropertyRef Name="MAND" />
+      </Principal>
+      <Dependent Role="HOADON">
+        <PropertyRef Name="MAND" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KH_HD">
+    <End Type="QLBHModel.KHACHHANG" Role="KHACHHANG" Multiplicity="0..1" />
+    <End Type="QLBHModel.HOADON" Role="HOADON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACHHANG">
+        <PropertyRef Name="MAKH" />
+      </Principal>
+      <Dependent Role="HOADON">
+        <PropertyRef Name="MAKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PN_ND">
+    <End Type="QLBHModel.NGUOIDUNG" Role="NGUOIDUNG" Multiplicity="0..1" />
+    <End Type="QLBHModel.PHIEUNHAP" Role="PHIEUNHAP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NGUOIDUNG">
+        <PropertyRef Name="MAND" />
+      </Principal>
+      <Dependent Role="PHIEUNHAP">
+        <PropertyRef Name="MAND" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

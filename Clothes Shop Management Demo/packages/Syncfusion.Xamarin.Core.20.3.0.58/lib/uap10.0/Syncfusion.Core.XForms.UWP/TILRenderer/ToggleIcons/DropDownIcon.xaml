@@ -1,0 +1,15 @@
+﻿<ContentPresenter x:Class="Syncfusion.XForms.UWP.TextInputLayout.DropDownIcon"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Syncfusion.XForms.UWP.TextInputLayout"
+    Background="Transparent">
+
+    <ContentPresenter.Resources>
+        <local:NativeColorConverter x:Key="colorConverter" />
+    </ContentPresenter.Resources>
+
+    <Path Fill="{Binding Color, Converter={StaticResource colorConverter}}"
+        Data="M0,0 L14,0 7,7 z">
+    </Path>
+</ContentPresenter>
+
