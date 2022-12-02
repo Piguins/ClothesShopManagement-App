@@ -50,9 +50,9 @@
                         <ComboBox
                         x:Name="cbxChon"
                         Style="{StaticResource MaterialDesignFilledComboBox}"
-                        materialDesign:TextFieldAssist.TextBoxViewMargin="2,-11,-10,0"
+                        materialDesign:TextFieldAssist.TextBoxViewMargin="2,-12,-10,0"
                         materialDesign:TextFieldAssist.TextFieldCornerRadius="14"
-                        materialDesign:HintAssist.Hint="Tìm kiếm"
+                       
                         materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                         BorderThickness="0"
                         materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
@@ -62,10 +62,11 @@
                         Height="35"
                         FontSize="14"
                         ItemsSource="{Binding listTK}"
-                        Width="110"
-                     
-                        >
-                            <ComboBox.ItemTemplate>
+                        Width="110">
+
+
+                            <ComboBox.ItemTemplate >
+                                
                                 <DataTemplate>
                                     <StackPanel Orientation="Horizontal">
                                         <TextBlock Text="{Binding}"/>
@@ -88,7 +89,7 @@
                                 materialDesign:HintAssist.Foreground="White"
                                 materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
                                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
-                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,7,0,0"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,6,0,0"
                                 BorderThickness="2"
                                 VerticalAlignment="Center" CaretBrush="Gray" >
                         <i:Interaction.Triggers>
