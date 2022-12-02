@@ -145,7 +145,7 @@
                                 FontSize="12"
                                 />
                             </Grid>
-                            <Grid Grid.Column="1">
+                            <Grid Grid.Column="1" Margin="-7 0 0 0">
                                 <TextBlock
                                 HorizontalAlignment="Left"
                                 Text="KHÁCH HÀNG"
@@ -155,16 +155,16 @@
                                 Margin="20 0 0 0"
                                 />
                             </Grid>
-                            <Grid Grid.Column="2">
+                            <Grid Grid.Column="2" Margin="-60 0 0 0">
                                 <TextBlock
-                                Text="NGÀY"
+                                Text="NGÀY" 
                                 HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
                                 FontFamily="{StaticResource Custom}"
                                 FontSize="12"
                                 />
                             </Grid>
-                            <Grid Grid.Column="3">
+                            <Grid Grid.Column="3" Margin="-78 0 0 0">
                                 <TextBlock
                                 Text="TRỊ GIÁ"
                                 VerticalAlignment="Center"
@@ -179,9 +179,8 @@
                           Height="410"
                           Width="675"
                           SelectionMode="Single"
-                          ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                              Margin="-5,0,0,0"
-                        >
+                          ScrollViewer.VerticalScrollBarVisibility="Hidden">
+
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <Border
@@ -218,7 +217,7 @@
                                         </Grid>
                                         <Grid Grid.Column="2">
                                             <TextBlock
-                                                Text="{Binding NGHD, StringFormat=dd/MM/yyyy hh:mm:tt}"
+                                                Text="{Binding NGHD, StringFormat=dd/MM/yyyy}"
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Center"
                                                 FontFamily="{StaticResource Custom}"
@@ -227,7 +226,7 @@
                                         </Grid>
                                         <Grid Grid.Column="3">
                                             <TextBlock
-                                                Text="{Binding TRIGIA, StringFormat={}VNĐ}"
+                                               Text="{Binding TRIGIA, StringFormat={}{0:#,###} VNĐ}"
                                                 HorizontalAlignment="Center"
                                                 VerticalAlignment="Center"
                                                 MaxWidth="150"
