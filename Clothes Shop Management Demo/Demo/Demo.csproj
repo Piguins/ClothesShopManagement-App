@@ -145,6 +145,7 @@
     <Compile Include="Model\CTPN.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\DataProvider.cs" />
     <Compile Include="Model\HOADON.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
