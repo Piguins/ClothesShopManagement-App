@@ -31,6 +31,8 @@ namespace Demo.ViewModel
         public ICommand ForgotPassCM { get; set; }
 
         public ICommand Login { get; set; }
+
+        public ICommand PasswordChangedCommand { get; set; }
         public LoginViewModel()
         {
             IsLogin = false;
@@ -48,15 +50,42 @@ namespace Demo.ViewModel
                 MainFrame.Content = new ForgetPassView();
             });
 
+            PasswordChangedCommand = new RelayCommand<PasswordBox>((p) => true, (p) => { Password = p.Password; });
+
             LoginCM = new RelayCommand<object>((p) => { return true; }, (p) =>
             {
+                try
+                {
+                    string PassEncode = MD5Hash(Base64Encode(Password));
+                    var accCount = DataProvider.Ins.DB.NGUOIDUNG.Where(x => x.USERNAME == Username && x.PASS == PassEncode && x.TTND).Count();
+                    if (accCount > 0)
+                    {
+                        IsLogin = true;
+                        Const.TenDangNhap = Username;
+                        Window oldWindow = App.Current.MainWindow;
+                        MainView mainView = new MainView();
+                        App.Current.MainWindow = oldWindow;
+                        oldWindow.Close();
+                        mainView.Show();
+                        Username = "";
+                    }
+                    else
+                    {
+                        MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng!", "Thông báo", MessageBoxButton.OK);
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Mất kết nối đến cơ sở dữ liệu!", "Thông báo", MessageBoxButton.OK);
+                }
+            });
+            /*{ 
                 Window oldWindow = App.Current.MainWindow;
                 MainView mainView = new MainView();
-                App.Current.MainWindow = oldWindow;
+                App.Current.MainWindow = oldWindow; 
                 oldWindow.Close();
                 mainView.Show();
-
-            });
+            });*/
 
         }
         public static string MD5Hash(string input)
@@ -76,7 +105,7 @@ namespace Demo.ViewModel
             var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
             return System.Convert.ToBase64String(plainTextBytes);
         }
-        public void login(LoginView p)
+        public void login(LoginViewPage p)
         {
             try
             {
@@ -87,10 +116,12 @@ namespace Demo.ViewModel
                 {
                     IsLogin = true;
                     Const.TenDangNhap = Username;
-                    MainWindow mainWindow = new MainWindow();
-                    mainWindow.Show();
+                    Window oldWindow = App.Current.MainWindow;
+                    MainView mainView = new MainView();
+                    App.Current.MainWindow = oldWindow;
+                    oldWindow.Close();
+                    mainView.Show();
                     Username = "";
-                    p.Hide();
                 }
                 else
                 {

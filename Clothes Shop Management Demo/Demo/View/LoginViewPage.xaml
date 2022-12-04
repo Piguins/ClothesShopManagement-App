@@ -44,7 +44,7 @@
                 <TextBox
                         materialDesign:HintAssist.Hint="Tên đăng nhập" 
                         FontFamily="Josefin Sans"
-                        Text="{Binding Content}" 
+                        Text="{Binding Username}" 
                         Height="40" 
                         Width="300"
                         Padding="20,15,0,0">
@@ -68,7 +68,13 @@
                                     Stretch="None"
                                     AlignmentX="Left"/>
                 </PasswordBox.Background>
-
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="PasswordChanged">
+                        <i:InvokeCommandAction Command="{Binding PasswordChangedCommand}"
+                                               CommandParameter="{Binding ElementName=PasswordBox}">
+                        </i:InvokeCommandAction>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
             </PasswordBox>
 
             <Button
@@ -156,7 +162,6 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-
             </Grid>
         </StackPanel>
     </Grid>
