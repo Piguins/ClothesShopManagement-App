@@ -57,7 +57,7 @@ namespace Demo.ViewModel
                 try
                 {
                     string PassEncode = MD5Hash(Base64Encode(Password));
-                    var accCount = DataProvider.Ins.DB.NGUOIDUNG.Where(x => x.USERNAME == Username && x.PASS == PassEncode && x.TTND).Count();
+                    var accCount = DataProvider.Ins.DB.NGUOIDUNGs.Where(x => x.USERNAME == Username && x.PASS == PassEncode && x.TTND).Count();
                     if (accCount > 0)
                     {
                         IsLogin = true;
@@ -111,7 +111,7 @@ namespace Demo.ViewModel
             {
                 if (p == null) return;
                 string PassEncode = MD5Hash(Base64Encode(Password));
-                var accCount = DataProvider.Ins.DB.NGUOIDUNG.Where(x => x.USERNAME == Username && x.PASS == PassEncode && x.TTND).Count();
+                var accCount = DataProvider.Ins.DB.NGUOIDUNGs.Where(x => x.USERNAME == Username && x.PASS == PassEncode && x.TTND).Count();
                 if (accCount > 0)
                 {
                     IsLogin = true;

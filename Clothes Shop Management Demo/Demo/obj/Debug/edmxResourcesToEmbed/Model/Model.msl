@@ -4,82 +4,82 @@
     <EntitySetMapping Name="CTHDs">
       <EntityTypeMapping TypeName="QLBHModel.CTHD">
         <MappingFragment StoreEntitySet="CTHD">
-          <ScalarProperty Name="SL" ColumnName="SL" />
-          <ScalarProperty Name="MASP" ColumnName="MASP" />
           <ScalarProperty Name="SOHD" ColumnName="SOHD" />
+          <ScalarProperty Name="MASP" ColumnName="MASP" />
+          <ScalarProperty Name="SL" ColumnName="SL" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CTPNs">
       <EntityTypeMapping TypeName="QLBHModel.CTPN">
         <MappingFragment StoreEntitySet="CTPN">
-          <ScalarProperty Name="SL" ColumnName="SL" />
-          <ScalarProperty Name="MASP" ColumnName="MASP" />
           <ScalarProperty Name="MAPN" ColumnName="MAPN" />
+          <ScalarProperty Name="MASP" ColumnName="MASP" />
+          <ScalarProperty Name="SL" ColumnName="SL" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="HOADONs">
       <EntityTypeMapping TypeName="QLBHModel.HOADON">
         <MappingFragment StoreEntitySet="HOADON">
-          <ScalarProperty Name="KHUYENMAI" ColumnName="KHUYENMAI" />
-          <ScalarProperty Name="TRIGIA" ColumnName="TRIGIA" />
-          <ScalarProperty Name="NGHD" ColumnName="NGHD" />
-          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
-          <ScalarProperty Name="MAND" ColumnName="MAND" />
           <ScalarProperty Name="SOHD" ColumnName="SOHD" />
+          <ScalarProperty Name="MAND" ColumnName="MAND" />
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="NGHD" ColumnName="NGHD" />
+          <ScalarProperty Name="TRIGIA" ColumnName="TRIGIA" />
+          <ScalarProperty Name="KHUYENMAI" ColumnName="KHUYENMAI" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="KHACHHANGs">
       <EntityTypeMapping TypeName="QLBHModel.KHACHHANG">
         <MappingFragment StoreEntitySet="KHACHHANG">
-          <ScalarProperty Name="SDT" ColumnName="SDT" />
-          <ScalarProperty Name="DCHI" ColumnName="DCHI" />
-          <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
-          <ScalarProperty Name="HOTEN" ColumnName="HOTEN" />
           <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="HOTEN" ColumnName="HOTEN" />
+          <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
+          <ScalarProperty Name="DCHI" ColumnName="DCHI" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="NGUOIDUNGs">
       <EntityTypeMapping TypeName="QLBHModel.NGUOIDUNG">
         <MappingFragment StoreEntitySet="NGUOIDUNG">
-          <ScalarProperty Name="MAIL" ColumnName="MAIL" />
-          <ScalarProperty Name="AVA" ColumnName="AVA" />
-          <ScalarProperty Name="TTND" ColumnName="TTND" />
-          <ScalarProperty Name="QTV" ColumnName="QTV" />
-          <ScalarProperty Name="PASS" ColumnName="PASS" />
-          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
-          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
-          <ScalarProperty Name="SDT" ColumnName="SDT" />
-          <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
-          <ScalarProperty Name="NGSINH" ColumnName="NGSINH" />
-          <ScalarProperty Name="TENND" ColumnName="TENND" />
           <ScalarProperty Name="MAND" ColumnName="MAND" />
+          <ScalarProperty Name="TENND" ColumnName="TENND" />
+          <ScalarProperty Name="NGSINH" ColumnName="NGSINH" />
+          <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="PASS" ColumnName="PASS" />
+          <ScalarProperty Name="QTV" ColumnName="QTV" />
+          <ScalarProperty Name="TTND" ColumnName="TTND" />
+          <ScalarProperty Name="AVA" ColumnName="AVA" />
+          <ScalarProperty Name="MAIL" ColumnName="MAIL" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PHIEUNHAPs">
       <EntityTypeMapping TypeName="QLBHModel.PHIEUNHAP">
         <MappingFragment StoreEntitySet="PHIEUNHAP">
-          <ScalarProperty Name="NGAYNHAP" ColumnName="NGAYNHAP" />
-          <ScalarProperty Name="MAND" ColumnName="MAND" />
           <ScalarProperty Name="MAPN" ColumnName="MAPN" />
+          <ScalarProperty Name="MAND" ColumnName="MAND" />
+          <ScalarProperty Name="NGAYNHAP" ColumnName="NGAYNHAP" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="SANPHAMs">
       <EntityTypeMapping TypeName="QLBHModel.SANPHAM">
         <MappingFragment StoreEntitySet="SANPHAM">
-          <ScalarProperty Name="SIZE" ColumnName="SIZE" />
-          <ScalarProperty Name="LOAISP" ColumnName="LOAISP" />
-          <ScalarProperty Name="SL" ColumnName="SL" />
-          <ScalarProperty Name="HINHSP" ColumnName="HINHSP" />
-          <ScalarProperty Name="MOTA" ColumnName="MOTA" />
-          <ScalarProperty Name="GIA" ColumnName="GIA" />
-          <ScalarProperty Name="TENSP" ColumnName="TENSP" />
           <ScalarProperty Name="MASP" ColumnName="MASP" />
+          <ScalarProperty Name="TENSP" ColumnName="TENSP" />
+          <ScalarProperty Name="GIA" ColumnName="GIA" />
+          <ScalarProperty Name="MOTA" ColumnName="MOTA" />
+          <ScalarProperty Name="HINHSP" ColumnName="HINHSP" />
+          <ScalarProperty Name="SL" ColumnName="SL" />
+          <ScalarProperty Name="LOAISP" ColumnName="LOAISP" />
+          <ScalarProperty Name="SIZE" ColumnName="SIZE" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -24,7 +24,7 @@ namespace Demo.ViewModel
             public OrderViewModel()
             {
                 listTK = new ObservableCollection<string>() { "Họ tên", "Số HD", "Ngày" };
-                listHD = new ObservableCollection<HOADON>(DataProvider.Ins.DB.HOADON);
+                listHD = new ObservableCollection<HOADON>(DataProvider.Ins.DB.HOADONs);
             
                 SearchCommand = new RelayCommand<OrderView>((p) => true, (p) => _SearchCommand(p));
             
@@ -36,7 +36,7 @@ namespace Demo.ViewModel
             }
             bool check(int m)
             {
-                foreach (HOADON temp in DataProvider.Ins.DB.HOADON)
+                foreach (HOADON temp in DataProvider.Ins.DB.HOADONs)
                 {
                     if (temp.SOHD == m)
                         return true;
