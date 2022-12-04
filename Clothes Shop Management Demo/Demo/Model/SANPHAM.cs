@@ -17,8 +17,8 @@ namespace Demo.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public SANPHAM()
         {
-            this.CTHDs = new HashSet<CTHD>();
-            this.CTPNs = new HashSet<CTPN>();
+            this.CTPN = new HashSet<CTPN>();
+            this.CTHD = new HashSet<CTHD>();
         }
     
         public string MASP { get; set; }
@@ -31,8 +31,8 @@ namespace Demo.Model
         public string SIZE { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CTHD> CTHDs { get; set; }
+        public virtual ICollection<CTPN> CTPN { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CTPN> CTPNs { get; set; }
+        public virtual ICollection<CTHD> CTHD { get; set; }
     }
 }

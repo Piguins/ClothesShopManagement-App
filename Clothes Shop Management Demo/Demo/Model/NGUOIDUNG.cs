@@ -17,8 +17,8 @@ namespace Demo.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public NGUOIDUNG()
         {
-            this.HOADONs = new HashSet<HOADON>();
-            this.PHIEUNHAPs = new HashSet<PHIEUNHAP>();
+            this.HOADON = new HashSet<HOADON>();
+            this.PHIEUNHAP = new HashSet<PHIEUNHAP>();
         }
     
         public string MAND { get; set; }
@@ -35,8 +35,8 @@ namespace Demo.Model
         public string MAIL { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HOADON> HOADONs { get; set; }
+        public virtual ICollection<HOADON> HOADON { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PHIEUNHAP> PHIEUNHAPs { get; set; }
+        public virtual ICollection<PHIEUNHAP> PHIEUNHAP { get; set; }
     }
 }

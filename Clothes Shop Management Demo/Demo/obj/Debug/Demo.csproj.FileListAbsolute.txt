@@ -696,3 +696,8 @@ C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Man
 C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ReportView.g.cs
 C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo_Content.g.cs
 C:\Users\theki\OneDrive\Desktop\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ReportView.baml
+D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo_Content.g.cs
+D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\EntityFramework.dll
+D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\EntityFramework.SqlServer.dll
+D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\EntityFramework.xml
+D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\EntityFramework.SqlServer.xml
