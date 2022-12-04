@@ -17,7 +17,7 @@ namespace Demo.View
     /// <summary>
     /// Interaction logic for DetailsOrder.xaml
     /// </summary>
-    public partial class DetailsOrder : Window
+    public partial class DetailsOrder : Page
     {
         public DetailsOrder()
         {
