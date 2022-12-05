@@ -5,13 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Demo.View"
         mc:Ignorable="d"
-       
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="AddImportView" 
         DataContext="{StaticResource DetailOrderVM}"
         x:Name="AddImportwd"
-        Height="600" 
+        Height="650" 
         Width="700">
     <Border
         x:Name="DetailOrder"
@@ -26,31 +25,33 @@
                 <RowDefinition/>
                 <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Row="0">
+            <Grid Grid.Row="0" Margin="0,-6,0,30" RenderTransformOrigin="0.5,0.5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
 
             </Grid>
-            <Grid Grid.Row="1">
-                <TextBlock
-                    Text="HÓA ĐƠN"
-                    Foreground="#6C63FF"
-                    FontFamily="{StaticResource Custom}"
-                    FontSize="30"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    />
-            </Grid>
-            <Grid Grid.Row="2">
+            <Grid Grid.Row="2" Margin="0 -50 0 0">
                 <Border
                         Width="694"
                         HorizontalAlignment="Center"
-                        Background="White"
-                        CornerRadius="15"/>
+                        Background="Transparent"
+                        CornerRadius="15" Height="277" VerticalAlignment="Top"/>
                 <StackPanel
-                            Margin="10"
+                            Margin="10,10,10,0" Height="267" VerticalAlignment="Top"
                             >
                     <TextBlock
                                 Margin="0,0,0,5"
-                                Text="THÔNG TIN HÓA ĐƠN"
+                                Text="THÔNG TIN HÓA ĐƠN" FontSize = "16"
                                 FontFamily="{StaticResource Custom}"
                                 HorizontalAlignment="Center"
                                 />
@@ -75,7 +76,7 @@
                         <Border BorderThickness="2" BorderBrush="Gray" CornerRadius="10">
                             <StackPanel Orientation="Horizontal">
                                 <TextBox
-                                    x:Name="MaND"
+                                    x:Name="MaND" 
                                     HorizontalAlignment="Left"
                                     FontFamily="{StaticResource Custom}"
                                     BorderThickness="0"
@@ -214,7 +215,7 @@
             <Grid Grid.Row="3">
                 <StackPanel>
                     <Border
-                        Margin="-12,10,-10,0"
+                        Margin="-12,-50,-10,0"
                         Width="680"
                         Height="40"
                         CornerRadius="10"
@@ -229,7 +230,7 @@
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
                             <Grid Grid.Column="0">
-                                <TextBlock
+                                <TextBlock Margin="60 0 0 0"
                                 Text="MÃ SP"
                                 HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
@@ -239,7 +240,7 @@
                             </Grid>
                             <Grid Grid.Column="1">
                                 <TextBlock
-                                                Margin="50,0,0,0"
+                                Margin="40,0,0,0"
                                 HorizontalAlignment="Left"
                                 Text="TÊN SP"
                                 VerticalAlignment="Center"
@@ -248,25 +249,24 @@
                                 />
                             </Grid>
                             <Grid Grid.Column="2">
-                                <TextBlock
+                                <TextBlock  Margin="35,0,0,0"
                                 Text="SIZE"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 FontFamily="{StaticResource Custom}"
-                                FontSize="12"
-                                    Margin="50,0,0,0"
-                                />
+                                FontSize="12" ></TextBlock>
+                             
                             </Grid>
                             <Grid Grid.Column="3">
-                                <TextBlock
+                                <TextBlock Margin="30,0,0,0"
                                 Text="SL"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 MaxWidth="150"
                                 FontFamily="{StaticResource Custom}"
-                                FontSize="12"
-                                    Margin="20,0,0,0"
-                                />
+                                FontSize="12" ></TextBlock>
+                                    
+                                
                             </Grid>
                             <Grid Grid.Column="4">
                                 <TextBlock
@@ -283,8 +283,8 @@
                     </Border>
                     <ListView x:Name="ListViewSP" 
                           SelectionMode="Single"
-                          ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                          Height="95"
+                          ScrollViewer.VerticalScrollBarVisibility="Visible"
+                          Height="140"
                         >
                         <ListView.ItemTemplate>
                             <DataTemplate>
@@ -293,8 +293,7 @@
                                 Width="600"
                                 Height="40"
                                 CornerRadius="10"
-                                Background="White"
-                        >
+                                Background="#6C63FF">
                                     <Grid>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="100"/>
@@ -343,7 +342,7 @@
                                         </Grid>
                                         <Grid Grid.Column="4">
                                             <TextBlock
-                                                Text="{Binding Tong,StringFormat={}VNĐ}"
+                                                Text="{Binding Tong,StringFormat={}{0:# ###} VNĐ}"
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Center"
                                                 MaxWidth="150"
@@ -372,7 +371,7 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Grid Grid.Column="0">
+                <Grid Grid.Column="0" Margin="0 -90 0 0">
                     <Button
                                     BorderThickness="0"
                                     Content="XÓA HÓA ĐƠN"
@@ -398,7 +397,7 @@
                 <Grid Grid.Column="2"
                       HorizontalAlignment="Right"
                       >
-                    <StackPanel>
+                    <StackPanel Margin="0,-47,0,18">
                         <TextBlock
                             Margin="0,6,0,0"
                             Foreground="#6C63FF"
@@ -423,7 +422,7 @@
                     </StackPanel>
                 </Grid>
                 <Grid Grid.Column="3">
-                    <StackPanel>
+                    <StackPanel Margin="0,-48,0,0" Height="112" VerticalAlignment="Top">
                         <TextBlock
                             HorizontalAlignment="Right"
                             Margin="0,6,10,0"

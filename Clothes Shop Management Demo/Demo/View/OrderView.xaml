@@ -226,7 +226,7 @@
                                         </Grid>
                                         <Grid Grid.Column="3">
                                             <TextBlock
-                                               Text="{Binding TRIGIA, StringFormat={}{0:#,###} VNĐ}"
+                                               Text="{Binding TRIGIA, StringFormat={}{0:# ###} VNĐ}"
                                                 HorizontalAlignment="Center"
                                                 VerticalAlignment="Center"
                                                 MaxWidth="150"
