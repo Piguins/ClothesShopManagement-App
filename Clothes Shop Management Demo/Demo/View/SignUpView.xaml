@@ -12,7 +12,8 @@
         ResizeMode="NoResize"
         Background="Transparent"
         AllowsTransparency="True" 
-        Title="Đăng ký" Height="450" Width="650" WindowStartupLocation="CenterScreen">
+        Title="Đăng ký" Height="450" Width="650" WindowStartupLocation="CenterScreen"
+        DataContext="{StaticResource RegisterVM}">
 
     <Window.Triggers>
         <EventTrigger RoutedEvent="Window.Loaded">
@@ -35,7 +36,7 @@
         <i:Interaction.Triggers>
             <i:EventTrigger EventName="MouseLeftButtonDown">
                 <i:InvokeCommandAction Command="{Binding Movewd}"
-                                                       CommandParameter="{Binding ElementName=Registerwd}"></i:InvokeCommandAction>
+                                                       CommandParameter="{Binding ElementName=SignUpWd}"></i:InvokeCommandAction>
             </i:EventTrigger>
         </i:Interaction.Triggers>
         <Grid>
@@ -63,12 +64,6 @@
                         </i:Interaction.Triggers>
                     </materialDesign:PackIcon>
                     <materialDesign:PackIcon Kind="CloseThick" Foreground="#6C63FF" Height="24" Width="24" MouseDown="CloseButton">
-                        <i:Interaction.Triggers>
-                            <i:EventTrigger EventName="MouseLeftButtonDown">
-                                <i:InvokeCommandAction Command="{Binding Close1}"
-                                                       CommandParameter="{Binding ElementName=Registerwd}"></i:InvokeCommandAction>
-                            </i:EventTrigger>
-                        </i:Interaction.Triggers>
                     </materialDesign:PackIcon>
                 </StackPanel>
             </Grid>
@@ -115,7 +110,7 @@
                         Content="Thêm ảnh đại diện" FontFamily="{StaticResource Custom}"
                         BorderThickness="0"
                         Width="160" Height="40" Background="#6C63FF" Foreground="White"
-                        Grid.Row="1" Click="Button_Click">
+                        Grid.Row="1">
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="Click">
                                 <i:InvokeCommandAction Command="{Binding AddImage}"
@@ -258,7 +253,7 @@
                             <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="Click">
                                     <i:InvokeCommandAction Command="{Binding Register}"
-                                                       CommandParameter="{Binding ElementName=Registerwd}"></i:InvokeCommandAction>
+                                                       CommandParameter="{Binding ElementName=SignUpWd}"></i:InvokeCommandAction>
                                 </i:EventTrigger>
                             </i:Interaction.Triggers>
                         </Button>
