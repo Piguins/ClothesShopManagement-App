@@ -44,6 +44,7 @@ namespace Demo.ViewModel
                     }
                 }
                 DataProvider.Ins.DB.SaveChanges();
+                MainViewModel.MainFrame.Content = new OrderView();
             }
         }
     }

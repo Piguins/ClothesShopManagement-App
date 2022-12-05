@@ -389,7 +389,7 @@
                             <i:EventTrigger EventName="Click">
                                 <i:InvokeCommandAction     
                                                             Command="{Binding DeleteOrder}"
-                                                            CommandParameter="{Binding ElementName=DetailOrderwd}"></i:InvokeCommandAction>
+                                                            CommandParameter="{Binding ElementName=AddImportwd}"></i:InvokeCommandAction>
                             </i:EventTrigger>
                         </i:Interaction.Triggers>
                     </Button>
