@@ -195,7 +195,7 @@
                             >
                             <DockPanel>
                                 <materialDesign:PackIcon
-                                Kind="AccountWrenchOutline"
+                                Kind="GiftOpenOutline"
                                 Width="25"
                                 Height="25"
                                 VerticalAlignment="Center"

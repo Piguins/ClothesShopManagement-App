@@ -174,7 +174,7 @@
                             Style="{StaticResource BtnVoucher}"
                             FontFamily="{StaticResource Custom}"
                             Uid="7"
-                            Command="{Binding SettingCM}">
+                            Command="{Binding VoucherCM}">
 
                             </RadioButton>
                             <Grid Grid.Row="2" VerticalAlignment="Bottom">
