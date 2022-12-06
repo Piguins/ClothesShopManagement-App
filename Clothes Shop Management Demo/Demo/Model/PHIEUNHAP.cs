@@ -17,7 +17,7 @@ namespace Demo.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public PHIEUNHAP()
         {
-            this.CTPNs = new HashSet<CTPN>();
+            this.CTPN = new HashSet<CTPN>();
         }
     
         public int MAPN { get; set; }
@@ -25,7 +25,7 @@ namespace Demo.Model
         public System.DateTime NGAYNHAP { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CTPN> CTPNs { get; set; }
+        public virtual ICollection<CTPN> CTPN { get; set; }
         public virtual NGUOIDUNG NGUOIDUNG { get; set; }
     }
 }

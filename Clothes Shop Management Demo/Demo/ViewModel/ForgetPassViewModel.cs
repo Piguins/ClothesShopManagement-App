@@ -46,10 +46,10 @@ namespace Demo.ViewModel
             }
             DataProvider.Ins.DB.SaveChanges();
             string nd = "Vui lòng nhập mật khẩu " + newpass + " để đăng nhập. Trân trọng !";
-            MailMessage message = new MailMessage("doanit008@gmail.com", parameter.MailAddress.Text, "Lấy lại mật khẩu", nd);
+            MailMessage message = new MailMessage("vhnm3004@gmail.com", parameter.MailAddress.Text, "Lấy lại mật khẩu", nd);
             SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
             smtpClient.EnableSsl = true;
-            smtpClient.Credentials = new NetworkCredential("doanit008@gmail.com", "laptrinhtructiu");
+            smtpClient.Credentials = new NetworkCredential("vhnm3004@gmail.com", "snnaarxvfndqhptl");
             smtpClient.Send(message);
             MessageBox.Show("Đã gửi mật khẩu vào Email đăng ký !", "Thông báo");
         }

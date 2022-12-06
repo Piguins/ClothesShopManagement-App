@@ -96,14 +96,14 @@ namespace Demo.ViewModel
                     return;
                 }
             }
-            string match = @"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*";
+            string match = @"^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$";
             Regex reg = new Regex(match);
             if (!reg.IsMatch(parameter.Mail.Text))
             {
                 MessageBox.Show("Email không hợp lệ !", "THÔNG BÁO", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
-            string match1 = @"^((09(\d){8})|(086(\d){7})|(088(\d){7})|(089(\d){7})|(01(\d){9}))$";
+            string match1 = @"^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$";
             Regex reg1 = new Regex(match1);
             if (!reg1.IsMatch(parameter.SDT.Text))
             {
