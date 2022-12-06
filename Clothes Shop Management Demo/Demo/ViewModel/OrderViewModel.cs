@@ -118,7 +118,6 @@ namespace Demo.ViewModel
         void _Detail(OrderView parameter)
         {
             DetailsOrder p = new DetailsOrder();
-
             HOADON temp = (HOADON)parameter.ListViewHD.SelectedItem;
             p.MaND.Text = temp.NGUOIDUNG.MAND;
             p.TenND.Text = temp.NGUOIDUNG.TENND;

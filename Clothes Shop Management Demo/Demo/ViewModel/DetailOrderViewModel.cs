@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Windows;
+using System.Collections.ObjectModel;
 
 namespace Demo.ViewModel
 {
@@ -44,7 +45,9 @@ namespace Demo.ViewModel
                     }
                 }
                 DataProvider.Ins.DB.SaveChanges();
-                MainViewModel.MainFrame.Content = new OrderView();
+                OrderView orderView = new OrderView();
+                orderView.ListViewHD.ItemsSource = new ObservableCollection<HOADON> (DataProvider.Ins.DB.HOADONs);
+                MainViewModel.MainFrame.Content = orderView;
             }
         }
     }
