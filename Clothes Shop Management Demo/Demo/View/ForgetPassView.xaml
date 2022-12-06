@@ -11,7 +11,7 @@
         Title="Quên mật khẩu" Height="350" Width="400"
         DataContext="{StaticResource ForgetPassVM}"
         Name="ForgetPassWindow">
-    
+
     <Page.Triggers>
         <EventTrigger RoutedEvent="Page.Loaded">
             <BeginStoryboard>
@@ -75,7 +75,7 @@
                              FontSize="15"
                              Width="200"
                              Padding="0,15,0,0"
-                             x:Name="requestUsernameField"
+                             x:Name="MailAddress"
                              BorderBrush="LightGray"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}"
                              />
@@ -96,9 +96,14 @@
                         Background="#6C63FF"
                         Content="Lấy mật khẩu"
                         Padding="0,0,0,0"
-                        materialDesign:ButtonAssist.CornerRadius="10"
-                                       
+                        materialDesign:ButtonAssist.CornerRadius="10"             
                         Margin="238,270,42,48">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction Command="{Binding SendPass}"
+                                                       CommandParameter="{Binding ElementName=ForgetPassWindow}"></i:InvokeCommandAction>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
         </Button>
     </Grid>
 </Page>
