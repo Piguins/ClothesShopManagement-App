@@ -7,14 +7,16 @@
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
       d:DesignHeight="605" d:DesignWidth="700"
-      Title="ProductViewPage">
+      Title="ProductViewPage"
+      DataContext="{StaticResource ProductsVM}">
 
-    <Border
+    <Border 
         Height="605"
         Width="700"
         Background="Transparent"
         CornerRadius="20"
-        BorderThickness="5">
+        BorderThickness="5"
+        DataContext="{StaticResource MainVM}">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="65"/>
@@ -36,9 +38,9 @@
                         Height="40"
                         Width="130"
                         CornerRadius="17"
-                        Background="#6C63FF"
-                        >
-                       
+                        Background="#6C63FF">
+
+
                         <ComboBox
                             x:Name="cbxBoLoc"
                             Style="{StaticResource MaterialDesignFilledComboBox}"
@@ -53,9 +55,9 @@
                             Height="35"
                             Width="125"
                             FontSize="14"
-                            SelectedIndex="0"
+                            SelectedIndex="0">
 
-                            >
+
                             <ComboBoxItem Content="Tất cả"/>
                             <ComboBoxItem Content="Áo sơ mi"/>
                             <ComboBoxItem Content="Áo thun"/>
@@ -100,7 +102,7 @@
                             </ComboBox.ItemTemplate>
                         </ComboBox>
                     </Border>
-                    <TextBox
+                    <TextBox 
                         x:Name="tbxSearch"
                         Width="280"
                         Height="40"
@@ -121,7 +123,7 @@
                         >
                      
                     </TextBox>
-                    <Button
+                    <Button 
                         Content="THÊM"
                         Margin="20,0,0,0"
                         Height="40"
@@ -132,7 +134,7 @@
                         Foreground="White"
                         FontWeight="SemiBold"
                         FontSize="14"
-                        >
+                        Command="{Binding AddProduct}">
                     </Button>
                 </StackPanel>
             </Grid>

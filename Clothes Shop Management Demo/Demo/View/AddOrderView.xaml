@@ -25,23 +25,12 @@
         </EventTrigger>
     </Page.Triggers>
 
-    <i:Interaction.Triggers>
-        <i:EventTrigger EventName="Loaded">
-            <i:InvokeCommandAction Command="{Binding Loadwd}"
-                                   CommandParameter="{Binding ElementName=AddOrderwd}"></i:InvokeCommandAction>
-        </i:EventTrigger>
-    </i:Interaction.Triggers>
     <Border
         x:Name="xx"
         CornerRadius="15"
-        Background="Transparent"
-        >
-        <i:Interaction.Triggers>
-            <i:EventTrigger EventName="MouseLeftButtonDown">
-                <i:InvokeCommandAction Command="{Binding MoveWindow}"
-                                       CommandParameter="{Binding ElementName=AddOrderwd}"></i:InvokeCommandAction>
-            </i:EventTrigger>
-        </i:Interaction.Triggers>
+        Background="Transparent">
+
+
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="30"/>

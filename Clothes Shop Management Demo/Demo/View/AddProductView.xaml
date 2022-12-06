@@ -1,25 +1,18 @@
-﻿<Window x:Class="Demo.View.AddProductView"
+﻿<Page x:Class="Demo.View.AddProductView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Demo.View"
         mc:Ignorable="d"
-        WindowStyle="None"
-        Background="Transparent"
+        Background="White"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        ResizeMode="CanMinimize"
         x:Name="AddProductwd"
         DataContext="{StaticResource AddProductVM}"
         Height="605" 
-        Width="700" WindowStartupLocation="CenterScreen">
-    <i:Interaction.Triggers>
-        <i:EventTrigger EventName="Loaded">
-            <i:InvokeCommandAction Command="{Binding Loadwd}"
-                                   CommandParameter="{Binding ElementName=AddProductwd}"></i:InvokeCommandAction>
-        </i:EventTrigger>
-    </i:Interaction.Triggers>
+        Width="700">
+   
     <Grid>
         <Grid>
             <Grid.ColumnDefinitions>
@@ -64,7 +57,7 @@
                             <Border
                                 CornerRadius="10"
                                 BorderThickness="2"
-                                BorderBrush="Black"
+                                BorderBrush="Gray"
                                 Height="30"
                                 >
                                 <TextBox
@@ -77,7 +70,7 @@
                                     FontFamily="{StaticResource Custom}"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                    materialDesign:HintAssist.Hint="THÊM MÃ SẢN PHẨM"
+                                    materialDesign:HintAssist.Hint="Nhập mã sản phẩm"
                                     materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0"
                                     materialDesign:TextFieldAssist.UnderlineBrush="LightPink"
                                 />
@@ -90,19 +83,19 @@
                                     Margin="10,0,0,0"
                                     Text="TÊN SẢN PHẨM"
                                     FontFamily="{StaticResource Custom}"
-                                Foreground="#6C63FF"
+                                    Foreground="#6C63FF"
                                 />
                             <TextBox
                                     Height="30"
                                     x:Name="TenSp"
                                     FontFamily="{StaticResource Custom}"
-                                Foreground="LightGray"
+                                    Foreground="LightGray"
                                     HorizontalAlignment="Left"
                                     Width="150"
                                     BorderThickness="2"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                    materialDesign:HintAssist.Hint="THÊM TÊN SẢN PHẨM"
+                                    materialDesign:HintAssist.Hint="Nhập tên sản phẩm"
                                     materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0"
                                     materialDesign:TextFieldAssist.UnderlineBrush="LightPink"
                                 />
@@ -128,7 +121,7 @@
                                     BorderThickness="2"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                    materialDesign:HintAssist.Hint="THÊM GIÁ SẢN PHẨM"
+                                    materialDesign:HintAssist.Hint="Nhập giá sản phẩm"
                                     materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0"
                                     materialDesign:TextFieldAssist.UnderlineBrush="LightPink"
                                 />
@@ -195,7 +188,7 @@
                                 Foreground="LightGray"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                    materialDesign:HintAssist.Hint="THÊM SỐ LƯỢNG"
+                                    materialDesign:HintAssist.Hint="Nhập số lượng"
                                     materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0"
                                     materialDesign:TextFieldAssist.UnderlineBrush="LightPink"
                                 />
@@ -258,7 +251,7 @@
                         Foreground="LightGray"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                    materialDesign:HintAssist.Hint="THÊM THÔNG TIN SẢN PHẨM"
+                                    materialDesign:HintAssist.Hint="Nhập thông tin sản phẩm"
                                     materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0"
                                     materialDesign:TextFieldAssist.UnderlineBrush="LightPink"
                                     HorizontalScrollBarVisibility="Auto"
@@ -268,7 +261,7 @@
                     <Button Content="THÊM SẢN PHẨM"
                                 Margin="0,30,0,0"
                                 Width="230"
-                                Background="LightPink"
+                                Background="#6C63FF"
                                 BorderThickness="0"
                                 x:Name="btnadd"
                             materialDesign:ButtonAssist.CornerRadius="10"
@@ -284,4 +277,4 @@
             </Grid>
         </Grid>
     </Grid>
-</Window>
+</Page>

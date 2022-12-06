@@ -28,6 +28,7 @@ namespace Demo.ViewModel
         public ICommand AddOrder { get; set; } 
         public ICommand ReportCM { get; set; }
         public ICommand AddCustomer { get; set; }
+        public ICommand AddProduct { get; set; }
 
         public MainViewModel()
         {
@@ -59,7 +60,6 @@ namespace Demo.ViewModel
             {
                 MainFrame.Content = new CustomersView();
             });
-
 
             SPCM = new RelayCommand<FrameworkElement>((p) => { return true; }, (p) =>
             {
@@ -94,6 +94,11 @@ namespace Demo.ViewModel
             AddNDCM = new RelayCommand<Frame>((p) => { return true; }, (p) =>
             {
                 MainFrame.Content = new AddNDView();
+            });
+
+            AddProduct = new RelayCommand<Frame>((p) => { return true; }, (p) =>
+            {
+                MainFrame.Content = new AddProductView();
             });
 
             SignoutCM = new RelayCommand<FrameworkElement>((p) => { return p == null ? false : true; }, (p) =>

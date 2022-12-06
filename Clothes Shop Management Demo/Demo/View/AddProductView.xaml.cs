@@ -17,7 +17,7 @@ namespace Demo.View
     /// <summary>
     /// Interaction logic for AddProductView.xaml
     /// </summary>
-    public partial class AddProductView : Window
+    public partial class AddProductView : Page
     {
         public AddProductView()
         {
