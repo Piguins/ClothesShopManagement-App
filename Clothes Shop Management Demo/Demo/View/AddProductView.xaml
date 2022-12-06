@@ -23,7 +23,7 @@
                 <Image 
                     x:Name="HinhAnh"
                     Source="{Binding linkimage}"
-                    Height="450"
+                    Height="374"
                     VerticalAlignment="Center">
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="MouseLeftButtonDown">
@@ -66,13 +66,13 @@
                                     Width="150"
                                     IsEnabled="False"
                                     BorderThickness="0"
-                                    Foreground="LightGray"
+                                    Foreground="Black"
                                     FontFamily="{StaticResource Custom}"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                    materialDesign:HintAssist.Hint="Nhập mã sản phẩm"
+                                    materialDesign:HintAssist.Hint=""
                                     materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0"
-                                    materialDesign:TextFieldAssist.UnderlineBrush="LightPink"
+                                    materialDesign:TextFieldAssist.UnderlineBrush="Black"
                                 />
                             </Border>
                         </StackPanel>
@@ -89,7 +89,7 @@
                                     Height="30"
                                     x:Name="TenSp"
                                     FontFamily="{StaticResource Custom}"
-                                    Foreground="LightGray"
+                                    Foreground="Black"
                                     HorizontalAlignment="Left"
                                     Width="150"
                                     BorderThickness="2"
@@ -97,7 +97,7 @@
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
                                     materialDesign:HintAssist.Hint="Nhập tên sản phẩm"
                                     materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0"
-                                    materialDesign:TextFieldAssist.UnderlineBrush="LightPink"
+                                    materialDesign:TextFieldAssist.UnderlineBrush="Gray"
                                 />
                         </StackPanel>
                     </StackPanel>
@@ -116,14 +116,14 @@
                                     x:Name="GiaSp"
                                     HorizontalAlignment="Left"
                                     Width="150"
-                                Foreground="LightGray"
+                                    Foreground="Black"
                                     FontFamily="{StaticResource Custom}"
                                     BorderThickness="2"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
                                     materialDesign:HintAssist.Hint="Nhập giá sản phẩm"
                                     materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0"
-                                    materialDesign:TextFieldAssist.UnderlineBrush="LightPink"
+                                    materialDesign:TextFieldAssist.UnderlineBrush="Gray"
                                 />
                         </StackPanel>
                         <StackPanel Orientation="Vertical"
@@ -147,12 +147,12 @@
                                 <ComboBox
                                     x:Name="LoaiSp"
                                     Style="{StaticResource MaterialDesignFilledComboBox}"
-                                    materialDesign:TextFieldAssist.TextBoxViewMargin="4,-15,0,0"
+                                    materialDesign:TextFieldAssist.TextBoxViewMargin="-10,-15,0,0"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     BorderThickness="0"
                                     materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
-                                    materialDesign:HintAssist.Foreground="White"
-                                    Background="White"
+                                    materialDesign:HintAssist.Hint="Nhấn để chọn"
+                                    Background="Transparent" Foreground="Black"
                                     FontFamily="{StaticResource Custom}"
                                     Height="30"
                                     FontSize="12"
@@ -185,12 +185,12 @@
                                     Width="150"
                                     FontFamily="{StaticResource Custom}"
                                     BorderThickness="2"
-                                Foreground="LightGray"
+                                Foreground="Black"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
                                     materialDesign:HintAssist.Hint="Nhập số lượng"
                                     materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0"
-                                    materialDesign:TextFieldAssist.UnderlineBrush="LightPink"
+                                    materialDesign:TextFieldAssist.UnderlineBrush="Gray"
                                 />
                         </StackPanel>
                         <StackPanel Orientation="Vertical"
@@ -215,11 +215,12 @@
                                 <ComboBox
                                     x:Name="SizeSp"
                                     Style="{StaticResource MaterialDesignFilledComboBox}"
-                                    materialDesign:TextFieldAssist.TextBoxViewMargin="4,-15,0,0"
+                                    materialDesign:TextFieldAssist.TextBoxViewMargin="-10,-15,0,0"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                              
                                     BorderThickness="0"
                                     materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
-                                    materialDesign:HintAssist.Foreground="White"
+                                    materialDesign:HintAssist.Hint="Nhấn để chọn"
                                     Background="White"
                                     FontFamily="{StaticResource Custom}"
                                     Height="30"
@@ -249,11 +250,13 @@
                                     Height="150"
                                     BorderThickness="2"
                         Foreground="LightGray"
+                                 
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                    materialDesign:HintAssist.Hint="Nhập thông tin sản phẩm"
+                                    materialDesign:HintAssist.Hint=""
                                     materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0"
-                                    materialDesign:TextFieldAssist.UnderlineBrush="LightPink"
+                                    materialDesign:TextFieldAssist.UnderlineBrush="Gray"
+                                    
                                     HorizontalScrollBarVisibility="Auto"
                                     AcceptsReturn="True"
                                     TextWrapping="Wrap"
