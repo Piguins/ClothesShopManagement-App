@@ -28,7 +28,7 @@ namespace Demo.ViewModel
                 {
                     if (temp.SOHD == int.Parse(parameter.SoHD.Text))
                     {
-                        foreach (CTHD temp1 in temp.CTHD)
+                        foreach (CTHD temp1 in temp.CTHDs)
                         {
                             foreach (SANPHAM temp2 in DataProvider.Ins.DB.SANPHAMs)
                             {

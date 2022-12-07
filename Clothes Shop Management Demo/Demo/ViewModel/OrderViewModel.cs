@@ -127,7 +127,7 @@ namespace Demo.ViewModel
             p.TenKH.Text = temp.KHACHHANG.HOTEN;
             p.KM.Text = temp.KHUYENMAI.ToString() + "%";
             List<HienThi> list = new List<HienThi>();
-            foreach (CTHD a in temp.CTHD)
+            foreach (CTHD a in temp.CTHDs)
             {
                 list.Add(new HienThi(a.MASP, a.SANPHAM.TENSP, a.SANPHAM.SIZE, a.SL, a.SANPHAM.GIA, a.SL * a.SANPHAM.GIA));
             }

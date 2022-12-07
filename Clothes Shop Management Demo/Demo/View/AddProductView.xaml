@@ -12,7 +12,20 @@
         DataContext="{StaticResource AddProductVM}"
         Height="605" 
         Width="700">
-   
+    <Page.Triggers>
+        <EventTrigger RoutedEvent="Page.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <ThicknessAnimation Storyboard.TargetName="AddProductwd"
+                                        Storyboard.TargetProperty="Margin"
+                                        From="426,0,0,0"
+                                        To="0"
+                                        Duration="0:0:0.2" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Page.Triggers>
+    
     <Grid>
         <Grid>
             <Grid.ColumnDefinitions>
@@ -64,13 +77,12 @@
                                     x:Name="MaSp"
                                     HorizontalAlignment="Left"
                                     Width="150"
-                                    IsEnabled="False"
                                     BorderThickness="0"
                                     Foreground="Black"
                                     FontFamily="{StaticResource Custom}"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                    materialDesign:HintAssist.Hint=""
+                                    materialDesign:HintAssist.Hint="Nhập mã sản phẩm"
                                     materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0"
                                     materialDesign:TextFieldAssist.UnderlineBrush="Black"
                                 />
