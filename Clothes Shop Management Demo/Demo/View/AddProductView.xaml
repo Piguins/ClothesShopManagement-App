@@ -261,7 +261,7 @@
                                     Width="310"
                                     Height="150"
                                     BorderThickness="2"
-                        Foreground="LightGray"
+                                    Foreground="Black"
                                  
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
