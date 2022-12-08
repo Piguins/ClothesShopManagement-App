@@ -99,7 +99,7 @@
                             </i:EventTrigger>
                         </i:Interaction.Triggers>
                     </TextBox>
-                    <Button DataContext="{StaticResource MainVM}"
+                    <Button 
                         Content="TẠO"
                         Margin="15,0,0,0"
                         Width="90"
@@ -108,9 +108,9 @@
                         BorderBrush="Transparent"
                         Foreground="White"
                         materialDesign:ButtonAssist.CornerRadius="15"
-                        Background="#6C63FF" 
-                        Command="{Binding AddOrder}"
-                        >
+                        Background="#6C63FF">
+
+
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="Click">
                                 <i:InvokeCommandAction Command="{Binding OpenAddOrder}"

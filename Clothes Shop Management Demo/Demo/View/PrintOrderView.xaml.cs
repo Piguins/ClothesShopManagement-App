@@ -17,7 +17,7 @@ namespace Demo.View
     /// <summary>
     /// Interaction logic for PrintOrderView.xaml
     /// </summary>
-    public partial class PrintOrderView : Window
+    public partial class PrintOrderView : Page
     {
         public PrintOrderView()
         {

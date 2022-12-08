@@ -25,7 +25,7 @@ namespace Demo.ViewModel
         public ICommand SPCM { get; set; }
         public ICommand OrderCM { get; set; }
         public ICommand KHCM { get; set; }
-        public ICommand AddOrder { get; set; } 
+        //public ICommand AddOrder { get; set; } 
         public ICommand ReportCM { get; set; }
         public ICommand AddCustomer { get; set; }
         public ICommand AddProduct { get; set; }
@@ -81,10 +81,10 @@ namespace Demo.ViewModel
                 MainFrame.Content = new ChangePassword();
             });
 
-            AddOrder = new RelayCommand<object>((p) => { return true; }, (p) =>
-            {
-                MainFrame.Content = new AddOrderView();
-            });
+            //AddOrder = new RelayCommand<object>((p) => { return true; }, (p) =>
+            //{
+            //    MainFrame.Content = new AddOrderView();
+            //});
 
             AddCustomer = new RelayCommand<Frame>((p) => { return true; }, (p) =>
             {

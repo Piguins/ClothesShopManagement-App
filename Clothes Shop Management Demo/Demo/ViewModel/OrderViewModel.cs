@@ -25,6 +25,7 @@ namespace Demo.ViewModel
         {
             listTK = new ObservableCollection<string>() { "Họ tên", "Số HD", "Ngày" };
             listHD = new ObservableCollection<HOADON>(DataProvider.Ins.DB.HOADONs);
+            OpenAddOrder = new RelayCommand<OrderView>((p) => true, (p) => _OpenAdd(p));
             SearchCommand = new RelayCommand<OrderView>((p) => true, (p) => _SearchCommand(p));
             Detail = new RelayCommand<OrderView>((p) => p.ListViewHD.SelectedItem != null ? true : false, (p) => _Detail(p));
             LoadCsCommand = new RelayCommand<OrderView>((p) => true, (p) => _LoadCsCommand(p));
@@ -42,6 +43,7 @@ namespace Demo.ViewModel
             }
             return false;
         }
+     
         int rdma()
         {
             int ma;
@@ -52,7 +54,15 @@ namespace Demo.ViewModel
             } while (check(ma));
             return ma;
         }
-
+        void _OpenAdd(OrderView paramater)
+        {
+            AddOrderView addOrder = new AddOrderView();
+            addOrder.SoHD.Text = rdma().ToString();
+            listHD = new ObservableCollection<HOADON>(DataProvider.Ins.DB.HOADONs);
+            paramater.ListViewHD.ItemsSource = listHD;
+            paramater.ListViewHD.Items.Refresh();
+            MainViewModel.MainFrame.Content = addOrder;
+        }
         void _SearchCommand(OrderView paramater)
         {
             ObservableCollection<HOADON> temp = new ObservableCollection<HOADON>();
