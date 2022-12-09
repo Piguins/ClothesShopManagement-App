@@ -74,43 +74,44 @@
                         </ComboBox>
                     </Border>
                     <TextBox
-                        x:Name="txbSearch"
-                        Width="430"
-                        Height="40"
-                        Margin="15,0,0,0"
-                        BorderBrush="#6C63FF"
-                        Foreground="Black"
-                        FontSize="14"
-                        FontWeight="SemiBold"
-                        materialDesign:HintAssist.Hint="Tìm kiếm"
-                        materialDesign:HintAssist.FontFamily="{StaticResource MaterialDesignFont}"
-                        materialDesign:HintAssist.Foreground="White"
-                        materialDesign:TextFieldAssist.TextBoxViewMargin="10,7,0,0"
-                        materialDesign:TextFieldAssist.TextFieldCornerRadius="15"
-                        materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
-                        BorderThickness="3"
-                        VerticalAlignment="Center"
-                        CaretBrush="Gray"
-                        >
-
+                         x:Name="txbSearch"
+                                Width="430"
+                                Height="40"
+                                Margin="15,0,0,0"
+                                BorderBrush="#6C63FF"
+                                Foreground="Black"
+                                FontSize="14"
+                                FontWeight="SemiBold"
+                                materialDesign:HintAssist.Hint="Tìm kiếm"
+                                materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
+                                materialDesign:HintAssist.Foreground="White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,6,0,0"
+                                BorderThickness="2"
+                                VerticalAlignment="Center" CaretBrush="Gray" >
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="TextChanged">
+                                <i:InvokeCommandAction Command="{Binding SearchCommand}"
+                                                       CommandParameter="{Binding ElementName=Customerwd}"></i:InvokeCommandAction>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
                     </TextBox>
                     <Button
+                        Content="THÊM"
                         Margin="20,0,0,0"
                         Width="80"
                         Height="40"
                         materialDesign:ButtonAssist.CornerRadius="15"
                         Background="#6C63FF" 
-                        Command="{Binding AddCustomer}"
+                        FontFamily="{StaticResource Custom}"
                         >
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock
-                                Text="THÊM"
-                                FontWeight="Bold"
-                                FontFamily="{StaticResource Custom}">
-
-                            </TextBlock>
-
-                        </StackPanel>
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <i:InvokeCommandAction Command="{Binding AddCsCommand}"
+                                                       CommandParameter="{Binding ElementName=Customerwd}"></i:InvokeCommandAction>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>                        
                     </Button>
 
                 </StackPanel>
@@ -197,7 +198,7 @@
                         Width="675"
                         SelectionMode="Single"
                         ScrollViewer.VerticalScrollBarVisibility="Hidden" 
-                        ItemsSource="{Binding listKH}" d:ItemsSource="{d:SampleData ItemCount=5}"                        
+                        ItemsSource="{Binding listKH}"                       
                         >
                         <ListView.ItemTemplate>
                             <DataTemplate>

@@ -190,7 +190,7 @@
                                 Width="319"
                                 BorderThickness="0"
                                 x:Name="btnupdate"
-                                materialDesign:ButtonAssist.CornerRadius="0"
+                                materialDesign:ButtonAssist.CornerRadius="10"
                                 FontFamily="{StaticResource Custom}"
                                 >
                             <Button.Background>
