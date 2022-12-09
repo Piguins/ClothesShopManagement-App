@@ -17,7 +17,7 @@ namespace Demo.View
     /// <summary>
     /// Interaction logic for AddImpotView.xaml
     /// </summary>
-    public partial class AddImpotView : Window
+    public partial class AddImpotView : Page
     {
         public AddImpotView()
         {

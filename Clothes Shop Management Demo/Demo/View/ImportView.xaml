@@ -12,7 +12,7 @@
       x:Name="Importwd"
       DataContext="{StaticResource ImportVM}">
 
-    <Border
+    <Border DataContext="{StaticResource MainVM}"
                     Height="605"
                     Width="700"
                     Background="Transparent"
@@ -59,7 +59,7 @@
                         </i:Interaction.Triggers>
                     </TextBox>
                     <Button
-                        Content="TÌM KIẾM"
+                        Content="NHẬP"
                         Margin="25,0,0,0"
                         Width="120"
                         Height="40"
@@ -68,6 +68,7 @@
                         Foreground="White"
                         materialDesign:ButtonAssist.CornerRadius="15"
                         Background="#6C63FF"
+                        Command="{Binding AddImport}"
                         >
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="Click">
