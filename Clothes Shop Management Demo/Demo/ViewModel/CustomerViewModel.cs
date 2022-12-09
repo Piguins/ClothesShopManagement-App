@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Windows.Controls;
+using MaterialDesignThemes.Wpf;
 
 namespace Demo.ViewModel
 {
@@ -79,7 +80,7 @@ namespace Demo.ViewModel
                         {
                             foreach (KHACHHANG s in listKH)
                             {
-                                if (s.HOTEN.Contains(paramater.txbSearch.Text))
+                                if (s.HOTEN.ToLower().Contains(paramater.txbSearch.Text))
                                 {
                                     temp.Add(s);
                                 }
@@ -118,7 +119,7 @@ namespace Demo.ViewModel
             detailCustomerView.Rank.Text = hang;
             listKH = new ObservableCollection<KHACHHANG>(DataProvider.Ins.DB.KHACHHANGs);
             paramater.ListViewKH.ItemsSource = listKH;
-            paramater.ListViewKH.SelectedItem = null;
+            paramater.ListViewKH.SelectedItem = null;   
             MainViewModel.MainFrame.Content = detailCustomerView;
         }
         bool check(string m)
@@ -143,10 +144,11 @@ namespace Demo.ViewModel
         void _AddCs(CustomersView paramater)
         {
             AddCustomerView addCustomerView = new AddCustomerView();
-            addCustomerView.MaKH.Text = rdma();
-            addCustomerView.ShowDialog();
+            addCustomerView.MaKH.Text = rdma().ToString();
             listKH = new ObservableCollection<KHACHHANG>(DataProvider.Ins.DB.KHACHHANGs);
             paramater.ListViewKH.ItemsSource = listKH;
+            paramater.ListViewKH.Items.Refresh();
+            MainViewModel.MainFrame.Content = addCustomerView;
         }
     }
 }

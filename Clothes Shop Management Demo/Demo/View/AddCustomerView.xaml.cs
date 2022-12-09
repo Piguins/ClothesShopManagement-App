@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Xamarin.Forms.Xaml;
 
 namespace Demo.View
 {
@@ -25,14 +26,9 @@ namespace Demo.View
             InitializeComponent();
         }
 
-        internal void ShowDialog()
+        public void ShowDialog()
         {
             throw new NotImplementedException();
-        }
-
-        private void Border_SizeChanged(object sender, SizeChangedEventArgs e)
-        {
-
         }
 
         private void lbl_Click(object sender, RoutedEventArgs e)

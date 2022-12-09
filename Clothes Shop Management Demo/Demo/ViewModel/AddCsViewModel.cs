@@ -16,7 +16,7 @@ namespace Demo.ViewModel
         public AddCsViewModel()
         {
             AddCsCommand = new RelayCommand<AddCustomerView>((p) => true, (p) => _AddCsCommand(p));
-
+            
         }
         bool check(string m)
         {
