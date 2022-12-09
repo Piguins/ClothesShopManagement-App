@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using System.Windows.Controls;
 
 namespace Demo.ViewModel
 {
-    public class CustomerViewModel:BaseViewModel
+    public class CustomerViewModel : BaseViewModel
     {
+        public static Frame MainFrame { get; set; }
         private ObservableCollection<KHACHHANG> _listKH;
         public ObservableCollection<KHACHHANG> listKH { get => _listKH; set { _listKH = value; OnPropertyChanged(); } }
         public ICommand SearchCommand { get; set; }
@@ -114,10 +116,10 @@ namespace Demo.ViewModel
             else if (doanhso > 10000000)
                 hang = "Kim cương";
             detailCustomerView.Rank.Text = hang;
-            detailCustomerView.ShowDialog();
             listKH = new ObservableCollection<KHACHHANG>(DataProvider.Ins.DB.KHACHHANGs);
             paramater.ListViewKH.ItemsSource = listKH;
             paramater.ListViewKH.SelectedItem = null;
+            MainViewModel.MainFrame.Content = detailCustomerView;
         }
         bool check(string m)
         {
