@@ -234,7 +234,7 @@
                                 />
                                 <Border BorderThickness="2" BorderBrush="Gray" CornerRadius="10">
                                     <ComboBox
-                                        Margin="0,2,0,0"
+                                        Margin="5,2,0,0"
                                         x:Name="SP"
                                         FontFamily="{StaticResource Custom}"
                                         BorderThickness="0"
@@ -297,14 +297,14 @@
                                     FontFamily="{StaticResource Custom}"
                                     />
                                     <Border BorderThickness="2" BorderBrush="Gray" CornerRadius="10">
-                                        <TextBox
+                                    <TextBox
                                     x:Name="SL"
                                     HorizontalAlignment="Left"
                                     FontFamily="{StaticResource Custom}"
                                     BorderThickness="0"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                    materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0"/>
+                                    materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0" VerticalAlignment="Center"/>
                                     </Border>
                                 </StackPanel>
                                 <StackPanel Width="140" Margin="10,0,0,0">
