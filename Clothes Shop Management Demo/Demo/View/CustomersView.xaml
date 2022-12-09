@@ -47,7 +47,7 @@
                         Background="#6C63FF"
                         >                        
                         <ComboBox
-                            x:Name="cbxTimKiem"
+                            x:Name="cbxChon"
                             Style="{StaticResource MaterialDesignFilledComboBox}"
                             materialDesign:TextFieldAssist.TextBoxViewMargin="2,-11,-10,0"
                             materialDesign:TextFieldAssist.TextFieldCornerRadius="14"
@@ -65,7 +65,7 @@
                         </ComboBox>
                     </Border>
                     <TextBox
-                        x:Name="tbxSearch"
+                        x:Name="txbSearch"
                         Width="430"
                         Height="40"
                         Margin="15,0,0,0"
@@ -183,7 +183,7 @@
 
                     </Border>
                     <ListView
-                        x:Name="CustomersListView"
+                        x:Name="ListViewKH"
                         ItemsSource="{Binding}"
                         Height="400"
                         Width="670"

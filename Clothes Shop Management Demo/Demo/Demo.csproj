@@ -140,41 +140,41 @@
     </ApplicationDefinition>
     <Compile Include="Model\Const.cs" />
     <Compile Include="Model\CTHD.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\CTPN.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\DataProvider.cs" />
     <Compile Include="Model\HOADON.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\KHACHHANG.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Model.Context.cs">
+    <Compile Include="Model\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model.Context.tt</DependentUpon>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Model.cs">
+    <Compile Include="Model\Model1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Model.Designer.cs">
+    <Compile Include="Model\Model1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model.edmx</DependentUpon>
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Model\NGUOIDUNG.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\PHIEUNHAP.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\SANPHAM.cs">
-      <DependentUpon>Model.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Resource\InfoCard.xaml.cs">
       <DependentUpon>InfoCard.xaml</DependentUpon>
@@ -407,12 +407,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Model\Model.edmx">
+    <EntityDeploy Include="Model\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Model\Model.edmx.diagram">
-      <DependentUpon>Model.edmx</DependentUpon>
+    <None Include="Model\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
     </None>
     <None Include="OpenTK.dll.config" />
     <None Include="packages.config" />
@@ -535,15 +535,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Model\Model.Context.tt">
+    <Content Include="Model\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model.edmx</DependentUpon>
-      <LastGenOutput>Model.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Model\Model.tt">
+    <Content Include="Model\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model.edmx</DependentUpon>
-      <LastGenOutput>Model.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

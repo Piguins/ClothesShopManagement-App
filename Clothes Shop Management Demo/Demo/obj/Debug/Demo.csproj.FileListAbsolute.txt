@@ -822,3 +822,44 @@ D:\College\Đồ Án LTTQ\Repository\Test\Clothes-Shop-Management-Project\Clothe
 D:\College\Đồ Án LTTQ\Repository\Test\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.CopyComplete
 D:\College\Đồ Án LTTQ\Repository\Test\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.exe
 D:\College\Đồ Án LTTQ\Repository\Test\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.pdb
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\EntityFramework.dll
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\EntityFramework.SqlServer.dll
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\OpenTK.dll
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\OpenTK.GLControl.dll
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.Core.XForms.dll
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.Core.XForms.WPF.dll
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.Licensing.dll
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.SfChart.WPF.dll
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.SfChart.XForms.dll
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.SfChart.XForms.WPF.dll
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.SfSkinManager.WPF.dll
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Core.dll
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Platform.dll
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Platform.WPF.dll
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Xaml.dll
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\EntityFramework.xml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\EntityFramework.SqlServer.xml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\OpenTK.pdb
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\OpenTK.xml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\OpenTK.GLControl.pdb
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\OpenTK.GLControl.xml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.Core.XForms.xml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.Core.XForms.WPF.xml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.SfChart.WPF.xml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.SfChart.XForms.xml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.SfChart.XForms.WPF.xml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Syncfusion.SfSkinManager.WPF.xml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Core.pdb
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Core.xml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Platform.WPF.pdb
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Xaml.pdb
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\bin\Debug\Xamarin.Forms.Xaml.xml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailImport.g.cs
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ImportView.g.cs
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\PrintOrderView.g.cs
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ReportView.g.cs
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo_Content.g.cs
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailImport.baml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ImportView.baml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\PrintOrderView.baml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\ReportView.baml

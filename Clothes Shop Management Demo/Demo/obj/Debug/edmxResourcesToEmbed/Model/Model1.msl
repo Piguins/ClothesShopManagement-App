@@ -1,16 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="QLBHModelStoreContainer" CdmEntityContainer="QLBHEntities">
-    <EntitySetMapping Name="CTPN">
-      <EntityTypeMapping TypeName="QLBHModel.CTPN">
-        <MappingFragment StoreEntitySet="CTPN">
-          <ScalarProperty Name="MAPN" ColumnName="MAPN" />
-          <ScalarProperty Name="MASP" ColumnName="MASP" />
-          <ScalarProperty Name="SL" ColumnName="SL" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="CTHD">
+    <EntitySetMapping Name="CTHDs">
       <EntityTypeMapping TypeName="QLBHModel.CTHD">
         <MappingFragment StoreEntitySet="CTHD">
           <ScalarProperty Name="SOHD" ColumnName="SOHD" />
@@ -19,7 +10,16 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="HOADON">
+    <EntitySetMapping Name="CTPNs">
+      <EntityTypeMapping TypeName="QLBHModel.CTPN">
+        <MappingFragment StoreEntitySet="CTPN">
+          <ScalarProperty Name="MAPN" ColumnName="MAPN" />
+          <ScalarProperty Name="MASP" ColumnName="MASP" />
+          <ScalarProperty Name="SL" ColumnName="SL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOADONs">
       <EntityTypeMapping TypeName="QLBHModel.HOADON">
         <MappingFragment StoreEntitySet="HOADON">
           <ScalarProperty Name="SOHD" ColumnName="SOHD" />
@@ -31,7 +31,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="KHACHHANG">
+    <EntitySetMapping Name="KHACHHANGs">
       <EntityTypeMapping TypeName="QLBHModel.KHACHHANG">
         <MappingFragment StoreEntitySet="KHACHHANG">
           <ScalarProperty Name="MAKH" ColumnName="MAKH" />
@@ -42,7 +42,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="NGUOIDUNG">
+    <EntitySetMapping Name="NGUOIDUNGs">
       <EntityTypeMapping TypeName="QLBHModel.NGUOIDUNG">
         <MappingFragment StoreEntitySet="NGUOIDUNG">
           <ScalarProperty Name="MAND" ColumnName="MAND" />
@@ -60,7 +60,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="PHIEUNHAP">
+    <EntitySetMapping Name="PHIEUNHAPs">
       <EntityTypeMapping TypeName="QLBHModel.PHIEUNHAP">
         <MappingFragment StoreEntitySet="PHIEUNHAP">
           <ScalarProperty Name="MAPN" ColumnName="MAPN" />
@@ -69,7 +69,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="SANPHAM">
+    <EntitySetMapping Name="SANPHAMs">
       <EntityTypeMapping TypeName="QLBHModel.SANPHAM">
         <MappingFragment StoreEntitySet="SANPHAM">
           <ScalarProperty Name="MASP" ColumnName="MASP" />

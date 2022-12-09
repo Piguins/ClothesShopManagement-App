@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="QLBHModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <EntityType Name="CTPN">
-    <Key>
-      <PropertyRef Name="MAPN" />
-      <PropertyRef Name="MASP" />
-    </Key>
-    <Property Name="MAPN" Type="int" Nullable="false" />
-    <Property Name="MASP" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="SL" Type="int" Nullable="false" />
-  </EntityType>
   <EntityType Name="CTHD">
     <Key>
       <PropertyRef Name="SOHD" />
       <PropertyRef Name="MASP" />
     </Key>
     <Property Name="SOHD" Type="int" Nullable="false" />
+    <Property Name="MASP" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SL" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CTPN">
+    <Key>
+      <PropertyRef Name="MAPN" />
+      <PropertyRef Name="MASP" />
+    </Key>
+    <Property Name="MAPN" Type="int" Nullable="false" />
     <Property Name="MASP" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="SL" Type="int" Nullable="false" />
   </EntityType>
@@ -162,8 +162,8 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="QLBHModelStoreContainer">
-    <EntitySet Name="CTPN" EntityType="Self.CTPN" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="CTHD" EntityType="Self.CTHD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CTPN" EntityType="Self.CTPN" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="HOADON" EntityType="Self.HOADON" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="KHACHHANG" EntityType="Self.KHACHHANG" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="NGUOIDUNG" EntityType="Self.NGUOIDUNG" Schema="dbo" store:Type="Tables" />
