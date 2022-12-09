@@ -1,4 +1,5 @@
-﻿using Demo.View;
+﻿using Demo.Model;
+using Demo.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ using System.Xml.Linq;
 
 namespace Demo.ViewModel
 {
-    internal class MainViewModel
+    internal class MainViewModel : BaseViewModel
     {
         public static Frame MainFrame { get; set; }
         public ICommand LoadPageCM { get; set; }
@@ -24,15 +25,50 @@ namespace Demo.ViewModel
         public ICommand AddNDCM { get; set; }
         public ICommand SPCM { get; set; }
         public ICommand OrderCM { get; set; }
+        public ICommand Quyen_Loaded { get; set; }
         public ICommand CsCM { get; set; }
         public ICommand KHCM { get; set; }
+        public ICommand TenDangNhap_Loaded { get; set; }
+        public ICommand Loadwd { get; set; }
         //public ICommand AddOrder { get; set; } 
         public ICommand ReportCM { get; set; }
         public ICommand AddCustomer { get; set; }
         public ICommand AddProduct { get; set; }
+        private NGUOIDUNG _User;
+        public NGUOIDUNG User { get => _User; set { _User = value; OnPropertyChanged(); } }
+        private Visibility _SetQuanLy;
+        public Visibility SetQuanLy { get => _SetQuanLy; set { _SetQuanLy = value; OnPropertyChanged(); } }
+        private string _Ava;
+        public string Ava { get => _Ava; set { _Ava = value; OnPropertyChanged(); } }
+
+        public void LoadTenND(MainView p)
+        {
+            p.TenDangNhap.Text = string.Join(" ", User.TENND.Split().Reverse().Take(2).Reverse());
+        }
+
+        void _Loadwd(MainView p)
+        {
+            if (LoginViewModel.IsLogin)
+            {
+                string a = Const.TenDangNhap;
+                User = DataProvider.Ins.DB.NGUOIDUNGs.Where(x => x.USERNAME == a).FirstOrDefault();
+                Const.ND = User;
+                SetQuanLy = User.QTV ? Visibility.Visible : Visibility.Collapsed;
+                Const.Admin = User.QTV;
+                Ava = User.AVA;
+                LoadTenND(p);
+            }
+        }
+        public void LoadQuyen(MainView p)
+        {
+            p.Quyen.Text = User.QTV ? "Quản lý" : "Nhân viên";
+        }
 
         public MainViewModel()
         {
+            Quyen_Loaded = new RelayCommand<MainView>((p) => true, (p) => LoadQuyen(p));
+            Loadwd = new RelayCommand<MainView>((p) => true, (p) => _Loadwd(p));
+            TenDangNhap_Loaded = new RelayCommand<MainView>((p) => true, (p) => LoadTenND(p));
             LoadPageCM = new RelayCommand<Frame>((p) => { return true; }, (p) =>
             {
                 MainFrame = p;
@@ -129,6 +165,7 @@ namespace Demo.ViewModel
                 }
                 return parent;
             }
+
         }
     }
 }

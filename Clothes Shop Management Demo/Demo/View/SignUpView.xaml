@@ -101,7 +101,7 @@
                           BlurRadius="10"/>
                             </Ellipse.Effect>
                             <Ellipse.Fill>
-                                <ImageBrush x:Name="ProfilePicture" ImageSource="/Resource/Image/addava.png"/>
+                                <ImageBrush x:Name="ProfilePicture" ImageSource="{Binding linkaddimage}"/>
                             </Ellipse.Fill>
                         </Ellipse>
                     </Border>
@@ -114,7 +114,7 @@
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="Click">
                                 <i:InvokeCommandAction Command="{Binding AddImage}"
-                                                   CommandParameter="{Binding ElementName=HinhAnh1}"></i:InvokeCommandAction>
+                                                   CommandParameter="{Binding ElementName=ProfilePicture}"></i:InvokeCommandAction>
                             </i:EventTrigger>
                         </i:Interaction.Triggers>
                     </Button>

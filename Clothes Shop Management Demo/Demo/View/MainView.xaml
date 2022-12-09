@@ -18,6 +18,14 @@
         Name="Mainview"
         DataContext="{StaticResource MainVM}">
 
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction  Command="{Binding Loadwd}"
+                                    CommandParameter="{Binding ElementName=Mainview}">
+
+            </i:InvokeCommandAction>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
     <Window.Triggers>
         <EventTrigger RoutedEvent="Window.Loaded">
             <BeginStoryboard>
@@ -77,8 +85,14 @@
                                            FontSize="15"
                                            Foreground="White"
                                            FontWeight="Thin"
-                                           FontFamily="{StaticResource Custom}">
-
+                                           FontFamily="{StaticResource Custom}"
+                                           >
+                                    <i:Interaction.Triggers>
+                                        <i:EventTrigger EventName="Loaded">
+                                            <i:InvokeCommandAction Command="{Binding TenDangNhap_Loaded}"
+                                                       CommandParameter="{Binding ElementName=Mainview}"></i:InvokeCommandAction>
+                                        </i:EventTrigger>
+                                    </i:Interaction.Triggers>/>
                                 </TextBlock>
                                 <TextBlock x:Name="Quyen" 
                                            Text="Quản trị viên"
@@ -86,7 +100,13 @@
                                            Foreground="White"
                                            FontFamily="{StaticResource Custom}"
                                            FontWeight="Thin">
-
+                                    <i:Interaction.Triggers>
+                                        <i:EventTrigger EventName="Loaded">
+                                            <i:InvokeCommandAction Command="{Binding Quyen_Loaded}"
+                                                           CommandParameter="{Binding ElementName=Mainview}">
+                                            </i:InvokeCommandAction>
+                                        </i:EventTrigger>
+                                    </i:Interaction.Triggers>/>
                                 </TextBlock>
 
                             </StackPanel>
@@ -186,8 +206,8 @@
                                     CommandParameter="{Binding ElementName=Mainview}">
                                 </Button>
                             </Grid>
-                                
-                       
+
+
 
                         </StackPanel>
                     </Grid>
