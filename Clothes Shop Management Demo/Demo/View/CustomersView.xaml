@@ -118,7 +118,7 @@
             <Grid Grid.Row="2">
                 <StackPanel>
                     <Border
-                        Margin="10,5,10,0"
+                        Margin="-15,0,0,0"
                         Width="670"
                         Height="50"
                         CornerRadius="10"
@@ -126,9 +126,9 @@
 
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="100"/>
-                                <ColumnDefinition Width="190"/>
-                                <ColumnDefinition Width="180"/>
+                                <ColumnDefinition Width="90"/>
+                                <ColumnDefinition Width="170"/>
+                                <ColumnDefinition Width="120"/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
                             <Grid Grid.Column="0">
@@ -154,7 +154,7 @@
                                            FontFamily="{StaticResource Custom}"
                                            FontSize="12"
                                            FontWeight="SemiBold"
-                                               Margin="40,0,0,0"
+                                               Margin="15,0,0,0"
                                            />
 
                                 </StackPanel>
@@ -168,7 +168,7 @@
                                            FontFamily="{StaticResource Custom}"
                                            FontSize="12"
                                            FontWeight="SemiBold"
-                                               Margin="50,0,0,0"
+                                               Margin="5,0,0,0"
                                            />
 
                                 </StackPanel>
@@ -193,26 +193,26 @@
                     </Border>
                     <ListView
                         x:Name="ListViewKH"
-                        Height="400"
-                        Width="670"
+                        Height="410"
+                        Width="675"
                         SelectionMode="Single"
                         ScrollViewer.VerticalScrollBarVisibility="Hidden" 
-                        ItemsSource="{Binding listKH}"                         
+                        ItemsSource="{Binding listKH}" d:ItemsSource="{d:SampleData ItemCount=5}"                        
                         >
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <Border
-                                    Width="630"
-                                    Height="45"
-                                    CornerRadius="15"
-                                    Margin="10,0,10,0"
+                                    Width="645"
+                                    Height="40"
+                                    CornerRadius="10"
+                                    Margin="0,0,10,0"
                                     Background="#6C63FF"
                                     >
                                     <Grid>
                                         <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="90"/>
+                                            <ColumnDefinition Width="170"/>
                                             <ColumnDefinition Width="120"/>
-                                            <ColumnDefinition Width="200"/>
-                                            <ColumnDefinition Width="180"/>
                                             <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
                                         <Grid Grid.Column="0">
@@ -221,7 +221,7 @@
                                                 HorizontalAlignment="Center"
                                                 VerticalAlignment="Center"
                                                 FontFamily="{StaticResource Custom}"
-                                                FontSize="16"
+                                                FontSize="12"
                                                 >
                                             </TextBlock>
                                         </Grid>
@@ -231,8 +231,8 @@
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Center"
                                                 FontFamily="{StaticResource Custom}"
-                                                FontSize="16"
-                                                Margin="5,0,0,0"
+                                                FontSize="12"
+                                                Margin="10,0,0,0"
                                                 >
                                             </TextBlock>
                                         </Grid>
@@ -242,7 +242,7 @@
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Center"
                                                 FontFamily="{StaticResource Custom}"
-                                                FontSize="16"
+                                                FontSize="12"
                                                 Margin="5,0,0,0"
                                                 >
                                             </TextBlock>
@@ -253,10 +253,9 @@
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Center"
                                                 FontFamily="{StaticResource Custom}"
-                                                FontSize="16"
-                                                Margin="5,0,0,0"
+                                                FontSize="12"
+                                                Margin="10,0,0,0"
                                                 >
-
                                             </TextBlock>
                                         </Grid>
                                     </Grid>
