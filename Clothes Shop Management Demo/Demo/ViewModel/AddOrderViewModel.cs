@@ -77,8 +77,8 @@ namespace Demo.ViewModel
             LSP = DataProvider.Ins.DB.SANPHAMs.Where(p => p.SL >= 0).ToList();
             paramater.KH.ItemsSource = LKH;
             paramater.SP.ItemsSource = LSP;
-            //paramater.MaND.Text = Const.ND.MAND;
-            //paramater.TenND.Text = Const.ND.TENND;
+            paramater.MaND.Text = Const.ND.MAND;
+            paramater.TenND.Text = Const.ND.TENND;
             paramater.Ngay.Text = DateTime.Now.ToString("dd/MM/yyyy hh:mm tt");
             paramater.TT.Text = String.Format("{0:0,0}", tongtien) + " VND";
             paramater.TT1.Text = String.Format("{0:0,0}", tongtien) + " VND";
