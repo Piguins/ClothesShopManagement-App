@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\App.xaml
-27-179682960
+28-1333718961
 2739969757
-6559342429
+661823867518
 41-809679646
-MainWindow.xaml;Resource\InfoCard.xaml;Resource\MainResource.xaml;Resource\StyleRecourse.xaml;View\AddCustomerView.xaml;View\AddImpotView.xaml;View\AddNDView.xaml;View\AddOrderView.xaml;View\AddProductView.xaml;View\ChangePassword.xaml;View\CustomersView.xaml;View\DetailImport.xaml;View\DetailNDView.xaml;View\DetailsOrder.xaml;View\ForgetPassView.xaml;View\HomeView.xaml;View\ImportView.xaml;View\LoginView.xaml;View\LoginViewPage.xaml;View\MainView.xaml;View\OrderView.xaml;View\PrintOrderView.xaml;View\ProductViewPage.xaml;View\QLNVView.xaml;View\ReportView.xaml;View\SettingView.xaml;View\SignUpView.xaml;
+MainWindow.xaml;Resource\InfoCard.xaml;Resource\MainResource.xaml;Resource\StyleRecourse.xaml;View\AddCustomerView.xaml;View\AddImpotView.xaml;View\AddNDView.xaml;View\AddOrderView.xaml;View\AddProductView.xaml;View\ChangePassword.xaml;View\CustomersView.xaml;View\DetailCustomerView.xaml;View\DetailImport.xaml;View\DetailNDView.xaml;View\DetailsOrder.xaml;View\ForgetPassView.xaml;View\HomeView.xaml;View\ImportView.xaml;View\LoginView.xaml;View\LoginViewPage.xaml;View\MainView.xaml;View\OrderView.xaml;View\PrintOrderView.xaml;View\ProductViewPage.xaml;View\QLNVView.xaml;View\ReportView.xaml;View\SettingView.xaml;View\SignUpView.xaml;
 
 False
 

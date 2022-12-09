@@ -25,6 +25,11 @@ namespace Demo.View
             InitializeComponent();
         }
 
+        internal void ShowDialog()
+        {
+            throw new NotImplementedException();
+        }
+
         private void Border_SizeChanged(object sender, SizeChangedEventArgs e)
         {
 

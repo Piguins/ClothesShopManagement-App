@@ -24,6 +24,7 @@ namespace Demo.ViewModel
         public ICommand AddNDCM { get; set; }
         public ICommand SPCM { get; set; }
         public ICommand OrderCM { get; set; }
+        public ICommand CsCM { get; set; }
         public ICommand KHCM { get; set; }
         //public ICommand AddOrder { get; set; } 
         public ICommand ReportCM { get; set; }
@@ -54,6 +55,10 @@ namespace Demo.ViewModel
             OrderCM = new RelayCommand<FrameworkElement>((p) => { return true; }, (p) =>
             {
                 MainFrame.Content = new OrderView();
+            });
+            CsCM = new RelayCommand<FrameworkElement>((p) => { return true; }, (p) =>
+            {
+                MainFrame.Content = new CustomersView();
             });
 
             KHCM = new RelayCommand<FrameworkElement>((p) => { return true; }, (p) =>

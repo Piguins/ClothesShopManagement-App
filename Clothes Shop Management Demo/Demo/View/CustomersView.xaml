@@ -3,12 +3,21 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Demo.ViewModel"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
       mc:Ignorable="d" 
       d:DesignHeight="605" d:DesignWidth="700"
-      DataContext="{StaticResource CsVM}">
+      DataContext="{StaticResource CsVM}"
+      x:Name="Customerwd">
 
-    <Border DataContext="{StaticResource MainVM}"
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadCsCommand}"
+                                   CommandParameter="{Binding ElementName=Customerwd}"></i:InvokeCommandAction>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Border 
         Height="605"
         Width="700"
         Background="Transparent"
@@ -45,7 +54,7 @@
                         Width="115"
                         CornerRadius="16"
                         Background="#6C63FF"
-                        >                        
+                        >
                         <ComboBox
                             x:Name="cbxChon"
                             Style="{StaticResource MaterialDesignFilledComboBox}"
@@ -83,7 +92,7 @@
                         VerticalAlignment="Center"
                         CaretBrush="Gray"
                         >
-                       
+
                     </TextBox>
                     <Button
                         Margin="20,0,0,0"
@@ -98,9 +107,9 @@
                                 Text="THÊM"
                                 FontWeight="Bold"
                                 FontFamily="{StaticResource Custom}">
-                                
+
                             </TextBlock>
-                                   
+
                         </StackPanel>
                     </Button>
 
@@ -114,23 +123,23 @@
                         Height="50"
                         CornerRadius="10"
                         >
-                      
+
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="80"/>
+                                <ColumnDefinition Width="100"/>
                                 <ColumnDefinition Width="190"/>
-                                <ColumnDefinition Width="160"/>
+                                <ColumnDefinition Width="180"/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
                             <Grid Grid.Column="0">
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock Text="MÃ KH"
-                                           HorizontalAlignment="Center"
+                                           HorizontalAlignment="Right"
                                            VerticalAlignment="Center"
                                            FontFamily="{StaticResource Custom}"
                                            FontSize="12"
                                            FontWeight="SemiBold"
-                                               Margin="10,0,0,0"
+                                               Margin="35,0,0,0"
                                            />
 
                                 </StackPanel>
@@ -145,7 +154,7 @@
                                            FontFamily="{StaticResource Custom}"
                                            FontSize="12"
                                            FontWeight="SemiBold"
-                                               Margin="35,0,0,0"
+                                               Margin="40,0,0,0"
                                            />
 
                                 </StackPanel>
@@ -159,7 +168,7 @@
                                            FontFamily="{StaticResource Custom}"
                                            FontSize="12"
                                            FontWeight="SemiBold"
-                                               Margin="35,0,0,0"
+                                               Margin="50,0,0,0"
                                            />
 
                                 </StackPanel>
@@ -173,7 +182,7 @@
                                            FontFamily="{StaticResource Custom}"
                                            FontSize="12"
                                            FontWeight="SemiBold"
-                                               Margin="90,0,0,0" RenderTransformOrigin="0.986,0.782"
+                                               Margin="80,0,0,0" RenderTransformOrigin="0.986,0.782"
                                            />
                                 </StackPanel>
 
@@ -184,26 +193,21 @@
                     </Border>
                     <ListView
                         x:Name="ListViewKH"
-                        ItemsSource="{Binding}"
                         Height="400"
                         Width="670"
                         SelectionMode="Single"
-                        ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                        ScrollViewer.VerticalScrollBarVisibility="Hidden" 
+                        ItemsSource="{Binding listKH}"                         
                         >
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <Border
-                                    Width="770"
-                                    Height="400"
+                                    Width="630"
+                                    Height="45"
                                     CornerRadius="15"
                                     Margin="10,0,10,0"
+                                    Background="#6C63FF"
                                     >
-                                    <Border.Background>
-                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                            <GradientStop Color="#FFE5D8" Offset="1"/>
-                                            <GradientStop Color="#FFCAD4" Offset="0"/>
-                                        </LinearGradientBrush>
-                                    </Border.Background>
                                     <Grid>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="120"/>
@@ -213,20 +217,20 @@
                                         </Grid.ColumnDefinitions>
                                         <Grid Grid.Column="0">
                                             <TextBlock
-                                                Text="{Binding}"
+                                                Text="{Binding MAKH}"
                                                 HorizontalAlignment="Center"
                                                 VerticalAlignment="Center"
-                                                FontFamily="{StaticResource MaterialDesignFont}"
+                                                FontFamily="{StaticResource Custom}"
                                                 FontSize="16"
                                                 >
                                             </TextBlock>
                                         </Grid>
                                         <Grid Grid.Column="1">
                                             <TextBlock
-                                                Text="{Binding}"
+                                                Text="{Binding HOTEN}"
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Center"
-                                                FontFamily="{StaticResource MaterialDesignFont}"
+                                                FontFamily="{StaticResource Custom}"
                                                 FontSize="16"
                                                 Margin="5,0,0,0"
                                                 >
@@ -234,10 +238,10 @@
                                         </Grid>
                                         <Grid Grid.Column="2">
                                             <TextBlock
-                                                Text="{Binding}"
+                                                Text="{Binding SDT}"
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Center"
-                                                FontFamily="{StaticResource MaterialDesignFont}"
+                                                FontFamily="{StaticResource Custom}"
                                                 FontSize="16"
                                                 Margin="5,0,0,0"
                                                 >
@@ -245,10 +249,10 @@
                                         </Grid>
                                         <Grid Grid.Column="3">
                                             <TextBlock
-                                                Text="{Binding}"
+                                                Text="{Binding DCHI}"
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Center"
-                                                FontFamily="{StaticResource MaterialDesignFont}"
+                                                FontFamily="{StaticResource Custom}"
                                                 FontSize="16"
                                                 Margin="5,0,0,0"
                                                 >
@@ -265,6 +269,12 @@
                                 <WrapPanel Orientation="Vertical"/>
                             </ItemsPanelTemplate>
                         </ListView.ItemsPanel>
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="SelectionChanged">
+                                <i:InvokeCommandAction     Command="{Binding Detail}"
+                                                           CommandParameter="{Binding ElementName=Customerwd}"></i:InvokeCommandAction>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
                     </ListView>
                 </StackPanel>
             </Grid>

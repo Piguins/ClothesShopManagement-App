@@ -24,5 +24,10 @@ namespace Demo.View
         {
             InitializeComponent();
         }
+
+        internal void ShowDialog()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
