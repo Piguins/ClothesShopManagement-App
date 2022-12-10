@@ -36,7 +36,7 @@
         x:Name="xx"
         CornerRadius="15"
         Background="Transparent"
-        >        
+        >
         <i:Interaction.Triggers>
             <i:EventTrigger EventName="MouseLeftButtonDown">
                 <i:InvokeCommandAction Command="{Binding MoveWindow}"
@@ -196,7 +196,7 @@
                 </Grid>
                 <Grid Grid.Column="1">
                     <Border
-                        Margin="20,0,20,0"
+                        Margin="18,0,20,0"
                         Background="White"
                         CornerRadius="15"
                         >
@@ -270,7 +270,7 @@
                                             BorderThickness="0"
                                             materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                             materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                            materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0"/>
+                                            materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0" Width="73"/>
                                     </Border>
                                 </StackPanel>
                                 <StackPanel
@@ -296,11 +296,12 @@
                             </StackPanel>
                             <StackPanel
                                 Width="270"
-                                Margin="20"
+                                Margin="0,18"
                                 Height="40"
                                 Orientation="Horizontal"
                                 >
-                                <Button Margin="4,0,0,0"
+                                <Button
+                                    Margin="2,0,0,0"
                                         BorderThickness="0"
                                         Content="THÊM"
                                         FontSize="12"
@@ -401,10 +402,10 @@
                             </Grid>
                             <Grid Grid.Column="1">
                                 <TextBlock
-                                    Margin="2,0,0,0"
-                                    HorizontalAlignment="Center"
+                                    Margin="32,10,0,0"
+                                    HorizontalAlignment="Left"
                                     Text="TÊN SP"
-                                    VerticalAlignment="Center"
+                                    VerticalAlignment="Top"
                                     FontFamily="{StaticResource Custom}"
                                     FontSize="12"
                                 />
@@ -421,11 +422,11 @@
                             <Grid Grid.Column="3">
                                 <TextBlock
                                     Text="SL"
-                                    HorizontalAlignment="Center"
-                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
                                     MaxWidth="150"
                                     FontFamily="{StaticResource Custom}"
-                                    FontSize="12"
+                                    FontSize="12" Margin="45,10,0,0"
                                 />
                             </Grid>
                             <Grid Grid.Column="4">
@@ -447,18 +448,18 @@
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <Border
-                                    Margin="35,0,0,0"
-                                    Width="600"
+                                    
+                                    Width="650"
                                     Height="40"
                                     CornerRadius="10"
                                     Background="White"
                         >
                                     <Grid>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="100"/>
+                                            <ColumnDefinition Width="130"/>
                                             <ColumnDefinition Width="150"/>
                                             <ColumnDefinition Width="130"/>
-                                            <ColumnDefinition/>
+                                            <ColumnDefinition Width="130"/>
                                             <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
                                         <Grid Grid.Column="0">
@@ -494,14 +495,14 @@
                                                 Text="{Binding SL}"
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Center"
-                                                MaxWidth="150"
+                                                MaxWidth="100"
                                                 FontFamily="{StaticResource Custom}"
                                                 FontSize="12"
                                             />
                                         </Grid>
                                         <Grid Grid.Column="4">
                                             <TextBlock
-                                                Text="{Binding Tiennhap, StringFormat={}VNĐ}"
+                                                Text="{Binding Tiennhap, StringFormat={}{0:# ###} VNĐ}"
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Center"
                                                 MaxWidth="150"

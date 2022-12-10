@@ -17,7 +17,7 @@ namespace Demo.View
     /// <summary>
     /// Interaction logic for DetailImport.xaml
     /// </summary>
-    public partial class DetailImport : Window
+    public partial class DetailImport : Page
     {
         public DetailImport()
         {

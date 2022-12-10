@@ -12,7 +12,7 @@
       x:Name="Importwd"
       DataContext="{StaticResource ImportVM}">
 
-    <Border DataContext="{StaticResource MainVM}"
+    <Border
                     Height="605"
                     Width="700"
                     Background="Transparent"
@@ -137,12 +137,13 @@
                                 <Border
                                     Width="600"
                                     Height="40"
-                                    CornerRadius="10"                       
+                                    CornerRadius="10"
+                                    Background="#6C63FF"
                                  >                                    
                                     <Grid>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="180"/>
-                                            <ColumnDefinition Width="250"/>
+                                            <ColumnDefinition Width="200"/>
                                             <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
                                         <Grid Grid.Column="0">
@@ -156,7 +157,7 @@
                                         </Grid>
                                         <Grid Grid.Column="1">
                                             <TextBlock
-                                                Margin="55,0,0,0"
+                                                Margin="50,0,0,0"
                                                 HorizontalAlignment="Left"
                                                 Text="{Binding NGUOIDUNG.TENND}"
                                                 VerticalAlignment="Center"
@@ -165,12 +166,13 @@
                                             />
                                         </Grid>
                                         <Grid Grid.Column="2">
-                                            <TextBlock Margin="55,0,0,0"
+                                            <TextBlock Margin="50,0,0,0"
                                                 Text="{Binding NGAYNHAP, StringFormat=dd/MM/yyyy hh:mm:tt}"
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Center"
                                                 FontFamily="{StaticResource Custom}"
                                                 FontSize="12"
+                                                MaxWidth="200"
                                                 />
                                         </Grid>
                                     </Grid>
