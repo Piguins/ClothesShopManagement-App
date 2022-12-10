@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Windows;
+using System.Collections.ObjectModel;
 
 namespace Demo.ViewModel
 {
@@ -74,6 +75,9 @@ namespace Demo.ViewModel
                         paramater.GT.SelectedItem = null;
                         paramater.GT.Items.Refresh();
                         paramater.DC.Clear();
+                        CustomersView customersView = new CustomersView();
+                        customersView.ListViewKH.ItemsSource = new ObservableCollection<KHACHHANG>(DataProvider.Ins.DB.KHACHHANGs);
+                        MainViewModel.MainFrame.Content = customersView;
                     }
                 }
             }

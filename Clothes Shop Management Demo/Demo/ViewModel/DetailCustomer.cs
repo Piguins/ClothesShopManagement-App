@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Windows;
+using System.Collections.ObjectModel;
 
 namespace Demo.ViewModel
 {
@@ -45,6 +46,9 @@ namespace Demo.ViewModel
                     }
                     DataProvider.Ins.DB.SaveChanges();
                     MessageBox.Show("Cập nhật thông tin thành công !", "THÔNG BÁO");
+                    CustomersView customersView = new CustomersView();
+                    customersView.ListViewKH.ItemsSource = new ObservableCollection<KHACHHANG>(DataProvider.Ins.DB.KHACHHANGs);
+                    MainViewModel.MainFrame.Content = customersView;
                 }
             }
         }

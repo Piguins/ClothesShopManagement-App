@@ -140,6 +140,9 @@ namespace Demo.ViewModel
                 }
                 DataProvider.Ins.DB.SaveChanges();
                 MessageBox.Show("Cập nhật thành công !", "THÔNG BÁO");
+                QLNVView qLNVView = new QLNVView();
+              
+                MainViewModel.MainFrame.Content = qLNVView;
             }
         }
         void _ResetPass(DetailNVView p)
@@ -170,6 +173,9 @@ namespace Demo.ViewModel
                 }
                 DataProvider.Ins.DB.SaveChanges();
                 MessageBox.Show("Xóa người dùng thành công !", "THÔNG BÁO");
+                QLNVView qLNVView = new QLNVView();
+              
+                MainViewModel.MainFrame.Content = qLNVView;
             }
         }
         bool check(string m)

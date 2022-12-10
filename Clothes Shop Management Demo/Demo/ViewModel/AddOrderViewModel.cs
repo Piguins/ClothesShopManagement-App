@@ -322,6 +322,9 @@ namespace Demo.ViewModel
                 paramater.TT1.Text = tongtien.ToString();
                 paramater.SoHD.Text = rdma().ToString();
                 MessageBox.Show("Thanh toán hóa đơn thành công !", "THÔNG BÁO");
+                OrderView orderView = new OrderView();
+                orderView.ListViewHD.ItemsSource = new ObservableCollection<HOADON>(DataProvider.Ins.DB.HOADONs);
+                MainViewModel.MainFrame.Content = orderView;
             }
             else
                 return;
