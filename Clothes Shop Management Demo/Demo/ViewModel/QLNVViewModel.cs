@@ -24,9 +24,7 @@ namespace Demo.ViewModel
         public ICommand DeleteNDCommand { get; set; }
         public ICommand AddNDCommand { get; set; }
         public ICommand LoadCsCommand { get; set; }
-        public ICommand Closewd { get; set; }
-        public ICommand Minimizewd { get; set; }
-        public ICommand MoveWindow { get; set; }
+    
         private ObservableCollection<string> _listTK;
         public ObservableCollection<string> listTK { get => _listTK; set { _listTK = value; OnPropertyChanged(); } }
         public ICommand ResetPass { get; set; }
@@ -36,13 +34,12 @@ namespace Demo.ViewModel
             listND = new ObservableCollection<NGUOIDUNG>(DataProvider.Ins.DB.NGUOIDUNGs.Where(p => p.TTND == true && p.MAND != Const.ND.MAND));
             listTK = new ObservableCollection<string>() { "Họ tên", "Mã NV", "SĐT" };
             SearchCommand = new RelayCommand<QLNVView>((p) => true, (p) => _SearchCommand(p));
-            //Detail = new RelayCommand<QLNVView>((p) => { return p.ListViewND.SelectedItem == null ? false : true; }, (p) => _DetailND(p));
+            Detail = new RelayCommand<QLNVView>((p) => { return p.ListViewND.SelectedItem == null ? false : true; }, (p) => _DetailND(p));
             AddNDCommand = new RelayCommand<QLNVView>((p) => true, (p) => _AddND(p));
-            //UpdateNDCommand = new RelayCommand<DetailNDView>((p) => true, (p) => _UpdateNDCommand(p));
-            //DeleteNDCommand = new RelayCommand<DetailNDView>((p) => true, (p) => _DeleteNDCommand(p));
+            UpdateNDCommand = new RelayCommand<DetailNVView>((p) => true, (p) => _UpdateNDCommand(p));
+            DeleteNDCommand = new RelayCommand<DetailNVView>((p) => true, (p) => _DeleteNDCommand(p));
             LoadCsCommand = new RelayCommand<QLNVView>((p) => true, (p) => _LoadCsCommand(p));
-
-            //ResetPass = new RelayCommand<DetailNDView>((p) => true, (p) => _ResetPass(p));
+            ResetPass = new RelayCommand<DetailNVView>((p) => true, (p) => _ResetPass(p));
         }
        
         void _LoadCsCommand(QLNVView parameter)
@@ -107,74 +104,74 @@ namespace Demo.ViewModel
             else
                 paramater.ListViewND.ItemsSource = listND;
         }
-        //void _DetailND(QLNVView paramater)
-        //{
-        //    DetailNDView detailNDView = new DetailNDView();
-        //    NGUOIDUNG temp = (NGUOIDUNG)paramater.ListViewND.SelectedItem;
-        //    detailNDView.MaND.Text = temp.MAND;
-        //    detailNDView.TenND.Text = temp.TENND;
-        //    detailNDView.SDT.Text = temp.SDT;
-        //    detailNDView.GT.Text = temp.GIOITINH;
-        //    detailNDView.NS.Text = temp.NGSINH.ToString();
-        //    detailNDView.Mail.Text = temp.MAIL;
-        //    Uri fileUri = new Uri(temp.AVA);
-        //    detailNDView.HinhAnh.ImageSource = new BitmapImage(fileUri);
-        //    detailNDView.DC.Text = temp.DIACHI;
-        //    detailNDView.QTV.Text = temp.QTV == true ? "Quản lý" : "Nhân viên";
-        //    detailNDView.ShowDialog();
-        //    listND = new ObservableCollection<NGUOIDUNG>(DataProvider.Ins.DB.NGUOIDUNGs.Where(p => p.TTND == true && p.MAND != Const.ND.MAND));
-        //    paramater.ListViewND.ItemsSource = listND;
-        //    paramater.ListViewND.SelectedItem = null;
-        //}
-        //void _UpdateNDCommand(DetailNDView p)
-        //{
-        //    MessageBoxResult h = System.Windows.MessageBox.Show("Bạn muốn cập nhật thông tin ?", "THÔNG BÁO", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
-        //    if (h == MessageBoxResult.Yes)
-        //    {
-        //        foreach (NGUOIDUNG a in DataProvider.Ins.DB.NGUOIDUNGs.Where(pa => pa.TTND == true && pa.MAND != Const.ND.MAND))
-        //        {
-        //            if (a.MAND == p.MaND.Text)
-        //            {
-        //                if (p.QTV.Text == "Quản lý")
-        //                    a.QTV = true;
-        //                else
-        //                    a.QTV = false;
-        //            }
-        //        }
-        //        DataProvider.Ins.DB.SaveChanges();
-        //        MessageBox.Show("Cập nhật thành công !", "THÔNG BÁO");
-        //    }
-        //}
-        //void _ResetPass(DetailNDView p)
-        //{
-        //    MessageBoxResult h = System.Windows.MessageBox.Show("Bạn muốn đặt lại mật khẩu ?", "THÔNG BÁO", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
-        //    if (h == MessageBoxResult.Yes)
-        //    {
-        //        foreach (NGUOIDUNG temp in DataProvider.Ins.DB.NGUOIDUNGs)
-        //        {
-        //            if (temp.MAND == p.MaND.Text)
-        //                temp.PASS = LoginViewModel.MD5Hash(LoginViewModel.Base64Encode("123456"));
-        //        }
-        //        DataProvider.Ins.DB.SaveChanges();
-        //        MessageBox.Show("Đặt lại mật khẩu thành công !", "THÔNG BÁO");
-        //    }
-        //}
-        //void _DeleteNDCommand(DetailNDView p)
-        //{
-        //    MessageBoxResult h = System.Windows.MessageBox.Show("Bạn muốn xóa người dùng này ?", "THÔNG BÁO", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
-        //    if (h == MessageBoxResult.Yes)
-        //    {
-        //        foreach (NGUOIDUNG a in DataProvider.Ins.DB.NGUOIDUNGs.Where(pa => pa.TTND == true && pa.MAND != Const.ND.MAND))
-        //        {
-        //            if (a.MAND == p.MaND.Text)
-        //            {
-        //                a.TTND = false;
-        //            }
-        //        }
-        //        DataProvider.Ins.DB.SaveChanges();
-        //        MessageBox.Show("Xóa người dùng thành công !", "THÔNG BÁO");
-        //    }
-        //}
+        void _DetailND(QLNVView paramater)
+        {
+            DetailNVView detailNDView = new DetailNVView();
+            NGUOIDUNG temp = (NGUOIDUNG)paramater.ListViewND.SelectedItem;
+            detailNDView.MaND.Text = temp.MAND;
+            detailNDView.TenND.Text = temp.TENND;
+            detailNDView.SDT.Text = temp.SDT;
+            detailNDView.GT.Text = temp.GIOITINH;
+            detailNDView.NS.Text = temp.NGSINH.ToString();
+            detailNDView.Mail.Text = temp.MAIL;
+            //Uri fileUri = new Uri(temp.AVA);
+            //detailNDView.HinhAnh.ImageSource = new BitmapImage(fileUri);
+            detailNDView.DC.Text = temp.DIACHI;
+            detailNDView.QTV.Text = temp.QTV == true ? "Quản lý" : "Nhân viên";
+            MainViewModel.MainFrame.Content = detailNDView;
+            listND = new ObservableCollection<NGUOIDUNG>(DataProvider.Ins.DB.NGUOIDUNGs.Where(p => p.TTND == true && p.MAND != Const.ND.MAND));
+            paramater.ListViewND.ItemsSource = listND;
+            paramater.ListViewND.SelectedItem = null;
+        }
+        void _UpdateNDCommand(DetailNVView p)
+        {
+            MessageBoxResult h = System.Windows.MessageBox.Show("Bạn muốn cập nhật thông tin ?", "THÔNG BÁO", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+            if (h == MessageBoxResult.Yes)
+            {
+                foreach (NGUOIDUNG a in DataProvider.Ins.DB.NGUOIDUNGs.Where(pa => pa.TTND == true && pa.MAND != Const.ND.MAND))
+                {
+                    if (a.MAND == p.MaND.Text)
+                    {
+                        if (p.QTV.Text == "Quản lý")
+                            a.QTV = true;
+                        else
+                            a.QTV = false;
+                    }
+                }
+                DataProvider.Ins.DB.SaveChanges();
+                MessageBox.Show("Cập nhật thành công !", "THÔNG BÁO");
+            }
+        }
+        void _ResetPass(DetailNVView p)
+        {
+            MessageBoxResult h = System.Windows.MessageBox.Show("Bạn muốn đặt lại mật khẩu ?", "THÔNG BÁO", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+            if (h == MessageBoxResult.Yes)
+            {
+                foreach (NGUOIDUNG temp in DataProvider.Ins.DB.NGUOIDUNGs)
+                {
+                    if (temp.MAND == p.MaND.Text)
+                        temp.PASS = LoginViewModel.MD5Hash(LoginViewModel.Base64Encode("123456"));
+                }
+                DataProvider.Ins.DB.SaveChanges();
+                MessageBox.Show("Đặt lại mật khẩu thành công !", "THÔNG BÁO");
+            }
+        }
+        void _DeleteNDCommand(DetailNVView p)
+        {
+            MessageBoxResult h = System.Windows.MessageBox.Show("Bạn muốn xóa người dùng này ?", "THÔNG BÁO", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+            if (h == MessageBoxResult.Yes)
+            {
+                foreach (NGUOIDUNG a in DataProvider.Ins.DB.NGUOIDUNGs.Where(pa => pa.TTND == true && pa.MAND != Const.ND.MAND))
+                {
+                    if (a.MAND == p.MaND.Text)
+                    {
+                        a.TTND = false;
+                    }
+                }
+                DataProvider.Ins.DB.SaveChanges();
+                MessageBox.Show("Xóa người dùng thành công !", "THÔNG BÁO");
+            }
+        }
         bool check(string m)
         {
             foreach (NGUOIDUNG temp in DataProvider.Ins.DB.NGUOIDUNGs)

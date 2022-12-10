@@ -17,21 +17,11 @@ namespace Demo.View
     /// <summary>
     /// Interaction logic for DetailNVView.xaml
     /// </summary>
-    public partial class DetailNVView : Window
+    public partial class DetailNVView : Page
     {
         public DetailNVView()
         {
             InitializeComponent();
-        }
-
-        private void MinimizeButton_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            WindowState = WindowState.Minimized;
-        }
-
-        private void CloseButton_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            Close();
         }
     }
 }
