@@ -51,7 +51,7 @@
 
             <Border Grid.Column="0"
                     Background="#FF6363AB"
-                    CornerRadius="40,0,0,40">
+                    CornerRadius="40,0,0,40" Height="700" VerticalAlignment="Top">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="60"/>
@@ -114,7 +114,7 @@
                     </Grid>
 
 
-                    <Grid Grid.Row="2" Margin="0,50,0,0" Grid.RowSpan="2">
+                    <Grid Grid.Row="2" Margin="0,30,0,0" Grid.RowSpan="2">
 
                         <StackPanel>
                             <RadioButton
@@ -131,8 +131,7 @@
                             Uid="1"
                             FontFamily="{StaticResource Custom}"
                             x:Name="btnOrder"
-                            Command="{Binding OrderCM}"
-                            >
+                            Command="{Binding OrderCM}">
                             </RadioButton>
 
                             <RadioButton
@@ -140,8 +139,7 @@
                             FontFamily="{StaticResource Custom}"
                             Uid="2"
                             x:Name="btnProducts"
-                            Command="{Binding SPCM}"
-                            >
+                            Command="{Binding SPCM}">
 
                             </RadioButton>
                             <RadioButton
@@ -149,8 +147,7 @@
                             FontFamily="{StaticResource Custom}"
                             Uid="3"
                             x:Name="btnKH"
-                            Command="{Binding KHCM}"
-                            >
+                            Command="{Binding KHCM}">
 
                             </RadioButton>
                             <RadioButton
@@ -158,8 +155,8 @@
                             FontFamily="{StaticResource Custom}"
                             Uid="4"
                             x:Name="btnImport"
-                            Command="{Binding ImportCM}"
-                            >
+                            Command="{Binding ImportCM}">
+
 
                             </RadioButton>
                             <RadioButton
@@ -168,8 +165,8 @@
                             FontFamily="{StaticResource Custom}"
                             Uid="5"
                             x:Name="btnReport"
-                            Command="{Binding ReportCM}"
-                            >
+                            Command="{Binding ReportCM}">
+
 
                             </RadioButton>
                             <RadioButton
@@ -178,9 +175,8 @@
                             Visibility="{Binding SetQuanLy}"
                             Style="{StaticResource BtnManage}"
                             FontFamily="{StaticResource Custom}"
-                            Command="{Binding QuanLyCM}"
-                            
-                            >
+                            Command="{Binding QuanLyCM}">
+
 
                             </RadioButton>
                             <RadioButton
@@ -195,18 +191,24 @@
                             FontFamily="{StaticResource Custom}"
                             Uid="7"
                             Command="{Binding VoucherCM}">
+                            </RadioButton>
+                            
+                            <RadioButton
+                            Style="{StaticResource BtnSupport}"
+                            FontFamily="{StaticResource Custom}"
+                            Uid="7"
+                            Command="{Binding SupportCM}">
 
                             </RadioButton>
                             <Grid Grid.Row="2" VerticalAlignment="Bottom">
                                 <Button
                          
                             Style="{StaticResource BtnLogOut}"
-                            FontFamily="{StaticResource Custom}" Margin="-5,65,0,-65"
+                            FontFamily="{StaticResource Custom}" Margin="-5,0,0,-65"
                                     Command="{Binding SignoutCM}"
                                     CommandParameter="{Binding ElementName=Mainview}">
                                 </Button>
                             </Grid>
-
 
 
                         </StackPanel>
@@ -230,20 +232,8 @@
                 HorizontalAlignment="Right"
                 Margin="10 20 30 0">
                             <materialDesign:PackIcon Kind="WindowMinimize" Foreground="#6C63FF" Height="24" Width="24" Margin="0,0,8,0" MouseDown="MinimizeButton">
-                                <i:Interaction.Triggers>
-                                    <i:EventTrigger EventName="MouseLeftButtonDown">
-                                        <i:InvokeCommandAction Command="{Binding Minimizewd}"
-                                                       CommandParameter="{Binding ElementName=Registerwd}"></i:InvokeCommandAction>
-                                    </i:EventTrigger>
-                                </i:Interaction.Triggers>
                             </materialDesign:PackIcon>
                             <materialDesign:PackIcon Kind="CloseThick" Foreground="#6C63FF" Height="24" Width="24" MouseDown="CloseButton">
-                                <i:Interaction.Triggers>
-                                    <i:EventTrigger EventName="MouseLeftButtonDown">
-                                        <i:InvokeCommandAction Command="{Binding Close1}"
-                                                       CommandParameter="{Binding ElementName=Registerwd}"></i:InvokeCommandAction>
-                                    </i:EventTrigger>
-                                </i:Interaction.Triggers>
                             </materialDesign:PackIcon>
                         </StackPanel>
                     </Border>
