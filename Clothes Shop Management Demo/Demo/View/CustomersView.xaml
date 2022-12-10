@@ -1,284 +1,290 @@
-﻿<Page x:Class="Demo.View.CustomersView"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Demo.ViewModel"
-      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
-      mc:Ignorable="d" 
-      d:DesignHeight="605" d:DesignWidth="700"
-      DataContext="{StaticResource CsVM}"
-      x:Name="Customerwd">
+﻿<Page x:Class = "Demo.View.CustomersView"
+      xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x = "http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc = "http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d = "http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local = "clr-namespace:Demo.ViewModel"
+      xmlns:materialDesign = "http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:i = "http://schemas.microsoft.com/expression/2010/interactivity"
+      mc:Ignorable = "d"
+      d:DesignHeight = "605" 
+      d:DesignWidth = "700"
+      DataContext = "{StaticResource CsVM}"
+      x:Name = "Customerwd" >
 
-    <i:Interaction.Triggers>
-        <i:EventTrigger EventName="Loaded">
-            <i:InvokeCommandAction Command="{Binding LoadCsCommand}"
-                                   CommandParameter="{Binding ElementName=Customerwd}"></i:InvokeCommandAction>
-        </i:EventTrigger>
-    </i:Interaction.Triggers>
-    <Border 
-        Height="605"
-        Width="700"
-        Background="Transparent"
-        CornerRadius="20"
-        BorderThickness="5"
-        
+    <i:Interaction.Triggers >
+        <i:EventTrigger EventName = "Loaded" >
+            <i:InvokeCommandAction Command = "{Binding LoadCsCommand}"
+                                   CommandParameter="{Binding ElementName=Customerwd}"></i:InvokeCommandAction >
+        </i:EventTrigger >
+    </i:Interaction.Triggers >
+    <Border
+        Height = "605"
+        Width = "700"
+        Background = "Transparent"
+        CornerRadius = "20"
+        BorderThickness = "5"
+
         >
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="65"/>
-                <RowDefinition Height="70"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Grid Grid.Row="0">
-                <StackPanel Orientation="Horizontal">
+        <Grid >
+            <Grid.RowDefinitions >
+                <RowDefinition Height = "65" />
+                <RowDefinition Height = "70" />
+                <RowDefinition />
+            </Grid.RowDefinitions >
+            <Grid Grid.Row = "0" >
+                <StackPanel Orientation = "Horizontal" >
                     <TextBlock
-                        FontWeight="SemiBold"
-                        FontFamily="{StaticResource Custom}"
-                        FontSize="30"
-                        Foreground="#6C63FF"
-                        Margin="15,10,0,0" Width="650"
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center"
-                    ><Run Text="KHÁCH HÀNG" />
-                    </TextBlock>
-                </StackPanel>
-
-            </Grid>
-            <Grid Grid.Row="1">
-                <StackPanel Orientation="Horizontal">
+                        FontWeight = "SemiBold"
+                        FontFamily = "{StaticResource Custom}"
+                        FontSize = "30"
+                        Foreground = "#6C63FF"
+                        Margin = "15,10,0,0" Width = "650"
+                        HorizontalAlignment = "Center"
+                        VerticalAlignment = "Center"
+                    ><Run Text = "KHÁCH HÀNG" />
+                    </TextBlock >
+                </StackPanel >
+            </Grid >
+            <Grid Grid.Row = "1" >
+                <StackPanel Orientation = "Horizontal" >
                     <Border
-                        Margin="15,0,0,0"
-                        Height="40"
-                        Width="115"
-                        CornerRadius="16"
-                        Background="#6C63FF"
+                        Margin = "15,0,0,0"
+                        Height = "40"
+                        Width = "115"
+                        CornerRadius = "16"
+                        Background = "#6C63FF"
                         >
                         <ComboBox
-                            x:Name="cbxChon"
-                            Style="{StaticResource MaterialDesignFilledComboBox}"
-                            materialDesign:TextFieldAssist.TextBoxViewMargin="2,-11,-10,0"
-                            materialDesign:TextFieldAssist.TextFieldCornerRadius="14"
-                            materialDesign:HintAssist.Hint="Tìm kiếm"
-                            materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
-                            BorderThickness="0"
-                            materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
-                            materialDesign:HintAssist.Foreground="White"
-                            Background="White"
-                            FontFamily="{StaticResource Custom}"
-                            Height="35"
-                            FontSize="14"
-                            Width="110">
-
-                        </ComboBox>
-                    </Border>
+                            x:Name = "cbxChon"
+                            Style = "{StaticResource MaterialDesignFilledComboBox}"
+                            materialDesign:TextFieldAssist.TextBoxViewMargin = "2,-13,-10,0"
+                            materialDesign:TextFieldAssist.TextFieldCornerRadius = "14"
+                            materialDesign:TextFieldAssist.DecorationVisibility = "Hidden"
+                            BorderThickness = "0"
+                            materialDesign:HintAssist.FontFamily = "{StaticResource Custom}"
+                            materialDesign:HintAssist.Foreground = "White"
+                            Background = "White"
+                            FontFamily = "{StaticResource Custom}"
+                            Height = "35"
+                            FontSize = "14"
+                            Width = "110"
+                            ItemsSource = "{Binding listTK}" >
+                            <ComboBox.ItemTemplate >
+                                <DataTemplate >
+                                    <StackPanel Orientation = "Horizontal" >
+                                        <TextBlock Text = "{Binding}" />
+                                    </StackPanel >
+                                </DataTemplate >
+                            </ComboBox.ItemTemplate >
+                        </ComboBox >
+                    </Border >
                     <TextBox
-                         x:Name="txbSearch"
-                                Width="430"
-                                Height="40"
-                                Margin="15,0,0,0"
-                                BorderBrush="#6C63FF"
-                                Foreground="Black"
-                                FontSize="14"
-                                FontWeight="SemiBold"
-                                materialDesign:HintAssist.Hint="Tìm kiếm"
-                                materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
-                                materialDesign:HintAssist.Foreground="White"
-                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
-                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,6,0,0"
-                                BorderThickness="2"
-                                VerticalAlignment="Center" CaretBrush="Gray" >
-                        <i:Interaction.Triggers>
-                            <i:EventTrigger EventName="TextChanged">
-                                <i:InvokeCommandAction Command="{Binding SearchCommand}"
-                                                       CommandParameter="{Binding ElementName=Customerwd}"></i:InvokeCommandAction>
-                            </i:EventTrigger>
-                        </i:Interaction.Triggers>
-                    </TextBox>
+                         x:Name = "txbSearch"
+                                Width = "430"
+                                Height = "40"
+                                Margin = "15,0,0,0"
+                                BorderBrush = "#6C63FF"
+                                Foreground = "Black"
+                                FontSize = "14"
+                                FontWeight = "SemiBold"
+                                materialDesign:HintAssist.Hint = "Tìm kiếm"
+                                materialDesign:HintAssist.FontFamily = "{StaticResource Custom}"
+                                materialDesign:HintAssist.Foreground = "White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius = "10"
+                                materialDesign:TextFieldAssist.DecorationVisibility = "Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin = "10,6,0,0"
+                                BorderThickness = "2"
+                                VerticalAlignment = "Center" CaretBrush = "Gray" >
+                        <i:Interaction.Triggers >
+                            <i:EventTrigger EventName = "TextChanged" >
+                                <i:InvokeCommandAction Command = "{Binding SearchCommand}"
+                                                       CommandParameter="{Binding ElementName=Customerwd}"></i:InvokeCommandAction >
+                            </i:EventTrigger >
+                        </i:Interaction.Triggers >
+                    </TextBox >
                     <Button
-                        Content="THÊM"
-                        Margin="20,0,0,0"
-                        Width="80"
-                        Height="40"
-                        materialDesign:ButtonAssist.CornerRadius="15"
-                        Background="#6C63FF" 
-                        FontFamily="{StaticResource Custom}"
+                        Content = "THÊM"
+                        Margin = "20,0,0,0"
+                        Width = "80"
+                        Height = "40"
+                        materialDesign:ButtonAssist.CornerRadius = "15"
+                        Background = "#6C63FF"
+                        FontFamily = "{StaticResource Custom}"
                         >
-                        <i:Interaction.Triggers>
-                            <i:EventTrigger EventName="Click">
-                                <i:InvokeCommandAction Command="{Binding AddCsCommand}"
-                                                       CommandParameter="{Binding ElementName=Customerwd}"></i:InvokeCommandAction>
-                            </i:EventTrigger>
-                        </i:Interaction.Triggers>                        
-                    </Button>
+                        <i:Interaction.Triggers >
+                            <i:EventTrigger EventName = "Click" >
+                                <i:InvokeCommandAction Command = "{Binding AddCsCommand}"
+                                                       CommandParameter="{Binding ElementName=Customerwd}"></i:InvokeCommandAction >
+                            </i:EventTrigger >
+                        </i:Interaction.Triggers >
+                    </Button >
 
-                </StackPanel>
-            </Grid>
-            <Grid Grid.Row="2">
-                <StackPanel>
+                </StackPanel >
+            </Grid >
+            <Grid Grid.Row = "2" >
+                <StackPanel >
                     <Border
-                        Margin="-15,0,0,0"
-                        Width="670"
-                        Height="50"
-                        CornerRadius="10"
+                        Margin = "-15,0,0,0"
+                        Width = "670"
+                        Height = "50"
+                        CornerRadius = "10"
                         >
 
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="90"/>
-                                <ColumnDefinition Width="170"/>
-                                <ColumnDefinition Width="120"/>
-                                <ColumnDefinition/>
-                            </Grid.ColumnDefinitions>
-                            <Grid Grid.Column="0">
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="MÃ KH"
-                                           HorizontalAlignment="Right"
-                                           VerticalAlignment="Center"
-                                           FontFamily="{StaticResource Custom}"
-                                           FontSize="12"
-                                           FontWeight="SemiBold"
-                                               Margin="35,0,0,0"
+                        <Grid >
+                            <Grid.ColumnDefinitions >
+                                <ColumnDefinition Width = "90" />
+                                <ColumnDefinition Width = "170" />
+                                <ColumnDefinition Width = "120" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions >
+                            <Grid Grid.Column = "0" >
+                                <StackPanel Orientation = "Horizontal" >
+                                    <TextBlock Text = "MÃ KH"
+                                           HorizontalAlignment = "Right"
+                                           VerticalAlignment = "Center"
+                                           FontFamily = "{StaticResource Custom}"
+                                           FontSize = "12"
+                                           FontWeight = "SemiBold"
+                                               Margin = "35,0,0,0"
                                            />
 
-                                </StackPanel>
+                                </StackPanel >
 
 
-                            </Grid>
-                            <Grid Grid.Column="1">
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="TÊN KHÁCH HÀNG"
-                                           HorizontalAlignment="Left"
-                                           VerticalAlignment="Center"
-                                           FontFamily="{StaticResource Custom}"
-                                           FontSize="12"
-                                           FontWeight="SemiBold"
-                                               Margin="15,0,0,0"
+                            </Grid >
+                            <Grid Grid.Column = "1" >
+                                <StackPanel Orientation = "Horizontal" >
+                                    <TextBlock Text = "TÊN KHÁCH HÀNG"
+                                           HorizontalAlignment = "Left"
+                                           VerticalAlignment = "Center"
+                                           FontFamily = "{StaticResource Custom}"
+                                           FontSize = "12"
+                                           FontWeight = "SemiBold"
+                                               Margin = "15,0,0,0"
                                            />
 
-                                </StackPanel>
+                                </StackPanel >
 
-                            </Grid>
-                            <Grid Grid.Column="2">
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="SỐ ĐIỆN THOẠI"
-                                           HorizontalAlignment="Left"
-                                           VerticalAlignment="Center"
-                                           FontFamily="{StaticResource Custom}"
-                                           FontSize="12"
-                                           FontWeight="SemiBold"
-                                               Margin="5,0,0,0"
+                            </Grid >
+                            <Grid Grid.Column = "2" >
+                                <StackPanel Orientation = "Horizontal" >
+                                    <TextBlock Text = "SỐ ĐIỆN THOẠI"
+                                           HorizontalAlignment = "Left"
+                                           VerticalAlignment = "Center"
+                                           FontFamily = "{StaticResource Custom}"
+                                           FontSize = "12"
+                                           FontWeight = "SemiBold"
+                                               Margin = "5,0,0,0"
                                            />
 
-                                </StackPanel>
+                                </StackPanel >
 
-                            </Grid>
-                            <Grid Grid.Column="3">
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="ĐỊA CHỈ"
-                                           HorizontalAlignment="Center"
-                                           VerticalAlignment="Center"
-                                           FontFamily="{StaticResource Custom}"
-                                           FontSize="12"
-                                           FontWeight="SemiBold"
-                                               Margin="80,0,0,0" RenderTransformOrigin="0.986,0.782"
+                            </Grid >
+                            <Grid Grid.Column = "3" >
+                                <StackPanel Orientation = "Horizontal" >
+                                    <TextBlock Text = "ĐỊA CHỈ"
+                                           HorizontalAlignment = "Center"
+                                           VerticalAlignment = "Center"
+                                           FontFamily = "{StaticResource Custom}"
+                                           FontSize = "12"
+                                           FontWeight = "SemiBold"
+                                               Margin = "80,0,0,0" RenderTransformOrigin = "0.986,0.782"
                                            />
-                                </StackPanel>
+                                </StackPanel >
 
-                            </Grid>
+                            </Grid >
 
-                        </Grid>
+                        </Grid >
 
-                    </Border>
+                    </Border >
                     <ListView
-                        x:Name="ListViewKH"
-                        Height="410"
-                        Width="675"
-                        SelectionMode="Single"
-                        ScrollViewer.VerticalScrollBarVisibility="Hidden" 
-                        ItemsSource="{Binding listKH}"                       
+                        x:Name = "ListViewKH"
+                        Height = "410"
+                        Width = "675"
+                        SelectionMode = "Single"
+                        ScrollViewer.VerticalScrollBarVisibility = "Hidden"
+                        ItemsSource = "{Binding listKH}"
                         >
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
+                        <ListView.ItemTemplate >
+                            <DataTemplate >
                                 <Border
-                                    Width="645"
-                                    Height="40"
-                                    CornerRadius="10"
-                                    Margin="0,0,10,0"
-                                    Background="#6C63FF"
+                                    Width = "645"
+                                    Height = "40"
+                                    CornerRadius = "10"
+                                    Margin = "0,0,10,0"
+                                    Background = "#6C63FF"
                                     >
-                                    <Grid>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="90"/>
-                                            <ColumnDefinition Width="170"/>
-                                            <ColumnDefinition Width="120"/>
-                                            <ColumnDefinition/>
-                                        </Grid.ColumnDefinitions>
-                                        <Grid Grid.Column="0">
+                                    <Grid >
+                                        <Grid.ColumnDefinitions >
+                                            <ColumnDefinition Width = "90" />
+                                            <ColumnDefinition Width = "170" />
+                                            <ColumnDefinition Width = "120" />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions >
+                                        <Grid Grid.Column = "0" >
                                             <TextBlock
-                                                Text="{Binding MAKH}"
-                                                HorizontalAlignment="Center"
-                                                VerticalAlignment="Center"
-                                                FontFamily="{StaticResource Custom}"
-                                                FontSize="12"
+                                                Text = "{Binding MAKH}"
+                                                HorizontalAlignment = "Center"
+                                                VerticalAlignment = "Center"
+                                                FontFamily = "{StaticResource Custom}"
+                                                FontSize = "12"
                                                 >
-                                            </TextBlock>
-                                        </Grid>
-                                        <Grid Grid.Column="1">
+                                            </TextBlock >
+                                        </Grid >
+                                        <Grid Grid.Column = "1" >
                                             <TextBlock
-                                                Text="{Binding HOTEN}"
-                                                HorizontalAlignment="Left"
-                                                VerticalAlignment="Center"
-                                                FontFamily="{StaticResource Custom}"
-                                                FontSize="12"
-                                                Margin="10,0,0,0"
+                                                Text = "{Binding HOTEN}"
+                                                HorizontalAlignment = "Left"
+                                                VerticalAlignment = "Center"
+                                                FontFamily = "{StaticResource Custom}"
+                                                FontSize = "12"
+                                                Margin = "10,0,0,0"
                                                 >
-                                            </TextBlock>
-                                        </Grid>
-                                        <Grid Grid.Column="2">
+                                            </TextBlock >
+                                        </Grid >
+                                        <Grid Grid.Column = "2" >
                                             <TextBlock
-                                                Text="{Binding SDT}"
-                                                HorizontalAlignment="Left"
-                                                VerticalAlignment="Center"
-                                                FontFamily="{StaticResource Custom}"
-                                                FontSize="12"
-                                                Margin="5,0,0,0"
+                                                Text = "{Binding SDT}"
+                                                HorizontalAlignment = "Left"
+                                                VerticalAlignment = "Center"
+                                                FontFamily = "{StaticResource Custom}"
+                                                FontSize = "12"
+                                                Margin = "5,0,0,0"
                                                 >
-                                            </TextBlock>
-                                        </Grid>
-                                        <Grid Grid.Column="3">
+                                            </TextBlock >
+                                        </Grid >
+                                        <Grid Grid.Column = "3" >
                                             <TextBlock
-                                                Text="{Binding DCHI}"
-                                                HorizontalAlignment="Left"
-                                                VerticalAlignment="Center"
-                                                FontFamily="{StaticResource Custom}"
-                                                FontSize="12"
-                                                Margin="10,0,0,0"
+                                                Text = "{Binding DCHI}"
+                                                HorizontalAlignment = "Left"
+                                                VerticalAlignment = "Center"
+                                                FontFamily = "{StaticResource Custom}"
+                                                FontSize = "12"
+                                                Margin = "10,0,0,0"
                                                 >
-                                            </TextBlock>
-                                        </Grid>
-                                    </Grid>
+                                            </TextBlock >
+                                        </Grid >
+                                    </Grid >
 
-                                </Border>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                        <ListView.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <WrapPanel Orientation="Vertical"/>
-                            </ItemsPanelTemplate>
-                        </ListView.ItemsPanel>
-                        <i:Interaction.Triggers>
-                            <i:EventTrigger EventName="SelectionChanged">
-                                <i:InvokeCommandAction     Command="{Binding Detail}"
-                                                           CommandParameter="{Binding ElementName=Customerwd}"></i:InvokeCommandAction>
-                            </i:EventTrigger>
-                        </i:Interaction.Triggers>
-                    </ListView>
-                </StackPanel>
-            </Grid>
-        </Grid>
+                                </Border >
+                            </DataTemplate >
+                        </ListView.ItemTemplate >
+                        <ListView.ItemsPanel >
+                            <ItemsPanelTemplate >
+                                <WrapPanel Orientation = "Vertical" />
+                            </ItemsPanelTemplate >
+                        </ListView.ItemsPanel >
+                        <i:Interaction.Triggers >
+                            <i:EventTrigger EventName = "SelectionChanged" >
+                                <i:InvokeCommandAction Command = "{Binding Detail}"
+                                                           CommandParameter="{Binding ElementName=Customerwd}"></i:InvokeCommandAction >
+                            </i:EventTrigger >
+                        </i:Interaction.Triggers >
+                    </ListView >
+                </StackPanel >
+            </Grid >
+        </Grid >
 
-    </Border>
+    </Border >
 </Page>

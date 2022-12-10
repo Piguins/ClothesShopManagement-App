@@ -119,7 +119,7 @@ namespace Demo.ViewModel
             detailCustomerView.Rank.Text = hang;
             listKH = new ObservableCollection<KHACHHANG>(DataProvider.Ins.DB.KHACHHANGs);
             paramater.ListViewKH.ItemsSource = listKH;
-            paramater.ListViewKH.SelectedItem = null;   
+            paramater.ListViewKH.SelectedItem = null;
             MainViewModel.MainFrame.Content = detailCustomerView;
         }
         bool check(string m)
