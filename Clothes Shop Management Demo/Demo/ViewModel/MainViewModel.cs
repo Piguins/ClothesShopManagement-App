@@ -30,6 +30,7 @@ namespace Demo.ViewModel
         public ICommand KHCM { get; set; }
         public ICommand TenDangNhap_Loaded { get; set; }
         public ICommand Loadwd { get; set; }
+
         //public ICommand AddOrder { get; set; } 
         public ICommand ReportCM { get; set; }
         public ICommand AddCustomer { get; set; }
@@ -122,11 +123,6 @@ namespace Demo.ViewModel
             {
                 MainFrame.Content = new ChangePassword();
             });
-
-            //AddOrder = new RelayCommand<object>((p) => { return true; }, (p) =>
-            //{
-            //    MainFrame.Content = new AddOrderView();
-            //});
 
             AddCustomer = new RelayCommand<Frame>((p) => { return true; }, (p) =>
             {
