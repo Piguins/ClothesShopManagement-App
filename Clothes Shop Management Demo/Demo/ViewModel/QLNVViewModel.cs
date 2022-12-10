@@ -18,6 +18,8 @@ namespace Demo.ViewModel
     {
         private ObservableCollection<NGUOIDUNG> _listND;
         public ObservableCollection<NGUOIDUNG> listND { get => _listND; set { _listND = value; OnPropertyChanged(); } }
+        public ICommand linkaddImage { get; set; }
+        public ICommand RemoveImage { get; set; }
         public ICommand SearchCommand { get; set; }
         public ICommand Detail { get; set; }
         public ICommand UpdateNDCommand { get; set; }
@@ -114,8 +116,6 @@ namespace Demo.ViewModel
             detailNDView.GT.Text = temp.GIOITINH;
             detailNDView.NS.Text = temp.NGSINH.ToString();
             detailNDView.Mail.Text = temp.MAIL;
-            //Uri fileUri = new Uri(temp.AVA);
-            //detailNDView.HinhAnh.ImageSource = new BitmapImage(fileUri);
             detailNDView.DC.Text = temp.DIACHI;
             detailNDView.QTV.Text = temp.QTV == true ? "Quản lý" : "Nhân viên";
             MainViewModel.MainFrame.Content = detailNDView;
@@ -144,7 +144,7 @@ namespace Demo.ViewModel
         }
         void _ResetPass(DetailNVView p)
         {
-            MessageBoxResult h = System.Windows.MessageBox.Show("Bạn muốn đặt lại mật khẩu ?", "THÔNG BÁO", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+            MessageBoxResult h = System.Windows.MessageBox.Show(" Bạn muốn đặt lại mật khẩu ? \n Mật khẩu sau khi đặt lại sẽ là 123456", "THÔNG BÁO", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
             if (h == MessageBoxResult.Yes)
             {
                 foreach (NGUOIDUNG temp in DataProvider.Ins.DB.NGUOIDUNGs)
