@@ -8,7 +8,8 @@
       xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="700"
-      Title="DetailsProduct">
+      Title="DetailsProduct"
+      DataContext="{StaticResource DetailProductVM}">
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">
             <i:InvokeCommandAction Command="{Binding Loadwd}"
