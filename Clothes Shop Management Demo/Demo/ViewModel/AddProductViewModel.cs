@@ -123,23 +123,21 @@ namespace Demo.ViewModel
                         a.SIZE = paramater.SizeSp.Text;
                         a.MOTA = paramater.MotaSp.Text;
                         a.HINHSP = "/Resource/ImgProduct/" + "product_" + paramater.MaSp.Text + ((linkimage.Contains(".jpg")) ? ".jpg" : ".png").ToString();
-                        DataProvider.Ins.DB.SANPHAMs.Add(a);
-                        DataProvider.Ins.DB.SaveChanges();
                         try
                         {
                             File.Copy(linkimage, _localLink + @"Resource\ImgProduct\" + "product_" + paramater.MaSp.Text + ((linkimage.Contains(".jpg")) ? ".jpg" : ".png").ToString(), true);
                         }
                         catch { }
                         MessageBox.Show("Thêm sản phẩm mới thành công !", "THÔNG BÁO");
-                        paramater.MaSp.Text = rdma();
+                        DataProvider.Ins.DB.SANPHAMs.Add(a);
+                        DataProvider.Ins.DB.SaveChanges();                    
                         paramater.TenSp.Clear();
                         paramater.LoaiSp.SelectedItem = null;
                         paramater.GiaSp.Clear();
                         paramater.SlSp.Clear();
                         paramater.SizeSp.SelectedItem = null;
-                        Uri fileUri = new Uri(Const._localLink + "/Resource/Image/add.png");
-                        paramater.HinhAnh.Source = new BitmapImage(fileUri);
-                        paramater.MotaSp.Clear();
+                        ProductViewPage productViewPage = new ProductViewPage();
+                        MainViewModel.MainFrame.Content = productViewPage;
                     }
                 }
             }

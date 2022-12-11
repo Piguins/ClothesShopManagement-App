@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Media.Imaging;
 
 namespace Demo.ViewModel
 {
@@ -87,7 +88,7 @@ namespace Demo.ViewModel
                 list.Add(new Display(a.MASP, a.SANPHAM.TENSP, a.SANPHAM.SIZE, (int)((float)a.SANPHAM.GIA * 5 / 6), a.SL, (int)((float)(a.SL * a.SANPHAM.GIA) * 5 / 6)));
                 tong += (int)((float)(a.SL * a.SANPHAM.GIA) * 5 / 6);
             }
-            detailImport.ttn.Text = String.Format("{0:#,###}" + " VND", tong);
+            detailImport.ttn.Text = String.Format("{0:0,0}", tong) + " VND";
             detailImport.ListViewSP.ItemsSource = list;
             p.ListViewPN.SelectedItem = null;
             listPN = new ObservableCollection<PHIEUNHAP>(DataProvider.Ins.DB.PHIEUNHAPs);

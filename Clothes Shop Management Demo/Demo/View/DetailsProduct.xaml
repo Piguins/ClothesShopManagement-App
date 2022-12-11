@@ -1,15 +1,17 @@
 ﻿<Page x:Class="Demo.View.DetailsProduct"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-      xmlns:local="clr-namespace:Demo.View"
-      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="700"
-      Title="DetailsProduct"
-      DataContext="{StaticResource DetailProductVM}">
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo.View"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Background="Transparent"
+        x:Name="DetailProductwd"
+        DataContext="{StaticResource DetailProductVM}"
+        Height="450" 
+        Width="690">
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">
             <i:InvokeCommandAction Command="{Binding Loadwd}"
@@ -20,7 +22,13 @@
         Background="White"
         CornerRadius="15"
         BorderThickness="3"
-        >        
+        >
+        <Border.BorderBrush>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0,0.5">
+                <GradientStop Color="#FFE5D8" Offset="0"/>
+                <GradientStop Color="#FFCAD4" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.BorderBrush>
         <i:Interaction.Triggers>
             <i:EventTrigger EventName="MouseLeftButtonDown">
                 <i:InvokeCommandAction Command="{Binding MoveWindow}"
@@ -37,46 +45,78 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0">
-                <Image 
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="350"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0"
                     x:Name="HinhAnh"
                     VerticalAlignment="Center"/>
+                <Canvas Grid.Row="1">
+                    <Button Content="CẬP NHẬT"
+                                Width="125"
+                                Height="30"
+                                materialDesign:ButtonAssist.CornerRadius = "15"
+                                BorderThickness="0"
+                                x:Name="btncapnhat"
+                                Background="#6C63FF"
+                                Foreground="White"
+                                
+                                HorizontalAlignment="Left" Canvas.Left="46" Canvas.Top="26"
+                                >
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <i:InvokeCommandAction Command="{Binding UpdateProduct}"
+                                                       CommandParameter="{Binding ElementName=DetailProductwd}"></i:InvokeCommandAction>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </Button>
+                    <Button Content="XÓA"
+                                Width="85"
+                                Height="30"
+                                BorderThickness="0"
+                                x:Name="btnxoa"
+                                Background="#6C63FF"
+                                Foreground="White"
+                            materialDesign:ButtonAssist.CornerRadius="15"
+                                HorizontalAlignment="Left" Canvas.Left="203" Canvas.Top="26"
+                                >
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <i:InvokeCommandAction Command="{Binding DeleteProduct}"
+                                                       CommandParameter="{Binding ElementName=DetailProductwd}"></i:InvokeCommandAction>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </Button>
+                </Canvas>
             </Grid>
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="30"/>
-                    <RowDefinition/>
+                    <RowDefinition />
+                    <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
-                <Grid Grid.Row="0" Background="Transparent">
-                    <StackPanel 
-                                Orientation="Horizontal" 
-                                HorizontalAlignment="Right" 
-                                VerticalAlignment="Center"
-                                Margin="0,0,10,0"
-                                >
-                        <materialDesign:PackIcon Kind="WindowMinimize" Foreground="#6891DF" Height="24" Width="24" Margin="0,0,8,0">
-                            <i:Interaction.Triggers>
-                                <i:EventTrigger EventName="MouseLeftButtonDown">
-                                    <i:InvokeCommandAction Command="{Binding Minimizewd}"
-                                                       CommandParameter="{Binding ElementName=DetailProductwd}"></i:InvokeCommandAction>
-                                </i:EventTrigger>
-                            </i:Interaction.Triggers>
-                        </materialDesign:PackIcon>
-                        <materialDesign:PackIcon Kind="CloseThick" Foreground="#6891DF" Height="24" Width="24">
-                            <i:Interaction.Triggers>
-                                <i:EventTrigger EventName="MouseLeftButtonDown">
-                                    <i:InvokeCommandAction Command="{Binding Closewd}"
-                                                       CommandParameter="{Binding ElementName=DetailProductwd}"></i:InvokeCommandAction>
-                                </i:EventTrigger>
-                            </i:Interaction.Triggers>
-                        </materialDesign:PackIcon>
-                    </StackPanel>
-                </Grid>
                 <Grid Grid.Row="1">
+                    <Button
+                        Height="30"
+                        Width="100" Margin="232,10,10,10"
+                        Content="quay lại"
+                        Foreground="#6C63FF"
+                        Background="Transparent"
+                        >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <i:InvokeCommandAction Command="{Binding Back}"
+                                                       CommandParameter="{Binding ElementName=DetailProductwd}"></i:InvokeCommandAction>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    </Button>
+                </Grid>
+                <Grid Grid.Row="0" Background="Transparent">
                     <StackPanel Orientation="Vertical"
                                 Margin="15,20,0,0"
                                 >
                         <TextBox 
-                                   HorizontalAlignment="Left"
+                                    HorizontalAlignment="Left"
                                    FontSize="28"
                                    materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                    BorderThickness="0"
@@ -125,7 +165,7 @@
                                         Margin="2"
                                         Height="20"
                                         Width="50"
-                                        Background="#6891DF"
+                                        Background="LightPink"
                                         CornerRadius="10"
                                         >
                                             <TextBlock Text="{Binding SIZE}"
@@ -145,7 +185,7 @@
                         </StackPanel>
                         <Expander
                             x:Name="Info"
-                            Background="White"
+                            Background="Transparent"
                             Header="Chi tiết sản phẩm"
                             FontFamily="{StaticResource Custom}"
                             >
@@ -158,46 +198,6 @@
                                      VerticalScrollBarVisibility="Visible"
                                      />
                         </Expander>
-                        <Button Content="CẬP NHẬT"
-                                Margin="0,20,0,0"
-                                Width="230"
-                                BorderThickness="0"
-                                x:Name="btncapnhat"
-                                Visibility="Collapsed"
-                                >
-                            <Button.Background>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0,0.5">
-                                    <GradientStop Color="White" Offset="0"/>
-                                    <GradientStop Color="#6891DF" Offset="1"/>
-                                </LinearGradientBrush>
-                            </Button.Background>
-                            <i:Interaction.Triggers>
-                                <i:EventTrigger EventName="Click">
-                                    <i:InvokeCommandAction Command="{Binding UpdateProduct}"
-                                                       CommandParameter="{Binding ElementName=DetailProductwd}"></i:InvokeCommandAction>
-                                </i:EventTrigger>
-                            </i:Interaction.Triggers>
-                        </Button>
-                        <Button Content="XÓA"
-                                Margin="0,15,0,0"
-                                Width="230"
-                                BorderThickness="0"
-                                x:Name="btnxoa"
-                                Visibility="Collapsed"
-                                >
-                            <Button.Background>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0,0.5">
-                                    <GradientStop Color="#FFE5D8" Offset="0"/>
-                                    <GradientStop Color="#FFCAD4" Offset="1"/>
-                                </LinearGradientBrush>
-                            </Button.Background>
-                            <i:Interaction.Triggers>
-                                <i:EventTrigger EventName="Click">
-                                    <i:InvokeCommandAction Command="{Binding DeleteProduct}"
-                                                       CommandParameter="{Binding ElementName=DetailProductwd}"></i:InvokeCommandAction>
-                                </i:EventTrigger>
-                            </i:Interaction.Triggers>
-                        </Button>
                     </StackPanel>
                 </Grid>
             </Grid>

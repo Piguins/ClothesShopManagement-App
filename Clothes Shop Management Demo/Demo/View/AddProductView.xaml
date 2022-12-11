@@ -79,6 +79,7 @@
                                     Width="150"
                                     BorderThickness="0"
                                     Foreground="Black"
+                                    IsEnabled="False"
                                     FontFamily="{StaticResource Custom}"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"

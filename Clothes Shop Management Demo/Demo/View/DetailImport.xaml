@@ -178,7 +178,7 @@
             <Grid Grid.Row="3">
                 <StackPanel>
                     <Border
-                        Margin="-12,10,0,0"
+                        Margin="0,10,0,0"
                         Width="650"
                         Height="40"
                         CornerRadius="15"
@@ -246,7 +246,7 @@
                     <ListView x:Name="ListViewSP" 
                           SelectionMode="Single"
                           ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                            Height="220"
+                          Height="220"
                         >
                         <ListView.ItemTemplate>
                             <DataTemplate>
@@ -307,7 +307,7 @@
                                         <Grid Grid.Column="4">
                                             <TextBlock
                                                 
-                                                Text="{Binding Tiennhap,StringFormat={}VNĐ}"
+                                                Text="{Binding Tiennhap,StringFormat={}{0:# ###} VNĐ}"
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Center"
                                                 MaxWidth="150"
@@ -339,7 +339,7 @@
                                     FontSize="12"
                                     x:Name="deleteimportbtn"
                                     FontFamily="{StaticResource Custom}"
-                                    Background="LightPink"
+                                    Background="#6C63FF"
                                     Width="150"
                                     Foreground="White"
                                     materialDesign:ButtonAssist.CornerRadius="10"
@@ -365,7 +365,7 @@
                         <TextBlock x:Name="ttn" 
                                    FontFamily="{StaticResource Custom}" 
                                    FontSize="16" 
-                                   Foreground="White"/>
+                                   Foreground="White" Width="350"/>
                     </StackPanel>
                 </Grid>
             </Grid>

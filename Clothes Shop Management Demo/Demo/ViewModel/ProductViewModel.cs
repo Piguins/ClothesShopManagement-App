@@ -107,7 +107,7 @@ namespace Demo.ViewModel
         void _SearchCommand(ProductViewPage paramater)
         {
             ObservableCollection<SANPHAM> temp = new ObservableCollection<SANPHAM>();
-            if (paramater.tbxSearch.Text != "")
+            if (paramater.cbxTimKiem.Text != "")
             {
                 switch (paramater.cbxTimKiem.SelectedItem.ToString())
                 {
@@ -165,11 +165,11 @@ namespace Demo.ViewModel
             detailProduct.SLSP.Text = "Số lượng: " + SL;
             detailProduct.kichco.ItemsSource = new ObservableCollection<SANPHAM>(listSP1.Where(p => p.TENSP == temp.TENSP && p.SL >= 0));
             detailProduct.Mota.Text = temp.MOTA;
-            Uri fileUri = new Uri(temp.HINHSP);
+            Uri fileUri = new Uri(temp.HINHSP, UriKind.Relative);
             detailProduct.HinhAnh.Source = new BitmapImage(fileUri);
+            paramater.ListViewProduct.SelectedItem = null;
             listSP1 = new ObservableCollection<SANPHAM>(DataProvider.Ins.DB.SANPHAMs.Where(p => p.SL >= 0));
             paramater.ListViewProduct.ItemsSource = listSP1;
-            paramater.ListViewProduct.SelectedItem = null;
             _Filter(paramater);
             _SearchCommand(paramater);
             MainViewModel.MainFrame.Content = detailProduct;
