@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Demo.ViewModel
 {
-    internal class ReportViewModel
+    public class ReportViewModel:BaseViewModel
     {
+        public ReportViewModel()
+        {
+        }
+
     }
 }

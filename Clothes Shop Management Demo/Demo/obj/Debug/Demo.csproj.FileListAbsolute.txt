@@ -992,3 +992,7 @@ D:\năm 2\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\
 D:\năm 2\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.csproj.CopyComplete
 D:\năm 2\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.exe
 D:\năm 2\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\Demo.pdb
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\UserControls\InforCard.g.cs
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\UserControls\Item.g.cs
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\UserControls\InforCard.baml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\UserControls\Item.baml

@@ -4,11 +4,13 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Demo.View"
+      xmlns:uc="clr-namespace:Demo.UserControls"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+      xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+      xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
       mc:Ignorable="d" 
       d:DesignHeight="550" d:DesignWidth="665"
       x:Name="Reportwd"
-      xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"      
       DataContext="{StaticResource ReportVM}"
       >
     <i:Interaction.Triggers>
@@ -17,317 +19,127 @@
                                                        CommandParameter="{Binding ElementName=Reportwd}"></i:InvokeCommandAction>
         </i:EventTrigger>
     </i:Interaction.Triggers>
-    <Border
-                    Height="550"
-                    Width="665"
-                    Background="Transparent"
-                    CornerRadius="40"
-                    Padding="13.75,0,6.875,0"
-                    >
+    <Border Grid.Column="1"
+            Background="Transparent">        
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="65"/>
-                <RowDefinition Height="40
-                               "/>
-                <RowDefinition/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Row="0">
-                <TextBlock VerticalAlignment="Center" 
-                           FontSize="30" Margin="20,0,0,0" 
-                           FontFamily="{StaticResource Custom}" Foreground="#6C63FF" 
-                           >THỐNG KÊ</TextBlock>
+            <!--Title-->
+            <!--Top Menu-->
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 30 0">
+                <Button Content="Today" Margin="0 0 10 0"/>
+                <Button Content="Week"  Margin="0 0 10 0" Background="#5B60C4" Foreground="#ffffff"/>
+                <Button Content="Month" Margin="0 0 10 0"/>
+                <Button Content="Year" Margin="0 0 10 0"/>
+            </StackPanel>
+
+            <!--Info Cards-->
+            <Grid Grid.Row="1" Margin="50 20 15 40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
             </Grid>
-            <Grid Grid.Row="1">
-                <materialDesign:ColorZone Background="#6C63FF"
-                                          CornerRadius="10"
-                Mode="PrimaryMid">
-                    <StackPanel 
-        Orientation="Horizontal">
-                        <RadioButton Uid="0"
-                                     x:Name="btnMain"
-                                     Style="{StaticResource MaterialDesignTabRadioButton}"
-                                     Margin="20,4,4,4"
-                                     IsChecked="True"
-                                     Width="300"
-                            FontFamily="{StaticResource Custom}"
-        Content="Tổng quan" BorderBrush="White" Foreground="White" >
-                            <i:Interaction.Triggers>
-                                <i:EventTrigger EventName="Click">
-                                    <i:InvokeCommandAction Command="{Binding SwitchTab}"
-                                                       CommandParameter="{Binding ElementName=Reportwd}"></i:InvokeCommandAction>
-                                </i:EventTrigger>
-                                <i:EventTrigger EventName="MouseMove">
-                                    <i:InvokeCommandAction Command="{Binding GetIdTab}"
-                                                       CommandParameter="{Binding ElementName=btnMain}"></i:InvokeCommandAction>
-                                </i:EventTrigger>
-                            </i:Interaction.Triggers>
-                        </RadioButton>
-                        <RadioButton Uid="1"
-                                     x:Name="btnSale"
-        Style="{StaticResource MaterialDesignTabRadioButton}"
-        Margin="4"
-                                     Width="300"
-                            FontFamily="{StaticResource Custom}"
-        Content="Lịch sử kinh doanh" BorderBrush="White" Foreground="White" >
-                            <i:Interaction.Triggers>
-                                <i:EventTrigger EventName="Click">
-                                    <i:InvokeCommandAction Command="{Binding SwitchTab}"
-                                                       CommandParameter="{Binding ElementName=Reportwd}"></i:InvokeCommandAction>
-                                </i:EventTrigger>
-                                <i:EventTrigger EventName="MouseMove">
-                                    <i:InvokeCommandAction Command="{Binding GetIdTab}"
-                                                       CommandParameter="{Binding ElementName=btnSale}"></i:InvokeCommandAction>
-                                </i:EventTrigger>
-                            </i:Interaction.Triggers>
-                        </RadioButton>
-                    </StackPanel>
-                </materialDesign:ColorZone>
-            </Grid>
-            <Grid Grid.Row="2" Margin="0, 5, 0, 0">
 
-                <Border x:Name="DonutChart" Height="250"
-                                Width="300"
-                        Visibility="{Binding SetMain}"
-                        Margin="10"
-                                Background="AliceBlue"
-                                CornerRadius="25"
-                                HorizontalAlignment="Right"
-                                VerticalAlignment="Bottom" >
-                    <syncfusion:SfChart x:Name="DChart" Background="AliceBlue" Header="Top 5 sản phẩm bán chạy nhất trong tháng" Margin="5">
-                        <syncfusion:SfChart.Resources>
+            <!--Chart Section-->
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-                            <ItemsPanelTemplate x:Key="itemPanelTemplate">
+                <!--Chart-->
+                <Border CornerRadius="20" Padding="0 5" Background="Transparent" Margin="5 0 0 5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
 
-                                <WrapPanel/>
+                        <StackPanel Orientation="Horizontal" Margin="10 0 0 25">
+                            <TextBlock Text="LỢI NHUẬN" Style="{StaticResource MaterialDesignTextBlock}"
+                                       FontFamily="{StaticResource Custom}"
+                                       Foreground="#6C63FF"
+                                       FontSize="30"
+                                       FontWeight="SemiBold"/>
+                        </StackPanel>
 
-                            </ItemsPanelTemplate>
+                        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0 0 0 25" Grid.Row="1">
+                            <TextBlock Text="16000000" Foreground="#6C63FF" Margin="3 0 0 35"/>
+                            <TextBlock Text="14000000" Foreground="#6C63FF" Margin="3 0 0 35"/>
+                            <TextBlock Text="12000000" Foreground="#6C63FF" Margin="3 0 0 35"/>
+                            <TextBlock Text="10000000" Foreground="#6C63FF" Margin="3 0 0 35"/>
+                            <TextBlock Text="8000000" Foreground="#6C63FF" Margin="10 0 0 35"/>
+                            <TextBlock Text="6000000" Foreground="#6C63FF" Margin="10 0 0 35"/>
+                            <TextBlock Text="4000000" Foreground="#6C63FF" Margin="10 0 0 35"/>
+                            <TextBlock Text="2000000" Foreground="#6C63FF" Margin="10 0 0 35"/>
+                            <TextBlock Text="0" Foreground="#6C63FF" HorizontalAlignment="Right" Margin="0 0 0 0"/>
+                        </StackPanel>
 
-                        </syncfusion:SfChart.Resources>
-                        <syncfusion:SfChart.Legend>
-                            <syncfusion:ChartLegend DockPosition="Bottom" ItemsPanel="{StaticResource itemPanelTemplate}"/>
-                        </syncfusion:SfChart.Legend>
-                        <syncfusion:SfChart.Series>
-                            <syncfusion:DoughnutSeries x:Name="Donut" LegendIcon="Diamond" EnableAnimation="True" 
-                                                       ItemsSource="{Binding Reviews}" EnableSmartLabels="True"
-                                                       XBindingPath="Type" YBindingPath="Num" CapStyle="BothCurve" SegmentSpacing="0"
-                                                       DoughnutCoefficient="0.7"
-                                                       VerticalAlignment="Stretch" LabelPosition="OutsideExtended"
-                                                       Palette="Custom">
-                                <syncfusion:DoughnutSeries.ColorModel>
-                                    <syncfusion:ChartColorModel>
-                                        <syncfusion:ChartColorModel.CustomBrushes>
-                                            <SolidColorBrush Color="#E0BBE4"/>
-                                            <SolidColorBrush Color="#957DAD"/>
-                                            <SolidColorBrush Color="#D291BC"/>
-                                            <SolidColorBrush Color="#FEC8D8"/>
-                                            <SolidColorBrush Color="#FFDFD3"/>
-                                        </syncfusion:ChartColorModel.CustomBrushes>
-                                    </syncfusion:ChartColorModel>
-                                </syncfusion:DoughnutSeries.ColorModel>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="1" Orientation="Horizontal" Margin="5 0 0 0">
+                            <TextBlock Text="0" Foreground="#717EB2"/>
+                            <TextBlock Text="1" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="2" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="3" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="4" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="5" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="6" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="7" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="8" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="9" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="10" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="11" Foreground="#717EB2" Margin="41 0 0 0"/>
+                            <TextBlock Text="12" Foreground="#717EB2" Margin="41 0 0 0"/>
+                        </StackPanel>
 
-                            </syncfusion:DoughnutSeries>
-                        </syncfusion:SfChart.Series>
-                        <i:Interaction.Triggers>
-                            <i:EventTrigger EventName="Loaded">
-                                <i:InvokeCommandAction Command="{Binding LoadDonut}"
-                                                       CommandParameter="{Binding ElementName=Reportwd}"></i:InvokeCommandAction>
-                            </i:EventTrigger>
-                        </i:Interaction.Triggers>
-                    </syncfusion:SfChart>
+                        <lvc:CartesianChart Grid.Row="1" Margin="55,0,30,25">
+                            <lvc:CartesianChart.Background>
+                                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                    <GradientStop Color="#6C63FF" Offset="0"/>
+                                    <GradientStop Color="#6A6AE4" Offset="1.5"/>
+                                </LinearGradientBrush>
+                            </lvc:CartesianChart.Background>
+
+                            <lvc:CartesianChart.DataTooltip>
+                                <lvc:DefaultTooltip Background="#24336A" Foreground="#D5E2FF"/>
+                            </lvc:CartesianChart.DataTooltip>
+
+                            <lvc:CartesianChart.AxisX>
+                                <lvc:Axis MinValue="1" MaxValue="5" Foreground="#717EB2" ShowLabels="False">
+                                    <lvc:Axis.Separator>
+                                        <lvc:Separator StrokeThickness="0" Step="1"/>
+                                    </lvc:Axis.Separator>
+                                </lvc:Axis>
+                            </lvc:CartesianChart.AxisX>
+
+                            <lvc:CartesianChart.AxisY>
+                                <lvc:Axis MinValue="0" MaxValue="60000" Foreground="#717EB2" ShowLabels="False">
+                                    <lvc:Axis.Separator>
+                                        <lvc:Separator StrokeThickness="0"/>
+                                    </lvc:Axis.Separator>
+                                </lvc:Axis>
+                            </lvc:CartesianChart.AxisY>
+
+                            <lvc:CartesianChart.Series>
+                                <lvc:LineSeries Name="Slm" Values="20000,17000,30000,15000,50000,30000,20000" StrokeThickness="2" Stroke="#ADA4FD" PointGeometrySize="0">
+                                    <lvc:LineSeries.Fill>
+                                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                            <GradientStop Color="#B397E2" Offset="0.4"/>
+                                            <GradientStop Color="#6A6AE4" Offset="1.2"/>
+                                        </LinearGradientBrush>
+                                    </lvc:LineSeries.Fill>
+                                </lvc:LineSeries>
+                            </lvc:CartesianChart.Series>
+                        </lvc:CartesianChart>
+
+                    </Grid>
                 </Border>
-                <Border x:Name="PieChart" Height="250"
-                                Width="300"
-                        Visibility="{Binding SetMain}"
-                        Margin="10"
-                                Background="AliceBlue"
-                                CornerRadius="25"
-                                HorizontalAlignment="Left"
-                                VerticalAlignment="Bottom" >
-                    <syncfusion:SfChart x:Name="PChart" Background="AliceBlue" Header="Số lượng loại sản phẩm bán ra" Margin="5">
-                        <syncfusion:SfChart.Resources>
 
-                            <ItemsPanelTemplate x:Key="itemPanelTemplate">
+                <!--Orders-->
 
-                                <WrapPanel/>
-
-                            </ItemsPanelTemplate>
-
-                        </syncfusion:SfChart.Resources>
-                        <syncfusion:SfChart.Legend>
-                            <syncfusion:ChartLegend DockPosition="Bottom" ItemsPanel="{StaticResource itemPanelTemplate}"/>
-                        </syncfusion:SfChart.Legend>
-                        <syncfusion:SfChart.Series>
-                            <syncfusion:PieSeries x:Name="Pie" LegendIcon="Diamond" EnableAnimation="True" 
-                                                       ItemsSource="{Binding Reviews}" EnableSmartLabels="True"
-                                                       XBindingPath="Type" YBindingPath="Num" ExplodeOnMouseClick="False"
-                                                       VerticalAlignment="Stretch" LabelPosition="OutsideExtended"
-                                                       ExplodeRadius="5" ExplodeAll="True"
-                                                       Palette="Custom">
-                                <syncfusion:PieSeries.ColorModel>
-                                    <syncfusion:ChartColorModel>
-                                        <syncfusion:ChartColorModel.CustomBrushes>
-                                            <SolidColorBrush Color="#C3E9FF"/>
-                                            <SolidColorBrush Color="#c6f8e5"/>
-                                            <SolidColorBrush Color="#fbf7d5"/>
-                                            <SolidColorBrush Color="#f9ded7"/>
-                                            <SolidColorBrush Color="#f5cdde "/>
-                                            <SolidColorBrush Color="#e2bef1"/>
-                                            <SolidColorBrush Color="#D5B9FC"/>
-                                        </syncfusion:ChartColorModel.CustomBrushes>
-                                    </syncfusion:ChartColorModel>
-                                </syncfusion:PieSeries.ColorModel>
-                            </syncfusion:PieSeries>
-                        </syncfusion:SfChart.Series>
-                        <i:Interaction.Triggers>
-                            <i:EventTrigger EventName="Loaded">
-                                <i:InvokeCommandAction Command="{Binding LoadPie}"
-                                                       CommandParameter="{Binding ElementName=Reportwd}"></i:InvokeCommandAction>
-                            </i:EventTrigger>
-                        </i:Interaction.Triggers>
-                    </syncfusion:SfChart>
-                </Border>
-                <Border x:Name="NVBox" Height="150"
-                                Width="200"
-                        Visibility="{Binding SetMain}"
-                        Margin="10"
-                                CornerRadius="25"
-                                HorizontalAlignment="Right"
-                                VerticalAlignment="Top" >
-                    <Border.Background>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#85FFBD" Offset="0"/>
-                            <GradientStop Color="#97D9E1" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Border.Background>
-                    <StackPanel HorizontalAlignment="Center"
-                                    VerticalAlignment="Center">
-
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="55"/>
-                                <RowDefinition Height="55"/>
-                            </Grid.RowDefinitions>
-                            <Grid Grid.Row="0" Width="150">
-                                <TextBlock Text="Nhân viên năng suất nhất:" TextWrapping="Wrap" FontSize="20" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto"/>
-                            </Grid>
-                            <Grid Grid.Row="1" VerticalAlignment="Center">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="100"/>
-                                    <ColumnDefinition Width="50"/>
-                                </Grid.ColumnDefinitions>
-                                <Grid Grid.Column="1">
-                                    <materialDesign:PackIcon Kind="AccountStar" Foreground="White" Height="50" Width="50"/>
-                                </Grid>
-                                <TextBlock x:Name="NVBest" VerticalAlignment="Top" Text="NV00" TextAlignment="Left" FontWeight="Bold" TextWrapping="Wrap" FontSize="25" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto" HorizontalAlignment="Right" Width="100">
-                                    <i:Interaction.Triggers>
-                                <i:EventTrigger EventName="Loaded">
-                                    <i:InvokeCommandAction Command="{Binding LoadNV}"
-                                                       CommandParameter="{Binding ElementName=Reportwd}"></i:InvokeCommandAction>
-                                </i:EventTrigger>
-                            </i:Interaction.Triggers>
-                                </TextBlock>
-                                <TextBlock x:Name="NVName" VerticalAlignment="Bottom" Text="Tên" TextAlignment="Left"  TextWrapping="Wrap" FontSize="13" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto">
-
-                                </TextBlock>
-                            </Grid>
-                        </Grid>
-                    </StackPanel>
-                </Border>
-                <Border x:Name="SPBox" Height="150"
-                                Width="200"
-                        Visibility="{Binding SetMain}"
-                        Margin="10"
-                                CornerRadius="25"
-                                HorizontalAlignment="Left"
-                                VerticalAlignment="Top" >
-                    <Border.Background>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#FBAB7E" Offset="0"/>
-                            <GradientStop Color="#F7CE68" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Border.Background>
-                    <StackPanel HorizontalAlignment="Center"
-                                    VerticalAlignment="Center">
-
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="55"/>
-                                <RowDefinition Height="55"/>
-                            </Grid.RowDefinitions>
-                            <Grid Grid.Row="0">
-                                <TextBlock HorizontalAlignment="Center" Margin="10,0,10,0" Text="Khách hàng doanh số cao nhất tháng:" TextWrapping="Wrap" FontSize="20" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto"/>
-                            </Grid>
-                            <Grid Grid.Row="1" VerticalAlignment="Center">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="130"/>
-                                    <ColumnDefinition Width="50"/>
-                                </Grid.ColumnDefinitions>
-                                <Grid Grid.Column="1">
-                                    <materialDesign:PackIcon Kind="Crown" HorizontalAlignment="Right" Foreground="White" Height="50" Width="50"/>
-                                </Grid>
-                                <TextBlock x:Name="MaxKH" Margin="10,0,0,0"
-                                           VerticalAlignment="Top" Text="Mã" TextAlignment="Left" FontWeight="Bold" TextWrapping="Wrap" FontSize="25" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto">
-                                    <i:Interaction.Triggers>
-                                <i:EventTrigger EventName="Loaded">
-                                    <i:InvokeCommandAction Command="{Binding LoadKH}"
-                                                       CommandParameter="{Binding ElementName=Reportwd}"></i:InvokeCommandAction>
-                                </i:EventTrigger>
-                            </i:Interaction.Triggers>
-                                </TextBlock>
-                                <TextBlock x:Name="KHName" Margin="10,0,0,0" TextTrimming="CharacterEllipsis" VerticalAlignment="Bottom" Text="Tên" TextAlignment="Left"  TextWrapping="NoWrap" Width="Auto" FontSize="13" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto">
-
-                                </TextBlock>
-                            </Grid>
-                        </Grid>
-                    </StackPanel>
-                </Border>
-                <Border x:Name="DTBox" Height="150"
-                                Width="200"
-                        Visibility="{Binding SetMain}"
-                        Margin="10"
-                                CornerRadius="25"
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Top" >
-                    <Border.Background>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="#8EC5FC" Offset="0"/>
-                            <GradientStop Color="#E0C3FC" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Border.Background>
-                    <StackPanel HorizontalAlignment="Center"
-                                    VerticalAlignment="Center">
-
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="55"/>
-                                <RowDefinition Height="55"/>
-                            </Grid.RowDefinitions>
-                            <Grid Grid.Row="0" Width="150">
-                                <TextBlock Text="Doanh thu so với tháng trước:" TextWrapping="Wrap" FontSize="20" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto"/>
-                            </Grid>
-                            <Grid Grid.Row="1" VerticalAlignment="Center">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="40"/>
-                                    <ColumnDefinition Width="120"/>
-                                </Grid.ColumnDefinitions>
-                                <Grid Grid.Column="0">
-                                    <materialDesign:PackIcon x:Name="IconUp" VerticalAlignment="Bottom" Visibility="{Binding Up}" Kind="ArrowUpBold" Foreground="White" Height="50" Width="50"/>
-                                    <materialDesign:PackIcon x:Name="IconDown" VerticalAlignment="Bottom" Visibility="{Binding Down}" Kind="ArrowDownBold" Foreground="White" Height="50" Width="50"/>
-                                </Grid>
-                                <Grid Grid.Column="1">
-                                    <TextBlock x:Name="DTTrend" VerticalAlignment="Center" Text="0" TextAlignment="Center" FontWeight="Bold" TextWrapping="Wrap" FontSize="20" Foreground="White" FontFamily="{StaticResource Custom}" Height="Auto">
-                                    </TextBlock>
-                                </Grid>
-                                <i:Interaction.Triggers>
-                                    <i:EventTrigger EventName="Loaded">
-                                        <i:InvokeCommandAction Command="{Binding LoadDT}"
-                                                       CommandParameter="{Binding ElementName=Reportwd}"></i:InvokeCommandAction>
-                                    </i:EventTrigger>
-                                </i:Interaction.Triggers>
-                            </Grid>
-                        </Grid>
-                    </StackPanel>
-                </Border>
             </Grid>
         </Grid>
     </Border>

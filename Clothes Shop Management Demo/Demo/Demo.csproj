@@ -179,6 +179,12 @@
     <Compile Include="Resource\InfoCard.xaml.cs">
       <DependentUpon>InfoCard.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\InforCard.xaml.cs">
+      <DependentUpon>InforCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Item.xaml.cs">
+      <DependentUpon>Item.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\AddCsViewModel.cs" />
     <Compile Include="ViewModel\AddImportViewModel.cs" />
@@ -296,6 +302,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Resource\StyleRecourse.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\InforCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Item.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
