@@ -14,8 +14,8 @@
     <Border
                     Height="605"
                     Width="700"
-                    Background="#21222D"
-                    CornerRadius="40"
+                    Background="Transparent"
+                    CornerRadius="0"
                     >
         <Grid>
             <Grid.RowDefinitions>
@@ -42,12 +42,13 @@
                         x:Name="cbxBoLoc"
                         Style="{StaticResource MaterialDesignFilledComboBox}"
                         materialDesign:TextFieldAssist.TextBoxViewMargin="8,-11,0,0"
-                        materialDesign:HintAssist.Hint="Bộ lọc"
+                        materialDesign:HintAssist.Hint=""
                         materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                         BorderThickness="0"
                         materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
                         materialDesign:HintAssist.Foreground="White"
                         Background="White"
+                        BorderBrush="#6C63FF" 
                         FontFamily="{StaticResource Custom}"
                         Height="38"
                         FontSize="14"
@@ -76,17 +77,17 @@
                         CornerRadius="10"
                         Background="White"
                         >
-                        <ComboBox
+                        <ComboBox BorderBrush="#6C63FF"
                         x:Name="cbxTimKiem"
                         Style="{StaticResource MaterialDesignFilledComboBox}"
-                        materialDesign:TextFieldAssist.TextBoxViewMargin="8,-11,0,0"
-                        materialDesign:HintAssist.Hint="Tìm Kiếm"
+                        materialDesign:TextFieldAssist.TextBoxViewMargin="0,-11,0,0"
+                        materialDesign:HintAssist.Hint="Tìm kiếm"
                         materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                         materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
                         BorderThickness="0"
                         materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
                         materialDesign:HintAssist.Foreground="White"
-                        BorderBrush="#6C63FF"
+                       
                         FontFamily="{StaticResource Custom}"
                         Height="38"
                         FontSize="14"
@@ -108,9 +109,10 @@
                                 Margin="10,0,0,0"
                                 BorderBrush="#6C63FF"
                                 Foreground="White"
+                             
                                 FontSize="16"
                                 FontWeight="SemiBold"
-                                materialDesign:HintAssist.Hint="Tìm Kiếm"
+                                materialDesign:HintAssist.Hint="Tìm kiếm"
                                 materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
                                 materialDesign:HintAssist.Foreground="White"
                                 materialDesign:TextFieldAssist.TextFieldCornerRadius="10"

@@ -19,14 +19,14 @@
         </i:EventTrigger>
     </i:Interaction.Triggers>
     <Border
-        Background="White"
+        Background="Transparent"
         CornerRadius="15"
         BorderThickness="3"
         >
         <Border.BorderBrush>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0,0.5">
-                <GradientStop Color="#FFE5D8" Offset="0"/>
-                <GradientStop Color="#FFCAD4" Offset="1"/>
+                <GradientStop Color="Transparent" Offset="0"/>
+                <GradientStop Color="Transparent" Offset="1"/>
             </LinearGradientBrush>
         </Border.BorderBrush>
         <i:Interaction.Triggers>
@@ -99,9 +99,10 @@
                     <Button
                         Height="30"
                         Width="100" Margin="232,10,10,10"
-                        Content="quay lại"
-                        Foreground="#6C63FF"
-                        Background="Transparent"
+                        Content="Quay lại"
+                        Foreground="White"
+                        Background="#6C63FF"
+                        
                         >
                     <i:Interaction.Triggers>
                         <i:EventTrigger EventName="Click">
@@ -165,7 +166,7 @@
                                         Margin="2"
                                         Height="20"
                                         Width="50"
-                                        Background="LightPink"
+                                        Background="White"
                                         CornerRadius="10"
                                         >
                                             <TextBlock Text="{Binding SIZE}"

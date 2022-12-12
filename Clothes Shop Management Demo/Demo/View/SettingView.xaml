@@ -16,7 +16,7 @@
 
     
 
-    <Grid DataContext="{StaticResource MainVM}">
+    <Grid>
 
         <Border Background="Transparent" 
                 Margin="0 0 0 0">
@@ -101,14 +101,14 @@
                                     TextWrapping="Wrap"
                                     MaxWidth="400" x:Name="TenND"
                                     FontFamily="Josefin Sans"
-                                    materialDesign:HintAssist.Hint="Họ tên" Height="45"/>
+                                    materialDesign:HintAssist.Hint="Họ tên" Text ="{Binding Name}" Height="45"/>
                                     <ComboBox 
                                     Margin="10,10,0,0"
                                     x:Name="GT" FontFamily="Josefin Sans"
                                     Style="{StaticResource MaterialDesignFilledComboBox}"
                                     materialDesign:HintAssist.Foreground="Black"
                                     materialDesign:TextFieldAssist.UnderlineBrush="#6C63FF"
-                                    materialDesign:HintAssist.Hint="Giới tính"
+                                    materialDesign:HintAssist.Hint="Giới tính" SelectedIndex="{Binding GioiTinh}"
                                     Height="45"
                                     Width="190" >
                                         <ComboBoxItem
@@ -127,7 +127,7 @@
                                             Foreground="Black" x:Name="NS"
                                             FontFamily="Josefin Sans"
                                             Focusable="False"
-                                            materialDesign:HintAssist.Hint="Ngày sinh" Style="{StaticResource MaterialDesignFilledDatePicker}" HorizontalAlignment="Left" Width="190">
+                                            materialDesign:HintAssist.Hint="Ngày sinh"  Text="{Binding DoB}" Style="{StaticResource MaterialDesignFilledDatePicker}" HorizontalAlignment="Left" Width="190">
 
                                     </DatePicker>
                                     <TextBox 
@@ -138,7 +138,7 @@
                                         VerticalAlignment="Top"
                                         AcceptsReturn="True"
                                         TextWrapping="Wrap"
-                                        HorizontalAlignment="Left" x:Name="SDT"
+                                        HorizontalAlignment="Left" x:Name="SDT"  Text="{Binding SDT}" 
                                         FontFamily="Josefin Sans"
                                         materialDesign:HintAssist.Hint="Số điện thoại" />
                                 </StackPanel>
@@ -149,7 +149,7 @@
                                     VerticalAlignment="Top"
                                     AcceptsReturn="True"
                                     TextWrapping="Wrap"
-                                    MaxWidth="400" x:Name="Mail"
+                                    MaxWidth="400" x:Name="Mail" Text="{Binding Mail}"
                                     materialDesign:HintAssist.Foreground="Black"
                                     materialDesign:TextFieldAssist.UnderlineBrush="#6C63FF"
                                     FontFamily="Josefin Sans"
@@ -161,7 +161,7 @@
                                     VerticalAlignment="Top"
                                     AcceptsReturn="True"
                                     TextWrapping="Wrap"
-                                    MaxWidth="400" x:Name="DC"
+                                    MaxWidth="400" x:Name="DC"  Text="{Binding DiaChi}"
                                     materialDesign:HintAssist.Foreground="Black"
                                     materialDesign:TextFieldAssist.UnderlineBrush="#6C63FF"
                                     FontFamily="Josefin Sans"
@@ -182,6 +182,12 @@
                             Height="40"
                             Style="{StaticResource MaterialDesignFlatMidBgButton}"
                             Margin="25,-25,0,0">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="Click">
+                                        <i:InvokeCommandAction Command="{Binding UpdateInfo}"
+                                                       CommandParameter="{Binding ElementName=Settingwd}"></i:InvokeCommandAction>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
                             </Button>
 
                             <Button
@@ -192,7 +198,13 @@
                                 HorizontalAlignment="Center"
                                 BorderBrush="Transparent"
                                 Cursor="Hand"  Margin="250,30,0,55"
-                                Command="{Binding ChangePassCM}" >
+                               >
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="Click">
+                                        <i:InvokeCommandAction Command="{Binding ChangePass}"
+                                                       CommandParameter="{Binding ElementName=Settingwd}"></i:InvokeCommandAction>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
                                 <Button.Style>
                                     <Style TargetType="Button">
                                         <Setter Property="Background" Value="Transparent"/>
