@@ -167,9 +167,9 @@ namespace Demo.ViewModel
             detailProduct.Mota.Text = temp.MOTA;
             Uri fileUri = new Uri(temp.HINHSP, UriKind.Relative);
             detailProduct.HinhAnh.Source = new BitmapImage(fileUri);
-            paramater.ListViewProduct.SelectedItem = null;
-            listSP1 = new ObservableCollection<SANPHAM>(DataProvider.Ins.DB.SANPHAMs.Where(p => p.SL >= 0));
+            listSP1 = new ObservableCollection<SANPHAM>(DataProvider.Ins.DB.SANPHAMs.Where(p => p.SL > 0));
             paramater.ListViewProduct.ItemsSource = listSP1;
+            paramater.ListViewProduct.SelectedItem = null;
             _Filter(paramater);
             _SearchCommand(paramater);
             MainViewModel.MainFrame.Content = detailProduct;

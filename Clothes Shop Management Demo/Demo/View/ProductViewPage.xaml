@@ -14,8 +14,8 @@
     <Border
                     Height="605"
                     Width="700"
-                    Background="Transparent"
-                    CornerRadius="0"
+                    Background="white"
+                    CornerRadius="40"
                     >
         <Grid>
             <Grid.RowDefinitions>
@@ -35,25 +35,26 @@
                         Margin="8,0,0,0"
                         Height="40"
                         Width="120"
-                        CornerRadius="10"
-                        Background="White"
+                        CornerRadius="17"
+                        Background="#6C63FF"
                         >
                         <ComboBox
+                            Margin="1,1,1,1"
                         x:Name="cbxBoLoc"
-                        Style="{StaticResource MaterialDesignFilledComboBox}"
-                        materialDesign:TextFieldAssist.TextBoxViewMargin="8,-11,0,0"
-                        materialDesign:HintAssist.Hint=""
+                        Style="{StaticResource MaterialDesignFilledComboBox}"                        
                         materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                         BorderThickness="0"
                         materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
-                        materialDesign:HintAssist.Foreground="White"
+                        materialDesign:TextFieldAssist.UnderlineBrush="#6C63FF"
+                        materialDesign:TextFieldAssist.TextBoxViewMargin="2,-12,-10,0"
+                        materialDesign:TextFieldAssist.TextFieldCornerRadius="17"
                         Background="White"
-                        BorderBrush="#6C63FF" 
                         FontFamily="{StaticResource Custom}"
-                        Height="38"
+                        Height="35"          
                         FontSize="14"
                         SelectedIndex="0"
-                        Width="110">
+                        Foreground="Black"
+                        Width="116">
                             <ComboBoxItem Content="Tất cả"/>
                             <ComboBoxItem Content="Áo sơ mi"/>
                             <ComboBoxItem Content="Áo thun"/>
@@ -74,25 +75,26 @@
                         Margin="8,0,0,0"
                         Height="40"
                         Width="120"
-                        CornerRadius="10"
-                        Background="White"
+                        CornerRadius="17"
+                        Background="#6C63FF"
                         >
-                        <ComboBox BorderBrush="#6C63FF"
+                        <ComboBox
                         x:Name="cbxTimKiem"
-                        Style="{StaticResource MaterialDesignFilledComboBox}"
-                        materialDesign:TextFieldAssist.TextBoxViewMargin="0,-11,0,0"
-                        materialDesign:HintAssist.Hint="Tìm kiếm"
+                        Style="{StaticResource MaterialDesignFilledComboBox}"                        
                         materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
-                        materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
                         BorderThickness="0"
                         materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
-                        materialDesign:HintAssist.Foreground="White"
-                       
+                        materialDesign:TextFieldAssist.UnderlineBrush="#6C63FF"
+                        materialDesign:TextFieldAssist.TextBoxViewMargin="2,-12,-10,0"
+                        materialDesign:TextFieldAssist.TextFieldCornerRadius="17"
+                        Background="White"
                         FontFamily="{StaticResource Custom}"
-                        Height="38"
+                        Height="35"          
                         FontSize="14"
-                        ItemsSource="{Binding listTK}"
-                        Width="110">
+                        SelectedIndex="0"
+                        Foreground="Black"
+                        Width="116"
+                        ItemsSource="{Binding listTK}">
                             <ComboBox.ItemTemplate>
                                 <DataTemplate>
                                     <StackPanel Orientation="Horizontal">
@@ -109,17 +111,16 @@
                                 Margin="10,0,0,0"
                                 BorderBrush="#6C63FF"
                                 Foreground="White"
-                             
                                 FontSize="16"
                                 FontWeight="SemiBold"
-                                materialDesign:HintAssist.Hint="Tìm kiếm"
+                                materialDesign:HintAssist.Hint="Tìm Kiếm"
                                 materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
                                 materialDesign:HintAssist.Foreground="White"
                                 materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
                                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                 materialDesign:TextFieldAssist.TextBoxViewMargin="10,3,0,0"
                                 BorderThickness="2"
-                                VerticalAlignment="Center" CaretBrush="#6C63FF" >
+                                VerticalAlignment="Center" CaretBrush="Black" >
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="TextChanged">
                                 <i:InvokeCommandAction Command="{Binding SearchCommand}"
@@ -178,7 +179,7 @@
                                                     FontFamily="{StaticResource Custom}"
                                                     FontSize="14"
                                                     HorizontalAlignment="Center"
-                                                    Text="{Binding GIA,StringFormat={}{0:#,###} VNĐ}"
+                                                    Text="{Binding GIA,StringFormat={}{0:# ###} VNĐ}"
                                                     />
                                 </StackPanel>
                             </Border>

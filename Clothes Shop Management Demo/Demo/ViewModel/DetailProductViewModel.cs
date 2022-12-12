@@ -11,7 +11,7 @@ using System.Collections.ObjectModel;
 
 namespace Demo.ViewModel
 {
-    public class DetailProductViewModel:BaseViewModel
+    public class DetailProductViewModel : BaseViewModel
     {
         public ICommand Back { get; set; }
         public ICommand UpdateProduct { get; set; }
@@ -60,7 +60,7 @@ namespace Demo.ViewModel
                 DataProvider.Ins.DB.SaveChanges();
                 MessageBox.Show("Xóa sản phẩm thành công !", "THÔNG BÁO");
                 ProductViewPage productView = new ProductViewPage();
-                productView.ListViewProduct.ItemsSource = new ObservableCollection<SANPHAM>(DataProvider.Ins.DB.SANPHAMs.Where(p => p.SL >= 0));
+                productView.ListViewProduct.ItemsSource = new ObservableCollection<SANPHAM>(DataProvider.Ins.DB.SANPHAMs.Where(p => p.SL > 0));
                 MainViewModel.MainFrame.Content = productView;
             }
         }

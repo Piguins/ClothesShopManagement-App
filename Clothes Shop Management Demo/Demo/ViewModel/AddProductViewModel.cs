@@ -11,10 +11,11 @@ using System.Windows.Controls;
 using System.Windows;
 using Microsoft.Win32;
 using System.IO;
+using System.Collections.ObjectModel;
 
 namespace Demo.ViewModel
 {
-    public class AddProductViewModel:BaseViewModel
+    public class AddProductViewModel : BaseViewModel
     {
         private string _localLink = System.Reflection.Assembly.GetExecutingAssembly().Location.Remove(System.Reflection.Assembly.GetExecutingAssembly().Location.IndexOf(@"bin\Debug"));
         public ICommand AddImage { get; set; }
@@ -130,13 +131,14 @@ namespace Demo.ViewModel
                         catch { }
                         MessageBox.Show("Thêm sản phẩm mới thành công !", "THÔNG BÁO");
                         DataProvider.Ins.DB.SANPHAMs.Add(a);
-                        DataProvider.Ins.DB.SaveChanges();                    
+                        DataProvider.Ins.DB.SaveChanges();
                         paramater.TenSp.Clear();
                         paramater.LoaiSp.SelectedItem = null;
                         paramater.GiaSp.Clear();
                         paramater.SlSp.Clear();
                         paramater.SizeSp.SelectedItem = null;
                         ProductViewPage productViewPage = new ProductViewPage();
+                        productViewPage.ListViewProduct.ItemsSource = new ObservableCollection<SANPHAM>(DataProvider.Ins.DB.SANPHAMs.Where(p => p.SL >= 0));
                         MainViewModel.MainFrame.Content = productViewPage;
                     }
                 }

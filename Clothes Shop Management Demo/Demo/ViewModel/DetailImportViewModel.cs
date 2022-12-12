@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -15,10 +16,17 @@ namespace Demo.ViewModel
     class DetailImportViewModel
     {
         public ICommand Loadwd { get; set; }
+        public ICommand Back { get; set; }
         public ICommand Delete { get; set; }
         public DetailImportViewModel()
         {
+            Back = new RelayCommand<DetailImport>((p) => true, (p) => _Back(p));
             Delete = new RelayCommand<DetailImport>((p) => true, (p) => _Delete(p));
+        }
+        void _Back(DetailImport p)
+        {
+            ImportView importView = new ImportView();
+            MainViewModel.MainFrame.Content = importView;
         }
         void _Delete(DetailImport parameter)
         {

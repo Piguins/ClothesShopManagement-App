@@ -196,6 +196,7 @@ namespace Demo.ViewModel
                 LSP = DataProvider.Ins.DB.SANPHAMs.Where(p => p.SL >= 0).ToList();
                 paramater.SP.Items.Refresh();
                 ImportView importView = new ImportView();
+                importView.ListViewPN.ItemsSource = new ObservableCollection<PHIEUNHAP>(DataProvider.Ins.DB.PHIEUNHAPs);
                 MainViewModel.MainFrame.Content = importView;
             }
             else
