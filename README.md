@@ -98,11 +98,14 @@ Kinh tế ngày càng phát triển, đây là thời buổi của công nghệ,
   * Quản lý nhập hàng
   * Đăng nhập và đăng xuất
   * Báo cáo và thống kê
+  * In hóa đơn
   * Giảm giá sản phẩm theo hóa đơn
-  * Xuất Voucher, áp dụng Voucher
+  * Gửi thông báo tới email khách hàng
   * Cài đặt thông tin tài khoản
   * Thay đổi mật khẩu
   * Lấy lại mật khẩu
+  * Gửi thông báo tới bộ phận Developer nếu phần mềm lỗi
+  * Gửi thông báo đính kèm được hình ảnh
 
 <!-- TÁC GIẢ -->
 <div id="Tacgia"></div>
