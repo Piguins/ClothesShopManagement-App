@@ -179,7 +179,7 @@
     </Style>
     <Style BasedOn="{StaticResource {x:Type ToggleButton}}"
            TargetType="RadioButton"
-           x:Key="BtnVoucher">
+           x:Key="BtnNoti">
         <Style.Setters>
             <Setter Property="Template">
                 <Setter.Value>
