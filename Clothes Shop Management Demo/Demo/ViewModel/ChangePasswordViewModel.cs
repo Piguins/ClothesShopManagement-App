@@ -22,11 +22,13 @@ namespace Demo.ViewModel
         public string Password { get => _Password; set { _Password = value; OnPropertyChanged(); } }
         private NGUOIDUNG _User;
         public NGUOIDUNG User { get => _User; set { _User = value; OnPropertyChanged(); } }
+        public ICommand MinimizeWd { get; set; }
+        public ICommand Closewd { get; set; }
+        public ICommand MoveWd { get; set; }
         public ICommand OldPassChangedCommand { get; set; }
         public ICommand PasswordChangedCommand { get; set; }
         public ICommand NewPassChangedCommand { get; set; }
         public ICommand Save { get; set; }
-        public ICommand Username { get; set; }
         public ChangePasswordViewModel()
         {
             Save = new RelayCommand<ChangePassword>((p) => true, (p) => SaveNewPass(p));
@@ -40,7 +42,7 @@ namespace Demo.ViewModel
             User = DataProvider.Ins.DB.NGUOIDUNGs.Where(x => x.USERNAME == a).FirstOrDefault();
             try
             {
-                if (Password == " " || OldPass == " " || NewPass == " ")
+                if (Password == "" || OldPass == "" || NewPass == "")
                 {
                     MessageBox.Show("Vui lòng nhập thông tin!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
@@ -67,7 +69,9 @@ namespace Demo.ViewModel
             {
                 MessageBox.Show("Vui lòng nhập thông tin!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
-        }       
+        }
+
+        
         public static string Base64Encode(string plainText)
         {
             var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
