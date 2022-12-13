@@ -186,9 +186,9 @@
       <DependentUpon>Item.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\BaseViewModel.cs" />
-    <Compile Include="ViewModel\AddCsViewModel.cs" />
+    <Compile Include="ViewModel\AddCustomersViewModel.cs" />
     <Compile Include="ViewModel\AddImportViewModel.cs" />
-    <Compile Include="ViewModel\AddNDVM.cs" />
+    <Compile Include="ViewModel\AddNguoiDungViewModel.cs" />
     <Compile Include="ViewModel\AddOrderViewModel.cs" />
     <Compile Include="ViewModel\AddProductViewModel.cs" />
     <Compile Include="ViewModel\ChangePasswordViewModel.cs" />
@@ -262,6 +262,12 @@
     </Compile>
     <Compile Include="View\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\NotiCustomer.xaml.cs">
+      <DependentUpon>NotiCustomer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\NotiDev.xaml.cs">
+      <DependentUpon>NotiDev.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\OrderView.xaml.cs">
       <DependentUpon>OrderView.xaml</DependentUpon>
@@ -390,6 +396,14 @@
     <Page Include="View\MainView.xaml">
       <SubType>Designer</SubType>
       <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="View\NotiCustomer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\NotiDev.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\OrderView.xaml">
       <SubType>Designer</SubType>

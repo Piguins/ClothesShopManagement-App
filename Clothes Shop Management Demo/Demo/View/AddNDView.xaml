@@ -111,7 +111,7 @@
                                     Width="190"
                                     Style="{StaticResource MaterialDesignFilledTextBox}"
                                     VerticalAlignment="Top"
-                                    TextWrapping="Wrap"
+                                    TextWrapping="Wrap" IsEnabled="False"
                                     MaxWidth="400" x:Name="MaND"
                                     FontFamily="{StaticResource Custom}"
                                     materialDesign:HintAssist.Hint="Mã người dùng"/>
@@ -122,7 +122,7 @@
                                     Width="190"
                                     Style="{StaticResource MaterialDesignFilledTextBox}"
                                     VerticalAlignment="Top"
-                                    AcceptsReturn="True"
+                                    AcceptsReturn="True" 
                                     TextWrapping="Wrap"
                                     MaxWidth="400" x:Name="TenND"
                                     FontFamily="{StaticResource Custom}"

@@ -195,14 +195,14 @@
                             >
                             <DockPanel>
                                 <materialDesign:PackIcon
-                                Kind="GiftOpenOutline"
+                                Kind="BellOutline"
                                 Width="25"
                                 Height="25"
                                 VerticalAlignment="Center"
                                 Margin="6"
                                 />
                                 <TextBlock 
-                                Text="VOUCHER"
+                                Text="THÔNG BÁO"
                                 FontSize="13"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"

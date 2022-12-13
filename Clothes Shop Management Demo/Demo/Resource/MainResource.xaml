@@ -9,12 +9,12 @@
     <viewmodel:HomeViewModel x:Key="HomeVM"></viewmodel:HomeViewModel>
     <viewmodel:CustomerViewModel x:Key="CsVM"></viewmodel:CustomerViewModel>
     <viewmodel:DetailCustomer x:Key="DetailCsVM"></viewmodel:DetailCustomer>
-    <viewmodel:AddCsViewModel x:Key="AddCsVM"></viewmodel:AddCsViewModel>
+    <viewmodel:AddCustomersViewModel x:Key="AddCsVM"></viewmodel:AddCustomersViewModel>
     <viewmodel:AddOrderViewModel x:Key="AddOrderVM"></viewmodel:AddOrderViewModel>
     <viewmodel:OrderViewModel x:Key="OrVM"></viewmodel:OrderViewModel>
     <viewmodel:DetailOrderViewModel x:Key="DetailOrderVM"></viewmodel:DetailOrderViewModel>
     <viewmodel:QLNVViewModel x:Key="QLNVVM"></viewmodel:QLNVViewModel>
-    <viewmodel:AddNDVM x:Key="AddNDVM"></viewmodel:AddNDVM>
+    <viewmodel:AddNguoiDungViewModel x:Key="AddNDVM"></viewmodel:AddNguoiDungViewModel>
     <viewmodel:ReportViewModel x:Key="ReportVM"></viewmodel:ReportViewModel>
     <viewmodel:SettingViewModel x:Key="SettingVM"></viewmodel:SettingViewModel>
     <viewmodel:ChangePasswordViewModel x:Key="ChangePassVM"></viewmodel:ChangePasswordViewModel>

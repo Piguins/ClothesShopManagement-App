@@ -190,7 +190,7 @@
                             Style="{StaticResource BtnVoucher}"
                             FontFamily="{StaticResource Custom}"
                             Uid="7"
-                            Command="{Binding VoucherCM}">
+                            Command="{Binding NotiCM}">
                             </RadioButton>
                             
                             <RadioButton

@@ -36,6 +36,9 @@ namespace Demo.ViewModel
         public ICommand AddCustomer { get; set; }
         public ICommand AddProduct { get; set; }
         public ICommand AddImport { get; set; }
+        public ICommand NotiCM { get; set; }
+        public ICommand SupportCM { get; set; }
+
         private NGUOIDUNG _User;
         public NGUOIDUNG User { get => _User; set { _User = value; OnPropertyChanged(); } }
         private Visibility _SetQuanLy;
@@ -142,6 +145,16 @@ namespace Demo.ViewModel
             AddImport = new RelayCommand<Frame>((p) => { return true; }, (p) =>
             {
                 MainFrame.Content = new AddImpotView();
+            });
+
+            NotiCM = new RelayCommand<FrameworkElement>((p) => { return true; }, (p) =>
+            {
+                MainFrame.Content = new NotiCustomer();
+            });
+
+            SupportCM = new RelayCommand<FrameworkElement>((p) => { return true; }, (p) =>
+            {
+                MainFrame.Content = new NotiDev();
             });
 
             SignoutCM = new RelayCommand<FrameworkElement>((p) => { return p == null ? false : true; }, (p) =>
