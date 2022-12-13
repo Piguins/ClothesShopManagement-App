@@ -371,8 +371,9 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Grid Grid.Column="0" Margin="0 -90 0 0">
-                    <Button
+                <Grid Grid.Column="0" Margin="0 -60 0 0">
+                    <StackPanel Orientation="Vertical">
+                        <Button
                                     BorderThickness="0"
                                     Content="XÓA HÓA ĐƠN"
                                     FontSize="12"
@@ -385,14 +386,37 @@
                                     Foreground="Black"
                                     materialDesign:ButtonAssist.CornerRadius="15" Height="50"
                                 >
-                        <i:Interaction.Triggers>
-                            <i:EventTrigger EventName="Click">
-                                <i:InvokeCommandAction     
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="Click">
+                                    <i:InvokeCommandAction     
                                                             Command="{Binding DeleteOrder}"
                                                             CommandParameter="{Binding ElementName=AddImportwd}"></i:InvokeCommandAction>
-                            </i:EventTrigger>
-                        </i:Interaction.Triggers>
-                    </Button>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </Button>
+                        <Button
+                                    BorderThickness="0"
+                                    Content="IN HÓA ĐƠN"
+                                    FontSize="12"
+                                    x:Name="printbtn"
+                                    FontFamily="{StaticResource Custom}"
+                                    Background="#6C63FF"
+                                    Width="150"
+                                    VerticalAlignment="Center"
+                                    Margin="33,20,34,0"
+                                    Foreground="Black"
+                                    materialDesign:ButtonAssist.CornerRadius="15" Height="50"
+                                >
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="Click">
+                                    <i:InvokeCommandAction     
+                                                            Command="{Binding PrintOrder}"
+                                                            CommandParameter="{Binding ElementName=AddImportwd}"></i:InvokeCommandAction>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </Button>
+                    </StackPanel>
+                    
                 </Grid>
                 <Grid Grid.Column="2"
                       HorizontalAlignment="Right"

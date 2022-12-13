@@ -15,6 +15,7 @@ namespace Demo.ViewModel
     {
         public ICommand Loadwd { get; set; }
         public ICommand DeleteOrder { get; set; }
+        public ICommand PrintOrder { get; set; }
         public DetailOrderViewModel()
         {
             DeleteOrder = new RelayCommand<DetailsOrder>((p) => true, (p) => _DeleteOrder(p));
