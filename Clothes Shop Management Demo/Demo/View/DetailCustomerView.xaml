@@ -226,7 +226,7 @@
                                 />
                         <TextBox
                             Margin="250,-30,0,0"
-                                    x:Name="EMAIL"
+                                    x:Name="eMAIL"
                                     FontFamily="{StaticResource Custom}"
                                     HorizontalAlignment="Center"
                                     Width="247"

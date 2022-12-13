@@ -43,7 +43,7 @@ namespace Demo.ViewModel
                         a.SDT = p.SDT.Text;
                         a.GIOITINH = p.GT.Text;
                         a.DCHI = p.DC.Text;
-                        a.EMAIL = p.DC.Text;
+                        a.EMAIL = p.eMAIL.Text;
                     }
                     DataProvider.Ins.DB.SaveChanges();
                     MessageBox.Show("Cập nhật thông tin thành công !", "THÔNG BÁO");
