@@ -102,6 +102,7 @@ namespace Demo.ViewModel
             detailCustomerView.SDT.Text = temp.SDT;
             detailCustomerView.GT.Text = temp.GIOITINH;
             detailCustomerView.DC.Text = temp.DCHI;
+            detailCustomerView.EMAIL.Text = temp.EMAIL;
             int doanhso = 0;
             foreach (HOADON a in DataProvider.Ins.DB.HOADONs)
             {

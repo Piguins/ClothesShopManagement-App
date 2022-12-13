@@ -1012,3 +1012,5 @@ D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\U
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailsProduct.baml
 E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\PrintOrder.g.cs
 E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\PrintOrder.baml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\PrintOrder.g.cs
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\PrintOrder.baml

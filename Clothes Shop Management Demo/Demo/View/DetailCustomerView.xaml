@@ -19,7 +19,7 @@
     </i:Interaction.Triggers>
     <Border
         CornerRadius="15"
-        Background="Transparent"
+        Background="White"
         >                
         <Grid>
             <Grid.ColumnDefinitions>
@@ -201,19 +201,19 @@
                             </StackPanel>
                         </StackPanel>
                         <TextBlock
-                                    Margin="8,30,0,10"
+                                    Margin="-400,30,0,10"
                                     Text="ĐỊA CHỈ"
                                     FontFamily="{StaticResource Custom}"
                             HorizontalAlignment="Center"
                             FontSize="12"
                                 />
                         <TextBox
-                            Margin="10,0,0,0"
+                            Margin="-270,0,0,0"
                                     x:Name="DC"
                                     FontFamily="{StaticResource Custom}"
                                     HorizontalAlignment="Center"
-                                    Width="350"
-                                    Height="110"
+                                    Width="247"
+                                    Height="29"
                                     BorderThickness="2"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
@@ -224,8 +224,25 @@
                                     AcceptsReturn="True"
                                     TextWrapping="Wrap"
                                 />
+                        <TextBox
+                            Margin="250,-30,0,0"
+                                    x:Name="EMAIL"
+                                    FontFamily="{StaticResource Custom}"
+                                    HorizontalAlignment="Center"
+                                    Width="247"
+                                    Height="29"
+                                    BorderThickness="2"
+                                    materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                    materialDesign:HintAssist.Hint="Nhập Email"
+                                    materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0"
+                                    materialDesign:TextFieldAssist.UnderlineBrush="Black"
+                                    HorizontalScrollBarVisibility="Auto"
+                                    AcceptsReturn="True"
+                                    TextWrapping="Wrap"
+                                />
                         <Button Content="CẬP NHẬT"
-                                Margin="0,30,0,0"
+                                Margin="0,70,0,0"
                                 Width="230"
                                 BorderThickness="0"
                                 x:Name="btnupdate"

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\
 Demo
 none
 false
 DEBUG;TRACE
-E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\App.xaml
+D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\App.xaml
 321804698400
-2-95638413
-71257321242
-41-809679646
+2739969757
+711216548775
+411846722780
 MainWindow.xaml;Resource\InfoCard.xaml;Resource\MainResource.xaml;Resource\StyleRecourse.xaml;UserControls\InforCard.xaml;UserControls\Item.xaml;View\AddCustomerView.xaml;View\AddImpotView.xaml;View\AddNDView.xaml;View\AddOrderView.xaml;View\AddProductView.xaml;View\ChangePassword.xaml;View\CustomersView.xaml;View\DetailCustomerView.xaml;View\DetailImport.xaml;View\DetailNDView.xaml;View\DetailsOrder.xaml;View\DetailsProduct.xaml;View\ForgetPassView.xaml;View\HomeView.xaml;View\ImportView.xaml;View\LoginView.xaml;View\LoginViewPage.xaml;View\MainView.xaml;View\OrderView.xaml;View\PrintOrder.xaml;View\PrintOrderView.xaml;View\ProductViewPage.xaml;View\QLNVView.xaml;View\ReportView.xaml;View\SettingView.xaml;View\SignUpView.xaml;
 
-True
+False
 
