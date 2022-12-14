@@ -43,7 +43,6 @@
           <Property Name="GIOITINH" Type="nvarchar" MaxLength="5" />
           <Property Name="DCHI" Type="nvarchar" MaxLength="50" />
           <Property Name="SDT" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="EMAIL" Type="varchar" MaxLength="100" />
         </EntityType>
         <EntityType Name="NGUOIDUNG">
           <Key>
@@ -254,7 +253,6 @@
           <Property Name="GIOITINH" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
           <Property Name="DCHI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="SDT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="HOADONs" Relationship="Self.FK_KH_HD" FromRole="KHACHHANG" ToRole="HOADON" />
         </EntityType>
         <EntityType Name="NGUOIDUNG">
@@ -466,7 +464,6 @@
                 <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
                 <ScalarProperty Name="DCHI" ColumnName="DCHI" />
                 <ScalarProperty Name="SDT" ColumnName="SDT" />
-                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

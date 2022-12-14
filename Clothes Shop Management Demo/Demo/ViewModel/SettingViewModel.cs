@@ -11,6 +11,8 @@ using System.Text.RegularExpressions;
 using System.Windows.Media.Imaging;
 using System.Windows.Media;
 using System.Windows;
+using System.IO;
+using Microsoft.Win32;
 
 namespace Demo.ViewModel
 {
@@ -41,7 +43,7 @@ namespace Demo.ViewModel
         public SettingViewModel()
         {
             Loadwd = new RelayCommand<SettingView>((p) => true, (p) => _Loadwd(p));
-            //AddImage = new RelayCommand<ImageBrush>((p) => true, (p) => _AddImage(p));
+            AddImage = new RelayCommand<ImageBrush>((p) => true, (p) => _AddImage(p));
             UpdateInfo = new RelayCommand<SettingView>((p) => true, (p) => _UdpateInfo(p));
             ChangePass = new RelayCommand<SettingView>((p) => true, (p) => _ChangePass());
         }
@@ -50,16 +52,16 @@ namespace Demo.ViewModel
             ChangePassword change = new ChangePassword();
             MainViewModel.MainFrame.Content = change;
         }
-        //void _AddImage(ImageBrush p)
-        //{
-        //    OpenFileDialog open = new OpenFileDialog();
-        //    open.Filter = "Image Files(*.jpg; *.png)|*.jpg; *.png";
-        //    if (open.ShowDialog() == true)
-        //    {
-        //        Ava = open.FileName;
-        //    }
-        //    p.ImageSource = new BitmapImage(new Uri(Ava));
-        //}
+        void _AddImage(ImageBrush p)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Image Files(*.jpg; *.png)|*.jpg; *.png";
+            if (open.ShowDialog() == true)
+            {
+                Ava = open.FileName;
+            }
+            p.ImageSource = new BitmapImage(new Uri(Ava));
+        }
         void _Loadwd(SettingView p)
         {
             if (LoginViewModel.IsLogin)
@@ -93,23 +95,24 @@ namespace Demo.ViewModel
                 MessageBox.Show("Email không hợp lệ !", "THÔNG BÁO", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
+
             var temp = DataProvider.Ins.DB.NGUOIDUNGs.Where(pa => pa.USERNAME == TenTK).FirstOrDefault();
-            temp.TENND = p.TenND.Text;
-            temp.SDT = p.SDT.Text;
-            temp.DIACHI = p.DC.Text;
-            temp.GIOITINH = p.GT.Text;
-            temp.NGSINH = (DateTime)p.NS.SelectedDate;
+            temp.TENND = p.NameBox.Text;
+            temp.SDT = p.SDTBox.Text;
+            temp.DIACHI = p.AddressBox.Text;
+            temp.GIOITINH = p.GTBox.Text;
+            temp.NGSINH = (DateTime)p.DateBox.SelectedDate;
             temp.MAIL = p.Mail.Text;
             string rd = StringGenerator();
             if (User.AVA != Ava)
                 temp.AVA = "/Resource/Ava/" + rd + (Ava.Contains(".jpg") ? ".jpg" : ".png").ToString();
             DataProvider.Ins.DB.SaveChanges();
-            //try
-            //{
-            //    if (User.AVA != Ava)
-            //        File.Copy(Ava, Const._localLink + @"Resource/Ava/" + rd + (Ava.Contains(".jpg") ? ".jpg" : ".png").ToString(), true);
-            //}
-            //catch { }
+            try
+            {
+                if (User.AVA != Ava)
+                    File.Copy(Ava, Const._localLink + @"Resource/Ava/" + rd + (Ava.Contains(".jpg") ? ".jpg" : ".png").ToString(), true);
+            }
+            catch { }
             MessageBox.Show("Cập nhật thành công!", "Thông báo");
         }
         static string StringGenerator()

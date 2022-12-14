@@ -1018,3 +1018,7 @@ D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\V
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\NotiDev.g.cs
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\NotiCustomer.baml
 D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\NotiDev.baml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\NotiCustomer.g.cs
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\NotiDev.g.cs
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\NotiCustomer.baml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\NotiDev.baml
