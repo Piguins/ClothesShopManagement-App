@@ -35,19 +35,25 @@
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
                                     materialDesign:HintAssist.Hint="Chọn khách hàng"
-                                    materialDesign:TextFieldAssist.TextBoxViewMargin="10,10,0,0"
-                                    materialDesign:TextFieldAssist.UnderlineBrush="Black" Height="45"/>
+                                    materialDesign:TextFieldAssist.TextBoxViewMargin="10,6,0,0"
+                                    materialDesign:TextFieldAssist.UnderlineBrush="Black" Height="38"/>
         </StackPanel>
         <StackPanel Margin="350,128,100,408">
             <TextBox
-    Height="50"
-    materialDesign:HintAssist.Hint="Email khách hàng"
-    materialDesign:TextFieldAssist.CharacterCounterVisibility="{Binding IsChecked, 
-                Converter={StaticResource BooleanToVisibilityConverter},
-                ElementName=MaterialDesignOutlinedTextBoxTextCountComboBox}"
-    Style="{StaticResource MaterialDesignOutlinedTextBox}"
-                  materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-    VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" IsEnabled="False" />
+                            Margin="0 5 0 0" FontWeight="Normal"
+                                    HorizontalAlignment="Left"
+                                    Width="250"
+                                    BorderThickness="1"
+                                    materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                    materialDesign:HintAssist.Hint="Email khách hàng"
+                                    materialDesign:TextFieldAssist.TextBoxViewMargin="10,5,0,0"
+                                    materialDesign:TextFieldAssist.UnderlineBrush="Gray"
+                  
+                                    Foreground="Black"
+                                    HorizontalScrollBarVisibility="Auto"
+                                    AcceptsReturn="True"
+                                    TextWrapping="Wrap" Height="38"/>
         </StackPanel>
         <StackPanel>
             <TextBox
@@ -82,7 +88,7 @@
                                     AcceptsReturn="True"
                                     TextWrapping="Wrap"/>
 
-        <Button Content="GỬI" VerticalAlignment="Top"
+        <Button Content="Gửi" VerticalAlignment="Top"
                                 Margin="514,527,100,0"
                                 BorderThickness="0"
                                 materialDesign:ButtonAssist.CornerRadius="10"
