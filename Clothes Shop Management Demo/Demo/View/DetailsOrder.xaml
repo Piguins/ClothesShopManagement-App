@@ -10,7 +10,7 @@
         Title="AddImportView" 
         DataContext="{StaticResource DetailOrderVM}"
         x:Name="AddImportwd"
-        Height="650" 
+        Height="600"
         Width="700">
     <Border
         x:Name="DetailOrder"
@@ -371,7 +371,7 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Grid Grid.Column="0" Margin="0 -60 0 0">
+                <Grid Grid.Column="0" Margin="0 -25 0 0">
                     <StackPanel Orientation="Vertical">
                         <Button
                                     BorderThickness="0"
@@ -384,7 +384,7 @@
                                     VerticalAlignment="Center"
                                     Margin="33,0,34,0"
                                     Foreground="Black"
-                                    materialDesign:ButtonAssist.CornerRadius="15" Height="50"
+                                    materialDesign:ButtonAssist.CornerRadius="15" Height="40"
                                 >
                             <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="Click">
@@ -403,14 +403,14 @@
                                     Background="#6C63FF"
                                     Width="150"
                                     VerticalAlignment="Center"
-                                    Margin="33,20,34,0"
+                                    Margin="33,10,34,0"
                                     Foreground="Black"
-                                    materialDesign:ButtonAssist.CornerRadius="15" Height="50"
+                                    materialDesign:ButtonAssist.CornerRadius="15" Height="40"
                                 >
                             <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="Click">
                                     <i:InvokeCommandAction     
-                                                            Command="{Binding PrintOrder}"
+                                                            Command="{Binding PrintOrderCM}"
                                                             CommandParameter="{Binding ElementName=AddImportwd}"></i:InvokeCommandAction>
                                 </i:EventTrigger>
                             </i:Interaction.Triggers>
@@ -421,7 +421,7 @@
                 <Grid Grid.Column="2"
                       HorizontalAlignment="Right"
                       >
-                    <StackPanel Margin="0,-47,0,18">
+                    <StackPanel Margin="0,-30,0,18">
                         <TextBlock
                             Margin="0,6,0,0"
                             Foreground="#6C63FF"
@@ -446,7 +446,7 @@
                     </StackPanel>
                 </Grid>
                 <Grid Grid.Column="3">
-                    <StackPanel Margin="0,-48,0,0" Height="112" VerticalAlignment="Top">
+                    <StackPanel Margin="0,-30,0,0" Height="112" VerticalAlignment="Top">
                         <TextBlock
                             HorizontalAlignment="Right"
                             Margin="0,6,10,0"

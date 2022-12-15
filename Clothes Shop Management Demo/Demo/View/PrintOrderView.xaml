@@ -8,8 +8,10 @@
         Background="Transparent"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        x:Name="AddProductwd"
-        Width="700" >
+        x:Name="PrintOrderPage"
+        Width="700"
+        Height="600"
+        DataContext="{StaticResource PrintOrderVM}">
     <Border x:Name="PrintView"
           Background="Transparent"
             CornerRadius="15">

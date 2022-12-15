@@ -19,9 +19,29 @@ namespace Demo.View
     /// </summary>
     public partial class DetailsOrder : Page
     {
+        
+
         public DetailsOrder()
         {
             InitializeComponent();
+        }
+
+        public MainWindow _mainWindow;
+        private void BtnPrint_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                _mainWindow.IsEnabled = false;
+                PrintDialog printDialog = new PrintDialog();
+                if(printDialog.ShowDialog()==true)
+                {
+                    printDialog.PrintVisual(AddImportwd,"Hóa đơn");
+                }
+            }
+            catch (Exception)
+            {
+                _mainWindow.IsEnabled = true;
+            }
         }
     }
 }

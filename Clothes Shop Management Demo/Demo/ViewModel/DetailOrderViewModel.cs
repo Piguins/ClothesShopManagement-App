@@ -5,20 +5,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows;
 using System.Collections.ObjectModel;
+using System.Xml.Linq;
 
 namespace Demo.ViewModel
 {
-    public class DetailOrderViewModel : BaseViewModel
+    internal class DetailOrderViewModel : BaseViewModel
     {
+        public static Frame MainFrame { get; set; }
         public ICommand Loadwd { get; set; }
         public ICommand DeleteOrder { get; set; }
-        public ICommand PrintOrder { get; set; }
+        public ICommand PrintOrderCM { get; set; }       
+
+
         public DetailOrderViewModel()
         {
+            PrintOrderCM = new RelayCommand<PrintOrderView>((p) => true, (p) => _PrintOrderView(p));
             DeleteOrder = new RelayCommand<DetailsOrder>((p) => true, (p) => _DeleteOrder(p));
+        }
+        void _PrintOrderView(PrintOrderView paramater)
+        {
+            PrintOrderView printOrderView = new PrintOrderView();
+            MainViewModel.MainFrame.Content = printOrderView;
         }
         void _DeleteOrder(DetailsOrder parameter)
         {
@@ -49,6 +60,16 @@ namespace Demo.ViewModel
                 OrderView orderView = new OrderView();
                 orderView.ListViewHD.ItemsSource = new ObservableCollection<HOADON> (DataProvider.Ins.DB.HOADONs);
                 MainViewModel.MainFrame.Content = orderView;
+                FrameworkElement GetParentWindow(FrameworkElement p)
+                {
+                    FrameworkElement parent = p;
+
+                    while (parent.Parent != null)
+                    {
+                        parent = parent.Parent as FrameworkElement;
+                    }
+                    return parent;
+                }
             }
         }
     }
