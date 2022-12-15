@@ -18,8 +18,7 @@ namespace Demo.ViewModel
         public static Frame MainFrame { get; set; }
         public ICommand Loadwd { get; set; }
         public ICommand DeleteOrder { get; set; }
-        public ICommand PrintOrderCM { get; set; }       
-
+        public ICommand PrintOrderCM { get; set; }
 
         public DetailOrderViewModel()
         {
@@ -59,17 +58,7 @@ namespace Demo.ViewModel
                 DataProvider.Ins.DB.SaveChanges();
                 OrderView orderView = new OrderView();
                 orderView.ListViewHD.ItemsSource = new ObservableCollection<HOADON> (DataProvider.Ins.DB.HOADONs);
-                MainViewModel.MainFrame.Content = orderView;
-                FrameworkElement GetParentWindow(FrameworkElement p)
-                {
-                    FrameworkElement parent = p;
-
-                    while (parent.Parent != null)
-                    {
-                        parent = parent.Parent as FrameworkElement;
-                    }
-                    return parent;
-                }
+                MainViewModel.MainFrame.Content = orderView;                
             }
         }
     }
