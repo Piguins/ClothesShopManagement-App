@@ -16,25 +16,5 @@ namespace Demo.View
 {
     /// <summary>
     /// Interaction logic for PrintOrderView.xaml
-    /// </summary>
-    public partial class PrintOrderView : Page
-    {
-        public PrintOrderView()
-        {
-            InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                
-
-            }
-            catch (Exception)
-            {
-
-            }
-        }
-    }
+    /// </summary>    
 }

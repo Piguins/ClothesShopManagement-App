@@ -22,13 +22,13 @@ namespace Demo.ViewModel
 
         public DetailOrderViewModel()
         {
-            PrintOrderCM = new RelayCommand<PrintOrdersView>((p) => true, (p) => _PrintOrderView(p));
+            PrintOrderCM = new RelayCommand<PrintOrderView>((p) => true, (p) => _PrintOrderView(p));
             DeleteOrder = new RelayCommand<DetailsOrder>((p) => true, (p) => _DeleteOrder(p));
         }
-        void _PrintOrderView(PrintOrdersView paramater)
+        void _PrintOrderView(PrintOrderView paramater)
         {
-            PrintOrdersView printOrderView = new PrintOrdersView();
-            MainViewModel.MainFrame.Content = printOrderView;
+            PrintOrderView printOrdersView = new PrintOrderView();
+            MainViewModel.MainFrame.Content = printOrdersView;
         }
         void _DeleteOrder(DetailsOrder parameter)
         {

@@ -273,9 +273,8 @@
     <Compile Include="View\OrderView.xaml.cs">
       <DependentUpon>OrderView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\PrintOrdersView.xaml.cs">
-      <DependentUpon>PrintOrdersView.xaml</DependentUpon>
-      <SubType>Code</SubType>
+    <Compile Include="View\PrintOrderView.xaml.cs">
+      <DependentUpon>PrintOrderView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ProductViewPage.xaml.cs">
       <DependentUpon>ProductViewPage.xaml</DependentUpon>
@@ -408,7 +407,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\PrintOrdersView.xaml">
+    <Page Include="View\PrintOrderView.xaml">
       <SubType>Designer</SubType>
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
