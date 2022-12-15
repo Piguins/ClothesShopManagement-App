@@ -6,6 +6,8 @@
       xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
       xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
       xmlns:uc="clr-namespace:Demo.Resource"
+      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
       xmlns:local="clr-namespace:Demo.View"
       mc:Ignorable="d" 
       d:DesignHeight="605" d:DesignWidth="705"
@@ -46,8 +48,72 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Image Source="/Resource/Image/Shoping 2.png" Grid.ColumnSpan="2" Margin="-116,-156,231,-26"/>
-          
+                <Image Source="/Resource/Image/Shoping 2.png" Grid.Column="0"/>
+                <Grid Grid.Column="1">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="0" 
+                                   Text="Danh sách mối" 
+                                   FontSize="25" 
+                                   FontFamily="NunitoBold" 
+                                   FontWeight="Bold" 
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center"/>
+
+                        <StackPanel Grid.Row="1">
+                            <ListView x:Name="ListViewIP" ItemsSource="{Binding ListMoi}"
+                          Height="314"
+                          Width="327"
+                          SelectionMode="Single"
+                          ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                        >
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border
+                                    Width="200"
+                                    Height="200"
+                                   CornerRadius="10"
+                                    Background="#6C63FF"
+                                 >
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="100"/>
+                                                    <ColumnDefinition Width="auto"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Ellipse  Margin="10,18,10,10" Grid.Column="0">
+                                                    <Ellipse.Fill>
+                                                        <ImageBrush ImageSource="{Binding Anh}"/>
+                                                    </Ellipse.Fill>
+                                                </Ellipse>
+
+                                                <Grid Grid.Column="1">
+                                                    <TextBlock Text="{Binding Ten}" Foreground="Black" FontSize="15" Height="28" Width="90" Margin="0,17,0,55"/>
+                                                    <TextBlock Text="{Binding Sdt}" Foreground="Black" FontSize="10" Margin="0,42,0,42"/>
+                                                    <TextBlock Text="{Binding BuonBan}" Foreground="Black" FontSize="10" Margin="0,63,0,20"/>
+                                                </Grid>
+                                            </Grid>
+                                        </Border>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                                <ListView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapPanel Orientation="Vertical"/>
+                                    </ItemsPanelTemplate>
+                                </ListView.ItemsPanel>
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="SelectionChanged">
+                                        <i:InvokeCommandAction     Command="{Binding Detail}"
+                                                           CommandParameter="{Binding ElementName=Importwd}"></i:InvokeCommandAction>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </ListView>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
             </Grid>
         </Grid>
     </Border>
