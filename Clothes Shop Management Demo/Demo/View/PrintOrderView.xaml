@@ -11,8 +11,10 @@
         x:Name="PrintOrderPage"
         Width="700"
         Height="600"
-        DataContext="{StaticResource PrintOrderVM}">
-    <Border x:Name="PrintView"
+        Title="PrintOrderView"
+        DataContext="{StaticResource PrintOrderVM}"
+        >
+    <Border x:Name="PrintOrder"
           Background="Transparent"
             CornerRadius="15">
         <Grid >
@@ -48,11 +50,12 @@
                         materialDesign:ButtonAssist.CornerRadius="10"
                         Margin="0 0 20 0"
                         Style="{DynamicResource MaterialDesignFlatDarkBgButton}"
-                        Background="Transparent" >
+                        Background="Transparent" Click="Button_Click" >
                     <materialDesign:PackIcon Kind="Printer"
-                                             Height="40"
-                                             Width="40"
+                                             Height="30"
+                                             Width="30"
                                              Margin="-0 0 0 0"
+                                             Foreground="#6C63FF"
                                              ></materialDesign:PackIcon>
                     
                 </Button>
