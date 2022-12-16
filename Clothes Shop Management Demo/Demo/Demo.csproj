@@ -237,6 +237,15 @@
     <Compile Include="View\DetailImport.xaml.cs">
       <DependentUpon>DetailImport.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\DetailMoi.xaml.cs">
+      <DependentUpon>DetailMoi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DetailMoi1.xaml.cs">
+      <DependentUpon>DetailMoi1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DetailMoi2.xaml.cs">
+      <DependentUpon>DetailMoi2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\DetailNDView.xaml.cs">
       <DependentUpon>DetailNDView.xaml</DependentUpon>
     </Compile>
@@ -356,6 +365,18 @@
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="View\DetailImport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DetailMoi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DetailMoi1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DetailMoi2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

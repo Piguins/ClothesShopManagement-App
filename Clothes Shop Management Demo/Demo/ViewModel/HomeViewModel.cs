@@ -6,33 +6,44 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace Demo.ViewModel
 {
-    internal class HomeViewModel : BaseViewModel
+    public class HomeViewModel : BaseViewModel
     {
-        public class CacMoi
-        {
-            public string Anh { get; set; }
-            public string Ten { get; set; }
-            public string Sđt { get; set; }
-            public string BuonBan { get; set; }
-        }
-
-        private ObservableCollection<CacMoi> _ListMoi;
-        public ObservableCollection<CacMoi> ListMoi { get => _ListMoi; set => _ListMoi = value; }
+        public ICommand opendetail { get; set; }
+        public ICommand opendetail1 { get; set; }
+        public ICommand opendetail2 { get; set; }
+        public ICommand Back { get; set; }
 
         public HomeViewModel()
         {
-            ListMoi = new ObservableCollection<CacMoi>();
-            ListMoi.Add(new CacMoi { Anh = "/Resource/Ava/Tu.jpg", Ten = "Đào Anh Tú", Sđt = "0941520828", BuonBan = "Quần áo" });
-            ListMoi.Add(new CacMoi { Anh = "/Resource/Ava/Tu.jpg", Ten = "Đào Anh Tú", Sđt = "0941520828", BuonBan = "Quần áo" });
-            ListMoi.Add(new CacMoi { Anh = "/Resource/Ava/Tu.jpg", Ten = "Đào Anh Tú", Sđt = "0941520828", BuonBan = "Quần áo" });
-            ListMoi.Add(new CacMoi { Anh = "/Resource/Ava/Tu.jpg", Ten = "Đào Anh Tú", Sđt = "0941520828", BuonBan = "Quần áo" });
-
-            HomeView homeView = new HomeView();
-            homeView.ListViewIP.ItemsSource = ListMoi;
-            MainViewModel.MainFrame.Content = homeView;
+            opendetail = new RelayCommand<HomeView>((p) => true, (p) => _opendetail(p));
+            opendetail1 = new RelayCommand<HomeView>((p) => true, (p) => _opendetail1(p));
+            opendetail2 = new RelayCommand<HomeView>((p) => true, (p) => _opendetail2(p));
+            Back = new RelayCommand<HomeView>((p) => true, (p) => _Back(p));
+        }
+        void _opendetail(HomeView p)
+        {
+            DetailMoi detailMoi = new DetailMoi();
+            MainViewModel.MainFrame.Content = detailMoi;
+        }
+        void _opendetail1(HomeView p)
+        {
+            DetailMoi1 detailMoi1 = new DetailMoi1();
+            MainViewModel.MainFrame.Content = detailMoi1;
+        }
+        void _opendetail2(HomeView p)
+        {
+            DetailMoi2 detailMoi2 = new DetailMoi2();
+            MainViewModel.MainFrame.Content = detailMoi2;
+        }
+        void _Back(HomeView p)
+        {
+            HomeView a = new HomeView();
+            MainViewModel.MainFrame.Content = a;
         }
     }
+
 }

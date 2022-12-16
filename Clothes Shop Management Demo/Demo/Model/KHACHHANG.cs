@@ -25,7 +25,6 @@ namespace Demo.Model
         public string GIOITINH { get; set; }
         public string DCHI { get; set; }
         public string SDT { get; set; }
-        public string EMAIL { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HOADON> HOADONs { get; set; }

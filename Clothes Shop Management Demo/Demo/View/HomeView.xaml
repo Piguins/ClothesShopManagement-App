@@ -13,7 +13,8 @@
       d:DesignHeight="605" d:DesignWidth="705"
       Title="HomeView"
       DataContext="{StaticResource HomeVM}"
-      Name="HomeViewPage">
+      x:Name="HomeViewwd"
+      >
 
 
 
@@ -65,52 +66,99 @@
                                    VerticalAlignment="Center"/>
 
                         <StackPanel Grid.Row="1">
-                            <ListView x:Name="ListViewIP" ItemsSource="{Binding ListMoi}"
-                          Height="314"
-                          Width="327"
-                          SelectionMode="Single"
-                          ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                        >
-                                <ListView.ItemTemplate>
-                                    <DataTemplate>
-                                        <Border
-                                    Width="200"
-                                    Height="200"
-                                   CornerRadius="10"
-                                    Background="#6C63FF"
+                            <Button
+                                    Width="300"
+                                    Height="100"
+                                    materialDesign:ButtonAssist.CornerRadius="17"
+                                    Background="#FFD1C8C8"
+                                    Margin="0,0,0,10"
                                  >
-                                            <Grid>
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="100"/>
-                                                    <ColumnDefinition Width="auto"/>
-                                                </Grid.ColumnDefinitions>
-                                                <Ellipse  Margin="10,18,10,10" Grid.Column="0">
-                                                    <Ellipse.Fill>
-                                                        <ImageBrush ImageSource="{Binding Anh}"/>
-                                                    </Ellipse.Fill>
-                                                </Ellipse>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Ellipse  Margin="-58,14,78,14" Grid.Column="0">
+                                        <Ellipse.Fill>
+                                            <ImageBrush ImageSource="/Resource/Ava/Tu.jpg"/>
+                                        </Ellipse.Fill>
+                                    </Ellipse>
 
-                                                <Grid Grid.Column="1">
-                                                    <TextBlock Text="{Binding Ten}" Foreground="Black" FontSize="15" Height="28" Width="90" Margin="0,17,0,55"/>
-                                                    <TextBlock Text="{Binding Sdt}" Foreground="Black" FontSize="10" Margin="0,42,0,42"/>
-                                                    <TextBlock Text="{Binding BuonBan}" Foreground="Black" FontSize="10" Margin="0,63,0,20"/>
-                                                </Grid>
-                                            </Grid>
-                                        </Border>
-                                    </DataTemplate>
-                                </ListView.ItemTemplate>
-                                <ListView.ItemsPanel>
-                                    <ItemsPanelTemplate>
-                                        <WrapPanel Orientation="Vertical"/>
-                                    </ItemsPanelTemplate>
-                                </ListView.ItemsPanel>
+                                    <Grid Grid.Column="1">
+                                        <TextBlock Text="Nguyễn Văn A" Foreground="Black" FontSize="15" Height="28" Margin="-76,9,-76,55"/>
+                                        <TextBlock Text="0945356489" Foreground="Black" FontSize="10" Margin="-62,37,62,39"/>
+                                        <TextBlock Text="Quần áo" Foreground="Black" FontSize="10" Margin="-62,58,62,19"/>
+                                    </Grid>
+                                </Grid>
                                 <i:Interaction.Triggers>
-                                    <i:EventTrigger EventName="SelectionChanged">
-                                        <i:InvokeCommandAction     Command="{Binding Detail}"
-                                                           CommandParameter="{Binding ElementName=Importwd}"></i:InvokeCommandAction>
+                                    <i:EventTrigger EventName="Click">
+                                        <i:InvokeCommandAction Command="{Binding opendetail}"
+                                                       CommandParameter="{Binding ElementName=HomeViewwd}"></i:InvokeCommandAction>
                                     </i:EventTrigger>
                                 </i:Interaction.Triggers>
-                            </ListView>
+                            </Button>
+                            <Button
+                                    Width="300"
+                                    Height="100"
+                                    materialDesign:ButtonAssist.CornerRadius="17"
+                                    Background="#FFD1C8C8"
+                                    Margin="0,0,0,10"
+                                 >
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Ellipse  Margin="-58,14,78,14" Grid.Column="0">
+                                        <Ellipse.Fill>
+                                            <ImageBrush ImageSource="/Resource/Ava/Tu.jpg"/>
+                                        </Ellipse.Fill>
+                                    </Ellipse>
+
+                                    <Grid Grid.Column="1">
+                                        <TextBlock Text="Phạm Văn B" Foreground="Black" FontSize="15" Height="28" Margin="-76,9,-76,55"/>
+                                        <TextBlock Text="0949998659" Foreground="Black" FontSize="10" Margin="-62,37,62,39"/>
+                                        <TextBlock Text="Túi" Foreground="Black" FontSize="10" Margin="-62,58,62,19"/>
+                                    </Grid>
+                                </Grid>
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="Click">
+                                        <i:InvokeCommandAction     Command="{Binding opendetail1}"
+                                                           CommandParameter="{Binding ElementName=HomeViewwd}"></i:InvokeCommandAction>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </Button>
+                            <Button
+                                    Width="300"
+                                    Height="100"
+                                    materialDesign:ButtonAssist.CornerRadius="17"
+                                    Background="#FFD1C8C8"
+                                    Margin="0,0,0,10"
+                                 >
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Ellipse  Margin="-58,14,78,14" Grid.Column="0">
+                                        <Ellipse.Fill>
+                                            <ImageBrush ImageSource="/Resource/Ava/Tu.jpg"/>
+                                        </Ellipse.Fill>
+                                    </Ellipse>
+
+                                    <Grid Grid.Column="1">
+                                        <TextBlock Text="Nguyễn Thị C" Foreground="Black" FontSize="15" Height="28" Margin="-76,9,-76,55"/>
+                                        <TextBlock Text="0933756895" Foreground="Black" FontSize="10" Margin="-62,37,62,39"/>
+                                        <TextBlock Text="Áo khoác" Foreground="Black" FontSize="10" Margin="-62,58,62,19"/>
+                                    </Grid>
+                                </Grid>
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="Click">
+                                        <i:InvokeCommandAction     Command="{Binding opendetail2}"
+                                                           CommandParameter="{Binding ElementName=HomeViewwd}"></i:InvokeCommandAction>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </Button>
                         </StackPanel>
                     </Grid>
                 </Grid>

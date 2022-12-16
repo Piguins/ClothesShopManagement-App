@@ -1,0 +1,171 @@
+﻿<Page x:Class="Demo.View.DetailMoi"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Demo.View"
+      x:Name="DTMoiwd"
+      mc:Ignorable="d" 
+      d:DesignHeight="480" d:DesignWidth="650"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+      Title="DetailMoi"
+      DataContext="{StaticResource HomeVM}"
+      Background="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0"
+                  Background="Transparent">
+
+        </Grid>
+        <Grid Grid.Row="1">
+            <TextBlock
+                    Text="THÔNG TIN MỐI BỎ HÀNG" Margin="35 0 0 0"
+                    HorizontalAlignment="Center"
+                    FontSize="24"
+                    Foreground="#6C63FF"
+                    FontFamily="{StaticResource Custom}"
+                    />
+        </Grid>
+        <Grid Grid.Row="2"
+                  Margin="0,15,0,0"
+                  >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="116*"/>
+                    <RowDefinition Height="19*"/>
+                </Grid.RowDefinitions>
+
+
+                <Grid>
+                    <StackPanel>
+                        <StackPanel
+                        Orientation="Horizontal" Margin="155 0 0 0" 
+                        >
+                            <TextBox 
+                                    Margin="0,10,0,0" Foreground="Black" 
+                                    materialDesign:HintAssist.Foreground="Black"
+                                    materialDesign:TextFieldAssist.UnderlineBrush="#6C63FF"
+                                    Width="388"
+                                    Text="Nguyễn Văn A"
+                                    Style="{StaticResource MaterialDesignFilledTextBox}"
+                                    VerticalAlignment="Top"
+                                    AcceptsReturn="True"
+                                    TextWrapping="Wrap"
+                                    IsEnabled="False"
+                                    MaxWidth="400" x:Name="Ten"
+                                    FontFamily="{StaticResource Custom}"
+                                    materialDesign:HintAssist.Hint="Họ tên"/>
+                        </StackPanel>
+                        <StackPanel
+                        Orientation="Horizontal"
+                        Margin="155 0 0 0"
+                        >
+                            <TextBox 
+                                    Margin="0,10,10,0" Foreground="Black" 
+                                    materialDesign:HintAssist.Foreground="Black"
+                                    materialDesign:TextFieldAssist.UnderlineBrush="#6C63FF"
+                                    Width="147"
+                                    Text="Nam"
+                                    Style="{StaticResource MaterialDesignFilledTextBox}"
+                                    VerticalAlignment="Top"
+                                    AcceptsReturn="True"
+                                    TextWrapping="Wrap"
+                                    IsEnabled="False"
+                                    MaxWidth="400"
+                                    FontFamily="{StaticResource Custom}"
+                                    materialDesign:HintAssist.Hint="Giới Tính"/>
+                            <TextBox 
+                                    Margin="0,10,0,0" Foreground="Black" 
+                                    materialDesign:HintAssist.Foreground="Black"
+                                    materialDesign:TextFieldAssist.UnderlineBrush="#6C63FF"
+                                    Width="228"
+                                    Text="0945354269"
+                                    Style="{StaticResource MaterialDesignFilledTextBox}"
+                                    VerticalAlignment="Top"
+                                    AcceptsReturn="True"
+                                    TextWrapping="Wrap"
+                                    IsEnabled="False"
+                                    MaxWidth="400"
+                                    FontFamily="{StaticResource Custom}"
+                                    materialDesign:HintAssist.Hint="Số điện thoại"/>
+                        </StackPanel>
+                        <TextBox Foreground="Black" 
+                                 Margin="0,10,0,0"
+                                 Style="{StaticResource MaterialDesignFilledTextBox}"
+                                 VerticalAlignment="Top"
+                                 AcceptsReturn="True"
+                                 TextWrapping="Wrap"
+                                 IsEnabled="False"
+                                 MaxWidth="400"
+                                 Text="Quần áo"
+                                 materialDesign:HintAssist.Foreground="Black"
+                                 materialDesign:TextFieldAssist.UnderlineBrush="#6C63FF"
+                                 FontFamily="{StaticResource Custom}"
+                                 materialDesign:HintAssist.Hint="Buôn bán" Width="390"/>
+                        <TextBox Foreground="Black" 
+                                 Margin="0,10,0,0"
+                                 Style="{StaticResource MaterialDesignFilledTextBox}"
+                                 VerticalAlignment="Top"
+                                 AcceptsReturn="True"
+                                 TextWrapping="Wrap"
+                                 IsEnabled="False"
+                                 MaxWidth="400" x:Name="Email"
+                                 materialDesign:HintAssist.Foreground="Black"
+                                 materialDesign:TextFieldAssist.UnderlineBrush="#6C63FF"
+                                 FontFamily="{StaticResource Custom}"
+                                 Text="nguyenvanA@gmail.com"
+                                 materialDesign:HintAssist.Hint="Email" Width="390"/>
+                        <TextBox Foreground="Black" 
+                                 Margin="0,10,0,0"
+                                 Style="{StaticResource MaterialDesignFilledTextBox}"
+                                 VerticalAlignment="Top"
+                                 AcceptsReturn="True"
+                                 TextWrapping="Wrap"
+                                 IsEnabled="False"
+                                 MaxWidth="400"
+                                 materialDesign:HintAssist.Foreground="Black"
+                                 materialDesign:TextFieldAssist.UnderlineBrush="#6C63FF"
+                                 FontFamily="{StaticResource Custom}"
+                                 Text="hello.com"
+                                 materialDesign:HintAssist.Hint="Website" Width="390"/>
+                        <TextBox Foreground="Black" 
+                                 Margin="0,10,0,0"
+                                 Style="{StaticResource MaterialDesignFilledTextBox}"
+                                 VerticalAlignment="Top"
+                                 AcceptsReturn="True"
+                                 TextWrapping="Wrap"
+                                 IsEnabled="False"
+                                 MaxWidth="400" x:Name="DiaChi"
+                                 materialDesign:HintAssist.Foreground="Black"
+                                 materialDesign:TextFieldAssist.UnderlineBrush="#6C63FF"
+                                 FontFamily="{StaticResource Custom}"
+                                 Text="Biên Hòa Đồng Nai"
+                                 materialDesign:HintAssist.Hint="Địa chỉ" Width="390"/>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Border Grid.Row="1">
+                        <Button Margin="529,14,23,10" Background="Transparent">
+                            <TextBlock Text="Quay lại"
+                                           Height="30"
+                                           Width="50"
+                                           Foreground="#6C63FF"/>
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="Click">
+                                    <i:InvokeCommandAction Command="{Binding Back}"
+                                                       CommandParameter="{Binding ElementName=HomeViewwd}"></i:InvokeCommandAction>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </Button>
+                    </Border>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

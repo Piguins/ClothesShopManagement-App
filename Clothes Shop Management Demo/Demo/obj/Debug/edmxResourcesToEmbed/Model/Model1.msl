@@ -39,7 +39,6 @@
           <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
           <ScalarProperty Name="DCHI" ColumnName="DCHI" />
           <ScalarProperty Name="SDT" ColumnName="SDT" />
-          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

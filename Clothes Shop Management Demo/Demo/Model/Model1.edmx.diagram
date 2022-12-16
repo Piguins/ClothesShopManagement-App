@@ -4,11 +4,11 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="a4976e3317684a98a7550611e77a22af" Name="Diagram1">
+      <Diagram DiagramId="1e7b40ed4cf04f12b206ac0b472588c7" Name="Diagram1">
         <EntityTypeShape EntityType="QLBHModel.CTHD" Width="1.5" PointX="5.25" PointY="2.875" IsExpanded="true" />
         <EntityTypeShape EntityType="QLBHModel.CTPN" Width="1.5" PointX="5.25" PointY="6.375" IsExpanded="true" />
         <EntityTypeShape EntityType="QLBHModel.HOADON" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLBHModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBHModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
         <EntityTypeShape EntityType="QLBHModel.NGUOIDUNG" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
         <EntityTypeShape EntityType="QLBHModel.PHIEUNHAP" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
         <EntityTypeShape EntityType="QLBHModel.SANPHAM" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />

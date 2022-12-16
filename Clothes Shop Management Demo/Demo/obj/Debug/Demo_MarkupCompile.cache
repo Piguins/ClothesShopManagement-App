@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\
+D:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\
 Demo
 none
 false
 DEBUG;TRACE
-D:\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\App.xaml
-33-366313693
+D:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\App.xaml
+36-1581212779
 2739969757
-72-585814365
-411846722780
-MainWindow.xaml;Resource\InfoCard.xaml;Resource\MainResource.xaml;Resource\StyleRecourse.xaml;UserControls\InforCard.xaml;UserControls\Item.xaml;View\AddCustomerView.xaml;View\AddImpotView.xaml;View\AddNDView.xaml;View\AddOrderView.xaml;View\AddProductView.xaml;View\ChangePassword.xaml;View\CustomersView.xaml;View\DetailCustomerView.xaml;View\DetailImport.xaml;View\DetailNDView.xaml;View\DetailsOrder.xaml;View\DetailsProduct.xaml;View\ForgetPassView.xaml;View\HomeView.xaml;View\ImportView.xaml;View\LoginView.xaml;View\LoginViewPage.xaml;View\MainView.xaml;View\NotiCustomer.xaml;View\NotiDev.xaml;View\OrderView.xaml;View\PrintOrderView.xaml;View\ProductViewPage.xaml;View\QLNVView.xaml;View\ReportView.xaml;View\SettingView.xaml;View\SignUpView.xaml;
+75-168072483
+411528410977
+MainWindow.xaml;Resource\InfoCard.xaml;Resource\MainResource.xaml;Resource\StyleRecourse.xaml;UserControls\InforCard.xaml;UserControls\Item.xaml;View\AddCustomerView.xaml;View\AddImpotView.xaml;View\AddNDView.xaml;View\AddOrderView.xaml;View\AddProductView.xaml;View\ChangePassword.xaml;View\CustomersView.xaml;View\DetailCustomerView.xaml;View\DetailImport.xaml;View\DetailMoi.xaml;View\DetailMoi1.xaml;View\DetailMoi2.xaml;View\DetailNDView.xaml;View\DetailsOrder.xaml;View\DetailsProduct.xaml;View\ForgetPassView.xaml;View\HomeView.xaml;View\ImportView.xaml;View\LoginView.xaml;View\LoginViewPage.xaml;View\MainView.xaml;View\NotiCustomer.xaml;View\NotiDev.xaml;View\OrderView.xaml;View\PrintOrderView.xaml;View\ProductViewPage.xaml;View\QLNVView.xaml;View\ReportView.xaml;View\SettingView.xaml;View\SignUpView.xaml;
 
 False
 
