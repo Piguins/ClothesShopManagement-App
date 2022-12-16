@@ -11,7 +11,8 @@
         DataContext="{StaticResource DetailOrderVM}"
         x:Name="AddImportwd"
         Height="600"
-        Width="700">
+        Width="700"
+      Background="White">
     <Border
         x:Name="DetailOrder"
         CornerRadius="15"
@@ -19,8 +20,6 @@
 
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="30"/>
-                <RowDefinition Height="50"/>
                 <RowDefinition Height="280"/>
                 <RowDefinition/>
                 <RowDefinition Height="100"/>
@@ -40,7 +39,7 @@
                 </Grid.RenderTransform>
 
             </Grid>
-            <Grid Grid.Row="2" Margin="0 -50 0 0">
+            <Grid Grid.Row="0" Margin="0 00 0 0">
                 <Border
                         Width="694"
                         HorizontalAlignment="Center"
@@ -54,6 +53,7 @@
                                 Text="THÔNG TIN HÓA ĐƠN" FontSize = "16"
                                 FontFamily="{StaticResource Custom}"
                                 HorizontalAlignment="Center"
+                                Foreground="#6C63FF"
                                 />
                     <StackPanel Orientation="Vertical">
                         <StackPanel Orientation="Horizontal">
@@ -212,10 +212,10 @@
                 </StackPanel>
             </Grid>
 
-            <Grid Grid.Row="3">
+            <Grid Grid.Row="1">
                 <StackPanel>
                     <Border
-                        Margin="-12,-50,-10,0"
+                        Margin="-12,-10,-10,0"
                         Width="680"
                         Height="40"
                         CornerRadius="10"
@@ -283,8 +283,8 @@
                     </Border>
                     <ListView x:Name="ListViewSP" 
                           SelectionMode="Single"
-                          ScrollViewer.VerticalScrollBarVisibility="Visible"
-                          Height="140"
+                          ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                          Height="170"
                         >
                         <ListView.ItemTemplate>
                             <DataTemplate>
@@ -362,16 +362,15 @@
                     </ListView>
                 </StackPanel>
             </Grid>
-            <Grid Grid.Row="4"
+            <Grid Grid.Row="2"
                   Margin="0,4,0,0"
                   >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
-                    <ColumnDefinition Width="50"/>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Grid Grid.Column="0" Margin="0 -25 0 0">
+                <Grid Grid.Column="0" Margin="0 0 0 0">
                     <StackPanel Orientation="Vertical">
                         <Button
                                     BorderThickness="0"
@@ -418,10 +417,10 @@
                     </StackPanel>
                     
                 </Grid>
-                <Grid Grid.Column="2"
+                <Grid Grid.Column="1"
                       HorizontalAlignment="Right"
                       >
-                    <StackPanel Margin="0,-30,0,18">
+                    <StackPanel Margin="0,0,0,18">
                         <TextBlock
                             Margin="0,6,0,0"
                             Foreground="#6C63FF"
@@ -445,8 +444,8 @@
                         />
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Column="3">
-                    <StackPanel Margin="0,-30,0,0" Height="112" VerticalAlignment="Top">
+                <Grid Grid.Column="2">
+                    <StackPanel Margin="0,0,0,0" VerticalAlignment="Top">
                         <TextBlock
                             HorizontalAlignment="Right"
                             Margin="0,6,10,0"
