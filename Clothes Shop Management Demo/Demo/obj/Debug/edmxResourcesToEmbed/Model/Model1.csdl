@@ -45,6 +45,7 @@
     <Property Name="GIOITINH" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
     <Property Name="DCHI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="SDT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="HOADONs" Relationship="Self.FK_KH_HD" FromRole="KHACHHANG" ToRole="HOADON" />
   </EntityType>
   <EntityType Name="NGUOIDUNG">

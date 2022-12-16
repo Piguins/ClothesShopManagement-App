@@ -38,6 +38,7 @@
     <Property Name="GIOITINH" Type="nvarchar" MaxLength="5" />
     <Property Name="DCHI" Type="nvarchar" MaxLength="50" />
     <Property Name="SDT" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="100" />
   </EntityType>
   <EntityType Name="NGUOIDUNG">
     <Key>

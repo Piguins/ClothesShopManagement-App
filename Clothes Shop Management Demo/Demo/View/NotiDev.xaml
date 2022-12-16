@@ -4,11 +4,74 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Demo.View"
+      xmlns:i = "http://schemas.microsoft.com/expression/2010/interactivity"
+      xmlns:materialDesign = "http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="NotiDev">
+      d:DesignHeight="605" d:DesignWidth="700"
+      Title="NotiDev"
+      Background="Transparent">
 
     <Grid>
+        <StackPanel Orientation = "Horizontal" Margin="30 0 0 0">
+
+            <TextBlock
+                        FontWeight = "SemiBold"
+                        FontFamily = "{StaticResource Custom}"
+                        FontSize = "30"
+                        Foreground = "#6C63FF"
+                        Margin = "15,-500,0,0" Width = "442"
+                        VerticalAlignment = "Center"
+                    ><Run Text = "BÁO LỖI PHẦN MỀM" />
+            </TextBlock >
+        </StackPanel>
         
+        <StackPanel>
+            <TextBox
+                            Margin="50,150,0,346" FontWeight="Normal"
+                                    HorizontalAlignment="Left"
+                                    Width="550"
+                                    BorderThickness="1"
+                                    materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                    materialDesign:HintAssist.Hint="Nhập tiêu đề"
+                                    materialDesign:TextFieldAssist.TextBoxViewMargin="10,5,0,0"
+                                    materialDesign:TextFieldAssist.UnderlineBrush="Gray"
+                  
+                                    Foreground="Black"
+                                    HorizontalScrollBarVisibility="Auto"
+                                    AcceptsReturn="True"
+                                    TextWrapping="Wrap" Height="35"/>
+        </StackPanel>
+        <StackPanel Margin="0 -70 0 0">
+        <TextBox
+                            Margin="50,300,0,118" FontWeight="Normal"
+                                    HorizontalAlignment="Left"
+                                    Width="550"
+                                    BorderThickness="1"
+                                    materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                                    materialDesign:HintAssist.Hint="Nhập nội dung cần gửi"
+                                    materialDesign:TextFieldAssist.TextBoxViewMargin="10,5,0,0"
+                                    materialDesign:TextFieldAssist.UnderlineBrush="Gray"
+                                    Foreground="Black"
+                                    HorizontalScrollBarVisibility="Auto"
+                                    AcceptsReturn="True"
+                                    TextWrapping="Wrap" Height="185"/>
+        </StackPanel>
+
+        <Button Content="Gửi" VerticalAlignment="Top"
+                                Margin="501,474,113,0"
+                                BorderThickness="0"
+                                materialDesign:ButtonAssist.CornerRadius="10"
+                                Background="#6C63FF">
+        </Button>
+
+        <Button Content="Đính kèm" VerticalAlignment="Top"
+                                Margin="61,474,542,0"
+                                BorderThickness="0"
+                                materialDesign:ButtonAssist.CornerRadius="10"
+                                Background="#6C63FF" Click="Button_Click">
+        </Button>
+
     </Grid>
 </Page>

@@ -9,7 +9,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="605" d:DesignWidth="700"
       Title="NotiCustomer"
-      Background="White">
+      Background="Transparent">
 
     <Grid>
         <Grid.RowDefinitions>
