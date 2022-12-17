@@ -24,4 +24,6 @@
     <viewmodel:RegisterViewModel x:Key="RegisterVM"></viewmodel:RegisterViewModel>
     <viewmodel:ForgetPassViewModel x:Key="ForgetPassVM"></viewmodel:ForgetPassViewModel>
     <viewmodel:PrintOrderViewModel x:Key="PrintOrderVM"></viewmodel:PrintOrderViewModel>
+    <viewmodel:NotiCustomerViewModel x:Key="NotiCustomerVM"></viewmodel:NotiCustomerViewModel>
+    <viewmodel:NotiDevViewModel x:Key="NotiDevVM"></viewmodel:NotiDevViewModel>
 </ResourceDictionary>

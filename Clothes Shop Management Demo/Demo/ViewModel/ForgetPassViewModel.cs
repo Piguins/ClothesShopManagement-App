@@ -31,7 +31,7 @@ namespace Demo.ViewModel
             int dem = DataProvider.Ins.DB.NGUOIDUNGs.Where(p => p.MAIL == parameter.MailAddress.Text).Count();
             if (dem == 0)
             {
-                MessageBox.Show("Email này chưa được đăng lý !", "THÔNG BÁO", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Email này chưa được đăng ký !", "THÔNG BÁO", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
             Random rand = new Random();

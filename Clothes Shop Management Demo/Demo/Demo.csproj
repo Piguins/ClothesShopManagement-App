@@ -192,6 +192,8 @@
     <Compile Include="ViewModel\AddOrderViewModel.cs" />
     <Compile Include="ViewModel\AddProductViewModel.cs" />
     <Compile Include="ViewModel\ChangePasswordViewModel.cs" />
+    <Compile Include="ViewModel\NotiCustomerViewModel.cs" />
+    <Compile Include="ViewModel\NotiDevViewModel.cs" />
     <Compile Include="ViewModel\PrintOrderViewModel.cs" />
     <Compile Include="ViewModel\SettingViewModel.cs" />
     <Compile Include="ViewModel\ReportViewModel.cs" />

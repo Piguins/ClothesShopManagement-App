@@ -25,8 +25,8 @@ namespace Demo.Model
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<CTHD> CTHDs { get; set; }
         public virtual DbSet<CTPN> CTPNs { get; set; }
+        public virtual DbSet<CTHD> CTHDs { get; set; }
         public virtual DbSet<HOADON> HOADONs { get; set; }
         public virtual DbSet<KHACHHANG> KHACHHANGs { get; set; }
         public virtual DbSet<NGUOIDUNG> NGUOIDUNGs { get; set; }

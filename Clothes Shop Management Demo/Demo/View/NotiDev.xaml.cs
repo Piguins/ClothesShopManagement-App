@@ -26,27 +26,5 @@ namespace Demo.View
         {
             InitializeComponent();
         }
-
-        List<string> _lstFilePath;
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            OpenFileDialog file = new OpenFileDialog();
-            file.Title = "Select attached files";
-            file.Multiselect = true;
-            file.RestoreDirectory = true;
-            if (file.ShowDialog() == true)
-            {
-                _lstFilePath = new List<string>();
-                foreach (var item in file.FileNames)
-                {
-                    _lstFilePath.Add(item);
-                    if (!File.Exists(item))
-                    {
-                        MessageBox.Show("File does not exist", "Email", MessageBoxButton.OK, MessageBoxImage.Warning);
-                        return;
-                    }
-                }
-            }
-        }
     }
 }
