@@ -13,12 +13,14 @@ using System.Windows.Input;
 using Microsoft.Win32;
 using System.IO;
 using System.Windows.Interop;
+using System.Net.Mime;
 
 namespace Demo.ViewModel
 {
     public class NotiDevViewModel : BaseViewModel
     {
         List<string> file_list;
+        string[] files;
         public ICommand SendMSG { get; set; }
         public ICommand SendAttachment { get; set; }
         public NotiDevViewModel()
@@ -34,10 +36,11 @@ namespace Demo.ViewModel
                 file.Title = "Select attached files";
                 file.Multiselect = true;
                 file.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif";
+                file.RestoreDirectory = true;
                 if (file.ShowDialog()==true)
                 {
                     file_list = new List<string>();
-                    foreach (var item in file_list)
+                    foreach (var item in file.FileNames)
                     {
                         file_list.Add(item);
                         if (!File.Exists(item))
@@ -47,8 +50,9 @@ namespace Demo.ViewModel
                         }
                     }
                 }
-                int fileNumber = file.FileNames.Count();
-                parameter.attachButton.Content="Đã đính kèm!";
+                files = file_list.ToArray();
+                int filenum = file.FileNames.Count();
+                parameter.attachButton.Content="Attachments("+filenum+")";
             }
             catch (Exception ex)
             {
@@ -58,17 +62,22 @@ namespace Demo.ViewModel
         }
         void _SendMSG(NotiDev parameter)
         {
-            MailMessage message;
+            MailMessage message = new MailMessage();
             Attachment attachment;
             string msg = parameter.MSGBox.Text;
-            message = new MailMessage("vhnm3004@gmail.com", "vhnm3004@outlook.com", parameter.SubjectBox.Text, msg);
-            foreach (var item in file_list.ToArray())
+            message.From = new MailAddress("vhnm3004@gmail.com");
+            message.To.Add("vhnm3004@outlook.com");
+            message.Subject = parameter.SubjectBox.Text;
+            message.Body = parameter.MSGBox.Text;
+            message.IsBodyHtml = true;
+            foreach (var item in files)
             {
-                attachment = new Attachment(item);
+                attachment = new System.Net.Mail.Attachment(item);
                 message.Attachments.Add(attachment);
             }
             SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
             smtpClient.EnableSsl = true;
+            smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
             smtpClient.Credentials = new NetworkCredential("vhnm3004@gmail.com", "snnaarxvfndqhptl");
             smtpClient.Send(message);
             MessageBox.Show("Đã gửi báo lỗi thành công!", "Thông báo");
