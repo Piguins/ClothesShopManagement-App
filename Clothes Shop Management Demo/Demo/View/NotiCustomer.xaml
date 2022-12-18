@@ -10,8 +10,14 @@
       d:DesignHeight="605" d:DesignWidth="700"
       Title="NotiCustomer"
       Background="Transparent"
+      Name="NotiCustomerView"
       DataContext="{StaticResource NotiCustomerVM}">
-
+    <i:Interaction.Triggers >
+        <i:EventTrigger EventName = "Loaded" >
+            <i:InvokeCommandAction Command = "{Binding LoadCsCommand}"
+                                   CommandParameter="{Binding ElementName=NotiCustomerView}"></i:InvokeCommandAction >
+        </i:EventTrigger >
+    </i:Interaction.Triggers >
     <Grid>
         <Grid.RowDefinitions>
 
@@ -30,14 +36,30 @@
         </StackPanel>
 
         <StackPanel Orientation = "Horizontal"  Margin="50 -300 0 0" RenderTransformOrigin="0.433,0.694">
-            <ComboBox
-                                    Width="250" 
-                                    BorderThickness="1"
-                                    materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
-                                    materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                    materialDesign:HintAssist.Hint="Chọn khách hàng"
-                                    materialDesign:TextFieldAssist.TextBoxViewMargin="10,6,0,0"
-                                    materialDesign:TextFieldAssist.UnderlineBrush="Black" Height="38"/>
+            <ComboBox   Width="250" 
+                        BorderThickness="1"
+                        Name="CustomerList"
+                        materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                        materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                        materialDesign:HintAssist.Hint="Chọn khách hàng"
+                        materialDesign:TextFieldAssist.TextBoxViewMargin="10,6,0,0"
+                        materialDesign:TextFieldAssist.UnderlineBrush="Black" Height="38"
+                        ItemsSource="{Binding ListKH}"
+                        >
+                <ComboBox.ItemTemplate >
+                    <DataTemplate >
+                        <StackPanel Orientation = "Horizontal" >
+                            <TextBlock Text = "{Binding HOTEN}" />
+                        </StackPanel >
+                    </DataTemplate >
+                </ComboBox.ItemTemplate >
+                <i:Interaction.Triggers >
+                    <i:EventTrigger EventName = "SelectionChanged" >
+                        <i:InvokeCommandAction Command = "{Binding CustomerChanged}"
+                                                           CommandParameter="{Binding ElementName=NotiCustomerView}"></i:InvokeCommandAction >
+                    </i:EventTrigger >
+                </i:Interaction.Triggers >
+            </ComboBox>
         </StackPanel>
         <StackPanel Margin="350,128,100,408">
             <TextBox
@@ -50,10 +72,9 @@
                                     materialDesign:HintAssist.Hint="Email khách hàng"
                                     materialDesign:TextFieldAssist.TextBoxViewMargin="10,5,0,0"
                                     materialDesign:TextFieldAssist.UnderlineBrush="Gray"
-                  
+                                    Name="EmailAddress"
                                     Foreground="Black"
                                     HorizontalScrollBarVisibility="Auto"
-                                    AcceptsReturn="True"
                                     TextWrapping="Wrap" Height="38"/>
         </StackPanel>
         <StackPanel>
@@ -67,7 +88,7 @@
                                     materialDesign:HintAssist.Hint="Nhập tiêu đề"
                                     materialDesign:TextFieldAssist.TextBoxViewMargin="10,5,0,0"
                                     materialDesign:TextFieldAssist.UnderlineBrush="Gray"
-                  
+                                    Name ="SubjectBox"
                                     Foreground="Black"
                                     HorizontalScrollBarVisibility="Auto"
                                     AcceptsReturn="True"
@@ -87,20 +108,36 @@
                                     Foreground="Black"
                                     HorizontalScrollBarVisibility="Auto"
                                     AcceptsReturn="True"
-                                    TextWrapping="Wrap"/>
+                                    TextWrapping="Wrap"
+                                    Name="BodyBox"/>
 
         <Button Content="Gửi" VerticalAlignment="Top"
-                                Margin="514,527,100,0"
+                                Margin="501,509,113,0"
                                 BorderThickness="0"
                                 materialDesign:ButtonAssist.CornerRadius="10"
                                 Background="#6C63FF">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction  Command="{Binding SendMSG}"
+                                            CommandParameter="{Binding ElementName=NotiCustomerView}">
+                    </i:InvokeCommandAction>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
         </Button>
 
         <Button Content="Đính kèm" VerticalAlignment="Top"
-                                Margin="77,527,526,0"
+                                Margin="61,509,499,0"
                                 BorderThickness="0"
                                 materialDesign:ButtonAssist.CornerRadius="10"
-                                Background="#6C63FF" Click="Button_Click">
+                                Background="#6C63FF"
+                                Name ="attachButton">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <i:InvokeCommandAction  Command="{Binding SendAttachment}"
+                                            CommandParameter="{Binding ElementName=NotiCustomerView}">
+                    </i:InvokeCommandAction>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
         </Button>
 
     </Grid>
