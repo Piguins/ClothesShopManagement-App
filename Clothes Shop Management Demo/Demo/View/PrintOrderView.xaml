@@ -68,7 +68,8 @@
                                            Text="{Binding Source=TenKH}"
                                        FontSize="20"
                                        FontFamily="{StaticResource Custom}"
-                                       Width="240"/>
+                                       Width="240"
+                                       Margin="0,10,0,0"/>
                                 
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
@@ -176,7 +177,7 @@
                         <ListView x:Name="ListSP" 
                           SelectionMode="Single"
                           ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                            Height="240" d:ItemsSource="{d:SampleData ItemCount=5}"
+                            Height="220" d:ItemsSource="{d:SampleData ItemCount=3}"
                         >
                             <ListView.ItemTemplate>
                                 <DataTemplate>

@@ -105,29 +105,29 @@
                         </ComboBox>
                     </Border>
                     <TextBox
-                                x:Name="tbxSearch"
-                                Width="320"
-                                Height="40"
-                                Margin="10,0,0,0"
-                                BorderBrush="#6C63FF"
-                                Foreground="White"
-                                FontSize="16"
-                                FontWeight="SemiBold"
-                                materialDesign:HintAssist.Hint="Tìm Kiếm"
-                                materialDesign:HintAssist.FontFamily="{StaticResource Custom}"
-                                materialDesign:HintAssist.Foreground="White"
-                                materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
-                                materialDesign:TextFieldAssist.TextBoxViewMargin="10,3,0,0"
-                                BorderThickness="2"
-                                VerticalAlignment="Center" CaretBrush="Black" >
-                        <i:Interaction.Triggers>
-                            <i:EventTrigger EventName="TextChanged">
-                                <i:InvokeCommandAction Command="{Binding SearchCommand}"
-                                                       CommandParameter="{Binding ElementName=Productwd}"></i:InvokeCommandAction>
-                            </i:EventTrigger>
-                        </i:Interaction.Triggers>
-                    </TextBox>
+                         x:Name = "tbxSearch"
+                                Width = "310"
+                                Height = "40"
+                                Margin = "15,0,0,0"
+                                BorderBrush = "#6C63FF"
+                                Foreground = "Black"
+                                FontSize = "14"
+                                FontWeight = "SemiBold"
+                                materialDesign:HintAssist.Hint = "Tìm kiếm"
+                                materialDesign:HintAssist.FontFamily = "{StaticResource Custom}"
+                                materialDesign:HintAssist.Foreground = "White"
+                                materialDesign:TextFieldAssist.TextFieldCornerRadius = "10"
+                                materialDesign:TextFieldAssist.DecorationVisibility = "Hidden"
+                                materialDesign:TextFieldAssist.TextBoxViewMargin = "10,6,0,0"
+                                BorderThickness = "2"
+                                VerticalAlignment = "Center" CaretBrush = "Gray" >
+                        <i:Interaction.Triggers >
+                            <i:EventTrigger EventName = "TextChanged" >
+                                <i:InvokeCommandAction Command = "{Binding SearchCommand}"
+                                                       CommandParameter="{Binding ElementName=Productwd}"></i:InvokeCommandAction >
+                            </i:EventTrigger >
+                        </i:Interaction.Triggers >
+                    </TextBox >
                     <Button
                         Content="THÊM"
                         Margin="10,0,0,0"

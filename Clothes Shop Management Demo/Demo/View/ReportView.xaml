@@ -121,7 +121,7 @@
                             </lvc:CartesianChart.AxisY>
 
                             <lvc:CartesianChart.Series>
-                                <lvc:LineSeries Name="Slm" Values="4000000,10000000,12000000,1500000,2500000,13000000,8000000,3000000,5000000,12000000,10000000,16000000" 
+                                <lvc:LineSeries Name="Slm" Values="4000000,5000000,7000000,14000000,2500000,13000000,8000000,3000000,5000000,12000000,10000000,16000000" 
                                                 StrokeThickness="1" 
                                                 Stroke="#6C63FF" PointGeometrySize="0">
                                     <i:Interaction.Triggers>

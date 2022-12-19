@@ -1222,3 +1222,9 @@ D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Sho
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailsProduct.baml
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\NotiCustomer.baml
 D:\College\Đồ Án LTTQ\Repository\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\NotiDev.baml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailMoi.g.cs
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailMoi1.g.cs
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailMoi2.g.cs
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailMoi.baml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailMoi1.baml
+E:\IT008\Clothes-Shop-Management-Project\Clothes Shop Management Demo\Demo\obj\Debug\View\DetailMoi2.baml

@@ -60,7 +60,7 @@
                                     IsEnabled="False"
                                     MaxWidth="400" x:Name="Ten"
                                     FontFamily="{StaticResource Custom}"
-                                    materialDesign:HintAssist.Hint="Họ tên"/>
+                                    materialDesign:HintAssist.Hint="Họ tên" />
                         </StackPanel>
                         <StackPanel
                         Orientation="Horizontal"

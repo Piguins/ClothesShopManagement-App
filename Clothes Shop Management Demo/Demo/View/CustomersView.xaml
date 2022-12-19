@@ -204,10 +204,11 @@
                         Width = "675"
                         SelectionMode = "Single"
                         ScrollViewer.VerticalScrollBarVisibility = "Hidden"
-                        ItemsSource = "{Binding listKH}"
+                        ItemsSource = "{Binding listKH}" 
+                        Foreground="White"
                         >
                         <ListView.ItemTemplate >
-                            <DataTemplate >
+                            <DataTemplate>
                                 <Border
                                     Width = "645"
                                     Height = "40"

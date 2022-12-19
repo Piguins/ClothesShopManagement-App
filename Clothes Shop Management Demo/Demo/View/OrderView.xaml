@@ -179,7 +179,8 @@
                           Height="410"
                           Width="675"
                           SelectionMode="Single"
-                          ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                          ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                              Foreground="White">
 
                         <ListView.ItemTemplate>
                             <DataTemplate>

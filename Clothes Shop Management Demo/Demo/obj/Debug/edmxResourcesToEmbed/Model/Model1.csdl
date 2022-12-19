@@ -1,16 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="QLBHModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="CTPN">
-    <Key>
-      <PropertyRef Name="MAPN" />
-      <PropertyRef Name="MASP" />
-    </Key>
-    <Property Name="MAPN" Type="Int32" Nullable="false" />
-    <Property Name="MASP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="SL" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="PHIEUNHAP" Relationship="Self.FK_CN_PN" FromRole="CTPN" ToRole="PHIEUNHAP" />
-    <NavigationProperty Name="SANPHAM" Relationship="Self.FK_CN_SP" FromRole="CTPN" ToRole="SANPHAM" />
-  </EntityType>
   <EntityType Name="CTHD">
     <Key>
       <PropertyRef Name="SOHD" />
@@ -21,6 +10,17 @@
     <Property Name="SL" Type="Int32" Nullable="false" />
     <NavigationProperty Name="HOADON" Relationship="Self.FK_CT_HD" FromRole="CTHD" ToRole="HOADON" />
     <NavigationProperty Name="SANPHAM" Relationship="Self.FK_CT_SP" FromRole="CTHD" ToRole="SANPHAM" />
+  </EntityType>
+  <EntityType Name="CTPN">
+    <Key>
+      <PropertyRef Name="MAPN" />
+      <PropertyRef Name="MASP" />
+    </Key>
+    <Property Name="MAPN" Type="Int32" Nullable="false" />
+    <Property Name="MASP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SL" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PHIEUNHAP" Relationship="Self.FK_CN_PN" FromRole="CTPN" ToRole="PHIEUNHAP" />
+    <NavigationProperty Name="SANPHAM" Relationship="Self.FK_CN_SP" FromRole="CTPN" ToRole="SANPHAM" />
   </EntityType>
   <EntityType Name="HOADON">
     <Key>
@@ -45,7 +45,6 @@
     <Property Name="GIOITINH" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
     <Property Name="DCHI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="SDT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="HOADONs" Relationship="Self.FK_KH_HD" FromRole="KHACHHANG" ToRole="HOADON" />
   </EntityType>
   <EntityType Name="NGUOIDUNG">
@@ -89,33 +88,9 @@
     <Property Name="SL" Type="Int32" Nullable="false" />
     <Property Name="LOAISP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="SIZE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="CTPNs" Relationship="Self.FK_CN_SP" FromRole="SANPHAM" ToRole="CTPN" />
     <NavigationProperty Name="CTHDs" Relationship="Self.FK_CT_SP" FromRole="SANPHAM" ToRole="CTHD" />
+    <NavigationProperty Name="CTPNs" Relationship="Self.FK_CN_SP" FromRole="SANPHAM" ToRole="CTPN" />
   </EntityType>
-  <Association Name="FK_CN_PN">
-    <End Role="PHIEUNHAP" Type="Self.PHIEUNHAP" Multiplicity="1" />
-    <End Role="CTPN" Type="Self.CTPN" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="PHIEUNHAP">
-        <PropertyRef Name="MAPN" />
-      </Principal>
-      <Dependent Role="CTPN">
-        <PropertyRef Name="MAPN" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_CN_SP">
-    <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="1" />
-    <End Role="CTPN" Type="Self.CTPN" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="SANPHAM">
-        <PropertyRef Name="MASP" />
-      </Principal>
-      <Dependent Role="CTPN">
-        <PropertyRef Name="MASP" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_CT_HD">
     <End Role="HOADON" Type="Self.HOADON" Multiplicity="1" />
     <End Role="CTHD" Type="Self.CTHD" Multiplicity="*" />
@@ -136,6 +111,30 @@
         <PropertyRef Name="MASP" />
       </Principal>
       <Dependent Role="CTHD">
+        <PropertyRef Name="MASP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CN_PN">
+    <End Role="PHIEUNHAP" Type="Self.PHIEUNHAP" Multiplicity="1" />
+    <End Role="CTPN" Type="Self.CTPN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PHIEUNHAP">
+        <PropertyRef Name="MAPN" />
+      </Principal>
+      <Dependent Role="CTPN">
+        <PropertyRef Name="MAPN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CN_SP">
+    <End Role="SANPHAM" Type="Self.SANPHAM" Multiplicity="1" />
+    <End Role="CTPN" Type="Self.CTPN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SANPHAM">
+        <PropertyRef Name="MASP" />
+      </Principal>
+      <Dependent Role="CTPN">
         <PropertyRef Name="MASP" />
       </Dependent>
     </ReferentialConstraint>
@@ -177,21 +176,13 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="QLBHEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="CTPNs" EntityType="Self.CTPN" />
     <EntitySet Name="CTHDs" EntityType="Self.CTHD" />
+    <EntitySet Name="CTPNs" EntityType="Self.CTPN" />
     <EntitySet Name="HOADONs" EntityType="Self.HOADON" />
     <EntitySet Name="KHACHHANGs" EntityType="Self.KHACHHANG" />
     <EntitySet Name="NGUOIDUNGs" EntityType="Self.NGUOIDUNG" />
     <EntitySet Name="PHIEUNHAPs" EntityType="Self.PHIEUNHAP" />
     <EntitySet Name="SANPHAMs" EntityType="Self.SANPHAM" />
-    <AssociationSet Name="FK_CN_PN" Association="Self.FK_CN_PN">
-      <End Role="PHIEUNHAP" EntitySet="PHIEUNHAPs" />
-      <End Role="CTPN" EntitySet="CTPNs" />
-    </AssociationSet>
-    <AssociationSet Name="FK_CN_SP" Association="Self.FK_CN_SP">
-      <End Role="SANPHAM" EntitySet="SANPHAMs" />
-      <End Role="CTPN" EntitySet="CTPNs" />
-    </AssociationSet>
     <AssociationSet Name="FK_CT_HD" Association="Self.FK_CT_HD">
       <End Role="HOADON" EntitySet="HOADONs" />
       <End Role="CTHD" EntitySet="CTHDs" />
@@ -199,6 +190,14 @@
     <AssociationSet Name="FK_CT_SP" Association="Self.FK_CT_SP">
       <End Role="SANPHAM" EntitySet="SANPHAMs" />
       <End Role="CTHD" EntitySet="CTHDs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CN_PN" Association="Self.FK_CN_PN">
+      <End Role="PHIEUNHAP" EntitySet="PHIEUNHAPs" />
+      <End Role="CTPN" EntitySet="CTPNs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CN_SP" Association="Self.FK_CN_SP">
+      <End Role="SANPHAM" EntitySet="SANPHAMs" />
+      <End Role="CTPN" EntitySet="CTPNs" />
     </AssociationSet>
     <AssociationSet Name="FK_HD_ND" Association="Self.FK_HD_ND">
       <End Role="NGUOIDUNG" EntitySet="NGUOIDUNGs" />
