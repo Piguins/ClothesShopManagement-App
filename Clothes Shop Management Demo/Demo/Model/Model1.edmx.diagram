@@ -4,18 +4,18 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="604b699841a74e2a8336773d66fd2e97" Name="Diagram1">
-        <EntityTypeShape EntityType="QLBHModel.CTHD" Width="1.5" PointX="5.25" PointY="2.875" IsExpanded="true" />
+      <Diagram DiagramId="52e0f959ad484805a1cc0218e9171ddc" Name="Diagram1">
         <EntityTypeShape EntityType="QLBHModel.CTPN" Width="1.5" PointX="5.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBHModel.CTHD" Width="1.5" PointX="5.25" PointY="2.875" IsExpanded="true" />
         <EntityTypeShape EntityType="QLBHModel.HOADON" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLBHModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBHModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
         <EntityTypeShape EntityType="QLBHModel.NGUOIDUNG" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
         <EntityTypeShape EntityType="QLBHModel.PHIEUNHAP" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
         <EntityTypeShape EntityType="QLBHModel.SANPHAM" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
-        <AssociationConnector Association="QLBHModel.FK_CT_HD" ManuallyRouted="false" />
-        <AssociationConnector Association="QLBHModel.FK_CT_SP" ManuallyRouted="false" />
         <AssociationConnector Association="QLBHModel.FK_CN_PN" ManuallyRouted="false" />
         <AssociationConnector Association="QLBHModel.FK_CN_SP" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBHModel.FK_CT_HD" ManuallyRouted="false" />
+        <AssociationConnector Association="QLBHModel.FK_CT_SP" ManuallyRouted="false" />
         <AssociationConnector Association="QLBHModel.FK_HD_ND" ManuallyRouted="false" />
         <AssociationConnector Association="QLBHModel.FK_KH_HD" ManuallyRouted="false" />
         <AssociationConnector Association="QLBHModel.FK_PN_ND" ManuallyRouted="false" />

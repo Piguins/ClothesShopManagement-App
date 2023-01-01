@@ -27,12 +27,41 @@ namespace Demo.ViewModel
         }
         void _PrintOrderView(DetailsOrder paramater)
         {
+            KHACHHANG tempKH=new KHACHHANG();
+            HOADON tempHD=new HOADON();
+            foreach (HOADON temp in DataProvider.Ins.DB.HOADONs)
+            {
+                if (temp.SOHD == int.Parse(paramater.SoHD.Text))
+                {
+                    tempHD = temp;
+                    foreach (KHACHHANG kh in DataProvider.Ins.DB.KHACHHANGs)
+                    {
+                        if (temp.MAKH==kh.MAKH)
+                        {
+                            tempKH = kh;
+                            break;
+                        }
+                    }
+                    break;
+                }
+            }
             PrintOrderView printOrderView = new PrintOrderView();
+            printOrderView.TenKH.Text = tempKH.HOTEN;
+            printOrderView.sdt.Text = tempKH.SDT;
+            printOrderView.dc.Text = tempKH.DCHI;
+            printOrderView.ngay.Text = tempHD.NGHD.ToShortDateString();
+            printOrderView.sohd.Text = paramater.SoHD.Text;
+            List<HienThi> list = new List<HienThi>();
+            foreach (CTHD a in tempHD.CTHDs)
+            {
+                list.Add(new HienThi(a.MASP, a.SANPHAM.TENSP, a.SANPHAM.SIZE, a.SL, a.SANPHAM.GIA, a.SL * a.SANPHAM.GIA));
+            }
+            printOrderView.ListSP.ItemsSource = list;
             MainViewModel.MainFrame.Content = printOrderView;
         }
         void _DeleteOrder(DetailsOrder parameter)
         {
-            MessageBoxResult h = System.Windows.MessageBox.Show("Bạn muốn xóa hóa đơn này?", "THÔNG BÁO", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+            MessageBoxResult h = System.Windows.MessageBox.Show("Bạn muốn xóa hóa đơn này?", "THÔNG BÁO", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (h == MessageBoxResult.Yes)
             {
                 foreach (HOADON temp in DataProvider.Ins.DB.HOADONs)
