@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="QLBHModelStoreContainer" CdmEntityContainer="QLBHEntities">
-    <EntitySetMapping Name="CTPNs">
-      <EntityTypeMapping TypeName="QLBHModel.CTPN">
-        <MappingFragment StoreEntitySet="CTPN">
-          <ScalarProperty Name="MAPN" ColumnName="MAPN" />
+    <EntitySetMapping Name="CTHDs">
+      <EntityTypeMapping TypeName="QLBHModel.CTHD">
+        <MappingFragment StoreEntitySet="CTHD">
+          <ScalarProperty Name="SOHD" ColumnName="SOHD" />
           <ScalarProperty Name="MASP" ColumnName="MASP" />
           <ScalarProperty Name="SL" ColumnName="SL" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="CTHDs">
-      <EntityTypeMapping TypeName="QLBHModel.CTHD">
-        <MappingFragment StoreEntitySet="CTHD">
-          <ScalarProperty Name="SOHD" ColumnName="SOHD" />
+    <EntitySetMapping Name="CTPNs">
+      <EntityTypeMapping TypeName="QLBHModel.CTPN">
+        <MappingFragment StoreEntitySet="CTPN">
+          <ScalarProperty Name="MAPN" ColumnName="MAPN" />
           <ScalarProperty Name="MASP" ColumnName="MASP" />
           <ScalarProperty Name="SL" ColumnName="SL" />
         </MappingFragment>
@@ -39,7 +39,6 @@
           <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
           <ScalarProperty Name="DCHI" ColumnName="DCHI" />
           <ScalarProperty Name="SDT" ColumnName="SDT" />
-          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
