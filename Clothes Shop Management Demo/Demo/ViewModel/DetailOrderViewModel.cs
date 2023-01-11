@@ -27,6 +27,7 @@ namespace Demo.ViewModel
         }
         void _PrintOrderView(DetailsOrder paramater)
         {
+
             KHACHHANG tempKH=new KHACHHANG();
             HOADON tempHD=new HOADON();
             foreach (HOADON temp in DataProvider.Ins.DB.HOADONs)
@@ -45,12 +46,16 @@ namespace Demo.ViewModel
                     break;
                 }
             }
+
             PrintOrderView printOrderView = new PrintOrderView();
             printOrderView.TenKH.Text = tempKH.HOTEN;
             printOrderView.sdt.Text = tempKH.SDT;
             printOrderView.dc.Text = tempKH.DCHI;
             printOrderView.ngay.Text = tempHD.NGHD.ToShortDateString();
             printOrderView.sohd.Text = paramater.SoHD.Text;
+            printOrderView.GG.Text = "- " + String.Format("{0:0,0}", (tempHD.TRIGIA * 100 / (100 - tempHD.KHUYENMAI)) * tempHD.KHUYENMAI / 100) + " VND";
+            printOrderView.TT1.Text = String.Format("{0:0,0}", tempHD.TRIGIA) + " VND";
+            printOrderView.TT.Text = String.Format("{0:0,0}", tempHD.TRIGIA) + " VND";
             List<HienThi> list = new List<HienThi>();
             foreach (CTHD a in tempHD.CTHDs)
             {

@@ -231,6 +231,14 @@
                     </Grid>
                 </Grid>
             </Grid>
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Loaded">
+                    <i:InvokeCommandAction  Command="{Binding Loadwd}"
+                                    CommandParameter="{Binding ElementName=SettingViewPage}">
+
+                    </i:InvokeCommandAction>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
         </Border>
     </Grid>
 </Page>

@@ -255,7 +255,7 @@
                                 VerticalAlignment="Center"
                                 FontFamily="{StaticResource Custom}"
                                 FontSize="12" ></TextBlock>
-                             
+
                             </Grid>
                             <Grid Grid.Column="3">
                                 <TextBlock Margin="30,0,0,0"
@@ -265,8 +265,8 @@
                                 MaxWidth="150"
                                 FontFamily="{StaticResource Custom}"
                                 FontSize="12" ></TextBlock>
-                                    
-                                
+
+
                             </Grid>
                             <Grid Grid.Column="4">
                                 <TextBlock
@@ -415,7 +415,7 @@
                             </i:Interaction.Triggers>
                         </Button>
                     </StackPanel>
-                    
+
                 </Grid>
                 <Grid Grid.Column="1"
                       HorizontalAlignment="Right"
@@ -445,7 +445,11 @@
                     </StackPanel>
                 </Grid>
                 <Grid Grid.Column="2">
-                    <StackPanel Margin="0,0,0,0" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="232*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel VerticalAlignment="Top" Grid.ColumnSpan="2">
                         <TextBlock
                             HorizontalAlignment="Right"
                             Margin="0,6,10,0"
