@@ -16,14 +16,21 @@ namespace Demo.ViewModel
         private string MaKH;
         public ICommand GetMAKH { get; set; }
         public ICommand Update { get; set; }
+        public ICommand back { get; set; }
         public DetailCustomer()
         {           
             GetMAKH = new RelayCommand<DetailCustomerView>((p) => true, (p) => _GetMAKH(p));
             Update = new RelayCommand<DetailCustomerView>((p) => true, (p) => _Update(p));
+            back = new RelayCommand<DetailCustomerView>((p) => true, p => _back(p));
         }
         void _GetMAKH(DetailCustomerView paramater)
         {
             MaKH = paramater.MaKH.Text;
+        }
+        void _back(DetailCustomerView p)
+        {
+            CustomersView customersView = new CustomersView();
+            MainViewModel.MainFrame.Content = customersView;
         }
         void _Update(DetailCustomerView p)
         {

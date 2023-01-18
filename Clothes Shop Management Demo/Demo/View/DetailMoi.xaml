@@ -151,11 +151,11 @@
                 </Grid>
                 <Grid Grid.Row="1">
                     <Border Grid.Row="1">
-                        <Button Margin="529,14,23,10" Background="Transparent">
+                        <Button Margin="529,14,23,10" Background="#6C63FF">
                             <TextBlock Text="Quay lại"
                                            Height="30"
                                            Width="50"
-                                           Foreground="#6C63FF"/>
+                                           />
                             <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="Click">
                                     <i:InvokeCommandAction Command="{Binding Back}"

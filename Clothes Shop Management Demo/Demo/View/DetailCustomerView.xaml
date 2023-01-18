@@ -200,19 +200,23 @@
                                 </Border>
                             </StackPanel>
                         </StackPanel>
-                        <TextBlock
-                                    Margin="-350,30,0,10"
+                        <StackPanel Orientation="Horizontal" 
+                                    Margin="0,10,0,0"
+                                    HorizontalAlignment="Center" Height="19" Width="46">
+                            <TextBlock
+                                   
                                     Text="ĐỊA CHỈ"
                                     FontFamily="{StaticResource Custom}"
-                            HorizontalAlignment="Center"
-                            FontSize="12"
+                                    HorizontalAlignment="Center"
+                                    FontSize="12"
                                 />
+                        </StackPanel>
                         <TextBox
-                            Margin="-210,0,0,0"
+                            
                                     x:Name="DC"
                                     FontFamily="{StaticResource Custom}"
                                     HorizontalAlignment="Center"
-                                    Width="230"
+                                    Width="370"
                                     Height="29"
                                     BorderThickness="2"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
@@ -224,23 +228,33 @@
                                     AcceptsReturn="True"
                                     TextWrapping="Wrap"
                                 />
-                        <TextBox
-                            Margin="250,-30,0,0"
-                                    x:Name="eMAIL"
+                        <StackPanel Orientation="Horizontal" 
+                                    Margin="0,10,0,0"
+                                    HorizontalAlignment="Center" Height="19" Width="86">
+                            <TextBlock
+                                   
+                                    Text="ĐỊA CHỈ EMAIL"
                                     FontFamily="{StaticResource Custom}"
                                     HorizontalAlignment="Center"
-                                    Width="220"
+                                    FontSize="12"
+                                />
+                        </StackPanel>
+                        <TextBox
+                                    x:Name="eMAIL"
+                                    Margin="0,10,0,0"
+                                    FontFamily="{StaticResource Custom}"
+                                    HorizontalAlignment="Center"
+                                    Width="370"
                                     Height="29"
                                     BorderThickness="2"
                                     materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                                     materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
-                                    materialDesign:HintAssist.Hint="Nhập Email"
+                                    materialDesign:HintAssist.Hint="NHẬP EMAIL"
                                     materialDesign:TextFieldAssist.TextBoxViewMargin="10,0,0,0"
                                     materialDesign:TextFieldAssist.UnderlineBrush="Black"
                                     HorizontalScrollBarVisibility="Auto"
                                     AcceptsReturn="True"
-                                    TextWrapping="Wrap"
-                                />
+                                    TextWrapping="Wrap"/>
                         <Button Content="CẬP NHẬT"
                                 Margin="0,70,0,0"
                                 Width="230"
@@ -256,38 +270,17 @@
                                 </i:EventTrigger>
                             </i:Interaction.Triggers>
                         </Button>
-                        <Button 
-                        VerticalAlignment="Bottom" HorizontalAlignment="Right"
-                        Margin="0,0,98,48"
-                        Content = "Hủy" FontSize="14"
-                        Cursor="Hand"  Width="105"
-                        Height="30"
-                        Foreground="White"
-                        Background="#6C63FF"
-                        x:Name="lbl" Click="lbl_Click">
-                            <Button.Style>
-                                <Style TargetType="Button">
-                                    <Setter Property="Background" Value="Transparent"/>
-                                    <Setter Property="Foreground" Value="#6C63FF"/>
-                                    <Style.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True">
-                                            <Setter Property="Background" Value="#6891DF"/>
-                                            <Setter Property="Foreground" Value="White"/>
-                                        </Trigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Button.Style>
-                            <Button.Template>
-                                <ControlTemplate TargetType="Button">
-                                    <Border Width="100" Height="25"
-                                    CornerRadius="9"
-                                    Background="{TemplateBinding Background}">
-                                        <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center">
-                                        </ContentPresenter>
-                                    </Border>
-                                </ControlTemplate>
-                            </Button.Template>
+                        <Button Margin="529,14,23,10" Background="#6C63FF">
+                            <TextBlock Text="Quay lại"
+                                           Height="30"
+                                           Width="50"
+                                           />
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="Click">
+                                    <i:InvokeCommandAction Command="{Binding Back}"
+                                                       CommandParameter="{Binding ElementName=DetailCswd}"></i:InvokeCommandAction>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
                         </Button>
                     </StackPanel>
                 </Grid>

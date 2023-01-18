@@ -308,13 +308,8 @@
                                         x:Name="addbtn"
                                         FontFamily="{StaticResource Custom}"
                                         materialDesign:ButtonAssist.CornerRadius="10"
+                                        Background="#6C63FF"
                                 >
-                                    <Button.Background>
-                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0,0.5">
-                                            <GradientStop Color="#FFE5D8" Offset="0"/>
-                                            <GradientStop Color="#FFCAD4" Offset="1"/>
-                                        </LinearGradientBrush>
-                                    </Button.Background>
                                     <i:Interaction.Triggers>
                                         <i:EventTrigger EventName="Click">
                                             <i:InvokeCommandAction     
@@ -331,13 +326,9 @@
                                     x:Name="deletebtn"
                                     FontFamily="{StaticResource Custom}"
                                     materialDesign:ButtonAssist.CornerRadius="10"
+                                    Background="#6C63FF"
                                 >
-                                    <Button.Background>
-                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0,0.5">
-                                            <GradientStop Color="#FFE5D8" Offset="0"/>
-                                            <GradientStop Color="#FFCAD4" Offset="1"/>
-                                        </LinearGradientBrush>
-                                    </Button.Background>
+                                   
                                     <i:Interaction.Triggers>
                                         <i:EventTrigger EventName="Click">
                                             <i:InvokeCommandAction     
@@ -354,13 +345,9 @@
                                     FontFamily="{StaticResource Custom}"
                                     materialDesign:ButtonAssist.CornerRadius="10"
                                     x:Name="ttbtn"
+                                    Background="#6C63FF"
                                 >
-                                    <Button.Background>
-                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0,0.5">
-                                            <GradientStop Color="#FFE5D8" Offset="0"/>
-                                            <GradientStop Color="#FFCAD4" Offset="1"/>
-                                        </LinearGradientBrush>
-                                    </Button.Background>
+                                    
                                     <i:Interaction.Triggers>
                                         <i:EventTrigger EventName="Click">
                                             <i:InvokeCommandAction     
