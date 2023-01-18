@@ -273,11 +273,11 @@
                         <Button Margin="529,14,23,10" Background="#6C63FF">
                             <TextBlock Text="Quay lại"
                                            Height="30"
-                                           Width="50"
+                                           Width="53"
                                            />
                             <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="Click">
-                                    <i:InvokeCommandAction Command="{Binding Back}"
+                                    <i:InvokeCommandAction Command="{Binding back}"
                                                        CommandParameter="{Binding ElementName=DetailCswd}"></i:InvokeCommandAction>
                                 </i:EventTrigger>
                             </i:Interaction.Triggers>
