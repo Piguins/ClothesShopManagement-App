@@ -357,8 +357,8 @@
                     Height="40"
                     VerticalAlignment="Center"
                     Margin="300,10,0,0"
-                    Background="Transparent"
-                    Foreground="#6C63FF"
+                    Foreground="White"
+                    Background="#6C63FF"
                     HorizontalAlignment="Left" Grid.Column="1">
 
                     <i:Interaction.Triggers>

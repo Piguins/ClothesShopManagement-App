@@ -68,9 +68,9 @@
                         <StackPanel Grid.Row="1">
                             <Button
                                     Width="300"
-                                    Height="100"
+                                    Height="110"
                                     materialDesign:ButtonAssist.CornerRadius="17"
-                                    Background="#FFD1C8C8"
+                                    Background="#6C63FF"
                                     Margin="0,0,0,10"
                                  >
                                 <Grid>
@@ -78,16 +78,16 @@
                                         <ColumnDefinition Width="100"/>
                                         <ColumnDefinition Width="auto"/>
                                     </Grid.ColumnDefinitions>
-                                    <Ellipse  Margin="-58,14,78,14" Grid.Column="0">
+                                    <Ellipse  Margin="-58,14,78,14" Grid.Column="0" Width="75" Height="75">
                                         <Ellipse.Fill>
                                             <ImageBrush ImageSource="/Resource/Ava/Tu.jpg"/>
                                         </Ellipse.Fill>
                                     </Ellipse>
 
                                     <Grid Grid.Column="1">
-                                        <TextBlock Text="Nguyễn Văn A" Foreground="Black" FontSize="15" Height="28" Margin="-76,9,-76,55"/>
-                                        <TextBlock Text="0945356489" Foreground="Black" FontSize="10" Margin="-62,37,62,39"/>
-                                        <TextBlock Text="Quần áo" Foreground="Black" FontSize="10" Margin="-62,58,62,19"/>
+                                        <TextBlock Text="Nguyễn Văn A" Foreground="White" FontSize="15" Height="28" Margin="-76,9,-76,55"/>
+                                        <TextBlock Text="0945356489" Foreground="White" FontSize="10" Margin="-62,37,62,39"/>
+                                        <TextBlock Text="Quần áo" Foreground="White" FontSize="10" Margin="-62,58,62,19"/>
                                     </Grid>
                                 </Grid>
                                 <i:Interaction.Triggers>
@@ -99,9 +99,9 @@
                             </Button>
                             <Button
                                     Width="300"
-                                    Height="100"
+                                    Height="110"
                                     materialDesign:ButtonAssist.CornerRadius="17"
-                                    Background="#FFD1C8C8"
+                                    Background="#6C63FF"
                                     Margin="0,0,0,10"
                                  >
                                 <Grid>
@@ -109,16 +109,16 @@
                                         <ColumnDefinition Width="100"/>
                                         <ColumnDefinition Width="auto"/>
                                     </Grid.ColumnDefinitions>
-                                    <Ellipse  Margin="-58,14,78,14" Grid.Column="0">
+                                    <Ellipse  Margin="-58,14,78,14" Grid.Column="0" Height="75" Width="75">
                                         <Ellipse.Fill>
-                                            <ImageBrush ImageSource="/Resource/Ava/Tu.jpg"/>
+                                            <ImageBrush ImageSource="/Resource/Ava/b.png"/>
                                         </Ellipse.Fill>
                                     </Ellipse>
 
                                     <Grid Grid.Column="1">
-                                        <TextBlock Text="Phạm Văn B" Foreground="Black" FontSize="15" Height="28" Margin="-76,9,-76,55"/>
-                                        <TextBlock Text="0949998659" Foreground="Black" FontSize="10" Margin="-62,37,62,39"/>
-                                        <TextBlock Text="Túi" Foreground="Black" FontSize="10" Margin="-62,58,62,19"/>
+                                        <TextBlock Text="Phạm Văn B" Foreground="White" FontSize="15" Height="28" Margin="-76,9,-76,55"/>
+                                        <TextBlock Text="0949998659" Foreground="White" FontSize="10" Margin="-62,37,62,39"/>
+                                        <TextBlock Text="Túi" Foreground="White" FontSize="10" Margin="-62,58,62,19"/>
                                     </Grid>
                                 </Grid>
                                 <i:Interaction.Triggers>
@@ -130,9 +130,9 @@
                             </Button>
                             <Button
                                     Width="300"
-                                    Height="100"
+                                    Height="110"
                                     materialDesign:ButtonAssist.CornerRadius="17"
-                                    Background="#FFD1C8C8"
+                                    Background="#6C63FF"
                                     Margin="0,0,0,10"
                                  >
                                 <Grid>
@@ -140,16 +140,16 @@
                                         <ColumnDefinition Width="100"/>
                                         <ColumnDefinition Width="auto"/>
                                     </Grid.ColumnDefinitions>
-                                    <Ellipse  Margin="-58,14,78,14" Grid.Column="0">
+                                    <Ellipse  Margin="-58,14,78,14" Grid.Column="0" Height="75" Width="75">
                                         <Ellipse.Fill>
-                                            <ImageBrush ImageSource="/Resource/Ava/Tu.jpg"/>
+                                            <ImageBrush ImageSource="/Resource/Ava/a.png"/>
                                         </Ellipse.Fill>
                                     </Ellipse>
 
                                     <Grid Grid.Column="1">
-                                        <TextBlock Text="Nguyễn Thị C" Foreground="Black" FontSize="15" Height="28" Margin="-76,9,-76,55"/>
-                                        <TextBlock Text="0933756895" Foreground="Black" FontSize="10" Margin="-62,37,62,39"/>
-                                        <TextBlock Text="Áo khoác" Foreground="Black" FontSize="10" Margin="-62,58,62,19"/>
+                                        <TextBlock Text="Nguyễn Thị C" Foreground="White" FontSize="15" Height="28" Margin="-76,9,-76,55"/>
+                                        <TextBlock Text="0933756895" Foreground="White" FontSize="10" Margin="-62,37,62,39"/>
+                                        <TextBlock Text="Áo khoác" Foreground="White" FontSize="10" Margin="-62,58,62,19"/>
                                     </Grid>
                                 </Grid>
                                 <i:Interaction.Triggers>
