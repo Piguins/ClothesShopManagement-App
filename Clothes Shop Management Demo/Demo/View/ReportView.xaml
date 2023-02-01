@@ -21,7 +21,7 @@
         </i:EventTrigger>
     </i:Interaction.Triggers>
     <Border Grid.Column="1"
-            Background="Transparent">        
+            Background="Transparent">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="40"/>
@@ -30,9 +30,6 @@
             <!--Title-->
             <!--Top Menu-->
             <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 0 30 0">
-                <Button Content="Today" Margin="0 0 10 0"/>
-                <Button Content="Week"  Margin="0 0 10 0" Foreground="#ffffff"/>
-                <Button Content="Month" Margin="0 0 10 0"/>
                 <Button Content="Year" Margin="0 0 10 0"/>
             </StackPanel>
 
@@ -55,13 +52,17 @@
                 <!--Chart-->
                 <Border CornerRadius="20" Padding="0 5" Background="Transparent" Margin="5 0 0 5">
                     <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="91*"/>
+                            <ColumnDefinition Width="74*"/>
+                        </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="auto"/>
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
 
-                        <StackPanel Orientation="Horizontal" Margin="10 0 0 25">
-                            <TextBlock Text="LỢI NHUẬN" Style="{StaticResource MaterialDesignTextBlock}"
+                        <StackPanel Orientation="Horizontal" Margin="10 0 0 25" Grid.ColumnSpan="2">
+                            <TextBlock Text="LỢI NHUẬN (VNĐ)" Style="{StaticResource MaterialDesignTextBlock}"
                                        FontFamily="{StaticResource Custom}"
                                        Foreground="#6C63FF"
                                        FontSize="30"
@@ -69,35 +70,33 @@
                         </StackPanel>
 
                         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0 0 0 25" Grid.Row="1">
-                            <TextBlock Text="16000000" Foreground="#6C63FF" Margin="3 0 0 30"/>
-                            <TextBlock Text="14000000" Foreground="#6C63FF" Margin="3 0 0 30"/>
-                            <TextBlock Text="12000000" Foreground="#6C63FF" Margin="3 0 0 30"/>
-                            <TextBlock Text="10000000" Foreground="#6C63FF" Margin="3 0 0 30"/>
-                            <TextBlock Text="8000000" Foreground="#6C63FF" Margin="10 0 0 30"/>
-                            <TextBlock Text="6000000" Foreground="#6C63FF" Margin="10 0 0 30"/>
-                            <TextBlock Text="4000000" Foreground="#6C63FF" Margin="10 0 0 30"/>
-                            <TextBlock Text="2000000" Foreground="#6C63FF" Margin="10 0 0 30"/>
+                            <TextBlock Text="21000000" Foreground="#6C63FF" Margin="3 0 0 40"/>
+                            <TextBlock Text="18000000" Foreground="#6C63FF" Margin="3 0 0 40"/>
+                            <TextBlock Text="15000000" Foreground="#6C63FF" Margin="3 0 0 40"/>
+                            <TextBlock Text="12000000" Foreground="#6C63FF" Margin="10 0 0 40"/>
+                            <TextBlock Text="9000000" Foreground="#6C63FF" Margin="10 0 0 40"/>
+                            <TextBlock Text="6000000" Foreground="#6C63FF" Margin="10 0 0 40"/>
+                            <TextBlock Text="3000000" Foreground="#6C63FF" Margin="10 0 0 40"/>
                             <TextBlock Text="0" Foreground="#6C63FF" HorizontalAlignment="Right" Margin="0 0 3 10"/>
                         </StackPanel>
 
-                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="1" Orientation="Horizontal" Margin="5 0 0 0">
-                            <TextBlock Text="0" Foreground="#717EB2"/>
-                            <TextBlock Text="1" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="2" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="3" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="4" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="5" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="6" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="7" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="8" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="9" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="10" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="11" Foreground="#717EB2" Margin="41 0 0 0"/>
-                            <TextBlock Text="12" Foreground="#717EB2" Margin="41 0 0 0"/>
+                        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="1" Orientation="Horizontal" Margin="65,0,0,0" Grid.ColumnSpan="2">
+                            <TextBlock Text="1" Foreground="#717EB2"/>
+                            <TextBlock Text="2" Foreground="#717EB2" Margin="47 0 0 0"/>
+                            <TextBlock Text="3" Foreground="#717EB2" Margin="47 0 0 0"/>
+                            <TextBlock Text="4" Foreground="#717EB2" Margin="47 0 0 0"/>
+                            <TextBlock Text="5" Foreground="#717EB2" Margin="47 0 0 0"/>
+                            <TextBlock Text="6" Foreground="#717EB2" Margin="47 0 0 0"/>
+                            <TextBlock Text="7" Foreground="#717EB2" Margin="47 0 0 0"/>
+                            <TextBlock Text="8" Foreground="#717EB2" Margin="47 0 0 0"/>
+                            <TextBlock Text="9" Foreground="#717EB2" Margin="47 0 0 0"/>
+                            <TextBlock Text="10" Foreground="#717EB2" Margin="47 0 0 0"/>
+                            <TextBlock Text="11" Foreground="#717EB2" Margin="47 0 0 0"/>
+                            <TextBlock Text="12" Foreground="#717EB2" Margin="47 0 0 0"/>
                         </StackPanel>
 
-                        <lvc:CartesianChart Grid.Row="1" Margin="50,0,25,35" Loaded="CartesianChart_Loaded">
-                            
+                        <lvc:CartesianChart Grid.Row="1" Margin="60,0,25,37" Loaded="CartesianChart_Loaded" Grid.ColumnSpan="2">
+
 
                             <lvc:CartesianChart.DataTooltip>
                                 <lvc:DefaultTooltip Background="#24336A" Foreground="#D5E2FF"
@@ -107,21 +106,21 @@
                             <lvc:CartesianChart.AxisX>
                                 <lvc:Axis MinValue="0" MaxValue="11" Foreground="#717EB2" ShowLabels="False">
                                     <lvc:Axis.Separator>
-                                        <lvc:Separator StrokeThickness="0" Step="1"/>
+                                        <lvc:Separator StrokeThickness="2" Step="1"/>
                                     </lvc:Axis.Separator>
                                 </lvc:Axis>
                             </lvc:CartesianChart.AxisX>
 
                             <lvc:CartesianChart.AxisY>
-                                <lvc:Axis MinValue="0" MaxValue="16000000" Foreground="#717EB2" ShowLabels="False">
+                                <lvc:Axis MinValue="0" MaxValue="23000000" Foreground="#717EB2" ShowLabels="False">
                                     <lvc:Axis.Separator>
-                                        <lvc:Separator StrokeThickness="0"/>
+                                        <lvc:Separator StrokeThickness="2"/>
                                     </lvc:Axis.Separator>
                                 </lvc:Axis>
                             </lvc:CartesianChart.AxisY>
 
                             <lvc:CartesianChart.Series>
-                                <lvc:LineSeries Name="Slm" Values="4000000,5000000,7000000,14000000,2500000,13000000,8000000,3000000,5000000,12000000,10000000,16000000" 
+                                <lvc:LineSeries Name="Slm" Values="7672900,21500000,1008000,456000,14071000,3730000,7039000, 13710000,13024000,7851000,0,3150000" 
                                                 StrokeThickness="1" 
                                                 Stroke="#6C63FF" PointGeometrySize="0">
                                     <i:Interaction.Triggers>
