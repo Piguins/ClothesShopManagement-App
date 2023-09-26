@@ -24,11 +24,11 @@ namespace Demo.Model
             }
         }
 
-        public QLBHEntities DB { get; set; }
+        public Model1 DB { get; set; }
 
         private DataProvider()
         {
-            DB = new QLBHEntities();
+            DB = new Model1();
         }
     }
 }
