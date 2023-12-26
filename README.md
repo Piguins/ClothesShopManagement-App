@@ -116,13 +116,9 @@ Kinh tế ngày càng phát triển, đây là thời buổi của công nghệ,
 ## III. Tác giả
 
 * [Tô Thế Kiệt – Trưởng nhóm](https://github.com/kiethongngu)
-  * Vai trò: Team Leader, Database Design, Frontend Developer, Backend Developer
 * [Đào Anh Tú](https://github.com/anhtu301003)
-  * Vai trò: Frontend Developer
 * [Ngô Hữu Thiên](https://github.com/takaesa)
-  * Vai trò: Frontend Developer
 * [Vũ Hoàng Nhật Minh](https://github.com/Minguml)
-  * Vai trò: Frontend Developer, Backend Developer
 
 <!-- NGƯỜI HƯỚNG DẪN -->
 <div id="Nguoihuongdan"></div>
