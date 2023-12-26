@@ -4,8 +4,7 @@
   <img src="https://www.uit.edu.vn/sites/vi/files/banner_uit.png" alt="Alt text">
 </p>
 
-# QUẢN LÝ BÁN HÀNG QUẦN ÁO
-Hỗ trợ các cửa hàng quần áo dễ dàng hơn trong việc quản lý.
+
 
 ## Mục lục
 
